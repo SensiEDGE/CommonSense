@@ -35,7 +35,7 @@
 #ifndef APPDEFINES_H
 #define APPDEFINES_H
 
-#if 0 // Port expander is MAX7317
+#if 1 // Port expander is MAX7317
 #define PORT_EXPANDER_MAX7317
 #else // Port expander is PCA9538
 #define PORT_EXPANDER_PCA9538
