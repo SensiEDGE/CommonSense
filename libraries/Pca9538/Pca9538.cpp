@@ -33,7 +33,7 @@
  */
 
 #include "Pca9538.h"
-#include "Appdefines.h"
+#include "../../Appdefines.h"
 #include "../I2c/I2c.h"
 
 #define PCA9538_I2C_ADDR    0xE0 >> 1
