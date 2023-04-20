@@ -9,11 +9,12 @@
 #include "ei_device_sony_spresense.h"
 
 //#include "Audio.h"
-#include "Wire.h"
-#include "KX126.h"
-#include "File.h"
+#include "libraries/Drivers/CXD5602/Wire/Wire.h"
+//#include "libraries/Hardware/KXxx/KX126.h"
+#include "libraries/ThirdParty/File/File.h"
 
 #include "Tests.h"
+#include "ei_main.h"
 
 #include "cxd56_gpio.h"
 #include "arch/board/board.h"
@@ -27,12 +28,14 @@
 
 
 /* Extern reference -------------------------------------------------------- */
-extern int ei_main();
+//extern int ei_main();
 
 /* Forward declarations ---------------------------------------------------- */
 static void disable_uart_irq(void);
 static void handle_sony_id(void);
 static void init_acc(void);
+char spresense_getchar(void);
+bool check_and_get_char (char* data);
 //static void audio_attention_cb(const ErrorAttentionParam *atprm);
 static void empty_audio_fifo(void);
 extern "C" void spresense_time_cb(uint32_t *sec, uint32_t *nano);
@@ -43,7 +46,7 @@ extern "C" void spresense_time_cb(uint32_t *sec, uint32_t *nano);
 #define CONSOLE_BASE    CXD56_UART1_BASE
 
 /* Private variables ------------------------------------------------------- */
-KX126 kx126(KX126_DEVICE_ADDRESS_1F);
+//KX126 kx126(KX126_DEVICE_ADDRESS_1F);
 
 /* Audio variables */
 //AudioClass *theAudio;
@@ -104,15 +107,14 @@ extern "C" int spresense_main(void)
 #endif
     boardctl(BOARDIOC_INIT, 0);
 
-    disable_uart_irq();
     handle_sony_id();
-
-    tests();
+    //tests();
+    ei_main();
     
-while (1){}
-{
-    /* code */
-}
+    while (1){}
+    {
+        /* code */
+    }
 
     init_acc();
 
@@ -148,6 +150,23 @@ char spresense_getchar(void)
     }
     else {
         return (char)getreg32(CONSOLE_BASE + CXD56_UART_DR);
+    }
+}
+
+/**
+ * @brief  Function with tests
+ * @param  data char from console
+ * @retval true is some data received
+ */
+bool check_and_get_char (char* data) {
+    uint32_t reg = 0;
+    reg = getreg32(CONSOLE_BASE + CXD56_UART_FR);
+    if ((UART_FR_RXFE & reg) && !(UART_FR_RXFF & reg)) {
+        *data = 0;
+        return false;
+    } else {
+        *data = (char)getreg32(CONSOLE_BASE + CXD56_UART_DR);
+        return true; 
     }
 }
 
@@ -189,7 +208,7 @@ extern "C" void spresense_ledcontrol(tEiLeds led, bool on_off)
 
 int spresense_getAcc(float acc_val[3])
 {
-    return (int)kx126.get_val(acc_val);
+    return 0;//(int)kx126.get_val(acc_val);
 }
 
 /**
@@ -425,7 +444,7 @@ static void init_acc(void)
 {
     Wire.begin();
 
-    uint8_t rc = kx126.init();
+    uint8_t rc = 0;//kx126.init();
 
     if (rc != 0) {
         printf("Accelerometer (KX126) missing or not working correctly\r\n");

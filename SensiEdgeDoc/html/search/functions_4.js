@@ -1,8 +1,16 @@
 var searchData=
 [
-  ['enable_0',['enable',['../class_apds9250.html#a7f7fd770f7fa19bf6600845ea777e208',1,'Apds9250']]],
-  ['enablebootcause_1',['enableBootCause',['../class_low_power_class.html#ad70ceeb7d3af4f91b8d6e14c68979731',1,'LowPowerClass::enableBootCause(bootcause_e bc)'],['../class_low_power_class.html#a6dfe370bd2c703fbf9ab706c5441eaa8',1,'LowPowerClass::enableBootCause(uint8_t pin)']]],
-  ['end_2',['end',['../class_audio_class.html#a2c2df39b0309a60ecf5ab7f34118e045',1,'AudioClass::end()'],['../class_sp_gnss.html#a2cb1bd948752a0417db137525d8ea3a7',1,'SpGnss::end()'],['../class_low_power_class.html#a580194a8e5638eca6403103fc7a47a2b',1,'LowPowerClass::end()'],['../class_memory_util_class.html#aeb84a039be8f00284638ef088be5cada',1,'MemoryUtilClass::end()'],['../class_rtc_class.html#ab87cbd8470df2d234ecce62f3d5ee2ae',1,'RtcClass::end()']]],
-  ['endusbmsc_3',['endUsbMsc',['../class_s_d_class.html#a4c4cc1dd0d51f85bd490f4229c87bf33',1,'SDClass']]],
-  ['exists_4',['exists',['../class_storage_class.html#a5d550898c4d71b61b399158c1a0c55e2',1,'StorageClass']]]
+  ['day_0',['day',['../class_rtc_time.html#a7dbc6e0a2ffafd23aa342c0e45b6046d',1,'RtcTime::day() const'],['../class_rtc_time.html#ade50ff9836f7d24cd7d6f4e1a7fe56f8',1,'RtcTime::day(int day)']]],
+  ['deepsleep_1',['deepSleep',['../class_low_power_class.html#a88517a45855821809d5e05db72b9f46d',1,'LowPowerClass::deepSleep()'],['../class_low_power_class.html#ad89302bd1915509cb4a3672181ae0fa2',1,'LowPowerClass::deepSleep(uint32_t seconds)']]],
+  ['deselect_2',['deselect',['../class_sp_gnss.html#aec39958ae3be3143479e360706ce2022',1,'SpGnss']]],
+  ['destroystaticpools_3',['destroyStaticPools',['../_memory_util_8cpp.html#a55c3ca1d0f7ac9312e92d5e45cb32d06',1,'destroyStaticPools(void):&#160;MemoryUtil.cpp'],['../_memory_util_8h.html#a55c3ca1d0f7ac9312e92d5e45cb32d06',1,'destroyStaticPools(void):&#160;MemoryUtil.cpp']]],
+  ['detachalarm_4',['detachAlarm',['../class_rtc_class.html#aeee6044d08e492330ad2720ee9a90b4e',1,'RtcClass']]],
+  ['die_5',['die',['../namespacemsgq__layout.html#aaf7508cc7743b2fb9152c7c91e961b1b',1,'msgq_layout']]],
+  ['disable_6',['disable',['../class_apds9250.html#a1d8c251138e173017438fc6f98121be6',1,'Apds9250']]],
+  ['disablebootcause_7',['disableBootCause',['../class_low_power_class.html#ac858ee26bd656143d8249d365ac55b09',1,'LowPowerClass::disableBootCause(bootcause_e bc)'],['../class_low_power_class.html#a0950365b094f5f70575ee7e5ebcd896d',1,'LowPowerClass::disableBootCause(uint8_t pin)']]],
+  ['disk_5finitialize_8',['disk_initialize',['../diskio_8cpp.html#a09cdaa6f36fa409bdf002727bff98eb1',1,'disk_initialize(BYTE pdrv):&#160;diskio.cpp'],['../diskio_8h.html#a09cdaa6f36fa409bdf002727bff98eb1',1,'disk_initialize(BYTE pdrv):&#160;diskio.cpp']]],
+  ['disk_5fioctl_9',['disk_ioctl',['../diskio_8cpp.html#ab00fa450a811dbdabe3c655c1a36fab4',1,'disk_ioctl(BYTE pdrv, BYTE cmd, void *buff):&#160;diskio.cpp'],['../diskio_8h.html#ab00fa450a811dbdabe3c655c1a36fab4',1,'disk_ioctl(BYTE pdrv, BYTE cmd, void *buff):&#160;diskio.cpp']]],
+  ['disk_5fread_10',['disk_read',['../diskio_8cpp.html#a075d27f59f550e2cee07d00abcff32e0',1,'disk_read(BYTE pdrv, BYTE *buff, DWORD sector, UINT count):&#160;diskio.cpp'],['../diskio_8h.html#a075d27f59f550e2cee07d00abcff32e0',1,'disk_read(BYTE pdrv, BYTE *buff, DWORD sector, UINT count):&#160;diskio.cpp']]],
+  ['disk_5fstatus_11',['disk_status',['../diskio_8cpp.html#a8348ac5ee6d709420c02e45c111f4793',1,'disk_status(BYTE pdrv):&#160;diskio.cpp'],['../diskio_8h.html#a8348ac5ee6d709420c02e45c111f4793',1,'disk_status(BYTE pdrv):&#160;diskio.cpp']]],
+  ['disk_5fwrite_12',['disk_write',['../diskio_8cpp.html#a0fe56ee4831a44b09cfd96856e069634',1,'disk_write(BYTE pdrv, const BYTE *buff, DWORD sector, UINT count):&#160;diskio.cpp'],['../diskio_8h.html#a0fe56ee4831a44b09cfd96856e069634',1,'disk_write(BYTE pdrv, const BYTE *buff, DWORD sector, UINT count):&#160;diskio.cpp']]]
 ];

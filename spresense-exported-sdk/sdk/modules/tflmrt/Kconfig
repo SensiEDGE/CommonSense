@@ -1,0 +1,35 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+menu "TensorFlow Lite Micro runtime library"
+config TFLM_RT
+	bool "TensorFlow Lite Micro runtime library"
+	select EXTERNALS_TENSORFLOW
+	default n
+	---help---
+		Enable or disable TensorFlow Lite Micro runtime library.
+
+if TFLM_RT
+
+config TFLM_RT_MPCOMM
+	bool "Use multicore processing"
+	select MPCOMM
+	default n
+	---help---
+		Enable or disable multicore processing.
+
+if TFLM_RT_MPCOMM
+
+config TFLM_RT_MPCOMM_PATH
+	string "MPCOMM TFLMRT-MP ELF file path"
+	default "/mnt/sd0/BIN/TFLMRT-MP"
+	---help---
+		Set path to MPCOMM TFLMRT-MP worker program ELF file on the board.
+
+endif
+
+endif
+
+endmenu # TFLM_RT

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SensiEdgeDoc: libraries/RTC/RTC.h Source File</title>
+<title>SensiEdgeDoc: libraries/Drivers/CXD5602/RTC/RTC.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_f34881fcf60f680b800190d5274dfaea.html">RTC</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_cfc7d16331ab447fc90cc53aebf2da65.html">Drivers</a></li><li class="navelem"><a class="el" href="dir_ddf2aa6299a67cbed9296dd18546c154.html">CXD5602</a></li><li class="navelem"><a class="el" href="dir_9b7d112647da1d7774c3fe45977aaa01.html">RTC</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -73,7 +73,7 @@ $(function() {
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#ifndef __RTC_H__</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#define __RTC_H__</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#include &quot;RtcTime.h&quot;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#include &quot;<a class="code" href="_rtc_time_8h.html">RtcTime.h</a>&quot;</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_rtc_class.html">   60</a></span><span class="keyword">class </span><a class="code hl_class" href="class_rtc_class.html">RtcClass</a></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
@@ -107,9 +107,10 @@ $(function() {
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>};</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword">extern</span> <a class="code hl_class" href="class_rtc_class.html">RtcClass</a> RTC;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword">extern</span> <a class="code hl_class" href="class_rtc_class.html">RtcClass</a> <a class="code hl_variable" href="group__rtc.html#ga58e005fa37b73a7ba8f8d8d478a03902">RTC</a>;</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">#endif </span><span class="comment">// __RTC_H__</span></div>
+<div class="ttc" id="a_rtc_time_8h_html"><div class="ttname"><a href="_rtc_time_8h.html">RtcTime.h</a></div></div>
 <div class="ttc" id="aclass_rtc_class_html"><div class="ttname"><a href="class_rtc_class.html">RtcClass</a></div><div class="ttdoc">This is the interface to the RTC Hardware.</div><div class="ttdef"><b>Definition:</b> RTC.h:61</div></div>
 <div class="ttc" id="aclass_rtc_class_html_a3cdddfdec285bfe52035891df76dcaf7"><div class="ttname"><a href="class_rtc_class.html#a3cdddfdec285bfe52035891df76dcaf7">RtcClass::getTime</a></div><div class="ttdeci">RtcTime getTime()</div><div class="ttdoc">Get RTC time.</div><div class="ttdef"><b>Definition:</b> RTC.cpp:165</div></div>
 <div class="ttc" id="aclass_rtc_class_html_a3fa06278712a46bdd64e5955655f448e"><div class="ttname"><a href="class_rtc_class.html#a3fa06278712a46bdd64e5955655f448e">RtcClass::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the RTC library.</div><div class="ttdef"><b>Definition:</b> RTC.cpp:110</div></div>
@@ -122,6 +123,7 @@ $(function() {
 <div class="ttc" id="aclass_rtc_class_html_aeee6044d08e492330ad2720ee9a90b4e"><div class="ttname"><a href="class_rtc_class.html#aeee6044d08e492330ad2720ee9a90b4e">RtcClass::detachAlarm</a></div><div class="ttdeci">void detachAlarm()</div><div class="ttdoc">Detach the alarm handler.</div><div class="ttdef"><b>Definition:</b> RTC.cpp:249</div></div>
 <div class="ttc" id="aclass_rtc_class_html_af11cf25280f48ec8f206e8f0925da3d3"><div class="ttname"><a href="class_rtc_class.html#af11cf25280f48ec8f206e8f0925da3d3">RtcClass::setAlarmSeconds</a></div><div class="ttdeci">void setAlarmSeconds(uint32_t seconds)</div><div class="ttdoc">Set RTC alarm time after the specified seconds.</div><div class="ttdef"><b>Definition:</b> RTC.cpp:208</div></div>
 <div class="ttc" id="aclass_rtc_time_html"><div class="ttname"><a href="class_rtc_time.html">RtcTime</a></div><div class="ttdoc">RTC time definitions.</div><div class="ttdef"><b>Definition:</b> RtcTime.h:35</div></div>
+<div class="ttc" id="agroup__rtc_html_ga58e005fa37b73a7ba8f8d8d478a03902"><div class="ttname"><a href="group__rtc.html#ga58e005fa37b73a7ba8f8d8d478a03902">RTC</a></div><div class="ttdeci">RtcClass RTC</div><div class="ttdef"><b>Definition:</b> RTC.cpp:254</div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type. The developer should modify this to suit the platform bein...</div><div class="ttdef"><b>Definition:</b> vl53l1_types.h:78</div></div>
 <div class="ttc" id="avl53l1__types_8h_html_aa343fa3b3d06292b959ffdd4c4703b06"><div class="ttname"><a href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a></div><div class="ttdeci">short int16_t</div><div class="ttdoc">Typedef defining 16 bit short type. The developer should modify this to suit the platform being deplo...</div><div class="ttdef"><b>Definition:</b> vl53l1_types.h:93</div></div>
 </div><!-- fragment --></div><!-- contents -->

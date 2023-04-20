@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SensiEdgeDoc: libraries/Pwm/Pwm.h Source File</title>
+<title>SensiEdgeDoc: libraries/Drivers/CXD5602/Pwm/Pwm.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_ff031f0f2372719f29624ae75ff8eb19.html">Pwm</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_cfc7d16331ab447fc90cc53aebf2da65.html">Drivers</a></li><li class="navelem"><a class="el" href="dir_ddf2aa6299a67cbed9296dd18546c154.html">CXD5602</a></li><li class="navelem"><a class="el" href="dir_5ba18c9417d0bf0689fadfe1f970b07c.html">Pwm</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,22 +75,25 @@ $(function() {
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    PWM_STOP = 0,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    PWM_WORK</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} pwm_work_status_t;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="_pwm_8h.html#ac139031cac800acd2bd2ea5e45a98f9c">   40</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="_pwm_8h.html#ac139031cac800acd2bd2ea5e45a98f9ca4da638211112ff017325e9472592a151">   41</a></span>    <a class="code hl_enumvalue" href="_pwm_8h.html#ac139031cac800acd2bd2ea5e45a98f9ca4da638211112ff017325e9472592a151">PWM_STOP</a> = 0,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_enumvalue" href="_pwm_8h.html#ac139031cac800acd2bd2ea5e45a98f9caa306f152d6b11e8ef096c71d5b66d77a">PWM_WORK</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="_pwm_8h.html#ac139031cac800acd2bd2ea5e45a98f9caa306f152d6b11e8ef096c71d5b66d77a">   43</a></span>} <a class="code hl_enumeration" href="_pwm_8h.html#ac139031cac800acd2bd2ea5e45a98f9c">pwm_work_status_t</a>;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">void</span> <a class="code hl_function" href="_pwm_8h.html#a1e8fdae3fd7118582ffa427dad05b6e1">pwm_init</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">void</span> <a class="code hl_function" href="_pwm_8h.html#aac6f25de389adb5d200749aec96dcd1b">pwm_run</a>(<a class="code hl_typedef" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> freq_hz, <a class="code hl_typedef" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> duty, <a class="code hl_typedef" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> time_ms);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>pwm_work_status_t <a class="code hl_function" href="_pwm_8h.html#a5631deb9d17e4c8ce061a972cc6392df">pwm_act</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><a class="code hl_enumeration" href="_pwm_8h.html#ac139031cac800acd2bd2ea5e45a98f9c">pwm_work_status_t</a> <a class="code hl_function" href="_pwm_8h.html#a5631deb9d17e4c8ce061a972cc6392df">pwm_act</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif </span><span class="comment">// PWM_H</span></div>
-<div class="ttc" id="a_pwm_8h_html_a1e8fdae3fd7118582ffa427dad05b6e1"><div class="ttname"><a href="_pwm_8h.html#a1e8fdae3fd7118582ffa427dad05b6e1">pwm_init</a></div><div class="ttdeci">void pwm_init(void)</div><div class="ttdoc">PWM init.</div><div class="ttdef"><b>Definition:</b> Pwm.cpp:93</div></div>
-<div class="ttc" id="a_pwm_8h_html_a5631deb9d17e4c8ce061a972cc6392df"><div class="ttname"><a href="_pwm_8h.html#a5631deb9d17e4c8ce061a972cc6392df">pwm_act</a></div><div class="ttdeci">pwm_work_status_t pwm_act(void)</div><div class="ttdoc">PWM activity.</div><div class="ttdef"><b>Definition:</b> Pwm.cpp:123</div></div>
-<div class="ttc" id="a_pwm_8h_html_aac6f25de389adb5d200749aec96dcd1b"><div class="ttname"><a href="_pwm_8h.html#aac6f25de389adb5d200749aec96dcd1b">pwm_run</a></div><div class="ttdeci">void pwm_run(uint16_t freq_hz, uint8_t duty, uint16_t time_ms)</div><div class="ttdoc">Set PWM params.</div><div class="ttdef"><b>Definition:</b> Pwm.cpp:116</div></div>
+<div class="ttc" id="a_pwm_8h_html_a1e8fdae3fd7118582ffa427dad05b6e1"><div class="ttname"><a href="_pwm_8h.html#a1e8fdae3fd7118582ffa427dad05b6e1">pwm_init</a></div><div class="ttdeci">void pwm_init(void)</div><div class="ttdoc">PWM init.</div><div class="ttdef"><b>Definition:</b> Pwm.cpp:96</div></div>
+<div class="ttc" id="a_pwm_8h_html_a5631deb9d17e4c8ce061a972cc6392df"><div class="ttname"><a href="_pwm_8h.html#a5631deb9d17e4c8ce061a972cc6392df">pwm_act</a></div><div class="ttdeci">pwm_work_status_t pwm_act(void)</div><div class="ttdoc">PWM activity.</div><div class="ttdef"><b>Definition:</b> Pwm.cpp:148</div></div>
+<div class="ttc" id="a_pwm_8h_html_aac6f25de389adb5d200749aec96dcd1b"><div class="ttname"><a href="_pwm_8h.html#aac6f25de389adb5d200749aec96dcd1b">pwm_run</a></div><div class="ttdeci">void pwm_run(uint16_t freq_hz, uint8_t duty, uint16_t time_ms)</div><div class="ttdoc">Set PWM params.</div><div class="ttdef"><b>Definition:</b> Pwm.cpp:136</div></div>
+<div class="ttc" id="a_pwm_8h_html_ac139031cac800acd2bd2ea5e45a98f9c"><div class="ttname"><a href="_pwm_8h.html#ac139031cac800acd2bd2ea5e45a98f9c">pwm_work_status_t</a></div><div class="ttdeci">pwm_work_status_t</div><div class="ttdef"><b>Definition:</b> Pwm.h:40</div></div>
+<div class="ttc" id="a_pwm_8h_html_ac139031cac800acd2bd2ea5e45a98f9ca4da638211112ff017325e9472592a151"><div class="ttname"><a href="_pwm_8h.html#ac139031cac800acd2bd2ea5e45a98f9ca4da638211112ff017325e9472592a151">PWM_STOP</a></div><div class="ttdeci">@ PWM_STOP</div><div class="ttdef"><b>Definition:</b> Pwm.h:41</div></div>
+<div class="ttc" id="a_pwm_8h_html_ac139031cac800acd2bd2ea5e45a98f9caa306f152d6b11e8ef096c71d5b66d77a"><div class="ttname"><a href="_pwm_8h.html#ac139031cac800acd2bd2ea5e45a98f9caa306f152d6b11e8ef096c71d5b66d77a">PWM_WORK</a></div><div class="ttdeci">@ PWM_WORK</div><div class="ttdef"><b>Definition:</b> Pwm.h:42</div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. The developer should modify this to suit the platform be...</div><div class="ttdef"><b>Definition:</b> vl53l1_types.h:88</div></div>
 <div class="ttc" id="avl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. The developer should modify this to suit the platform bein...</div><div class="ttdef"><b>Definition:</b> vl53l1_types.h:98</div></div>
 </div><!-- fragment --></div><!-- contents -->

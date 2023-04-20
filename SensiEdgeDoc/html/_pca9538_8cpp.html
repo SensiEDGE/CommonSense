@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SensiEdgeDoc: libraries/Pca9538/Pca9538.cpp File Reference</title>
+<title>SensiEdgeDoc: libraries/Hardware/Pca9538/Pca9538.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_8ed6d68c58f4e5895c0795a627f96fc8.html">Pca9538</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_30ec792bae0d62409ac0d542d335de12.html">Hardware</a></li><li class="navelem"><a class="el" href="dir_67a915ac24ace1a645581abe3092905b.html">Pca9538</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,26 +75,21 @@ $(function() {
 
 <p>PCA9538 driver.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;Pca9538.h&quot;</code><br />
-<code>#include &quot;Appdefines.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="_i2c_8h_source.html">../I2c/I2c.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_pca9538_8h_source.html">Pca9538.h</a>&quot;</code><br />
+<code>#include &quot;../Appdefines.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_i2c_8h_source.html">../../Drivers/CXD5602/I2c/I2c.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ad6bdbd77f04e67ad073c48de3b29f5fb"><td class="memItemLeft" align="right" valign="top"><a id="ad6bdbd77f04e67ad073c48de3b29f5fb" name="ad6bdbd77f04e67ad073c48de3b29f5fb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PCA9538_I2C_ADDR</b>&#160;&#160;&#160;0xE0 &gt;&gt; 1</td></tr>
+<tr class="memitem:ad6bdbd77f04e67ad073c48de3b29f5fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pca9538_8cpp.html#ad6bdbd77f04e67ad073c48de3b29f5fb">PCA9538_I2C_ADDR</a>&#160;&#160;&#160;0xE0 &gt;&gt; 1</td></tr>
 <tr class="separator:ad6bdbd77f04e67ad073c48de3b29f5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97bbe05577b6b2b434920c08bcee8e72"><td class="memItemLeft" align="right" valign="top"><a id="a97bbe05577b6b2b434920c08bcee8e72" name="a97bbe05577b6b2b434920c08bcee8e72"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PCA9538_INPUT_PORT_REG</b>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a97bbe05577b6b2b434920c08bcee8e72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pca9538_8cpp.html#a97bbe05577b6b2b434920c08bcee8e72">PCA9538_INPUT_PORT_REG</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a97bbe05577b6b2b434920c08bcee8e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a017789052776732260776ef4bb9ed617"><td class="memItemLeft" align="right" valign="top"><a id="a017789052776732260776ef4bb9ed617" name="a017789052776732260776ef4bb9ed617"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PCA9538_OUTPUT_PORT_REG</b>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a017789052776732260776ef4bb9ed617"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pca9538_8cpp.html#a017789052776732260776ef4bb9ed617">PCA9538_OUTPUT_PORT_REG</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a017789052776732260776ef4bb9ed617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb258957b24c256bd7343bc9b9f797d7"><td class="memItemLeft" align="right" valign="top"><a id="acb258957b24c256bd7343bc9b9f797d7" name="acb258957b24c256bd7343bc9b9f797d7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PCA9538_POLARITY_INVERSION_REG</b>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:acb258957b24c256bd7343bc9b9f797d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pca9538_8cpp.html#acb258957b24c256bd7343bc9b9f797d7">PCA9538_POLARITY_INVERSION_REG</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:acb258957b24c256bd7343bc9b9f797d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2bb00a00e5947a6b3b003585654d03e"><td class="memItemLeft" align="right" valign="top"><a id="ac2bb00a00e5947a6b3b003585654d03e" name="ac2bb00a00e5947a6b3b003585654d03e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PCA9538_CONFIG_REG</b>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:ac2bb00a00e5947a6b3b003585654d03e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pca9538_8cpp.html#ac2bb00a00e5947a6b3b003585654d03e">PCA9538_CONFIG_REG</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:ac2bb00a00e5947a6b3b003585654d03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -102,9 +97,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a49fd7291319c8a78ef2da24e8cf33ca7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pca9538_8cpp.html#a49fd7291319c8a78ef2da24e8cf33ca7">pca9538_init</a> (void)</td></tr>
 <tr class="memdesc:a49fd7291319c8a78ef2da24e8cf33ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">PCA9538 init.  <a href="_pca9538_8cpp.html#a49fd7291319c8a78ef2da24e8cf33ca7">More...</a><br /></td></tr>
 <tr class="separator:a49fd7291319c8a78ef2da24e8cf33ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fbd37008f1f813b810f52d81cf3c95c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pca9538_8cpp.html#a3fbd37008f1f813b810f52d81cf3c95c">pca9538_write_reg</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> reg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
-<tr class="memdesc:a3fbd37008f1f813b810f52d81cf3c95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write PCA9538 reg via I2C.  <a href="_pca9538_8cpp.html#a3fbd37008f1f813b810f52d81cf3c95c">More...</a><br /></td></tr>
-<tr class="separator:a3fbd37008f1f813b810f52d81cf3c95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac637be554436ca24d7b1172cab8c5a18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pca9538_8cpp.html#ac637be554436ca24d7b1172cab8c5a18">pca9538_set_pin</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> pin_num)</td></tr>
 <tr class="memdesc:ac637be554436ca24d7b1172cab8c5a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">PCA9538 set GPO pin.  <a href="_pca9538_8cpp.html#ac637be554436ca24d7b1172cab8c5a18">More...</a><br /></td></tr>
 <tr class="separator:ac637be554436ca24d7b1172cab8c5a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,14 +119,85 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >PCA9538 driver. </p>
 <dl class="section date"><dt>Date</dt><dd>26 August 2022</dd></dl>
-<p>COPYRIGHT(c) 2022 Droid-Technologies LLC</p>
+<p>COPYRIGHT(c) 2022 EDGE Impulse</p>
 <p >Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p><ol type="1">
 <li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
 <li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-<li>Neither the name of Droid-Technologies LLC nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+<li>Neither the name of EDGE Impulse nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
 </ol>
 <p >THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ac2bb00a00e5947a6b3b003585654d03e" name="ac2bb00a00e5947a6b3b003585654d03e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2bb00a00e5947a6b3b003585654d03e">&#9670;&nbsp;</a></span>PCA9538_CONFIG_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCA9538_CONFIG_REG&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6bdbd77f04e67ad073c48de3b29f5fb" name="ad6bdbd77f04e67ad073c48de3b29f5fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6bdbd77f04e67ad073c48de3b29f5fb">&#9670;&nbsp;</a></span>PCA9538_I2C_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCA9538_I2C_ADDR&#160;&#160;&#160;0xE0 &gt;&gt; 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97bbe05577b6b2b434920c08bcee8e72" name="a97bbe05577b6b2b434920c08bcee8e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97bbe05577b6b2b434920c08bcee8e72">&#9670;&nbsp;</a></span>PCA9538_INPUT_PORT_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCA9538_INPUT_PORT_REG&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a017789052776732260776ef4bb9ed617" name="a017789052776732260776ef4bb9ed617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a017789052776732260776ef4bb9ed617">&#9670;&nbsp;</a></span>PCA9538_OUTPUT_PORT_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCA9538_OUTPUT_PORT_REG&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb258957b24c256bd7343bc9b9f797d7" name="acb258957b24c256bd7343bc9b9f797d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb258957b24c256bd7343bc9b9f797d7">&#9670;&nbsp;</a></span>PCA9538_POLARITY_INVERSION_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCA9538_POLARITY_INVERSION_REG&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="aa1ae745b2c2d47d6d0abf786bdd6232f" name="aa1ae745b2c2d47d6d0abf786bdd6232f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1ae745b2c2d47d6d0abf786bdd6232f">&#9670;&nbsp;</a></span>pca9538_get_pins()</h2>
 
@@ -250,7 +313,7 @@ Functions</h2></td></tr>
 <p>PCA9538 reset GPO pin. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pinNum</td><td>reset GPO pin number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinNum</td><td>reset GPO pin number mask </td></tr>
   </table>
   </dd>
 </dl>
@@ -282,7 +345,7 @@ Functions</h2></td></tr>
 <p>PCA9538 set GPO pin. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pinNum</td><td>set GPO Pin pin number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinNum</td><td>set GPO Pin pin number mask </td></tr>
   </table>
   </dd>
 </dl>
@@ -347,49 +410,6 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pins</td><td>set GPIO Pins mask, 0 - output, 1 - input </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3fbd37008f1f813b810f52d81cf3c95c" name="a3fbd37008f1f813b810f52d81cf3c95c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fbd37008f1f813b810f52d81cf3c95c">&#9670;&nbsp;</a></span>pca9538_write_reg()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pca9538_write_reg </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Write PCA9538 reg via I2C. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register addres </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>for write </td></tr>
   </table>
   </dd>
 </dl>

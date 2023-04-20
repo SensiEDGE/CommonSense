@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SensiEdgeDoc: libraries/Gnss/Gnss.h File Reference</title>
+<title>SensiEdgeDoc: libraries/Drivers/CXD5602/Gnss/Gnss.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_6ac1a9bc61d565eab7122183c38013a5.html">Gnss</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_cfc7d16331ab447fc90cc53aebf2da65.html">Drivers</a></li><li class="navelem"><a class="el" href="dir_ddf2aa6299a67cbed9296dd18546c154.html">CXD5602</a></li><li class="navelem"><a class="el" href="dir_5b728163cd6309c19ecb0e670f3c8337.html">Gnss</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,11 +96,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gaefcdd1f15a91ca4752add2f80b6a07f1"><td class="memItemLeft" align="right" valign="top"><a id="gaefcdd1f15a91ca4752add2f80b6a07f1" name="gaefcdd1f15a91ca4752add2f80b6a07f1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss.html#gaefcdd1f15a91ca4752add2f80b6a07f1">SpFixMode</a> { <b>FixInvalid</b> = 1
-, <b>Fix2D</b>
-, <b>Fix3D</b>
+<tr class="memitem:gaefcdd1f15a91ca4752add2f80b6a07f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss.html#gaefcdd1f15a91ca4752add2f80b6a07f1">SpFixMode</a> { <a class="el" href="group__gnss.html#ggaefcdd1f15a91ca4752add2f80b6a07f1a5d1e8ce0a658baf794399892b9a6fdfe">FixInvalid</a> = 1
+, <a class="el" href="group__gnss.html#ggaefcdd1f15a91ca4752add2f80b6a07f1ac6e70e98a38d6b4cb2d92a2c08038d60">Fix2D</a>
+, <a class="el" href="group__gnss.html#ggaefcdd1f15a91ca4752add2f80b6a07f1a177564aeaebccc903fb98bf53a1b1e51">Fix3D</a>
  }</td></tr>
-<tr class="memdesc:gaefcdd1f15a91ca4752add2f80b6a07f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">status of pos fix <br /></td></tr>
+<tr class="memdesc:gaefcdd1f15a91ca4752add2f80b6a07f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">status of pos fix  <a href="group__gnss.html#gaefcdd1f15a91ca4752add2f80b6a07f1">More...</a><br /></td></tr>
 <tr class="separator:gaefcdd1f15a91ca4752add2f80b6a07f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3612ae648e55227528ddaf35a6fbd251"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss.html#ga3612ae648e55227528ddaf35a6fbd251">SpStartMode</a> { <a class="el" href="group__gnss.html#gga3612ae648e55227528ddaf35a6fbd251ae606cd01cea555f30f11958374ff8e76">COLD_START</a>
 , <a class="el" href="group__gnss.html#gga3612ae648e55227528ddaf35a6fbd251a11a17a5b0c80f9a17fac7f0934c58727">WARM_START</a>
@@ -108,12 +108,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga3612ae648e55227528ddaf35a6fbd251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mode to set to GNSS at the start of positioning.  <a href="group__gnss.html#ga3612ae648e55227528ddaf35a6fbd251">More...</a><br /></td></tr>
 <tr class="separator:ga3612ae648e55227528ddaf35a6fbd251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae50242be6a652d17905e266a8bb84ff0"><td class="memItemLeft" align="right" valign="top"><a id="gae50242be6a652d17905e266a8bb84ff0" name="gae50242be6a652d17905e266a8bb84ff0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss.html#gae50242be6a652d17905e266a8bb84ff0">SpPrintLevel</a> { <b>PrintNone</b> = 0
-, <b>PrintError</b>
-, <b>PrintWarning</b>
-, <b>PrintInfo</b>
+<tr class="memitem:gae50242be6a652d17905e266a8bb84ff0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss.html#gae50242be6a652d17905e266a8bb84ff0">SpPrintLevel</a> { <a class="el" href="group__gnss.html#ggae50242be6a652d17905e266a8bb84ff0a00831564502ffc5d12bd3675b2bc4b9b">PrintNone</a> = 0
+, <a class="el" href="group__gnss.html#ggae50242be6a652d17905e266a8bb84ff0a8abb97aa5f418e3d758a7e1b383b5483">PrintError</a>
+, <a class="el" href="group__gnss.html#ggae50242be6a652d17905e266a8bb84ff0a95641db087b2dceaf2d5a3e44dc01a29">PrintWarning</a>
+, <a class="el" href="group__gnss.html#ggae50242be6a652d17905e266a8bb84ff0a23d6a2fd540bfbc5c8ee41ad1898c183">PrintInfo</a>
  }</td></tr>
-<tr class="memdesc:gae50242be6a652d17905e266a8bb84ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the debug log output level. <br /></td></tr>
+<tr class="memdesc:gae50242be6a652d17905e266a8bb84ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the debug log output level.  <a href="group__gnss.html#gae50242be6a652d17905e266a8bb84ff0">More...</a><br /></td></tr>
 <tr class="separator:gae50242be6a652d17905e266a8bb84ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2f77b15640243f2c58396b36fea950be"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss.html#ga2f77b15640243f2c58396b36fea950be">SpPvtType</a> { <a class="el" href="group__gnss.html#gga2f77b15640243f2c58396b36fea950bea4be6c114ab7d4cc3ea7b2086f826b7a7">SpPvtTypeNone</a> = 0
 , <a class="el" href="group__gnss.html#gga2f77b15640243f2c58396b36fea950bea52e809e445875ea9722e6417c8825d54">SpPvtTypeGnss</a>
@@ -122,19 +122,19 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga2f77b15640243f2c58396b36fea950be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the GNSS positioning type.  <a href="group__gnss.html#ga2f77b15640243f2c58396b36fea950be">More...</a><br /></td></tr>
 <tr class="separator:ga2f77b15640243f2c58396b36fea950be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaad65f454315ea5795d4b87fcaedca08e"><td class="memItemLeft" align="right" valign="top"><a id="gaad65f454315ea5795d4b87fcaedca08e" name="gaad65f454315ea5795d4b87fcaedca08e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss.html#gaad65f454315ea5795d4b87fcaedca08e">SpSatelliteType</a> { <br />
-&#160;&#160;<b>GPS</b> = (1U &lt;&lt; 0)
-, <b>GLONASS</b> = (1U &lt;&lt; 1)
-, <b>SBAS</b> = (1U &lt;&lt; 2)
-, <b>QZ_L1CA</b> = (1U &lt;&lt; 3)
+<tr class="memitem:gaad65f454315ea5795d4b87fcaedca08e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss.html#gaad65f454315ea5795d4b87fcaedca08e">SpSatelliteType</a> { <br />
+&#160;&#160;<a class="el" href="group__gnss.html#ggaad65f454315ea5795d4b87fcaedca08ea171ede81b49deebf3e342cdf41c62182">GPS</a> = (1U &lt;&lt; 0)
+, <a class="el" href="group__gnss.html#ggaad65f454315ea5795d4b87fcaedca08ea7d23de99080060f3d7d481c5ee0dddb7">GLONASS</a> = (1U &lt;&lt; 1)
+, <a class="el" href="group__gnss.html#ggaad65f454315ea5795d4b87fcaedca08ea47cc80f30e4ee0408b2b5ab8d51e579b">SBAS</a> = (1U &lt;&lt; 2)
+, <a class="el" href="group__gnss.html#ggaad65f454315ea5795d4b87fcaedca08ea4194479abf1704f230ded5755a56ab31">QZ_L1CA</a> = (1U &lt;&lt; 3)
 , <br />
-&#160;&#160;<b>QZ_L1S</b> = (1U &lt;&lt; 5)
-, <b>BEIDOU</b> = (1U &lt;&lt; 6)
-, <b>GALILEO</b> = (1U &lt;&lt; 7)
-, <b>UNKNOWN</b> = 0
+&#160;&#160;<a class="el" href="group__gnss.html#ggaad65f454315ea5795d4b87fcaedca08eacee7056bc25eb0228a4c219098a57e0e">QZ_L1S</a> = (1U &lt;&lt; 5)
+, <a class="el" href="group__gnss.html#ggaad65f454315ea5795d4b87fcaedca08eacca02fbf265438c90c5ab4a9bbd35096">BEIDOU</a> = (1U &lt;&lt; 6)
+, <a class="el" href="group__gnss.html#ggaad65f454315ea5795d4b87fcaedca08eaf6d041d14f6a7e8a76ae3f0eae6b9814">GALILEO</a> = (1U &lt;&lt; 7)
+, <a class="el" href="group__gnss.html#ggaad65f454315ea5795d4b87fcaedca08ea6ce26a62afab55d7606ad4e92428b30c">UNKNOWN</a> = 0
 <br />
  }</td></tr>
-<tr class="memdesc:gaad65f454315ea5795d4b87fcaedca08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Satellite system type. <br /></td></tr>
+<tr class="memdesc:gaad65f454315ea5795d4b87fcaedca08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Satellite system type.  <a href="group__gnss.html#gaad65f454315ea5795d4b87fcaedca08e">More...</a><br /></td></tr>
 <tr class="separator:gaad65f454315ea5795d4b87fcaedca08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

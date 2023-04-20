@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SensiEdgeDoc: libraries/Gnss/GnssPositionData.h Source File</title>
+<title>SensiEdgeDoc: libraries/Drivers/CXD5602/Gnss/GnssPositionData.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,14 +62,14 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_6ac1a9bc61d565eab7122183c38013a5.html">Gnss</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_cfc7d16331ab447fc90cc53aebf2da65.html">Drivers</a></li><li class="navelem"><a class="el" href="dir_ddf2aa6299a67cbed9296dd18546c154.html">CXD5602</a></li><li class="navelem"><a class="el" href="dir_5b728163cd6309c19ecb0e670f3c8337.html">Gnss</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">GnssPositionData.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<a href="_gnss_position_data_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *  GNSSPositionData.h - GNSS include file for the Spresense SDK</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *  Copyright 2018 Sony Semiconductor Solutions Corporation</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
@@ -95,13 +95,15 @@ $(function() {
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_gnss_position_data.html">   25</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>                       MagicNumber;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>                       CRC;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">struct </span>cxd56_gnss_positiondata_s    Data;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_gnss_position_data.html#a19ee0dadba05eee3cbc08ced800bcb55">   27</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>                       <a class="code hl_variable" href="struct_gnss_position_data.html#a19ee0dadba05eee3cbc08ced800bcb55">MagicNumber</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_gnss_position_data.html#a3acfda147aebdfd6a8bc11ecd79a7bf4">   28</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>                       <a class="code hl_variable" href="struct_gnss_position_data.html#a3acfda147aebdfd6a8bc11ecd79a7bf4">CRC</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_gnss_position_data.html#ae927dfff3a3e38293aa99f04308b64bd">   29</a></span>    <span class="keyword">struct </span>cxd56_gnss_positiondata_s    Data;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}<a class="code hl_struct" href="struct_gnss_position_data.html">GnssPositionData</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif </span><span class="comment">// GnssPositionData_h</span></div>
 <div class="ttc" id="astruct_gnss_position_data_html"><div class="ttname"><a href="struct_gnss_position_data.html">GnssPositionData</a></div><div class="ttdef"><b>Definition:</b> GnssPositionData.h:26</div></div>
+<div class="ttc" id="astruct_gnss_position_data_html_a19ee0dadba05eee3cbc08ced800bcb55"><div class="ttname"><a href="struct_gnss_position_data.html#a19ee0dadba05eee3cbc08ced800bcb55">GnssPositionData::MagicNumber</a></div><div class="ttdeci">unsigned long MagicNumber</div><div class="ttdef"><b>Definition:</b> GnssPositionData.h:27</div></div>
+<div class="ttc" id="astruct_gnss_position_data_html_a3acfda147aebdfd6a8bc11ecd79a7bf4"><div class="ttname"><a href="struct_gnss_position_data.html#a3acfda147aebdfd6a8bc11ecd79a7bf4">GnssPositionData::CRC</a></div><div class="ttdeci">unsigned long CRC</div><div class="ttdef"><b>Definition:</b> GnssPositionData.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

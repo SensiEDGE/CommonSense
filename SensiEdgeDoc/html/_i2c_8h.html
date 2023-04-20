@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SensiEdgeDoc: libraries/I2c/I2c.h File Reference</title>
+<title>SensiEdgeDoc: libraries/Drivers/CXD5602/I2c/I2c.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_e7d3c55de00c717b704173a07ba1dea2.html">I2c</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_cfc7d16331ab447fc90cc53aebf2da65.html">Drivers</a></li><li class="navelem"><a class="el" href="dir_ddf2aa6299a67cbed9296dd18546c154.html">CXD5602</a></li><li class="navelem"><a class="el" href="dir_b40ebbe40918881a548e7f86bdc33a06.html">I2c</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,30 +81,22 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ae4fbb549f8f2ecf379b60922b20e911f"><td class="memItemLeft" align="right" valign="top"><a id="ae4fbb549f8f2ecf379b60922b20e911f" name="ae4fbb549f8f2ecf379b60922b20e911f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TWI_SUCCESS</b>&#160;&#160;&#160;(0)</td></tr>
-<tr class="separator:ae4fbb549f8f2ecf379b60922b20e911f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2134f649eeceb37eb25ce2f70d1db770"><td class="memItemLeft" align="right" valign="top"><a id="a2134f649eeceb37eb25ce2f70d1db770" name="a2134f649eeceb37eb25ce2f70d1db770"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TWI_DATA_TOO_LONG</b>&#160;&#160;&#160;(1)</td></tr>
-<tr class="separator:a2134f649eeceb37eb25ce2f70d1db770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea571b5bbeee51c5176b3beb85c748b8"><td class="memItemLeft" align="right" valign="top"><a id="aea571b5bbeee51c5176b3beb85c748b8" name="aea571b5bbeee51c5176b3beb85c748b8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TWI_NACK_ON_ADDRESS</b>&#160;&#160;&#160;(2)</td></tr>
-<tr class="separator:aea571b5bbeee51c5176b3beb85c748b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e0ac59fd31cdf60bc92a88dd112613d"><td class="memItemLeft" align="right" valign="top"><a id="a2e0ac59fd31cdf60bc92a88dd112613d" name="a2e0ac59fd31cdf60bc92a88dd112613d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TWI_NACK_ON_DATA</b>&#160;&#160;&#160;(3)</td></tr>
-<tr class="separator:a2e0ac59fd31cdf60bc92a88dd112613d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62c196919b29532251fc817edec19601"><td class="memItemLeft" align="right" valign="top"><a id="a62c196919b29532251fc817edec19601" name="a62c196919b29532251fc817edec19601"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TWI_OTHER_ERROR</b>&#160;&#160;&#160;(4)</td></tr>
-<tr class="separator:a62c196919b29532251fc817edec19601"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1867504ce10e7c6ada5f521237b25858"><td class="memItemLeft" align="right" valign="top"><a id="a1867504ce10e7c6ada5f521237b25858" name="a1867504ce10e7c6ada5f521237b25858"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TWI_FREQ_100KHZ</b>&#160;&#160;&#160;(100000)</td></tr>
-<tr class="separator:a1867504ce10e7c6ada5f521237b25858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fb1c962d10587eeb4002e1ffccbceb4"><td class="memItemLeft" align="right" valign="top"><a id="a9fb1c962d10587eeb4002e1ffccbceb4" name="a9fb1c962d10587eeb4002e1ffccbceb4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TWI_FREQ_400KHZ</b>&#160;&#160;&#160;(400000)</td></tr>
-<tr class="separator:a9fb1c962d10587eeb4002e1ffccbceb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adff9c681e501eb1cb2aba194318f4a10"><td class="memItemLeft" align="right" valign="top"><a id="adff9c681e501eb1cb2aba194318f4a10" name="adff9c681e501eb1cb2aba194318f4a10"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TWI_FREQ_1MHZ</b>&#160;&#160;&#160;(1000000)</td></tr>
-<tr class="separator:adff9c681e501eb1cb2aba194318f4a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447602fedb8f944b9643b17fc9a52861"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#a447602fedb8f944b9643b17fc9a52861">I2C_SUCCESS</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:a447602fedb8f944b9643b17fc9a52861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122a3a7d7d8a1d88e4b69137e13b643e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#a122a3a7d7d8a1d88e4b69137e13b643e">I2C_DATA_TOO_LONG</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:a122a3a7d7d8a1d88e4b69137e13b643e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d561dc52986f21b4771bec046a1017"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#a99d561dc52986f21b4771bec046a1017">I2C_NACK_ON_ADDRESS</a>&#160;&#160;&#160;(2)</td></tr>
+<tr class="separator:a99d561dc52986f21b4771bec046a1017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ae11ee70740c32b7c1afdffa06d0df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#a06ae11ee70740c32b7c1afdffa06d0df">I2C_NACK_ON_DATA</a>&#160;&#160;&#160;(3)</td></tr>
+<tr class="separator:a06ae11ee70740c32b7c1afdffa06d0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e15df6c6862d640ea606f860120d3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#a98e15df6c6862d640ea606f860120d3a">I2C_OTHER_ERROR</a>&#160;&#160;&#160;(4)</td></tr>
+<tr class="separator:a98e15df6c6862d640ea606f860120d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f7a7a9186944a07322d0397216311e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#a97f7a7a9186944a07322d0397216311e">I2C_FREQ_100KHZ</a>&#160;&#160;&#160;(100000)</td></tr>
+<tr class="separator:a97f7a7a9186944a07322d0397216311e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba06b87086a0c553e13e96360d2ec93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#a8ba06b87086a0c553e13e96360d2ec93">I2C_FREQ_400KHZ</a>&#160;&#160;&#160;(400000)</td></tr>
+<tr class="separator:a8ba06b87086a0c553e13e96360d2ec93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16fe8a40aa40be08e3532cefde84c467"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#a16fe8a40aa40be08e3532cefde84c467">I2C_FREQ_1MHZ</a>&#160;&#160;&#160;(1000000)</td></tr>
+<tr class="separator:a16fe8a40aa40be08e3532cefde84c467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -126,11 +118,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a5ccf5c92d6035e86b68be1bb232f3040"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#a5ccf5c92d6035e86b68be1bb232f3040">i2c_read_regs</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_addr, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> reg_addr, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
 <tr class="memdesc:a5ccf5c92d6035e86b68be1bb232f3040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read device registers via I2C.  <a href="_i2c_8h.html#a5ccf5c92d6035e86b68be1bb232f3040">More...</a><br /></td></tr>
 <tr class="separator:a5ccf5c92d6035e86b68be1bb232f3040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafe68125ed26e48dbd376dfede91f2c3"><td class="memItemLeft" align="right" valign="top"><a id="aafe68125ed26e48dbd376dfede91f2c3" name="aafe68125ed26e48dbd376dfede91f2c3"></a>
-<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>i2c_read_data</b> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_addr, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
+<tr class="memitem:aafe68125ed26e48dbd376dfede91f2c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#aafe68125ed26e48dbd376dfede91f2c3">i2c_read_data</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_addr, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
+<tr class="memdesc:aafe68125ed26e48dbd376dfede91f2c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read device data via I2C.  <a href="_i2c_8h.html#aafe68125ed26e48dbd376dfede91f2c3">More...</a><br /></td></tr>
 <tr class="separator:aafe68125ed26e48dbd376dfede91f2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fe5ecba9aa15a8a1729aff1742a7f22"><td class="memItemLeft" align="right" valign="top"><a id="a8fe5ecba9aa15a8a1729aff1742a7f22" name="a8fe5ecba9aa15a8a1729aff1742a7f22"></a>
-<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>i2c_write_data</b> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_addr, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
+<tr class="memitem:a8fe5ecba9aa15a8a1729aff1742a7f22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#a8fe5ecba9aa15a8a1729aff1742a7f22">i2c_write_data</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_addr, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
+<tr class="memdesc:a8fe5ecba9aa15a8a1729aff1742a7f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write device data via I2C.  <a href="_i2c_8h.html#a8fe5ecba9aa15a8a1729aff1742a7f22">More...</a><br /></td></tr>
 <tr class="separator:a8fe5ecba9aa15a8a1729aff1742a7f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1da33b8ad65712e2c30e0940abaea261"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#a1da33b8ad65712e2c30e0940abaea261">i2c_write_regs_16addr</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_addr, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> reg_addr, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
 <tr class="memdesc:a1da33b8ad65712e2c30e0940abaea261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write device registers via I2C with 16 bit addres.  <a href="_i2c_8h.html#a1da33b8ad65712e2c30e0940abaea261">More...</a><br /></td></tr>
@@ -138,18 +130,134 @@ Functions</h2></td></tr>
 <tr class="memitem:ac7db59d6305b1865f13808d128c1a800"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#ac7db59d6305b1865f13808d128c1a800">i2c_read_regs_16addr</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_addr, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> reg_addr, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
 <tr class="memdesc:ac7db59d6305b1865f13808d128c1a800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read device registers via I2C with 16 bit addres.  <a href="_i2c_8h.html#ac7db59d6305b1865f13808d128c1a800">More...</a><br /></td></tr>
 <tr class="separator:ac7db59d6305b1865f13808d128c1a800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8a520de34fc94c3fc08d60c24a4fa2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sensirion__config_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8h.html#ab8a520de34fc94c3fc08d60c24a4fa2a">i2c_is_bevice_present</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_addr)</td></tr>
+<tr class="memdesc:ab8a520de34fc94c3fc08d60c24a4fa2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if device present or ready.  <a href="_i2c_8h.html#ab8a520de34fc94c3fc08d60c24a4fa2a">More...</a><br /></td></tr>
+<tr class="separator:ab8a520de34fc94c3fc08d60c24a4fa2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >I2C driver. </p>
 <dl class="section date"><dt>Date</dt><dd>29 March 2022</dd></dl>
-<p>COPYRIGHT(c) 2022 Droid-Technologies LLC</p>
+<p>COPYRIGHT(c) 2022 EDGE Impulse</p>
 <p >Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p><ol type="1">
 <li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
 <li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-<li>Neither the name of Droid-Technologies LLC nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+<li>Neither the name of EDGE Impulse nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
 </ol>
 <p >THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a122a3a7d7d8a1d88e4b69137e13b643e" name="a122a3a7d7d8a1d88e4b69137e13b643e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122a3a7d7d8a1d88e4b69137e13b643e">&#9670;&nbsp;</a></span>I2C_DATA_TOO_LONG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_DATA_TOO_LONG&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97f7a7a9186944a07322d0397216311e" name="a97f7a7a9186944a07322d0397216311e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97f7a7a9186944a07322d0397216311e">&#9670;&nbsp;</a></span>I2C_FREQ_100KHZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_FREQ_100KHZ&#160;&#160;&#160;(100000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16fe8a40aa40be08e3532cefde84c467" name="a16fe8a40aa40be08e3532cefde84c467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16fe8a40aa40be08e3532cefde84c467">&#9670;&nbsp;</a></span>I2C_FREQ_1MHZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_FREQ_1MHZ&#160;&#160;&#160;(1000000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ba06b87086a0c553e13e96360d2ec93" name="a8ba06b87086a0c553e13e96360d2ec93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ba06b87086a0c553e13e96360d2ec93">&#9670;&nbsp;</a></span>I2C_FREQ_400KHZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_FREQ_400KHZ&#160;&#160;&#160;(400000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99d561dc52986f21b4771bec046a1017" name="a99d561dc52986f21b4771bec046a1017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99d561dc52986f21b4771bec046a1017">&#9670;&nbsp;</a></span>I2C_NACK_ON_ADDRESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_NACK_ON_ADDRESS&#160;&#160;&#160;(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06ae11ee70740c32b7c1afdffa06d0df" name="a06ae11ee70740c32b7c1afdffa06d0df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ae11ee70740c32b7c1afdffa06d0df">&#9670;&nbsp;</a></span>I2C_NACK_ON_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_NACK_ON_DATA&#160;&#160;&#160;(3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98e15df6c6862d640ea606f860120d3a" name="a98e15df6c6862d640ea606f860120d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98e15df6c6862d640ea606f860120d3a">&#9670;&nbsp;</a></span>I2C_OTHER_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_OTHER_ERROR&#160;&#160;&#160;(4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a447602fedb8f944b9643b17fc9a52861" name="a447602fedb8f944b9643b17fc9a52861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a447602fedb8f944b9643b17fc9a52861">&#9670;&nbsp;</a></span>I2C_SUCCESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_SUCCESS&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a5730d9445429351b9f750084c5cb5aae" name="a5730d9445429351b9f750084c5cb5aae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5730d9445429351b9f750084c5cb5aae">&#9670;&nbsp;</a></span>i2c_init()</h2>
 
@@ -176,6 +284,88 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab8a520de34fc94c3fc08d60c24a4fa2a" name="ab8a520de34fc94c3fc08d60c24a4fa2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8a520de34fc94c3fc08d60c24a4fa2a">&#9670;&nbsp;</a></span>i2c_is_bevice_present()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sensirion__config_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> i2c_is_bevice_present </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>i2c_addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if device present or ready. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i2c_addr</td><td>I2C devices address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>if ok or ready </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aafe68125ed26e48dbd376dfede91f2c3" name="aafe68125ed26e48dbd376dfede91f2c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafe68125ed26e48dbd376dfede91f2c3">&#9670;&nbsp;</a></span>i2c_read_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_read_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>i2c_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read device data via I2C. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i2c_addr</td><td>I2C devices address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>dete wich should be read from register </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>size of data to read </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">I2C_SUCCESS</td><td>(0) if ok </td></tr>
   </table>
   </dd>
 </dl>
@@ -282,7 +472,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">TWI_SUCCESS</td><td>(0) if ok </td></tr>
+    <tr><td class="paramname">I2C_SUCCESS</td><td>(0) if ok </td></tr>
   </table>
   </dd>
 </dl>
@@ -339,7 +529,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">TWI_SUCCESS</td><td>(0) if ok </td></tr>
+    <tr><td class="paramname">I2C_SUCCESS</td><td>(0) if ok </td></tr>
   </table>
   </dd>
 </dl>
@@ -366,6 +556,56 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>Frequency from "I2C frequence supported" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8fe5ecba9aa15a8a1729aff1742a7f22" name="a8fe5ecba9aa15a8a1729aff1742a7f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe5ecba9aa15a8a1729aff1742a7f22">&#9670;&nbsp;</a></span>i2c_write_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_write_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>i2c_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write device data via I2C. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i2c_addr</td><td>I2C devices address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>dete wich should be read from register </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>size of data to write </td></tr>
   </table>
   </dd>
 </dl>

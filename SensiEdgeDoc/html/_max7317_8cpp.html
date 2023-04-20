@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SensiEdgeDoc: libraries/Max7317/Max7317.cpp File Reference</title>
+<title>SensiEdgeDoc: libraries/Hardware/Max7317/Max7317.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_f15d004ad36aec4832907dba72251ade.html">Max7317</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_30ec792bae0d62409ac0d542d335de12.html">Hardware</a></li><li class="navelem"><a class="el" href="dir_081489244724e3f96742b4833d432824.html">Max7317</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,16 +77,15 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_max7317_8h_source.html">Max7317.h</a>&quot;</code><br />
 <code>#include &quot;arch/board/board.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="_spi_8h_source.html">../Spi/Spi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_spi_8h_source.html">../../Drivers/CXD5602/Spi/Spi.h</a>&quot;</code><br />
 <code>#include &quot;cxd56_gpio.h&quot;</code><br />
 <code>#include &quot;cxd56_pinconfig.h&quot;</code><br />
-<code>#include &quot;../../Appdefines.h&quot;</code><br />
-<code>#include &quot;../../spresense-exported-sdk/nuttx/include/unistd.h&quot;</code><br />
+<code>#include &quot;../../../Appdefines.h&quot;</code><br />
+<code>#include &quot;../../../spresense-exported-sdk/nuttx/include/unistd.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a6a9618dd408602e3c0626c8b73c95d38"><td class="memItemLeft" align="right" valign="top"><a id="a6a9618dd408602e3c0626c8b73c95d38" name="a6a9618dd408602e3c0626c8b73c95d38"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX7371_SPI_MODE</b>&#160;&#160;&#160;SPI_MODE0</td></tr>
+<tr class="memitem:a6a9618dd408602e3c0626c8b73c95d38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_max7317_8cpp.html#a6a9618dd408602e3c0626c8b73c95d38">MAX7371_SPI_MODE</a>&#160;&#160;&#160;<a class="el" href="_spi_8h.html#ac4b206a51636d91c5cffcbcee458c3cbaacf2eef6aadb9f0de11862660cd9ade6">SPI_MODE0</a></td></tr>
 <tr class="separator:a6a9618dd408602e3c0626c8b73c95d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -113,14 +112,29 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Driver for MAX7317. </p>
 <dl class="section date"><dt>Date</dt><dd>24 March 2022</dd></dl>
-<p>COPYRIGHT(c) 2022 Droid-Technologies LLC</p>
+<p>COPYRIGHT(c) 2022 EDGE Impulse</p>
 <p >Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p><ol type="1">
 <li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
 <li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-<li>Neither the name of Droid-Technologies LLC nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+<li>Neither the name of EDGE Impulse nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
 </ol>
 <p >THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a6a9618dd408602e3c0626c8b73c95d38" name="a6a9618dd408602e3c0626c8b73c95d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a9618dd408602e3c0626c8b73c95d38">&#9670;&nbsp;</a></span>MAX7371_SPI_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX7371_SPI_MODE&#160;&#160;&#160;<a class="el" href="_spi_8h.html#ac4b206a51636d91c5cffcbcee458c3cbaacf2eef6aadb9f0de11862660cd9ade6">SPI_MODE0</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a0582882faa5c14849d3c33dd8e8419b8" name="a0582882faa5c14849d3c33dd8e8419b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0582882faa5c14849d3c33dd8e8419b8">&#9670;&nbsp;</a></span>max7317_get_pins()</h2>
 

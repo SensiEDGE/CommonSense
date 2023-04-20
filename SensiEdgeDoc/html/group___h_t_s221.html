@@ -67,7 +67,8 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">HTS221</div></div>
 </div><!--header-->
 <div class="contents">
@@ -114,254 +115,704 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhts221__t1__t0__msb__t.html">hts221_t1_t0_msb_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhts221__mode__t.html">hts221_mode_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gae4febb86e488dda5f8e7d6d97e5f0a3d"><td class="memItemLeft" align="right" valign="top"><a id="gae4febb86e488dda5f8e7d6d97e5f0a3d" name="gae4febb86e488dda5f8e7d6d97e5f0a3d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_WHO_AM_I</b>&#160;&#160;&#160;0x0FU</td></tr>
+<tr class="memitem:gae4febb86e488dda5f8e7d6d97e5f0a3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gae4febb86e488dda5f8e7d6d97e5f0a3d">HTS221_WHO_AM_I</a>&#160;&#160;&#160;0x0FU</td></tr>
 <tr class="separator:gae4febb86e488dda5f8e7d6d97e5f0a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga670fbf027b123a2166fdbcf8dffe9dcf"><td class="memItemLeft" align="right" valign="top"><a id="ga670fbf027b123a2166fdbcf8dffe9dcf" name="ga670fbf027b123a2166fdbcf8dffe9dcf"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_AV_CONF</b>&#160;&#160;&#160;0x10U</td></tr>
+<tr class="memitem:ga670fbf027b123a2166fdbcf8dffe9dcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga670fbf027b123a2166fdbcf8dffe9dcf">HTS221_AV_CONF</a>&#160;&#160;&#160;0x10U</td></tr>
 <tr class="separator:ga670fbf027b123a2166fdbcf8dffe9dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabece3ffa2b24a5180e54b6825fc672fa"><td class="memItemLeft" align="right" valign="top"><a id="gabece3ffa2b24a5180e54b6825fc672fa" name="gabece3ffa2b24a5180e54b6825fc672fa"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_CTRL_REG1</b>&#160;&#160;&#160;0x20U</td></tr>
+<tr class="memitem:gabece3ffa2b24a5180e54b6825fc672fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gabece3ffa2b24a5180e54b6825fc672fa">HTS221_CTRL_REG1</a>&#160;&#160;&#160;0x20U</td></tr>
 <tr class="separator:gabece3ffa2b24a5180e54b6825fc672fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7df2a67567fe9e5479064de03952f13d"><td class="memItemLeft" align="right" valign="top"><a id="ga7df2a67567fe9e5479064de03952f13d" name="ga7df2a67567fe9e5479064de03952f13d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_CTRL_REG2</b>&#160;&#160;&#160;0x21U</td></tr>
+<tr class="memitem:ga7df2a67567fe9e5479064de03952f13d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga7df2a67567fe9e5479064de03952f13d">HTS221_CTRL_REG2</a>&#160;&#160;&#160;0x21U</td></tr>
 <tr class="separator:ga7df2a67567fe9e5479064de03952f13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1bb023ca2f82120759047fe63f99f31e"><td class="memItemLeft" align="right" valign="top"><a id="ga1bb023ca2f82120759047fe63f99f31e" name="ga1bb023ca2f82120759047fe63f99f31e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_CTRL_REG3</b>&#160;&#160;&#160;0x22U</td></tr>
+<tr class="memitem:ga1bb023ca2f82120759047fe63f99f31e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga1bb023ca2f82120759047fe63f99f31e">HTS221_CTRL_REG3</a>&#160;&#160;&#160;0x22U</td></tr>
 <tr class="separator:ga1bb023ca2f82120759047fe63f99f31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1826b66e769ee6faa1ce14b78e6c8a2"><td class="memItemLeft" align="right" valign="top"><a id="gad1826b66e769ee6faa1ce14b78e6c8a2" name="gad1826b66e769ee6faa1ce14b78e6c8a2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_STATUS_REG</b>&#160;&#160;&#160;0x27U</td></tr>
+<tr class="memitem:gad1826b66e769ee6faa1ce14b78e6c8a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gad1826b66e769ee6faa1ce14b78e6c8a2">HTS221_STATUS_REG</a>&#160;&#160;&#160;0x27U</td></tr>
 <tr class="separator:gad1826b66e769ee6faa1ce14b78e6c8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacef3d26278abdc70a50447aa4b784e01"><td class="memItemLeft" align="right" valign="top"><a id="gacef3d26278abdc70a50447aa4b784e01" name="gacef3d26278abdc70a50447aa4b784e01"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_HUMIDITY_OUT_L</b>&#160;&#160;&#160;0x28U</td></tr>
+<tr class="memitem:gacef3d26278abdc70a50447aa4b784e01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gacef3d26278abdc70a50447aa4b784e01">HTS221_HUMIDITY_OUT_L</a>&#160;&#160;&#160;0x28U</td></tr>
 <tr class="separator:gacef3d26278abdc70a50447aa4b784e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7c122ae76caf83bf8cda0ce80c7c6fc"><td class="memItemLeft" align="right" valign="top"><a id="gaa7c122ae76caf83bf8cda0ce80c7c6fc" name="gaa7c122ae76caf83bf8cda0ce80c7c6fc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_HUMIDITY_OUT_H</b>&#160;&#160;&#160;0x29U</td></tr>
+<tr class="memitem:gaa7c122ae76caf83bf8cda0ce80c7c6fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaa7c122ae76caf83bf8cda0ce80c7c6fc">HTS221_HUMIDITY_OUT_H</a>&#160;&#160;&#160;0x29U</td></tr>
 <tr class="separator:gaa7c122ae76caf83bf8cda0ce80c7c6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga08a30140c07cab80950b0f27d3068903"><td class="memItemLeft" align="right" valign="top"><a id="ga08a30140c07cab80950b0f27d3068903" name="ga08a30140c07cab80950b0f27d3068903"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_TEMP_OUT_L</b>&#160;&#160;&#160;0x2AU</td></tr>
+<tr class="memitem:ga08a30140c07cab80950b0f27d3068903"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga08a30140c07cab80950b0f27d3068903">HTS221_TEMP_OUT_L</a>&#160;&#160;&#160;0x2AU</td></tr>
 <tr class="separator:ga08a30140c07cab80950b0f27d3068903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab1327a19e5c04f3889173b9d6b9147f1"><td class="memItemLeft" align="right" valign="top"><a id="gab1327a19e5c04f3889173b9d6b9147f1" name="gab1327a19e5c04f3889173b9d6b9147f1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_TEMP_OUT_H</b>&#160;&#160;&#160;0x2BU</td></tr>
+<tr class="memitem:gab1327a19e5c04f3889173b9d6b9147f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gab1327a19e5c04f3889173b9d6b9147f1">HTS221_TEMP_OUT_H</a>&#160;&#160;&#160;0x2BU</td></tr>
 <tr class="separator:gab1327a19e5c04f3889173b9d6b9147f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf9bfd58a9221ec51d2186983a222bd7a"><td class="memItemLeft" align="right" valign="top"><a id="gaf9bfd58a9221ec51d2186983a222bd7a" name="gaf9bfd58a9221ec51d2186983a222bd7a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_H0_RH_X2</b>&#160;&#160;&#160;0x30U</td></tr>
+<tr class="memitem:gaf9bfd58a9221ec51d2186983a222bd7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaf9bfd58a9221ec51d2186983a222bd7a">HTS221_H0_RH_X2</a>&#160;&#160;&#160;0x30U</td></tr>
 <tr class="separator:gaf9bfd58a9221ec51d2186983a222bd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga821173ee52f5d73a587aea678746d421"><td class="memItemLeft" align="right" valign="top"><a id="ga821173ee52f5d73a587aea678746d421" name="ga821173ee52f5d73a587aea678746d421"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_H1_RH_X2</b>&#160;&#160;&#160;0x31U</td></tr>
+<tr class="memitem:ga821173ee52f5d73a587aea678746d421"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga821173ee52f5d73a587aea678746d421">HTS221_H1_RH_X2</a>&#160;&#160;&#160;0x31U</td></tr>
 <tr class="separator:ga821173ee52f5d73a587aea678746d421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4dea7613af13017b969a94346754f50a"><td class="memItemLeft" align="right" valign="top"><a id="ga4dea7613af13017b969a94346754f50a" name="ga4dea7613af13017b969a94346754f50a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_T0_DEGC_X8</b>&#160;&#160;&#160;0x32U</td></tr>
+<tr class="memitem:ga4dea7613af13017b969a94346754f50a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga4dea7613af13017b969a94346754f50a">HTS221_T0_DEGC_X8</a>&#160;&#160;&#160;0x32U</td></tr>
 <tr class="separator:ga4dea7613af13017b969a94346754f50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82eafa2c2e12ff6b13202ec6ecce6c4b"><td class="memItemLeft" align="right" valign="top"><a id="ga82eafa2c2e12ff6b13202ec6ecce6c4b" name="ga82eafa2c2e12ff6b13202ec6ecce6c4b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_T1_DEGC_X8</b>&#160;&#160;&#160;0x33U</td></tr>
+<tr class="memitem:ga82eafa2c2e12ff6b13202ec6ecce6c4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga82eafa2c2e12ff6b13202ec6ecce6c4b">HTS221_T1_DEGC_X8</a>&#160;&#160;&#160;0x33U</td></tr>
 <tr class="separator:ga82eafa2c2e12ff6b13202ec6ecce6c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga501c82eee73d5c43fa970372a8b33900"><td class="memItemLeft" align="right" valign="top"><a id="ga501c82eee73d5c43fa970372a8b33900" name="ga501c82eee73d5c43fa970372a8b33900"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_T1_T0_MSB</b>&#160;&#160;&#160;0x35U</td></tr>
+<tr class="memitem:ga501c82eee73d5c43fa970372a8b33900"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga501c82eee73d5c43fa970372a8b33900">HTS221_T1_T0_MSB</a>&#160;&#160;&#160;0x35U</td></tr>
 <tr class="separator:ga501c82eee73d5c43fa970372a8b33900"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0f6c4b05bc48e0b948a0fd3ccef9c1d4"><td class="memItemLeft" align="right" valign="top"><a id="ga0f6c4b05bc48e0b948a0fd3ccef9c1d4" name="ga0f6c4b05bc48e0b948a0fd3ccef9c1d4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_H0_T0_OUT_L</b>&#160;&#160;&#160;0x36U</td></tr>
+<tr class="memitem:ga0f6c4b05bc48e0b948a0fd3ccef9c1d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga0f6c4b05bc48e0b948a0fd3ccef9c1d4">HTS221_H0_T0_OUT_L</a>&#160;&#160;&#160;0x36U</td></tr>
 <tr class="separator:ga0f6c4b05bc48e0b948a0fd3ccef9c1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa9b6b6d254d4ec273c518351485f18c0"><td class="memItemLeft" align="right" valign="top"><a id="gaa9b6b6d254d4ec273c518351485f18c0" name="gaa9b6b6d254d4ec273c518351485f18c0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_H0_T0_OUT_H</b>&#160;&#160;&#160;0x37U</td></tr>
+<tr class="memitem:gaa9b6b6d254d4ec273c518351485f18c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaa9b6b6d254d4ec273c518351485f18c0">HTS221_H0_T0_OUT_H</a>&#160;&#160;&#160;0x37U</td></tr>
 <tr class="separator:gaa9b6b6d254d4ec273c518351485f18c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26d2bf0f370d82ad94042a8267b0675c"><td class="memItemLeft" align="right" valign="top"><a id="ga26d2bf0f370d82ad94042a8267b0675c" name="ga26d2bf0f370d82ad94042a8267b0675c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_H1_T0_OUT_L</b>&#160;&#160;&#160;0x3AU</td></tr>
+<tr class="memitem:ga26d2bf0f370d82ad94042a8267b0675c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga26d2bf0f370d82ad94042a8267b0675c">HTS221_H1_T0_OUT_L</a>&#160;&#160;&#160;0x3AU</td></tr>
 <tr class="separator:ga26d2bf0f370d82ad94042a8267b0675c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0aeccdebd0a84275823ae867bc8516db"><td class="memItemLeft" align="right" valign="top"><a id="ga0aeccdebd0a84275823ae867bc8516db" name="ga0aeccdebd0a84275823ae867bc8516db"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_H1_T0_OUT_H</b>&#160;&#160;&#160;0x3BU</td></tr>
+<tr class="memitem:ga0aeccdebd0a84275823ae867bc8516db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga0aeccdebd0a84275823ae867bc8516db">HTS221_H1_T0_OUT_H</a>&#160;&#160;&#160;0x3BU</td></tr>
 <tr class="separator:ga0aeccdebd0a84275823ae867bc8516db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae19d5e4142581d49c372978cf670ac23"><td class="memItemLeft" align="right" valign="top"><a id="gae19d5e4142581d49c372978cf670ac23" name="gae19d5e4142581d49c372978cf670ac23"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_T0_OUT_L</b>&#160;&#160;&#160;0x3CU</td></tr>
+<tr class="memitem:gae19d5e4142581d49c372978cf670ac23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gae19d5e4142581d49c372978cf670ac23">HTS221_T0_OUT_L</a>&#160;&#160;&#160;0x3CU</td></tr>
 <tr class="separator:gae19d5e4142581d49c372978cf670ac23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga158e6b93f5439fde814e90510f87a2d2"><td class="memItemLeft" align="right" valign="top"><a id="ga158e6b93f5439fde814e90510f87a2d2" name="ga158e6b93f5439fde814e90510f87a2d2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_T0_OUT_H</b>&#160;&#160;&#160;0x3DU</td></tr>
+<tr class="memitem:ga158e6b93f5439fde814e90510f87a2d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga158e6b93f5439fde814e90510f87a2d2">HTS221_T0_OUT_H</a>&#160;&#160;&#160;0x3DU</td></tr>
 <tr class="separator:ga158e6b93f5439fde814e90510f87a2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1cf9297d88d8bac2d5e4d83ae9f2f983"><td class="memItemLeft" align="right" valign="top"><a id="ga1cf9297d88d8bac2d5e4d83ae9f2f983" name="ga1cf9297d88d8bac2d5e4d83ae9f2f983"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_T1_OUT_L</b>&#160;&#160;&#160;0x3EU</td></tr>
+<tr class="memitem:ga1cf9297d88d8bac2d5e4d83ae9f2f983"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga1cf9297d88d8bac2d5e4d83ae9f2f983">HTS221_T1_OUT_L</a>&#160;&#160;&#160;0x3EU</td></tr>
 <tr class="separator:ga1cf9297d88d8bac2d5e4d83ae9f2f983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga00ba1f41551f55db76679434b46f499f"><td class="memItemLeft" align="right" valign="top"><a id="ga00ba1f41551f55db76679434b46f499f" name="ga00ba1f41551f55db76679434b46f499f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTS221_T1_OUT_H</b>&#160;&#160;&#160;0x3FU</td></tr>
+<tr class="memitem:ga00ba1f41551f55db76679434b46f499f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga00ba1f41551f55db76679434b46f499f">HTS221_T1_OUT_H</a>&#160;&#160;&#160;0x3FU</td></tr>
 <tr class="separator:ga00ba1f41551f55db76679434b46f499f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga0ee74bdd72eca913966943e6fb4c9a56"><td class="memItemLeft" align="right" valign="top"><a id="ga0ee74bdd72eca913966943e6fb4c9a56" name="ga0ee74bdd72eca913966943e6fb4c9a56"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>hts221_avgh_t</b> { <br />
-&#160;&#160;<b>HTS221_H_AVG_4</b> = 0
-, <b>HTS221_H_AVG_8</b> = 1
-, <b>HTS221_H_AVG_16</b> = 2
-, <b>HTS221_H_AVG_32</b> = 3
+<tr class="memitem:ga0ee74bdd72eca913966943e6fb4c9a56"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga0ee74bdd72eca913966943e6fb4c9a56">hts221_avgh_t</a> { <br />
+&#160;&#160;<a class="el" href="group___h_t_s221.html#gga0ee74bdd72eca913966943e6fb4c9a56a32d6b0d989be6fed75324b3a25f3a000">HTS221_H_AVG_4</a> = 0
+, <a class="el" href="group___h_t_s221.html#gga0ee74bdd72eca913966943e6fb4c9a56a5690159bdb37320aacd5891f2f9117eb">HTS221_H_AVG_8</a> = 1
+, <a class="el" href="group___h_t_s221.html#gga0ee74bdd72eca913966943e6fb4c9a56a3f99386e6da755bda24718e7461a67eb">HTS221_H_AVG_16</a> = 2
+, <a class="el" href="group___h_t_s221.html#gga0ee74bdd72eca913966943e6fb4c9a56a946052bd3e8fb0daf624a4c5bdce9a1f">HTS221_H_AVG_32</a> = 3
 , <br />
-&#160;&#160;<b>HTS221_H_AVG_64</b> = 4
-, <b>HTS221_H_AVG_128</b> = 5
-, <b>HTS221_H_AVG_256</b> = 6
-, <b>HTS221_H_AVG_512</b> = 7
+&#160;&#160;<a class="el" href="group___h_t_s221.html#gga0ee74bdd72eca913966943e6fb4c9a56ab86ea7227ce5cfeb71fd946e494adc1e">HTS221_H_AVG_64</a> = 4
+, <a class="el" href="group___h_t_s221.html#gga0ee74bdd72eca913966943e6fb4c9a56a5885a80c8e6702976dac05ff54037a64">HTS221_H_AVG_128</a> = 5
+, <a class="el" href="group___h_t_s221.html#gga0ee74bdd72eca913966943e6fb4c9a56a11924a0a29f4af039f859200216b8309">HTS221_H_AVG_256</a> = 6
+, <a class="el" href="group___h_t_s221.html#gga0ee74bdd72eca913966943e6fb4c9a56a8d0563a1b55cb519977a47f443d22dfb">HTS221_H_AVG_512</a> = 7
 , <br />
-&#160;&#160;<b>HTS221_H_AVG_ND</b> = 8
+&#160;&#160;<a class="el" href="group___h_t_s221.html#gga0ee74bdd72eca913966943e6fb4c9a56ad7d00b235eafed2e384a2163682e8fb2">HTS221_H_AVG_ND</a> = 8
+, <a class="el" href="group___h_t_s221.html#gga0ee74bdd72eca913966943e6fb4c9a56a8adf469d3aa7a69eefd870e2bf6deb99">HTS221_H_AVG_ENUM</a>
 <br />
  }</td></tr>
 <tr class="separator:ga0ee74bdd72eca913966943e6fb4c9a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga163ecd5d819623632c31cc50704b5a0e"><td class="memItemLeft" align="right" valign="top"><a id="ga163ecd5d819623632c31cc50704b5a0e" name="ga163ecd5d819623632c31cc50704b5a0e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>hts221_avgt_t</b> { <br />
-&#160;&#160;<b>HTS221_T_AVG_2</b> = 0
-, <b>HTS221_T_AVG_4</b> = 1
-, <b>HTS221_T_AVG_8</b> = 2
-, <b>HTS221_T_AVG_16</b> = 3
+<tr class="memitem:ga163ecd5d819623632c31cc50704b5a0e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga163ecd5d819623632c31cc50704b5a0e">hts221_avgt_t</a> { <br />
+&#160;&#160;<a class="el" href="group___h_t_s221.html#gga163ecd5d819623632c31cc50704b5a0ea0af9e709b3899ebb74fb99c546e56707">HTS221_T_AVG_2</a> = 0
+, <a class="el" href="group___h_t_s221.html#gga163ecd5d819623632c31cc50704b5a0ea6b1378a91c06396e92f65004ff38a949">HTS221_T_AVG_4</a> = 1
+, <a class="el" href="group___h_t_s221.html#gga163ecd5d819623632c31cc50704b5a0ea278030b20ddf2bbebd4fbb145bc35ce3">HTS221_T_AVG_8</a> = 2
+, <a class="el" href="group___h_t_s221.html#gga163ecd5d819623632c31cc50704b5a0eae679e60eb2c729662cbbb759ea2037b4">HTS221_T_AVG_16</a> = 3
 , <br />
-&#160;&#160;<b>HTS221_T_AVG_32</b> = 4
-, <b>HTS221_T_AVG_64</b> = 5
-, <b>HTS221_T_AVG_128</b> = 6
-, <b>HTS221_T_AVG_256</b> = 7
+&#160;&#160;<a class="el" href="group___h_t_s221.html#gga163ecd5d819623632c31cc50704b5a0ea7a1eea9d2d35eec662edd8f97b564268">HTS221_T_AVG_32</a> = 4
+, <a class="el" href="group___h_t_s221.html#gga163ecd5d819623632c31cc50704b5a0ea54a147bd63de3b441be77c95b3dd6d90">HTS221_T_AVG_64</a> = 5
+, <a class="el" href="group___h_t_s221.html#gga163ecd5d819623632c31cc50704b5a0ea8c8541026df95906d6d8a319e3d68500">HTS221_T_AVG_128</a> = 6
+, <a class="el" href="group___h_t_s221.html#gga163ecd5d819623632c31cc50704b5a0eabf3ca9f7d448a612a08a93ce8148dc54">HTS221_T_AVG_256</a> = 7
 , <br />
-&#160;&#160;<b>HTS221_T_AVG_ND</b> = 8
+&#160;&#160;<a class="el" href="group___h_t_s221.html#gga163ecd5d819623632c31cc50704b5a0eab0763c86d47fbf61209846ef96ca72d3">HTS221_T_AVG_ND</a> = 8
+, <a class="el" href="group___h_t_s221.html#gga163ecd5d819623632c31cc50704b5a0ea4e419983977ccb1c4fbf87cf24d57e63">HTS221_T_AVG_ENUM</a>
 <br />
  }</td></tr>
 <tr class="separator:ga163ecd5d819623632c31cc50704b5a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2e671642100121a4ab19de9b10b7b869"><td class="memItemLeft" align="right" valign="top"><a id="ga2e671642100121a4ab19de9b10b7b869" name="ga2e671642100121a4ab19de9b10b7b869"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>hts221_odr_t</b> { <br />
-&#160;&#160;<b>HTS221_ONE_SHOT</b> = 0
-, <b>HTS221_ODR_1Hz</b> = 1
-, <b>HTS221_ODR_7Hz</b> = 2
-, <b>HTS221_ODR_12Hz5</b> = 3
+<tr class="memitem:ga2e671642100121a4ab19de9b10b7b869"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga2e671642100121a4ab19de9b10b7b869">hts221_odr_t</a> { <br />
+&#160;&#160;<a class="el" href="group___h_t_s221.html#gga2e671642100121a4ab19de9b10b7b869aadf14a3ff580f572b555ecf5af703e43">HTS221_ONE_SHOT</a> = 0
+, <a class="el" href="group___h_t_s221.html#gga2e671642100121a4ab19de9b10b7b869a641eff904498a37e92246ba747e4a725">HTS221_ODR_1Hz</a> = 1
+, <a class="el" href="group___h_t_s221.html#gga2e671642100121a4ab19de9b10b7b869a0d57cb5e6cb7aaf0ec887b60c3374eeb">HTS221_ODR_7Hz</a> = 2
+, <a class="el" href="group___h_t_s221.html#gga2e671642100121a4ab19de9b10b7b869af6c667b8ecad51d5875e8f601579eaee">HTS221_ODR_12Hz5</a> = 3
 , <br />
-&#160;&#160;<b>HTS221_ODR_ND</b> = 4
+&#160;&#160;<a class="el" href="group___h_t_s221.html#gga2e671642100121a4ab19de9b10b7b869a8c0070123d575bdf8a45e3d42f124560">HTS221_ODR_ND</a> = 4
+, <a class="el" href="group___h_t_s221.html#gga2e671642100121a4ab19de9b10b7b869a2eb3c09a93639bdc41cd76f4a73493c5">HTS221_ENUM</a>
 <br />
  }</td></tr>
 <tr class="separator:ga2e671642100121a4ab19de9b10b7b869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b113f4ece416bf4d9f0d0d2c757fff9"><td class="memItemLeft" align="right" valign="top"><a id="ga3b113f4ece416bf4d9f0d0d2c757fff9" name="ga3b113f4ece416bf4d9f0d0d2c757fff9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>hts221_pp_od_t</b> { <b>HTS221_PUSH_PULL</b> = 0
-, <b>HTS221_OPEN_DRAIN</b> = 1
-, <b>HTS221_PIN_MODE_ND</b> = 2
+<tr class="memitem:ga3b113f4ece416bf4d9f0d0d2c757fff9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga3b113f4ece416bf4d9f0d0d2c757fff9">hts221_pp_od_t</a> { <a class="el" href="group___h_t_s221.html#gga3b113f4ece416bf4d9f0d0d2c757fff9aef4569fac7ad2ac3940db97960fc4e42">HTS221_PUSH_PULL</a> = 0
+, <a class="el" href="group___h_t_s221.html#gga3b113f4ece416bf4d9f0d0d2c757fff9af2b9672b500dade18724866c81c8e941">HTS221_OPEN_DRAIN</a> = 1
+, <a class="el" href="group___h_t_s221.html#gga3b113f4ece416bf4d9f0d0d2c757fff9a832c04e2e76a4c6d0f60003945dcbe5f">HTS221_PIN_MODE_ND</a> = 2
  }</td></tr>
 <tr class="separator:ga3b113f4ece416bf4d9f0d0d2c757fff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad49688ae30befa6bb76c338669ecf3a8"><td class="memItemLeft" align="right" valign="top"><a id="gad49688ae30befa6bb76c338669ecf3a8" name="gad49688ae30befa6bb76c338669ecf3a8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>hts221_drdy_h_l_t</b> { <b>HTS221_ACTIVE_HIGH</b> = 0
-, <b>HTS221_ACTIVE_LOW</b> = 1
-, <b>HTS221_ACTIVE_ND</b> = 2
+<tr class="memitem:gad49688ae30befa6bb76c338669ecf3a8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gad49688ae30befa6bb76c338669ecf3a8">hts221_drdy_h_l_t</a> { <a class="el" href="group___h_t_s221.html#ggad49688ae30befa6bb76c338669ecf3a8a889e865e8ba72616d4fbb9e1a0af9164">HTS221_ACTIVE_HIGH</a> = 0
+, <a class="el" href="group___h_t_s221.html#ggad49688ae30befa6bb76c338669ecf3a8a76353e2e409bbc9b28579c1a89751bfc">HTS221_ACTIVE_LOW</a> = 1
+, <a class="el" href="group___h_t_s221.html#ggad49688ae30befa6bb76c338669ecf3a8a53e3b02e14e6faf358d6f591a90808f0">HTS221_ACTIVE_ND</a> = 2
  }</td></tr>
 <tr class="separator:gad49688ae30befa6bb76c338669ecf3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga55df8d20314e4cafe7f1ce20606fa18f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga55df8d20314e4cafe7f1ce20606fa18f">hts221_read_reg</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> reg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
-<tr class="memdesc:ga55df8d20314e4cafe7f1ce20606fa18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read generic device register.  <a href="group___h_t_s221.html#ga55df8d20314e4cafe7f1ce20606fa18f">More...</a><br /></td></tr>
-<tr class="separator:ga55df8d20314e4cafe7f1ce20606fa18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2c2e0ba9d999db22d3aba969d33cc67b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga2c2e0ba9d999db22d3aba969d33cc67b">hts221_write_reg</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> reg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
-<tr class="memdesc:ga2c2e0ba9d999db22d3aba969d33cc67b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write generic device register.  <a href="group___h_t_s221.html#ga2c2e0ba9d999db22d3aba969d33cc67b">More...</a><br /></td></tr>
-<tr class="separator:ga2c2e0ba9d999db22d3aba969d33cc67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga58e889f073030b6d6eeb75ea2c50e2f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga58e889f073030b6d6eeb75ea2c50e2f6">hts221_humidity_avg_set</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, hts221_avgh_t val)</td></tr>
-<tr class="memdesc:ga58e889f073030b6d6eeb75ea2c50e2f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numbers of averaged humidity samples.[set].  <a href="group___h_t_s221.html#ga58e889f073030b6d6eeb75ea2c50e2f6">More...</a><br /></td></tr>
-<tr class="separator:ga58e889f073030b6d6eeb75ea2c50e2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga957d95c801ac4d6979983e5afeaa2348"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga957d95c801ac4d6979983e5afeaa2348">hts221_humidity_avg_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, hts221_avgh_t *val)</td></tr>
-<tr class="memdesc:ga957d95c801ac4d6979983e5afeaa2348"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numbers of averaged humidity samples.[get].  <a href="group___h_t_s221.html#ga957d95c801ac4d6979983e5afeaa2348">More...</a><br /></td></tr>
-<tr class="separator:ga957d95c801ac4d6979983e5afeaa2348"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0420a8b45ccf8857542eb82e9badd0b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga0420a8b45ccf8857542eb82e9badd0b7">hts221_temperature_avg_set</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, hts221_avgt_t val)</td></tr>
-<tr class="memdesc:ga0420a8b45ccf8857542eb82e9badd0b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numbers of averaged temperature samples.[set].  <a href="group___h_t_s221.html#ga0420a8b45ccf8857542eb82e9badd0b7">More...</a><br /></td></tr>
-<tr class="separator:ga0420a8b45ccf8857542eb82e9badd0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab88944100267dacb83f5447842a3a259"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gab88944100267dacb83f5447842a3a259">hts221_temperature_avg_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, hts221_avgt_t *val)</td></tr>
-<tr class="memdesc:gab88944100267dacb83f5447842a3a259"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numbers of averaged temperature samples.[get].  <a href="group___h_t_s221.html#gab88944100267dacb83f5447842a3a259">More...</a><br /></td></tr>
-<tr class="separator:gab88944100267dacb83f5447842a3a259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac76997c4a073a18b264a828c83eea98a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gac76997c4a073a18b264a828c83eea98a">hts221_data_rate_set</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, hts221_odr_t val)</td></tr>
-<tr class="memdesc:gac76997c4a073a18b264a828c83eea98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output data rate selection.[set].  <a href="group___h_t_s221.html#gac76997c4a073a18b264a828c83eea98a">More...</a><br /></td></tr>
-<tr class="separator:gac76997c4a073a18b264a828c83eea98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga122bf05be19ba35c6febfae7172bc538"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga122bf05be19ba35c6febfae7172bc538">hts221_data_rate_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, hts221_odr_t *val)</td></tr>
-<tr class="memdesc:ga122bf05be19ba35c6febfae7172bc538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output data rate selection.[get].  <a href="group___h_t_s221.html#ga122bf05be19ba35c6febfae7172bc538">More...</a><br /></td></tr>
-<tr class="separator:ga122bf05be19ba35c6febfae7172bc538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c5e6e4c35aa4338e1285d48013710a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga4c5e6e4c35aa4338e1285d48013710a5">hts221_block_data_update_set</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> val)</td></tr>
-<tr class="memdesc:ga4c5e6e4c35aa4338e1285d48013710a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block data update.[set].  <a href="group___h_t_s221.html#ga4c5e6e4c35aa4338e1285d48013710a5">More...</a><br /></td></tr>
-<tr class="separator:ga4c5e6e4c35aa4338e1285d48013710a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga19bd4e2b276baaac3ed5d66eab404a1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga19bd4e2b276baaac3ed5d66eab404a1c">hts221_block_data_update_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
-<tr class="memdesc:ga19bd4e2b276baaac3ed5d66eab404a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block data update.[get].  <a href="group___h_t_s221.html#ga19bd4e2b276baaac3ed5d66eab404a1c">More...</a><br /></td></tr>
-<tr class="separator:ga19bd4e2b276baaac3ed5d66eab404a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga42c1bea16c6288f0844719e89ba5d3d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga42c1bea16c6288f0844719e89ba5d3d7">hts221_one_shoot_trigger_set</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> val)</td></tr>
-<tr class="memdesc:ga42c1bea16c6288f0844719e89ba5d3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">One-shot mode. Device perform a single measure.[set].  <a href="group___h_t_s221.html#ga42c1bea16c6288f0844719e89ba5d3d7">More...</a><br /></td></tr>
-<tr class="separator:ga42c1bea16c6288f0844719e89ba5d3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga559ec0e85034bde7eb642df06826b781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga559ec0e85034bde7eb642df06826b781">hts221_one_shoot_trigger_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
-<tr class="memdesc:ga559ec0e85034bde7eb642df06826b781"><td class="mdescLeft">&#160;</td><td class="mdescRight">One-shot mode. Device perform a single measure.[get].  <a href="group___h_t_s221.html#ga559ec0e85034bde7eb642df06826b781">More...</a><br /></td></tr>
-<tr class="separator:ga559ec0e85034bde7eb642df06826b781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6f7f9dc48b2a22bc260ebca444d2bb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gac6f7f9dc48b2a22bc260ebca444d2bb7">hts221_temp_data_ready_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
-<tr class="memdesc:gac6f7f9dc48b2a22bc260ebca444d2bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature data available.[get].  <a href="group___h_t_s221.html#gac6f7f9dc48b2a22bc260ebca444d2bb7">More...</a><br /></td></tr>
-<tr class="separator:gac6f7f9dc48b2a22bc260ebca444d2bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5cdebcf9270d1dc9c209425a3bfe9189"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga5cdebcf9270d1dc9c209425a3bfe9189">hts221_hum_data_ready_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
-<tr class="memdesc:ga5cdebcf9270d1dc9c209425a3bfe9189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Humidity data available.[get].  <a href="group___h_t_s221.html#ga5cdebcf9270d1dc9c209425a3bfe9189">More...</a><br /></td></tr>
-<tr class="separator:ga5cdebcf9270d1dc9c209425a3bfe9189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaa1af80599c536cc0ee6e0c82880dc67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaaa1af80599c536cc0ee6e0c82880dc67">hts221_humidity_raw_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buff)</td></tr>
-<tr class="memdesc:gaaa1af80599c536cc0ee6e0c82880dc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Humidity output value[get].  <a href="group___h_t_s221.html#gaaa1af80599c536cc0ee6e0c82880dc67">More...</a><br /></td></tr>
-<tr class="separator:gaaa1af80599c536cc0ee6e0c82880dc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90a5538907b9ac1a6a62249460c3268a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga90a5538907b9ac1a6a62249460c3268a">hts221_temperature_raw_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buff)</td></tr>
-<tr class="memdesc:ga90a5538907b9ac1a6a62249460c3268a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature output value[get].  <a href="group___h_t_s221.html#ga90a5538907b9ac1a6a62249460c3268a">More...</a><br /></td></tr>
-<tr class="separator:ga90a5538907b9ac1a6a62249460c3268a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6348ea5f9497a7a972f5f71d1806ab23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga6348ea5f9497a7a972f5f71d1806ab23">hts221_device_id_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buff)</td></tr>
-<tr class="memdesc:ga6348ea5f9497a7a972f5f71d1806ab23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device Who amI.[get].  <a href="group___h_t_s221.html#ga6348ea5f9497a7a972f5f71d1806ab23">More...</a><br /></td></tr>
-<tr class="separator:ga6348ea5f9497a7a972f5f71d1806ab23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac939c886c1e8e7b1645f11c2ff0a8586"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gac939c886c1e8e7b1645f11c2ff0a8586">hts221_power_on_set</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> val)</td></tr>
-<tr class="memdesc:gac939c886c1e8e7b1645f11c2ff0a8586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch device on/off.[set].  <a href="group___h_t_s221.html#gac939c886c1e8e7b1645f11c2ff0a8586">More...</a><br /></td></tr>
-<tr class="separator:gac939c886c1e8e7b1645f11c2ff0a8586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga14860f716f9e01cba2a824a6ded5dd92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga14860f716f9e01cba2a824a6ded5dd92">hts221_power_on_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
-<tr class="memdesc:ga14860f716f9e01cba2a824a6ded5dd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch device on/off.[get].  <a href="group___h_t_s221.html#ga14860f716f9e01cba2a824a6ded5dd92">More...</a><br /></td></tr>
-<tr class="separator:ga14860f716f9e01cba2a824a6ded5dd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4a1eb315293b75f024c394578bc2d32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gae4a1eb315293b75f024c394578bc2d32">hts221_heater_set</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> val)</td></tr>
-<tr class="memdesc:gae4a1eb315293b75f024c394578bc2d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Heater enable / disable.[set].  <a href="group___h_t_s221.html#gae4a1eb315293b75f024c394578bc2d32">More...</a><br /></td></tr>
-<tr class="separator:gae4a1eb315293b75f024c394578bc2d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6eb9dbf379dfda18cd6fbe1f9d1c8840"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga6eb9dbf379dfda18cd6fbe1f9d1c8840">hts221_heater_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
-<tr class="memdesc:ga6eb9dbf379dfda18cd6fbe1f9d1c8840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Heater enable / disable.[get].  <a href="group___h_t_s221.html#ga6eb9dbf379dfda18cd6fbe1f9d1c8840">More...</a><br /></td></tr>
-<tr class="separator:ga6eb9dbf379dfda18cd6fbe1f9d1c8840"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1761c41f04e3cd9df6d8f59fa0479ab6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga1761c41f04e3cd9df6d8f59fa0479ab6">hts221_boot_set</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> val)</td></tr>
-<tr class="memdesc:ga1761c41f04e3cd9df6d8f59fa0479ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reboot memory content. Reload the calibration parameters.[set].  <a href="group___h_t_s221.html#ga1761c41f04e3cd9df6d8f59fa0479ab6">More...</a><br /></td></tr>
-<tr class="separator:ga1761c41f04e3cd9df6d8f59fa0479ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa34e45bd0c290f7acaeed7f72a797229"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaa34e45bd0c290f7acaeed7f72a797229">hts221_boot_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
-<tr class="memdesc:gaa34e45bd0c290f7acaeed7f72a797229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reboot memory content. Reload the calibration parameters.[get].  <a href="group___h_t_s221.html#gaa34e45bd0c290f7acaeed7f72a797229">More...</a><br /></td></tr>
-<tr class="separator:gaa34e45bd0c290f7acaeed7f72a797229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4e16a817e909332d287061eca32e602"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gac4e16a817e909332d287061eca32e602">hts221_status_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="structhts221__status__reg__t.html">hts221_status_reg_t</a> *val)</td></tr>
-<tr class="memdesc:gac4e16a817e909332d287061eca32e602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Info about device status.[get].  <a href="group___h_t_s221.html#gac4e16a817e909332d287061eca32e602">More...</a><br /></td></tr>
-<tr class="separator:gac4e16a817e909332d287061eca32e602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4ec20a53e94edd6a41e71d876059e061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga4ec20a53e94edd6a41e71d876059e061">hts221_drdy_on_int_set</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> val)</td></tr>
-<tr class="memdesc:ga4ec20a53e94edd6a41e71d876059e061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data-ready signal on INT_DRDY pin.[set].  <a href="group___h_t_s221.html#ga4ec20a53e94edd6a41e71d876059e061">More...</a><br /></td></tr>
-<tr class="separator:ga4ec20a53e94edd6a41e71d876059e061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6b3a843b1226691f1af927ceb5c86081"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga6b3a843b1226691f1af927ceb5c86081">hts221_drdy_on_int_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
-<tr class="memdesc:ga6b3a843b1226691f1af927ceb5c86081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data-ready signal on INT_DRDY pin.[get].  <a href="group___h_t_s221.html#ga6b3a843b1226691f1af927ceb5c86081">More...</a><br /></td></tr>
-<tr class="separator:ga6b3a843b1226691f1af927ceb5c86081"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga266f97b072a5dff87122926e4ade846f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga266f97b072a5dff87122926e4ade846f">hts221_pin_mode_set</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, hts221_pp_od_t val)</td></tr>
-<tr class="memdesc:ga266f97b072a5dff87122926e4ade846f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push-pull/open drain selection on interrupt pads.[set].  <a href="group___h_t_s221.html#ga266f97b072a5dff87122926e4ade846f">More...</a><br /></td></tr>
-<tr class="separator:ga266f97b072a5dff87122926e4ade846f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3b44a59e01eaf5482eca145b54ccad8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gac3b44a59e01eaf5482eca145b54ccad8">hts221_pin_mode_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, hts221_pp_od_t *val)</td></tr>
-<tr class="memdesc:gac3b44a59e01eaf5482eca145b54ccad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push-pull/open drain selection on interrupt pads.[get].  <a href="group___h_t_s221.html#gac3b44a59e01eaf5482eca145b54ccad8">More...</a><br /></td></tr>
-<tr class="separator:gac3b44a59e01eaf5482eca145b54ccad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60c9669dc773819276c1186df1e9cacc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga60c9669dc773819276c1186df1e9cacc">hts221_int_polarity_set</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, hts221_drdy_h_l_t val)</td></tr>
-<tr class="memdesc:ga60c9669dc773819276c1186df1e9cacc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt active-high/low.[set].  <a href="group___h_t_s221.html#ga60c9669dc773819276c1186df1e9cacc">More...</a><br /></td></tr>
-<tr class="separator:ga60c9669dc773819276c1186df1e9cacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga00d4f70873ecfc5c4e4e1726daed21e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga00d4f70873ecfc5c4e4e1726daed21e7">hts221_int_polarity_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, hts221_drdy_h_l_t *val)</td></tr>
-<tr class="memdesc:ga00d4f70873ecfc5c4e4e1726daed21e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt active-high/low.[get].  <a href="group___h_t_s221.html#ga00d4f70873ecfc5c4e4e1726daed21e7">More...</a><br /></td></tr>
-<tr class="separator:ga00d4f70873ecfc5c4e4e1726daed21e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac99e477c7b6509736759a96e694030d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gac99e477c7b6509736759a96e694030d4">hts221_hum_rh_point_0_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, float_t *val)</td></tr>
-<tr class="memdesc:gac99e477c7b6509736759a96e694030d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">First calibration point for Rh Humidity.[get].  <a href="group___h_t_s221.html#gac99e477c7b6509736759a96e694030d4">More...</a><br /></td></tr>
-<tr class="separator:gac99e477c7b6509736759a96e694030d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2d70f758bbb7fa4d8f6b19b9f54e33c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga2d70f758bbb7fa4d8f6b19b9f54e33c3">hts221_hum_rh_point_1_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, float_t *val)</td></tr>
-<tr class="memdesc:ga2d70f758bbb7fa4d8f6b19b9f54e33c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Second calibration point for Rh Humidity.[get].  <a href="group___h_t_s221.html#ga2d70f758bbb7fa4d8f6b19b9f54e33c3">More...</a><br /></td></tr>
-<tr class="separator:ga2d70f758bbb7fa4d8f6b19b9f54e33c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga25ab2a81e2537d323ffd69b9b308a8a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga25ab2a81e2537d323ffd69b9b308a8a1">hts221_temp_deg_point_0_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, float_t *val)</td></tr>
-<tr class="memdesc:ga25ab2a81e2537d323ffd69b9b308a8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">First calibration point for degC temperature.[get].  <a href="group___h_t_s221.html#ga25ab2a81e2537d323ffd69b9b308a8a1">More...</a><br /></td></tr>
-<tr class="separator:ga25ab2a81e2537d323ffd69b9b308a8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga67f0a6c52687236eb53254a8ee95ea36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga67f0a6c52687236eb53254a8ee95ea36">hts221_temp_deg_point_1_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, float_t *val)</td></tr>
-<tr class="memdesc:ga67f0a6c52687236eb53254a8ee95ea36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Second calibration point for degC temperature.[get].  <a href="group___h_t_s221.html#ga67f0a6c52687236eb53254a8ee95ea36">More...</a><br /></td></tr>
-<tr class="separator:ga67f0a6c52687236eb53254a8ee95ea36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9a042a884d14e202ccc1979d3f6700aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga9a042a884d14e202ccc1979d3f6700aa">hts221_hum_adc_point_0_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, float_t *val)</td></tr>
-<tr class="memdesc:ga9a042a884d14e202ccc1979d3f6700aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">First calibration point for humidity in LSB.[get].  <a href="group___h_t_s221.html#ga9a042a884d14e202ccc1979d3f6700aa">More...</a><br /></td></tr>
-<tr class="separator:ga9a042a884d14e202ccc1979d3f6700aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4b009df79dc4baa466041718194c8c27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga4b009df79dc4baa466041718194c8c27">hts221_hum_adc_point_1_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, float_t *val)</td></tr>
-<tr class="memdesc:ga4b009df79dc4baa466041718194c8c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Second calibration point for humidity in LSB.[get].  <a href="group___h_t_s221.html#ga4b009df79dc4baa466041718194c8c27">More...</a><br /></td></tr>
-<tr class="separator:ga4b009df79dc4baa466041718194c8c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7a9d01cb15f2664bb5ae3895dd146129"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga7a9d01cb15f2664bb5ae3895dd146129">hts221_temp_adc_point_0_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, float_t *val)</td></tr>
-<tr class="memdesc:ga7a9d01cb15f2664bb5ae3895dd146129"><td class="mdescLeft">&#160;</td><td class="mdescRight">First calibration point for temperature in LSB.[get].  <a href="group___h_t_s221.html#ga7a9d01cb15f2664bb5ae3895dd146129">More...</a><br /></td></tr>
-<tr class="separator:ga7a9d01cb15f2664bb5ae3895dd146129"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f3376cb9d699999b697bcc780025386"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga4f3376cb9d699999b697bcc780025386">hts221_temp_adc_point_1_get</a> (<a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *ctx, float_t *val)</td></tr>
-<tr class="memdesc:ga4f3376cb9d699999b697bcc780025386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Second calibration point for temperature in LSB.[get].  <a href="group___h_t_s221.html#ga4f3376cb9d699999b697bcc780025386">More...</a><br /></td></tr>
-<tr class="separator:ga4f3376cb9d699999b697bcc780025386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga845eb45acdb99606bf5da038714ed078"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga845eb45acdb99606bf5da038714ed078">hts221_read_reg</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> reg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="memdesc:ga845eb45acdb99606bf5da038714ed078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read generic device register.  <a href="group___h_t_s221.html#ga845eb45acdb99606bf5da038714ed078">More...</a><br /></td></tr>
+<tr class="separator:ga845eb45acdb99606bf5da038714ed078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27e6c4bb82c834ae0659297aa8ff004c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga27e6c4bb82c834ae0659297aa8ff004c">hts221_write_reg</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> reg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="memdesc:ga27e6c4bb82c834ae0659297aa8ff004c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write generic device register.  <a href="group___h_t_s221.html#ga27e6c4bb82c834ae0659297aa8ff004c">More...</a><br /></td></tr>
+<tr class="separator:ga27e6c4bb82c834ae0659297aa8ff004c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0fcde2433fb39f504ebd8495c22d854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaf0fcde2433fb39f504ebd8495c22d854">hts221_humidity_avg_set</a> (<a class="el" href="group___h_t_s221.html#ga0ee74bdd72eca913966943e6fb4c9a56">hts221_avgh_t</a> val)</td></tr>
+<tr class="memdesc:gaf0fcde2433fb39f504ebd8495c22d854"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numbers of averaged humidity samples.[set].  <a href="group___h_t_s221.html#gaf0fcde2433fb39f504ebd8495c22d854">More...</a><br /></td></tr>
+<tr class="separator:gaf0fcde2433fb39f504ebd8495c22d854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6546033565112e220ae6597a997a3f6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga6546033565112e220ae6597a997a3f6d">hts221_humidity_avg_get</a> (<a class="el" href="group___h_t_s221.html#ga0ee74bdd72eca913966943e6fb4c9a56">hts221_avgh_t</a> *val)</td></tr>
+<tr class="memdesc:ga6546033565112e220ae6597a997a3f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numbers of averaged humidity samples.[get].  <a href="group___h_t_s221.html#ga6546033565112e220ae6597a997a3f6d">More...</a><br /></td></tr>
+<tr class="separator:ga6546033565112e220ae6597a997a3f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5b5cb972cb91fabf5cd05fd510f5118"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gac5b5cb972cb91fabf5cd05fd510f5118">hts221_temperature_avg_set</a> (<a class="el" href="group___h_t_s221.html#ga163ecd5d819623632c31cc50704b5a0e">hts221_avgt_t</a> val)</td></tr>
+<tr class="memdesc:gac5b5cb972cb91fabf5cd05fd510f5118"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numbers of averaged temperature samples.[set].  <a href="group___h_t_s221.html#gac5b5cb972cb91fabf5cd05fd510f5118">More...</a><br /></td></tr>
+<tr class="separator:gac5b5cb972cb91fabf5cd05fd510f5118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdcc6e6a26101eb8bb7f833aafa65395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gabdcc6e6a26101eb8bb7f833aafa65395">hts221_temperature_avg_get</a> (<a class="el" href="group___h_t_s221.html#ga163ecd5d819623632c31cc50704b5a0e">hts221_avgt_t</a> *val)</td></tr>
+<tr class="memdesc:gabdcc6e6a26101eb8bb7f833aafa65395"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numbers of averaged temperature samples.[get].  <a href="group___h_t_s221.html#gabdcc6e6a26101eb8bb7f833aafa65395">More...</a><br /></td></tr>
+<tr class="separator:gabdcc6e6a26101eb8bb7f833aafa65395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bf17cf0abf473a33d08cc80ff360e0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga2bf17cf0abf473a33d08cc80ff360e0e">hts221_data_rate_set</a> (<a class="el" href="group___h_t_s221.html#ga2e671642100121a4ab19de9b10b7b869">hts221_odr_t</a> val)</td></tr>
+<tr class="memdesc:ga2bf17cf0abf473a33d08cc80ff360e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output data rate selection.[set].  <a href="group___h_t_s221.html#ga2bf17cf0abf473a33d08cc80ff360e0e">More...</a><br /></td></tr>
+<tr class="separator:ga2bf17cf0abf473a33d08cc80ff360e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8b5e14902059e20fd88b4c1f375b3ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gad8b5e14902059e20fd88b4c1f375b3ef">hts221_data_rate_get</a> (<a class="el" href="group___h_t_s221.html#ga2e671642100121a4ab19de9b10b7b869">hts221_odr_t</a> *val)</td></tr>
+<tr class="memdesc:gad8b5e14902059e20fd88b4c1f375b3ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output data rate selection.[get].  <a href="group___h_t_s221.html#gad8b5e14902059e20fd88b4c1f375b3ef">More...</a><br /></td></tr>
+<tr class="separator:gad8b5e14902059e20fd88b4c1f375b3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe45671b67b87afdd3b3b103bc5980d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gafe45671b67b87afdd3b3b103bc5980d0">hts221_block_data_update_set</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> val)</td></tr>
+<tr class="memdesc:gafe45671b67b87afdd3b3b103bc5980d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block data update.[set].  <a href="group___h_t_s221.html#gafe45671b67b87afdd3b3b103bc5980d0">More...</a><br /></td></tr>
+<tr class="separator:gafe45671b67b87afdd3b3b103bc5980d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3762a73e2f1bfb5c99890e8ab9445d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaf3762a73e2f1bfb5c99890e8ab9445d7">hts221_block_data_update_get</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
+<tr class="memdesc:gaf3762a73e2f1bfb5c99890e8ab9445d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block data update.[get].  <a href="group___h_t_s221.html#gaf3762a73e2f1bfb5c99890e8ab9445d7">More...</a><br /></td></tr>
+<tr class="separator:gaf3762a73e2f1bfb5c99890e8ab9445d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6e734c5d5119874bb42b683beef2a55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gad6e734c5d5119874bb42b683beef2a55">hts221_one_shoot_trigger_set</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> val)</td></tr>
+<tr class="memdesc:gad6e734c5d5119874bb42b683beef2a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">One-shot mode. Device perform a single measure.[set].  <a href="group___h_t_s221.html#gad6e734c5d5119874bb42b683beef2a55">More...</a><br /></td></tr>
+<tr class="separator:gad6e734c5d5119874bb42b683beef2a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga972b1a9ee0bd9e144fe22576be554cba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga972b1a9ee0bd9e144fe22576be554cba">hts221_one_shoot_trigger_get</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
+<tr class="memdesc:ga972b1a9ee0bd9e144fe22576be554cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">One-shot mode. Device perform a single measure.[get].  <a href="group___h_t_s221.html#ga972b1a9ee0bd9e144fe22576be554cba">More...</a><br /></td></tr>
+<tr class="separator:ga972b1a9ee0bd9e144fe22576be554cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8aa04ae54736262bb3587e572c345b02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga8aa04ae54736262bb3587e572c345b02">hts221_temp_data_ready_get</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
+<tr class="memdesc:ga8aa04ae54736262bb3587e572c345b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature data available.[get].  <a href="group___h_t_s221.html#ga8aa04ae54736262bb3587e572c345b02">More...</a><br /></td></tr>
+<tr class="separator:ga8aa04ae54736262bb3587e572c345b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63923e8802e2ad273e6c21bdb0155772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga63923e8802e2ad273e6c21bdb0155772">hts221_hum_data_ready_get</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
+<tr class="memdesc:ga63923e8802e2ad273e6c21bdb0155772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Humidity data available.[get].  <a href="group___h_t_s221.html#ga63923e8802e2ad273e6c21bdb0155772">More...</a><br /></td></tr>
+<tr class="separator:ga63923e8802e2ad273e6c21bdb0155772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga699d636830c585575402cd4be1e12e59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga699d636830c585575402cd4be1e12e59">hts221_humidity_raw_get</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buff)</td></tr>
+<tr class="memdesc:ga699d636830c585575402cd4be1e12e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Humidity output value[get].  <a href="group___h_t_s221.html#ga699d636830c585575402cd4be1e12e59">More...</a><br /></td></tr>
+<tr class="separator:ga699d636830c585575402cd4be1e12e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4c28daf922980c0e2edc5f16cacb42e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gac4c28daf922980c0e2edc5f16cacb42e">hts221_temperature_raw_get</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buff)</td></tr>
+<tr class="memdesc:gac4c28daf922980c0e2edc5f16cacb42e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature output value[get].  <a href="group___h_t_s221.html#gac4c28daf922980c0e2edc5f16cacb42e">More...</a><br /></td></tr>
+<tr class="separator:gac4c28daf922980c0e2edc5f16cacb42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa5c9a08ab7720cae4a66593d42330d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gafa5c9a08ab7720cae4a66593d42330d5">hts221_device_id_get</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buff)</td></tr>
+<tr class="memdesc:gafa5c9a08ab7720cae4a66593d42330d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device Who amI.[get].  <a href="group___h_t_s221.html#gafa5c9a08ab7720cae4a66593d42330d5">More...</a><br /></td></tr>
+<tr class="separator:gafa5c9a08ab7720cae4a66593d42330d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga839aae64c49e30a47d89084ed118bb97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga839aae64c49e30a47d89084ed118bb97">hts221_power_on_set</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> val)</td></tr>
+<tr class="memdesc:ga839aae64c49e30a47d89084ed118bb97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch device on/off.[set].  <a href="group___h_t_s221.html#ga839aae64c49e30a47d89084ed118bb97">More...</a><br /></td></tr>
+<tr class="separator:ga839aae64c49e30a47d89084ed118bb97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c9185af77778f65c4b978791815d458"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga0c9185af77778f65c4b978791815d458">hts221_power_on_get</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
+<tr class="memdesc:ga0c9185af77778f65c4b978791815d458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch device on/off.[get].  <a href="group___h_t_s221.html#ga0c9185af77778f65c4b978791815d458">More...</a><br /></td></tr>
+<tr class="separator:ga0c9185af77778f65c4b978791815d458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3c68d3581b887bbd7ae1172b74eb33a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaa3c68d3581b887bbd7ae1172b74eb33a">hts221_heater_set</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> val)</td></tr>
+<tr class="memdesc:gaa3c68d3581b887bbd7ae1172b74eb33a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Heater enable / disable.[set].  <a href="group___h_t_s221.html#gaa3c68d3581b887bbd7ae1172b74eb33a">More...</a><br /></td></tr>
+<tr class="separator:gaa3c68d3581b887bbd7ae1172b74eb33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacec14ba0b63542cfa02a798e488aadcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gacec14ba0b63542cfa02a798e488aadcc">hts221_heater_get</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
+<tr class="memdesc:gacec14ba0b63542cfa02a798e488aadcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Heater enable / disable.[get].  <a href="group___h_t_s221.html#gacec14ba0b63542cfa02a798e488aadcc">More...</a><br /></td></tr>
+<tr class="separator:gacec14ba0b63542cfa02a798e488aadcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e9556ea4c09243be1f331be9c9ff6d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga9e9556ea4c09243be1f331be9c9ff6d3">hts221_boot_set</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> val)</td></tr>
+<tr class="memdesc:ga9e9556ea4c09243be1f331be9c9ff6d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reboot memory content. Reload the calibration parameters.[set].  <a href="group___h_t_s221.html#ga9e9556ea4c09243be1f331be9c9ff6d3">More...</a><br /></td></tr>
+<tr class="separator:ga9e9556ea4c09243be1f331be9c9ff6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21f62cc62c0f0fc3234b5a3bf937a51a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga21f62cc62c0f0fc3234b5a3bf937a51a">hts221_boot_get</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
+<tr class="memdesc:ga21f62cc62c0f0fc3234b5a3bf937a51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reboot memory content. Reload the calibration parameters.[get].  <a href="group___h_t_s221.html#ga21f62cc62c0f0fc3234b5a3bf937a51a">More...</a><br /></td></tr>
+<tr class="separator:ga21f62cc62c0f0fc3234b5a3bf937a51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70eadc214927b91e3e4297bbad7c8844"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga70eadc214927b91e3e4297bbad7c8844">hts221_status_get</a> (<a class="el" href="structhts221__status__reg__t.html">hts221_status_reg_t</a> *val)</td></tr>
+<tr class="memdesc:ga70eadc214927b91e3e4297bbad7c8844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Info about device status.[get].  <a href="group___h_t_s221.html#ga70eadc214927b91e3e4297bbad7c8844">More...</a><br /></td></tr>
+<tr class="separator:ga70eadc214927b91e3e4297bbad7c8844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57029d09691de5e4fce05bdc593f8a1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga57029d09691de5e4fce05bdc593f8a1a">hts221_drdy_on_int_set</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> val)</td></tr>
+<tr class="memdesc:ga57029d09691de5e4fce05bdc593f8a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data-ready signal on INT_DRDY pin.[set].  <a href="group___h_t_s221.html#ga57029d09691de5e4fce05bdc593f8a1a">More...</a><br /></td></tr>
+<tr class="separator:ga57029d09691de5e4fce05bdc593f8a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad41ea70f5a6d9597f8705c3ce1ca7ba3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gad41ea70f5a6d9597f8705c3ce1ca7ba3">hts221_drdy_on_int_get</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
+<tr class="memdesc:gad41ea70f5a6d9597f8705c3ce1ca7ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data-ready signal on INT_DRDY pin.[get].  <a href="group___h_t_s221.html#gad41ea70f5a6d9597f8705c3ce1ca7ba3">More...</a><br /></td></tr>
+<tr class="separator:gad41ea70f5a6d9597f8705c3ce1ca7ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c12dd192db4c037b20b74c6a76e02b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga8c12dd192db4c037b20b74c6a76e02b8">hts221_pin_mode_set</a> (<a class="el" href="group___h_t_s221.html#ga3b113f4ece416bf4d9f0d0d2c757fff9">hts221_pp_od_t</a> val)</td></tr>
+<tr class="memdesc:ga8c12dd192db4c037b20b74c6a76e02b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push-pull/open drain selection on interrupt pads.[set].  <a href="group___h_t_s221.html#ga8c12dd192db4c037b20b74c6a76e02b8">More...</a><br /></td></tr>
+<tr class="separator:ga8c12dd192db4c037b20b74c6a76e02b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1706b81ce811344f9d64645bb72809c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga1706b81ce811344f9d64645bb72809c9">hts221_pin_mode_get</a> (<a class="el" href="group___h_t_s221.html#ga3b113f4ece416bf4d9f0d0d2c757fff9">hts221_pp_od_t</a> *val)</td></tr>
+<tr class="memdesc:ga1706b81ce811344f9d64645bb72809c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push-pull/open drain selection on interrupt pads.[get].  <a href="group___h_t_s221.html#ga1706b81ce811344f9d64645bb72809c9">More...</a><br /></td></tr>
+<tr class="separator:ga1706b81ce811344f9d64645bb72809c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ac9ccb9300dcef5632d79a67481eaac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga0ac9ccb9300dcef5632d79a67481eaac">hts221_int_polarity_set</a> (<a class="el" href="group___h_t_s221.html#gad49688ae30befa6bb76c338669ecf3a8">hts221_drdy_h_l_t</a> val)</td></tr>
+<tr class="memdesc:ga0ac9ccb9300dcef5632d79a67481eaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt active-high/low.[set].  <a href="group___h_t_s221.html#ga0ac9ccb9300dcef5632d79a67481eaac">More...</a><br /></td></tr>
+<tr class="separator:ga0ac9ccb9300dcef5632d79a67481eaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1c5e3767b672448fb2625d73cda19c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gab1c5e3767b672448fb2625d73cda19c9">hts221_int_polarity_get</a> (<a class="el" href="group___h_t_s221.html#gad49688ae30befa6bb76c338669ecf3a8">hts221_drdy_h_l_t</a> *val)</td></tr>
+<tr class="memdesc:gab1c5e3767b672448fb2625d73cda19c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt active-high/low.[get].  <a href="group___h_t_s221.html#gab1c5e3767b672448fb2625d73cda19c9">More...</a><br /></td></tr>
+<tr class="separator:gab1c5e3767b672448fb2625d73cda19c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf256760979ccadc3d14aea7c6371bab0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaf256760979ccadc3d14aea7c6371bab0">hts221_hum_rh_point_0_get</a> (<a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *val)</td></tr>
+<tr class="memdesc:gaf256760979ccadc3d14aea7c6371bab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">First calibration point for Rh Humidity.[get].  <a href="group___h_t_s221.html#gaf256760979ccadc3d14aea7c6371bab0">More...</a><br /></td></tr>
+<tr class="separator:gaf256760979ccadc3d14aea7c6371bab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2a0c81bf8a3c4d2ec384cb70b7378cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gad2a0c81bf8a3c4d2ec384cb70b7378cb">hts221_hum_rh_point_1_get</a> (<a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *val)</td></tr>
+<tr class="memdesc:gad2a0c81bf8a3c4d2ec384cb70b7378cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Second calibration point for Rh Humidity.[get].  <a href="group___h_t_s221.html#gad2a0c81bf8a3c4d2ec384cb70b7378cb">More...</a><br /></td></tr>
+<tr class="separator:gad2a0c81bf8a3c4d2ec384cb70b7378cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab895b67a418125e7776819614267fbe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gab895b67a418125e7776819614267fbe0">hts221_temp_deg_point_0_get</a> (<a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *val)</td></tr>
+<tr class="memdesc:gab895b67a418125e7776819614267fbe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">First calibration point for degC temperature.[get].  <a href="group___h_t_s221.html#gab895b67a418125e7776819614267fbe0">More...</a><br /></td></tr>
+<tr class="separator:gab895b67a418125e7776819614267fbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82dc9670d721d4f01a4d311fc4f20fb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga82dc9670d721d4f01a4d311fc4f20fb4">hts221_temp_deg_point_1_get</a> (<a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *val)</td></tr>
+<tr class="memdesc:ga82dc9670d721d4f01a4d311fc4f20fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Second calibration point for degC temperature.[get].  <a href="group___h_t_s221.html#ga82dc9670d721d4f01a4d311fc4f20fb4">More...</a><br /></td></tr>
+<tr class="separator:ga82dc9670d721d4f01a4d311fc4f20fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae50052e06606aa76743244fb4b5636bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gae50052e06606aa76743244fb4b5636bd">hts221_hum_adc_point_0_get</a> (<a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *val)</td></tr>
+<tr class="memdesc:gae50052e06606aa76743244fb4b5636bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">First calibration point for humidity in LSB.[get].  <a href="group___h_t_s221.html#gae50052e06606aa76743244fb4b5636bd">More...</a><br /></td></tr>
+<tr class="separator:gae50052e06606aa76743244fb4b5636bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b6d1627c2da6c9894c2aec1a6f196c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga4b6d1627c2da6c9894c2aec1a6f196c2">hts221_hum_adc_point_1_get</a> (<a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *val)</td></tr>
+<tr class="memdesc:ga4b6d1627c2da6c9894c2aec1a6f196c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Second calibration point for humidity in LSB.[get].  <a href="group___h_t_s221.html#ga4b6d1627c2da6c9894c2aec1a6f196c2">More...</a><br /></td></tr>
+<tr class="separator:ga4b6d1627c2da6c9894c2aec1a6f196c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga887c426ccbde288ce3852878c1b05ec2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga887c426ccbde288ce3852878c1b05ec2">hts221_temp_adc_point_0_get</a> (<a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *val)</td></tr>
+<tr class="memdesc:ga887c426ccbde288ce3852878c1b05ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">First calibration point for temperature in LSB.[get].  <a href="group___h_t_s221.html#ga887c426ccbde288ce3852878c1b05ec2">More...</a><br /></td></tr>
+<tr class="separator:ga887c426ccbde288ce3852878c1b05ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdcb39aa3706b6b94aaaeb50dfbf873c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gacdcb39aa3706b6b94aaaeb50dfbf873c">hts221_temp_adc_point_1_get</a> (<a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *val)</td></tr>
+<tr class="memdesc:gacdcb39aa3706b6b94aaaeb50dfbf873c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Second calibration point for temperature in LSB.[get].  <a href="group___h_t_s221.html#gacdcb39aa3706b6b94aaaeb50dfbf873c">More...</a><br /></td></tr>
+<tr class="separator:gacdcb39aa3706b6b94aaaeb50dfbf873c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0fd2a54170a720172fa51b6afe215fef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga0fd2a54170a720172fa51b6afe215fef">hts221_init</a> (void)</td></tr>
+<tr class="memdesc:ga0fd2a54170a720172fa51b6afe215fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTS221 init.  <a href="group___h_t_s221.html#ga0fd2a54170a720172fa51b6afe215fef">More...</a><br /></td></tr>
+<tr class="separator:ga0fd2a54170a720172fa51b6afe215fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31aff00f4afb77f9c995353fd16d1dd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga31aff00f4afb77f9c995353fd16d1dd9">hts221_get_hym_temp</a> (float *humidity, float *temperature)</td></tr>
+<tr class="memdesc:ga31aff00f4afb77f9c995353fd16d1dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTS221 get humidity and temperature.  <a href="group___h_t_s221.html#ga31aff00f4afb77f9c995353fd16d1dd9">More...</a><br /></td></tr>
+<tr class="separator:ga31aff00f4afb77f9c995353fd16d1dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga633ac81bbe41e848748431553aeb7d23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga633ac81bbe41e848748431553aeb7d23">hts221_get_pheriod_ns</a> (<a class="el" href="group___h_t_s221.html#ga2e671642100121a4ab19de9b10b7b869">hts221_odr_t</a> rate)</td></tr>
+<tr class="memdesc:ga633ac81bbe41e848748431553aeb7d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">get mesure pheriod [ns]  <a href="group___h_t_s221.html#ga633ac81bbe41e848748431553aeb7d23">More...</a><br /></td></tr>
+<tr class="separator:ga633ac81bbe41e848748431553aeb7d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga439c72588b91131ab18aab96eb5b05f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga439c72588b91131ab18aab96eb5b05f4">hts221_get_mode</a> (<a class="el" href="structhts221__mode__t.html">hts221_mode_t</a> *mode)</td></tr>
+<tr class="memdesc:ga439c72588b91131ab18aab96eb5b05f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">get hts221 current mode  <a href="group___h_t_s221.html#ga439c72588b91131ab18aab96eb5b05f4">More...</a><br /></td></tr>
+<tr class="separator:ga439c72588b91131ab18aab96eb5b05f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5ae1d0e6eb7b9afc05a33c797aae056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaf5ae1d0e6eb7b9afc05a33c797aae056">hts221_set_mode</a> (<a class="el" href="structhts221__mode__t.html">hts221_mode_t</a> *mode)</td></tr>
+<tr class="memdesc:gaf5ae1d0e6eb7b9afc05a33c797aae056"><td class="mdescLeft">&#160;</td><td class="mdescRight">set hts221 current mode  <a href="group___h_t_s221.html#gaf5ae1d0e6eb7b9afc05a33c797aae056">More...</a><br /></td></tr>
+<tr class="separator:gaf5ae1d0e6eb7b9afc05a33c797aae056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6ee2cd98cc2b11429ab7ee62ac2a6fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaf6ee2cd98cc2b11429ab7ee62ac2a6fa">hts221_enable</a> (void)</td></tr>
+<tr class="memdesc:gaf6ee2cd98cc2b11429ab7ee62ac2a6fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable hts221  <a href="group___h_t_s221.html#gaf6ee2cd98cc2b11429ab7ee62ac2a6fa">More...</a><br /></td></tr>
+<tr class="separator:gaf6ee2cd98cc2b11429ab7ee62ac2a6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0991ffbcbdff4fa8da0b22b3835b94f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaa0991ffbcbdff4fa8da0b22b3835b94f">hts221_disable</a> (void)</td></tr>
+<tr class="memdesc:gaa0991ffbcbdff4fa8da0b22b3835b94f"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable hts221  <a href="group___h_t_s221.html#gaa0991ffbcbdff4fa8da0b22b3835b94f">More...</a><br /></td></tr>
+<tr class="separator:gaa0991ffbcbdff4fa8da0b22b3835b94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga62adb89f29091f8a5c23bdc8574e0075"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga62adb89f29091f8a5c23bdc8574e0075">lin_t::x0</a></td></tr>
+<tr class="separator:ga62adb89f29091f8a5c23bdc8574e0075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5cecbd3de7b2455b25183120e6f04ff1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#ga5cecbd3de7b2455b25183120e6f04ff1">lin_t::y0</a></td></tr>
+<tr class="separator:ga5cecbd3de7b2455b25183120e6f04ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf6df544d6caab635a031e91b02904e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gadf6df544d6caab635a031e91b02904e3">lin_t::x1</a></td></tr>
+<tr class="separator:gadf6df544d6caab635a031e91b02904e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf36c9570419a74a6b04b5813537016a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_t_s221.html#gaaf36c9570419a74a6b04b5813537016a">lin_t::y1</a></td></tr>
+<tr class="separator:gaaf36c9570419a74a6b04b5813537016a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >This file provides a set of functions needed to drive the hts221 enhanced inertial module. </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga670fbf027b123a2166fdbcf8dffe9dcf" name="ga670fbf027b123a2166fdbcf8dffe9dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga670fbf027b123a2166fdbcf8dffe9dcf">&#9670;&nbsp;</a></span>HTS221_AV_CONF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_AV_CONF&#160;&#160;&#160;0x10U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabece3ffa2b24a5180e54b6825fc672fa" name="gabece3ffa2b24a5180e54b6825fc672fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabece3ffa2b24a5180e54b6825fc672fa">&#9670;&nbsp;</a></span>HTS221_CTRL_REG1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_CTRL_REG1&#160;&#160;&#160;0x20U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7df2a67567fe9e5479064de03952f13d" name="ga7df2a67567fe9e5479064de03952f13d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7df2a67567fe9e5479064de03952f13d">&#9670;&nbsp;</a></span>HTS221_CTRL_REG2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_CTRL_REG2&#160;&#160;&#160;0x21U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1bb023ca2f82120759047fe63f99f31e" name="ga1bb023ca2f82120759047fe63f99f31e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1bb023ca2f82120759047fe63f99f31e">&#9670;&nbsp;</a></span>HTS221_CTRL_REG3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_CTRL_REG3&#160;&#160;&#160;0x22U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf9bfd58a9221ec51d2186983a222bd7a" name="gaf9bfd58a9221ec51d2186983a222bd7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf9bfd58a9221ec51d2186983a222bd7a">&#9670;&nbsp;</a></span>HTS221_H0_RH_X2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_H0_RH_X2&#160;&#160;&#160;0x30U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa9b6b6d254d4ec273c518351485f18c0" name="gaa9b6b6d254d4ec273c518351485f18c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9b6b6d254d4ec273c518351485f18c0">&#9670;&nbsp;</a></span>HTS221_H0_T0_OUT_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_H0_T0_OUT_H&#160;&#160;&#160;0x37U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0f6c4b05bc48e0b948a0fd3ccef9c1d4" name="ga0f6c4b05bc48e0b948a0fd3ccef9c1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f6c4b05bc48e0b948a0fd3ccef9c1d4">&#9670;&nbsp;</a></span>HTS221_H0_T0_OUT_L</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_H0_T0_OUT_L&#160;&#160;&#160;0x36U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga821173ee52f5d73a587aea678746d421" name="ga821173ee52f5d73a587aea678746d421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga821173ee52f5d73a587aea678746d421">&#9670;&nbsp;</a></span>HTS221_H1_RH_X2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_H1_RH_X2&#160;&#160;&#160;0x31U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0aeccdebd0a84275823ae867bc8516db" name="ga0aeccdebd0a84275823ae867bc8516db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0aeccdebd0a84275823ae867bc8516db">&#9670;&nbsp;</a></span>HTS221_H1_T0_OUT_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_H1_T0_OUT_H&#160;&#160;&#160;0x3BU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga26d2bf0f370d82ad94042a8267b0675c" name="ga26d2bf0f370d82ad94042a8267b0675c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26d2bf0f370d82ad94042a8267b0675c">&#9670;&nbsp;</a></span>HTS221_H1_T0_OUT_L</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_H1_T0_OUT_L&#160;&#160;&#160;0x3AU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa7c122ae76caf83bf8cda0ce80c7c6fc" name="gaa7c122ae76caf83bf8cda0ce80c7c6fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7c122ae76caf83bf8cda0ce80c7c6fc">&#9670;&nbsp;</a></span>HTS221_HUMIDITY_OUT_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_HUMIDITY_OUT_H&#160;&#160;&#160;0x29U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacef3d26278abdc70a50447aa4b784e01" name="gacef3d26278abdc70a50447aa4b784e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacef3d26278abdc70a50447aa4b784e01">&#9670;&nbsp;</a></span>HTS221_HUMIDITY_OUT_L</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_HUMIDITY_OUT_L&#160;&#160;&#160;0x28U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad1826b66e769ee6faa1ce14b78e6c8a2" name="gad1826b66e769ee6faa1ce14b78e6c8a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad1826b66e769ee6faa1ce14b78e6c8a2">&#9670;&nbsp;</a></span>HTS221_STATUS_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_STATUS_REG&#160;&#160;&#160;0x27U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4dea7613af13017b969a94346754f50a" name="ga4dea7613af13017b969a94346754f50a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4dea7613af13017b969a94346754f50a">&#9670;&nbsp;</a></span>HTS221_T0_DEGC_X8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_T0_DEGC_X8&#160;&#160;&#160;0x32U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga158e6b93f5439fde814e90510f87a2d2" name="ga158e6b93f5439fde814e90510f87a2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga158e6b93f5439fde814e90510f87a2d2">&#9670;&nbsp;</a></span>HTS221_T0_OUT_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_T0_OUT_H&#160;&#160;&#160;0x3DU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae19d5e4142581d49c372978cf670ac23" name="gae19d5e4142581d49c372978cf670ac23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae19d5e4142581d49c372978cf670ac23">&#9670;&nbsp;</a></span>HTS221_T0_OUT_L</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_T0_OUT_L&#160;&#160;&#160;0x3CU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga82eafa2c2e12ff6b13202ec6ecce6c4b" name="ga82eafa2c2e12ff6b13202ec6ecce6c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga82eafa2c2e12ff6b13202ec6ecce6c4b">&#9670;&nbsp;</a></span>HTS221_T1_DEGC_X8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_T1_DEGC_X8&#160;&#160;&#160;0x33U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga00ba1f41551f55db76679434b46f499f" name="ga00ba1f41551f55db76679434b46f499f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00ba1f41551f55db76679434b46f499f">&#9670;&nbsp;</a></span>HTS221_T1_OUT_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_T1_OUT_H&#160;&#160;&#160;0x3FU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1cf9297d88d8bac2d5e4d83ae9f2f983" name="ga1cf9297d88d8bac2d5e4d83ae9f2f983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cf9297d88d8bac2d5e4d83ae9f2f983">&#9670;&nbsp;</a></span>HTS221_T1_OUT_L</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_T1_OUT_L&#160;&#160;&#160;0x3EU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga501c82eee73d5c43fa970372a8b33900" name="ga501c82eee73d5c43fa970372a8b33900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga501c82eee73d5c43fa970372a8b33900">&#9670;&nbsp;</a></span>HTS221_T1_T0_MSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_T1_T0_MSB&#160;&#160;&#160;0x35U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab1327a19e5c04f3889173b9d6b9147f1" name="gab1327a19e5c04f3889173b9d6b9147f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1327a19e5c04f3889173b9d6b9147f1">&#9670;&nbsp;</a></span>HTS221_TEMP_OUT_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_TEMP_OUT_H&#160;&#160;&#160;0x2BU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga08a30140c07cab80950b0f27d3068903" name="ga08a30140c07cab80950b0f27d3068903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08a30140c07cab80950b0f27d3068903">&#9670;&nbsp;</a></span>HTS221_TEMP_OUT_L</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_TEMP_OUT_L&#160;&#160;&#160;0x2AU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae4febb86e488dda5f8e7d6d97e5f0a3d" name="gae4febb86e488dda5f8e7d6d97e5f0a3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae4febb86e488dda5f8e7d6d97e5f0a3d">&#9670;&nbsp;</a></span>HTS221_WHO_AM_I</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTS221_WHO_AM_I&#160;&#160;&#160;0x0FU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga0ee74bdd72eca913966943e6fb4c9a56" name="ga0ee74bdd72eca913966943e6fb4c9a56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ee74bdd72eca913966943e6fb4c9a56">&#9670;&nbsp;</a></span>hts221_avgh_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___h_t_s221.html#ga0ee74bdd72eca913966943e6fb4c9a56">hts221_avgh_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0ee74bdd72eca913966943e6fb4c9a56a32d6b0d989be6fed75324b3a25f3a000" name="gga0ee74bdd72eca913966943e6fb4c9a56a32d6b0d989be6fed75324b3a25f3a000"></a>HTS221_H_AVG_4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0ee74bdd72eca913966943e6fb4c9a56a5690159bdb37320aacd5891f2f9117eb" name="gga0ee74bdd72eca913966943e6fb4c9a56a5690159bdb37320aacd5891f2f9117eb"></a>HTS221_H_AVG_8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0ee74bdd72eca913966943e6fb4c9a56a3f99386e6da755bda24718e7461a67eb" name="gga0ee74bdd72eca913966943e6fb4c9a56a3f99386e6da755bda24718e7461a67eb"></a>HTS221_H_AVG_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0ee74bdd72eca913966943e6fb4c9a56a946052bd3e8fb0daf624a4c5bdce9a1f" name="gga0ee74bdd72eca913966943e6fb4c9a56a946052bd3e8fb0daf624a4c5bdce9a1f"></a>HTS221_H_AVG_32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0ee74bdd72eca913966943e6fb4c9a56ab86ea7227ce5cfeb71fd946e494adc1e" name="gga0ee74bdd72eca913966943e6fb4c9a56ab86ea7227ce5cfeb71fd946e494adc1e"></a>HTS221_H_AVG_64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0ee74bdd72eca913966943e6fb4c9a56a5885a80c8e6702976dac05ff54037a64" name="gga0ee74bdd72eca913966943e6fb4c9a56a5885a80c8e6702976dac05ff54037a64"></a>HTS221_H_AVG_128&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0ee74bdd72eca913966943e6fb4c9a56a11924a0a29f4af039f859200216b8309" name="gga0ee74bdd72eca913966943e6fb4c9a56a11924a0a29f4af039f859200216b8309"></a>HTS221_H_AVG_256&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0ee74bdd72eca913966943e6fb4c9a56a8d0563a1b55cb519977a47f443d22dfb" name="gga0ee74bdd72eca913966943e6fb4c9a56a8d0563a1b55cb519977a47f443d22dfb"></a>HTS221_H_AVG_512&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0ee74bdd72eca913966943e6fb4c9a56ad7d00b235eafed2e384a2163682e8fb2" name="gga0ee74bdd72eca913966943e6fb4c9a56ad7d00b235eafed2e384a2163682e8fb2"></a>HTS221_H_AVG_ND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga0ee74bdd72eca913966943e6fb4c9a56a8adf469d3aa7a69eefd870e2bf6deb99" name="gga0ee74bdd72eca913966943e6fb4c9a56a8adf469d3aa7a69eefd870e2bf6deb99"></a>HTS221_H_AVG_ENUM&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga163ecd5d819623632c31cc50704b5a0e" name="ga163ecd5d819623632c31cc50704b5a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga163ecd5d819623632c31cc50704b5a0e">&#9670;&nbsp;</a></span>hts221_avgt_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___h_t_s221.html#ga163ecd5d819623632c31cc50704b5a0e">hts221_avgt_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga163ecd5d819623632c31cc50704b5a0ea0af9e709b3899ebb74fb99c546e56707" name="gga163ecd5d819623632c31cc50704b5a0ea0af9e709b3899ebb74fb99c546e56707"></a>HTS221_T_AVG_2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga163ecd5d819623632c31cc50704b5a0ea6b1378a91c06396e92f65004ff38a949" name="gga163ecd5d819623632c31cc50704b5a0ea6b1378a91c06396e92f65004ff38a949"></a>HTS221_T_AVG_4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga163ecd5d819623632c31cc50704b5a0ea278030b20ddf2bbebd4fbb145bc35ce3" name="gga163ecd5d819623632c31cc50704b5a0ea278030b20ddf2bbebd4fbb145bc35ce3"></a>HTS221_T_AVG_8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga163ecd5d819623632c31cc50704b5a0eae679e60eb2c729662cbbb759ea2037b4" name="gga163ecd5d819623632c31cc50704b5a0eae679e60eb2c729662cbbb759ea2037b4"></a>HTS221_T_AVG_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga163ecd5d819623632c31cc50704b5a0ea7a1eea9d2d35eec662edd8f97b564268" name="gga163ecd5d819623632c31cc50704b5a0ea7a1eea9d2d35eec662edd8f97b564268"></a>HTS221_T_AVG_32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga163ecd5d819623632c31cc50704b5a0ea54a147bd63de3b441be77c95b3dd6d90" name="gga163ecd5d819623632c31cc50704b5a0ea54a147bd63de3b441be77c95b3dd6d90"></a>HTS221_T_AVG_64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga163ecd5d819623632c31cc50704b5a0ea8c8541026df95906d6d8a319e3d68500" name="gga163ecd5d819623632c31cc50704b5a0ea8c8541026df95906d6d8a319e3d68500"></a>HTS221_T_AVG_128&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga163ecd5d819623632c31cc50704b5a0eabf3ca9f7d448a612a08a93ce8148dc54" name="gga163ecd5d819623632c31cc50704b5a0eabf3ca9f7d448a612a08a93ce8148dc54"></a>HTS221_T_AVG_256&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga163ecd5d819623632c31cc50704b5a0eab0763c86d47fbf61209846ef96ca72d3" name="gga163ecd5d819623632c31cc50704b5a0eab0763c86d47fbf61209846ef96ca72d3"></a>HTS221_T_AVG_ND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga163ecd5d819623632c31cc50704b5a0ea4e419983977ccb1c4fbf87cf24d57e63" name="gga163ecd5d819623632c31cc50704b5a0ea4e419983977ccb1c4fbf87cf24d57e63"></a>HTS221_T_AVG_ENUM&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="gad49688ae30befa6bb76c338669ecf3a8" name="gad49688ae30befa6bb76c338669ecf3a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad49688ae30befa6bb76c338669ecf3a8">&#9670;&nbsp;</a></span>hts221_drdy_h_l_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___h_t_s221.html#gad49688ae30befa6bb76c338669ecf3a8">hts221_drdy_h_l_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad49688ae30befa6bb76c338669ecf3a8a889e865e8ba72616d4fbb9e1a0af9164" name="ggad49688ae30befa6bb76c338669ecf3a8a889e865e8ba72616d4fbb9e1a0af9164"></a>HTS221_ACTIVE_HIGH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad49688ae30befa6bb76c338669ecf3a8a76353e2e409bbc9b28579c1a89751bfc" name="ggad49688ae30befa6bb76c338669ecf3a8a76353e2e409bbc9b28579c1a89751bfc"></a>HTS221_ACTIVE_LOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad49688ae30befa6bb76c338669ecf3a8a53e3b02e14e6faf358d6f591a90808f0" name="ggad49688ae30befa6bb76c338669ecf3a8a53e3b02e14e6faf358d6f591a90808f0"></a>HTS221_ACTIVE_ND&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga2e671642100121a4ab19de9b10b7b869" name="ga2e671642100121a4ab19de9b10b7b869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2e671642100121a4ab19de9b10b7b869">&#9670;&nbsp;</a></span>hts221_odr_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___h_t_s221.html#ga2e671642100121a4ab19de9b10b7b869">hts221_odr_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga2e671642100121a4ab19de9b10b7b869aadf14a3ff580f572b555ecf5af703e43" name="gga2e671642100121a4ab19de9b10b7b869aadf14a3ff580f572b555ecf5af703e43"></a>HTS221_ONE_SHOT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2e671642100121a4ab19de9b10b7b869a641eff904498a37e92246ba747e4a725" name="gga2e671642100121a4ab19de9b10b7b869a641eff904498a37e92246ba747e4a725"></a>HTS221_ODR_1Hz&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2e671642100121a4ab19de9b10b7b869a0d57cb5e6cb7aaf0ec887b60c3374eeb" name="gga2e671642100121a4ab19de9b10b7b869a0d57cb5e6cb7aaf0ec887b60c3374eeb"></a>HTS221_ODR_7Hz&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2e671642100121a4ab19de9b10b7b869af6c667b8ecad51d5875e8f601579eaee" name="gga2e671642100121a4ab19de9b10b7b869af6c667b8ecad51d5875e8f601579eaee"></a>HTS221_ODR_12Hz5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2e671642100121a4ab19de9b10b7b869a8c0070123d575bdf8a45e3d42f124560" name="gga2e671642100121a4ab19de9b10b7b869a8c0070123d575bdf8a45e3d42f124560"></a>HTS221_ODR_ND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2e671642100121a4ab19de9b10b7b869a2eb3c09a93639bdc41cd76f4a73493c5" name="gga2e671642100121a4ab19de9b10b7b869a2eb3c09a93639bdc41cd76f4a73493c5"></a>HTS221_ENUM&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga3b113f4ece416bf4d9f0d0d2c757fff9" name="ga3b113f4ece416bf4d9f0d0d2c757fff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b113f4ece416bf4d9f0d0d2c757fff9">&#9670;&nbsp;</a></span>hts221_pp_od_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___h_t_s221.html#ga3b113f4ece416bf4d9f0d0d2c757fff9">hts221_pp_od_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga3b113f4ece416bf4d9f0d0d2c757fff9aef4569fac7ad2ac3940db97960fc4e42" name="gga3b113f4ece416bf4d9f0d0d2c757fff9aef4569fac7ad2ac3940db97960fc4e42"></a>HTS221_PUSH_PULL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3b113f4ece416bf4d9f0d0d2c757fff9af2b9672b500dade18724866c81c8e941" name="gga3b113f4ece416bf4d9f0d0d2c757fff9af2b9672b500dade18724866c81c8e941"></a>HTS221_OPEN_DRAIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3b113f4ece416bf4d9f0d0d2c757fff9a832c04e2e76a4c6d0f60003945dcbe5f" name="gga3b113f4ece416bf4d9f0d0d2c757fff9a832c04e2e76a4c6d0f60003945dcbe5f"></a>HTS221_PIN_MODE_ND&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga19bd4e2b276baaac3ed5d66eab404a1c" name="ga19bd4e2b276baaac3ed5d66eab404a1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga19bd4e2b276baaac3ed5d66eab404a1c">&#9670;&nbsp;</a></span>hts221_block_data_update_get()</h2>
+<a id="gaf3762a73e2f1bfb5c99890e8ab9445d7" name="gaf3762a73e2f1bfb5c99890e8ab9445d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf3762a73e2f1bfb5c99890e8ab9445d7">&#9670;&nbsp;</a></span>hts221_block_data_update_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,19 +820,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_block_data_update_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -403,8 +844,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4c5e6e4c35aa4338e1285d48013710a5" name="ga4c5e6e4c35aa4338e1285d48013710a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4c5e6e4c35aa4338e1285d48013710a5">&#9670;&nbsp;</a></span>hts221_block_data_update_set()</h2>
+<a id="gafe45671b67b87afdd3b3b103bc5980d0" name="gafe45671b67b87afdd3b3b103bc5980d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe45671b67b87afdd3b3b103bc5980d0">&#9670;&nbsp;</a></span>hts221_block_data_update_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,19 +853,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_block_data_update_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -446,8 +877,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa34e45bd0c290f7acaeed7f72a797229" name="gaa34e45bd0c290f7acaeed7f72a797229"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa34e45bd0c290f7acaeed7f72a797229">&#9670;&nbsp;</a></span>hts221_boot_get()</h2>
+<a id="ga21f62cc62c0f0fc3234b5a3bf937a51a" name="ga21f62cc62c0f0fc3234b5a3bf937a51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21f62cc62c0f0fc3234b5a3bf937a51a">&#9670;&nbsp;</a></span>hts221_boot_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,19 +886,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_boot_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -489,8 +910,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1761c41f04e3cd9df6d8f59fa0479ab6" name="ga1761c41f04e3cd9df6d8f59fa0479ab6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1761c41f04e3cd9df6d8f59fa0479ab6">&#9670;&nbsp;</a></span>hts221_boot_set()</h2>
+<a id="ga9e9556ea4c09243be1f331be9c9ff6d3" name="ga9e9556ea4c09243be1f331be9c9ff6d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e9556ea4c09243be1f331be9c9ff6d3">&#9670;&nbsp;</a></span>hts221_boot_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,19 +919,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_boot_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -532,8 +943,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga122bf05be19ba35c6febfae7172bc538" name="ga122bf05be19ba35c6febfae7172bc538"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga122bf05be19ba35c6febfae7172bc538">&#9670;&nbsp;</a></span>hts221_data_rate_get()</h2>
+<a id="gad8b5e14902059e20fd88b4c1f375b3ef" name="gad8b5e14902059e20fd88b4c1f375b3ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8b5e14902059e20fd88b4c1f375b3ef">&#9670;&nbsp;</a></span>hts221_data_rate_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -541,19 +952,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_data_rate_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group___h_t_s221.html#ga2e671642100121a4ab19de9b10b7b869">hts221_odr_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">hts221_odr_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -575,8 +976,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac76997c4a073a18b264a828c83eea98a" name="gac76997c4a073a18b264a828c83eea98a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac76997c4a073a18b264a828c83eea98a">&#9670;&nbsp;</a></span>hts221_data_rate_set()</h2>
+<a id="ga2bf17cf0abf473a33d08cc80ff360e0e" name="ga2bf17cf0abf473a33d08cc80ff360e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2bf17cf0abf473a33d08cc80ff360e0e">&#9670;&nbsp;</a></span>hts221_data_rate_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -584,19 +985,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_data_rate_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group___h_t_s221.html#ga2e671642100121a4ab19de9b10b7b869">hts221_odr_t</a>&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">hts221_odr_t&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -618,8 +1009,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6348ea5f9497a7a972f5f71d1806ab23" name="ga6348ea5f9497a7a972f5f71d1806ab23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6348ea5f9497a7a972f5f71d1806ab23">&#9670;&nbsp;</a></span>hts221_device_id_get()</h2>
+<a id="gafa5c9a08ab7720cae4a66593d42330d5" name="gafa5c9a08ab7720cae4a66593d42330d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa5c9a08ab7720cae4a66593d42330d5">&#9670;&nbsp;</a></span>hts221_device_id_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -627,19 +1018,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_device_id_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>buff</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>buff</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -661,8 +1042,40 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6b3a843b1226691f1af927ceb5c86081" name="ga6b3a843b1226691f1af927ceb5c86081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6b3a843b1226691f1af927ceb5c86081">&#9670;&nbsp;</a></span>hts221_drdy_on_int_get()</h2>
+<a id="gaa0991ffbcbdff4fa8da0b22b3835b94f" name="gaa0991ffbcbdff4fa8da0b22b3835b94f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0991ffbcbdff4fa8da0b22b3835b94f">&#9670;&nbsp;</a></span>hts221_disable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hts221_disable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>disable hts221 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gad41ea70f5a6d9597f8705c3ce1ca7ba3" name="gad41ea70f5a6d9597f8705c3ce1ca7ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad41ea70f5a6d9597f8705c3ce1ca7ba3">&#9670;&nbsp;</a></span>hts221_drdy_on_int_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -670,19 +1083,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_drdy_on_int_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -704,8 +1107,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4ec20a53e94edd6a41e71d876059e061" name="ga4ec20a53e94edd6a41e71d876059e061"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4ec20a53e94edd6a41e71d876059e061">&#9670;&nbsp;</a></span>hts221_drdy_on_int_set()</h2>
+<a id="ga57029d09691de5e4fce05bdc593f8a1a" name="ga57029d09691de5e4fce05bdc593f8a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57029d09691de5e4fce05bdc593f8a1a">&#9670;&nbsp;</a></span>hts221_drdy_on_int_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -713,19 +1116,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_drdy_on_int_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -747,8 +1140,147 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6eb9dbf379dfda18cd6fbe1f9d1c8840" name="ga6eb9dbf379dfda18cd6fbe1f9d1c8840"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6eb9dbf379dfda18cd6fbe1f9d1c8840">&#9670;&nbsp;</a></span>hts221_heater_get()</h2>
+<a id="gaf6ee2cd98cc2b11429ab7ee62ac2a6fa" name="gaf6ee2cd98cc2b11429ab7ee62ac2a6fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6ee2cd98cc2b11429ab7ee62ac2a6fa">&#9670;&nbsp;</a></span>hts221_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hts221_enable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enable hts221 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga31aff00f4afb77f9c995353fd16d1dd9" name="ga31aff00f4afb77f9c995353fd16d1dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31aff00f4afb77f9c995353fd16d1dd9">&#9670;&nbsp;</a></span>hts221_get_hym_temp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hts221_get_hym_temp </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>humidity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>temperature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTS221 get humidity and temperature. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[Out]</td><td>humidity pointer to humidity </td></tr>
+    <tr><td class="paramname">[Out]</td><td>temperature pointer to temperature </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga439c72588b91131ab18aab96eb5b05f4" name="ga439c72588b91131ab18aab96eb5b05f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga439c72588b91131ab18aab96eb5b05f4">&#9670;&nbsp;</a></span>hts221_get_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hts221_get_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhts221__mode__t.html">hts221_mode_t</a> *&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get hts221 current mode </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">mode</td><td>from <a class="el" href="structhts221__mode__t.html">hts221_mode_t</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga633ac81bbe41e848748431553aeb7d23" name="ga633ac81bbe41e848748431553aeb7d23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga633ac81bbe41e848748431553aeb7d23">&#9670;&nbsp;</a></span>hts221_get_pheriod_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> hts221_get_pheriod_ns </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___h_t_s221.html#ga2e671642100121a4ab19de9b10b7b869">hts221_odr_t</a>&#160;</td>
+          <td class="paramname"><em>rate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get mesure pheriod [ns] </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rate</td><td>measure rate from hts221_odr_t </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">measure</td><td>pheriod [ns] 0 if off, 0xffffffffffffffff in other caces </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gacec14ba0b63542cfa02a798e488aadcc" name="gacec14ba0b63542cfa02a798e488aadcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacec14ba0b63542cfa02a798e488aadcc">&#9670;&nbsp;</a></span>hts221_heater_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -756,19 +1288,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_heater_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -790,8 +1312,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae4a1eb315293b75f024c394578bc2d32" name="gae4a1eb315293b75f024c394578bc2d32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae4a1eb315293b75f024c394578bc2d32">&#9670;&nbsp;</a></span>hts221_heater_set()</h2>
+<a id="gaa3c68d3581b887bbd7ae1172b74eb33a" name="gaa3c68d3581b887bbd7ae1172b74eb33a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa3c68d3581b887bbd7ae1172b74eb33a">&#9670;&nbsp;</a></span>hts221_heater_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -799,19 +1321,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_heater_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -833,8 +1345,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9a042a884d14e202ccc1979d3f6700aa" name="ga9a042a884d14e202ccc1979d3f6700aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9a042a884d14e202ccc1979d3f6700aa">&#9670;&nbsp;</a></span>hts221_hum_adc_point_0_get()</h2>
+<a id="gae50052e06606aa76743244fb4b5636bd" name="gae50052e06606aa76743244fb4b5636bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae50052e06606aa76743244fb4b5636bd">&#9670;&nbsp;</a></span>hts221_hum_adc_point_0_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -842,19 +1354,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_hum_adc_point_0_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -876,8 +1378,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4b009df79dc4baa466041718194c8c27" name="ga4b009df79dc4baa466041718194c8c27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4b009df79dc4baa466041718194c8c27">&#9670;&nbsp;</a></span>hts221_hum_adc_point_1_get()</h2>
+<a id="ga4b6d1627c2da6c9894c2aec1a6f196c2" name="ga4b6d1627c2da6c9894c2aec1a6f196c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b6d1627c2da6c9894c2aec1a6f196c2">&#9670;&nbsp;</a></span>hts221_hum_adc_point_1_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -885,19 +1387,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_hum_adc_point_1_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -919,8 +1411,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5cdebcf9270d1dc9c209425a3bfe9189" name="ga5cdebcf9270d1dc9c209425a3bfe9189"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5cdebcf9270d1dc9c209425a3bfe9189">&#9670;&nbsp;</a></span>hts221_hum_data_ready_get()</h2>
+<a id="ga63923e8802e2ad273e6c21bdb0155772" name="ga63923e8802e2ad273e6c21bdb0155772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63923e8802e2ad273e6c21bdb0155772">&#9670;&nbsp;</a></span>hts221_hum_data_ready_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -928,19 +1420,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_hum_data_ready_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -962,8 +1444,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac99e477c7b6509736759a96e694030d4" name="gac99e477c7b6509736759a96e694030d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac99e477c7b6509736759a96e694030d4">&#9670;&nbsp;</a></span>hts221_hum_rh_point_0_get()</h2>
+<a id="gaf256760979ccadc3d14aea7c6371bab0" name="gaf256760979ccadc3d14aea7c6371bab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf256760979ccadc3d14aea7c6371bab0">&#9670;&nbsp;</a></span>hts221_hum_rh_point_0_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -971,19 +1453,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_hum_rh_point_0_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1005,8 +1477,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2d70f758bbb7fa4d8f6b19b9f54e33c3" name="ga2d70f758bbb7fa4d8f6b19b9f54e33c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2d70f758bbb7fa4d8f6b19b9f54e33c3">&#9670;&nbsp;</a></span>hts221_hum_rh_point_1_get()</h2>
+<a id="gad2a0c81bf8a3c4d2ec384cb70b7378cb" name="gad2a0c81bf8a3c4d2ec384cb70b7378cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2a0c81bf8a3c4d2ec384cb70b7378cb">&#9670;&nbsp;</a></span>hts221_hum_rh_point_1_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1014,19 +1486,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_hum_rh_point_1_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1048,8 +1510,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga957d95c801ac4d6979983e5afeaa2348" name="ga957d95c801ac4d6979983e5afeaa2348"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga957d95c801ac4d6979983e5afeaa2348">&#9670;&nbsp;</a></span>hts221_humidity_avg_get()</h2>
+<a id="ga6546033565112e220ae6597a997a3f6d" name="ga6546033565112e220ae6597a997a3f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6546033565112e220ae6597a997a3f6d">&#9670;&nbsp;</a></span>hts221_humidity_avg_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1057,19 +1519,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_humidity_avg_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group___h_t_s221.html#ga0ee74bdd72eca913966943e6fb4c9a56">hts221_avgh_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">hts221_avgh_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1091,8 +1543,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga58e889f073030b6d6eeb75ea2c50e2f6" name="ga58e889f073030b6d6eeb75ea2c50e2f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga58e889f073030b6d6eeb75ea2c50e2f6">&#9670;&nbsp;</a></span>hts221_humidity_avg_set()</h2>
+<a id="gaf0fcde2433fb39f504ebd8495c22d854" name="gaf0fcde2433fb39f504ebd8495c22d854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0fcde2433fb39f504ebd8495c22d854">&#9670;&nbsp;</a></span>hts221_humidity_avg_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1100,19 +1552,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_humidity_avg_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group___h_t_s221.html#ga0ee74bdd72eca913966943e6fb4c9a56">hts221_avgh_t</a>&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">hts221_avgh_t&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1134,8 +1576,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaaa1af80599c536cc0ee6e0c82880dc67" name="gaaa1af80599c536cc0ee6e0c82880dc67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa1af80599c536cc0ee6e0c82880dc67">&#9670;&nbsp;</a></span>hts221_humidity_raw_get()</h2>
+<a id="ga699d636830c585575402cd4be1e12e59" name="ga699d636830c585575402cd4be1e12e59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga699d636830c585575402cd4be1e12e59">&#9670;&nbsp;</a></span>hts221_humidity_raw_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1143,19 +1585,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_humidity_raw_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>buff</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>buff</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1177,8 +1609,40 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga00d4f70873ecfc5c4e4e1726daed21e7" name="ga00d4f70873ecfc5c4e4e1726daed21e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga00d4f70873ecfc5c4e4e1726daed21e7">&#9670;&nbsp;</a></span>hts221_int_polarity_get()</h2>
+<a id="ga0fd2a54170a720172fa51b6afe215fef" name="ga0fd2a54170a720172fa51b6afe215fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0fd2a54170a720172fa51b6afe215fef">&#9670;&nbsp;</a></span>hts221_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hts221_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTS221 init. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gab1c5e3767b672448fb2625d73cda19c9" name="gab1c5e3767b672448fb2625d73cda19c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1c5e3767b672448fb2625d73cda19c9">&#9670;&nbsp;</a></span>hts221_int_polarity_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1186,19 +1650,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_int_polarity_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group___h_t_s221.html#gad49688ae30befa6bb76c338669ecf3a8">hts221_drdy_h_l_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">hts221_drdy_h_l_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1220,8 +1674,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga60c9669dc773819276c1186df1e9cacc" name="ga60c9669dc773819276c1186df1e9cacc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga60c9669dc773819276c1186df1e9cacc">&#9670;&nbsp;</a></span>hts221_int_polarity_set()</h2>
+<a id="ga0ac9ccb9300dcef5632d79a67481eaac" name="ga0ac9ccb9300dcef5632d79a67481eaac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ac9ccb9300dcef5632d79a67481eaac">&#9670;&nbsp;</a></span>hts221_int_polarity_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1229,19 +1683,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_int_polarity_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group___h_t_s221.html#gad49688ae30befa6bb76c338669ecf3a8">hts221_drdy_h_l_t</a>&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">hts221_drdy_h_l_t&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1263,8 +1707,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga559ec0e85034bde7eb642df06826b781" name="ga559ec0e85034bde7eb642df06826b781"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga559ec0e85034bde7eb642df06826b781">&#9670;&nbsp;</a></span>hts221_one_shoot_trigger_get()</h2>
+<a id="ga972b1a9ee0bd9e144fe22576be554cba" name="ga972b1a9ee0bd9e144fe22576be554cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga972b1a9ee0bd9e144fe22576be554cba">&#9670;&nbsp;</a></span>hts221_one_shoot_trigger_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1272,19 +1716,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_one_shoot_trigger_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1306,8 +1740,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga42c1bea16c6288f0844719e89ba5d3d7" name="ga42c1bea16c6288f0844719e89ba5d3d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga42c1bea16c6288f0844719e89ba5d3d7">&#9670;&nbsp;</a></span>hts221_one_shoot_trigger_set()</h2>
+<a id="gad6e734c5d5119874bb42b683beef2a55" name="gad6e734c5d5119874bb42b683beef2a55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6e734c5d5119874bb42b683beef2a55">&#9670;&nbsp;</a></span>hts221_one_shoot_trigger_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1315,19 +1749,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_one_shoot_trigger_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1349,8 +1773,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac3b44a59e01eaf5482eca145b54ccad8" name="gac3b44a59e01eaf5482eca145b54ccad8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac3b44a59e01eaf5482eca145b54ccad8">&#9670;&nbsp;</a></span>hts221_pin_mode_get()</h2>
+<a id="ga1706b81ce811344f9d64645bb72809c9" name="ga1706b81ce811344f9d64645bb72809c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1706b81ce811344f9d64645bb72809c9">&#9670;&nbsp;</a></span>hts221_pin_mode_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1358,19 +1782,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_pin_mode_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group___h_t_s221.html#ga3b113f4ece416bf4d9f0d0d2c757fff9">hts221_pp_od_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">hts221_pp_od_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1392,8 +1806,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga266f97b072a5dff87122926e4ade846f" name="ga266f97b072a5dff87122926e4ade846f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga266f97b072a5dff87122926e4ade846f">&#9670;&nbsp;</a></span>hts221_pin_mode_set()</h2>
+<a id="ga8c12dd192db4c037b20b74c6a76e02b8" name="ga8c12dd192db4c037b20b74c6a76e02b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c12dd192db4c037b20b74c6a76e02b8">&#9670;&nbsp;</a></span>hts221_pin_mode_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1401,19 +1815,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_pin_mode_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group___h_t_s221.html#ga3b113f4ece416bf4d9f0d0d2c757fff9">hts221_pp_od_t</a>&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">hts221_pp_od_t&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1429,8 +1833,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga14860f716f9e01cba2a824a6ded5dd92" name="ga14860f716f9e01cba2a824a6ded5dd92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga14860f716f9e01cba2a824a6ded5dd92">&#9670;&nbsp;</a></span>hts221_power_on_get()</h2>
+<a id="ga0c9185af77778f65c4b978791815d458" name="ga0c9185af77778f65c4b978791815d458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c9185af77778f65c4b978791815d458">&#9670;&nbsp;</a></span>hts221_power_on_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1438,19 +1842,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_power_on_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1472,8 +1866,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac939c886c1e8e7b1645f11c2ff0a8586" name="gac939c886c1e8e7b1645f11c2ff0a8586"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac939c886c1e8e7b1645f11c2ff0a8586">&#9670;&nbsp;</a></span>hts221_power_on_set()</h2>
+<a id="ga839aae64c49e30a47d89084ed118bb97" name="ga839aae64c49e30a47d89084ed118bb97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga839aae64c49e30a47d89084ed118bb97">&#9670;&nbsp;</a></span>hts221_power_on_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1481,19 +1875,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_power_on_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1515,8 +1899,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga55df8d20314e4cafe7f1ce20606fa18f" name="ga55df8d20314e4cafe7f1ce20606fa18f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga55df8d20314e4cafe7f1ce20606fa18f">&#9670;&nbsp;</a></span>hts221_read_reg()</h2>
+<a id="ga845eb45acdb99606bf5da038714ed078" name="ga845eb45acdb99606bf5da038714ed078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga845eb45acdb99606bf5da038714ed078">&#9670;&nbsp;</a></span>hts221_read_reg()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1524,12 +1908,6 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_read_reg </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
@@ -1572,8 +1950,40 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac4e16a817e909332d287061eca32e602" name="gac4e16a817e909332d287061eca32e602"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac4e16a817e909332d287061eca32e602">&#9670;&nbsp;</a></span>hts221_status_get()</h2>
+<a id="gaf5ae1d0e6eb7b9afc05a33c797aae056" name="gaf5ae1d0e6eb7b9afc05a33c797aae056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf5ae1d0e6eb7b9afc05a33c797aae056">&#9670;&nbsp;</a></span>hts221_set_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hts221_set_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhts221__mode__t.html">hts221_mode_t</a> *&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set hts221 current mode </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>from <a class="el" href="structhts221__mode__t.html">hts221_mode_t</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga70eadc214927b91e3e4297bbad7c8844" name="ga70eadc214927b91e3e4297bbad7c8844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70eadc214927b91e3e4297bbad7c8844">&#9670;&nbsp;</a></span>hts221_status_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1581,19 +1991,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_status_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="structhts221__status__reg__t.html">hts221_status_reg_t</a> *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1615,8 +2015,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7a9d01cb15f2664bb5ae3895dd146129" name="ga7a9d01cb15f2664bb5ae3895dd146129"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7a9d01cb15f2664bb5ae3895dd146129">&#9670;&nbsp;</a></span>hts221_temp_adc_point_0_get()</h2>
+<a id="ga887c426ccbde288ce3852878c1b05ec2" name="ga887c426ccbde288ce3852878c1b05ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga887c426ccbde288ce3852878c1b05ec2">&#9670;&nbsp;</a></span>hts221_temp_adc_point_0_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1624,19 +2024,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_temp_adc_point_0_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1658,8 +2048,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4f3376cb9d699999b697bcc780025386" name="ga4f3376cb9d699999b697bcc780025386"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4f3376cb9d699999b697bcc780025386">&#9670;&nbsp;</a></span>hts221_temp_adc_point_1_get()</h2>
+<a id="gacdcb39aa3706b6b94aaaeb50dfbf873c" name="gacdcb39aa3706b6b94aaaeb50dfbf873c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacdcb39aa3706b6b94aaaeb50dfbf873c">&#9670;&nbsp;</a></span>hts221_temp_adc_point_1_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1667,19 +2057,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_temp_adc_point_1_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1701,8 +2081,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac6f7f9dc48b2a22bc260ebca444d2bb7" name="gac6f7f9dc48b2a22bc260ebca444d2bb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac6f7f9dc48b2a22bc260ebca444d2bb7">&#9670;&nbsp;</a></span>hts221_temp_data_ready_get()</h2>
+<a id="ga8aa04ae54736262bb3587e572c345b02" name="ga8aa04ae54736262bb3587e572c345b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8aa04ae54736262bb3587e572c345b02">&#9670;&nbsp;</a></span>hts221_temp_data_ready_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1710,19 +2090,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_temp_data_ready_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1744,8 +2114,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga25ab2a81e2537d323ffd69b9b308a8a1" name="ga25ab2a81e2537d323ffd69b9b308a8a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga25ab2a81e2537d323ffd69b9b308a8a1">&#9670;&nbsp;</a></span>hts221_temp_deg_point_0_get()</h2>
+<a id="gab895b67a418125e7776819614267fbe0" name="gab895b67a418125e7776819614267fbe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab895b67a418125e7776819614267fbe0">&#9670;&nbsp;</a></span>hts221_temp_deg_point_0_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1753,19 +2123,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_temp_deg_point_0_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1787,8 +2147,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga67f0a6c52687236eb53254a8ee95ea36" name="ga67f0a6c52687236eb53254a8ee95ea36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga67f0a6c52687236eb53254a8ee95ea36">&#9670;&nbsp;</a></span>hts221_temp_deg_point_1_get()</h2>
+<a id="ga82dc9670d721d4f01a4d311fc4f20fb4" name="ga82dc9670d721d4f01a4d311fc4f20fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga82dc9670d721d4f01a4d311fc4f20fb4">&#9670;&nbsp;</a></span>hts221_temp_deg_point_1_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1796,19 +2156,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_temp_deg_point_1_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="_lsm6dso32_8h.html#a0132fe8401161a1806956a4d12b11784">float_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1830,8 +2180,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab88944100267dacb83f5447842a3a259" name="gab88944100267dacb83f5447842a3a259"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab88944100267dacb83f5447842a3a259">&#9670;&nbsp;</a></span>hts221_temperature_avg_get()</h2>
+<a id="gabdcc6e6a26101eb8bb7f833aafa65395" name="gabdcc6e6a26101eb8bb7f833aafa65395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabdcc6e6a26101eb8bb7f833aafa65395">&#9670;&nbsp;</a></span>hts221_temperature_avg_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1839,19 +2189,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_temperature_avg_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group___h_t_s221.html#ga163ecd5d819623632c31cc50704b5a0e">hts221_avgt_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">hts221_avgt_t *&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1873,8 +2213,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0420a8b45ccf8857542eb82e9badd0b7" name="ga0420a8b45ccf8857542eb82e9badd0b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0420a8b45ccf8857542eb82e9badd0b7">&#9670;&nbsp;</a></span>hts221_temperature_avg_set()</h2>
+<a id="gac5b5cb972cb91fabf5cd05fd510f5118" name="gac5b5cb972cb91fabf5cd05fd510f5118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5b5cb972cb91fabf5cd05fd510f5118">&#9670;&nbsp;</a></span>hts221_temperature_avg_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1882,19 +2222,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_temperature_avg_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group___h_t_s221.html#ga163ecd5d819623632c31cc50704b5a0e">hts221_avgt_t</a>&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">hts221_avgt_t&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1916,8 +2246,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga90a5538907b9ac1a6a62249460c3268a" name="ga90a5538907b9ac1a6a62249460c3268a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga90a5538907b9ac1a6a62249460c3268a">&#9670;&nbsp;</a></span>hts221_temperature_raw_get()</h2>
+<a id="gac4c28daf922980c0e2edc5f16cacb42e" name="gac4c28daf922980c0e2edc5f16cacb42e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac4c28daf922980c0e2edc5f16cacb42e">&#9670;&nbsp;</a></span>hts221_temperature_raw_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1925,19 +2255,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_temperature_raw_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>buff</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>buff</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1959,8 +2279,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2c2e0ba9d999db22d3aba969d33cc67b" name="ga2c2e0ba9d999db22d3aba969d33cc67b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2c2e0ba9d999db22d3aba969d33cc67b">&#9670;&nbsp;</a></span>hts221_write_reg()</h2>
+<a id="ga27e6c4bb82c834ae0659297aa8ff004c" name="ga27e6c4bb82c834ae0659297aa8ff004c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27e6c4bb82c834ae0659297aa8ff004c">&#9670;&nbsp;</a></span>hts221_write_reg()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1968,12 +2288,6 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> hts221_write_reg </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstmdev__ctx__t.html">stmdev_ctx_t</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
@@ -2013,6 +2327,63 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga62adb89f29091f8a5c23bdc8574e0075" name="ga62adb89f29091f8a5c23bdc8574e0075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62adb89f29091f8a5c23bdc8574e0075">&#9670;&nbsp;</a></span>x0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float lin_t::x0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadf6df544d6caab635a031e91b02904e3" name="gadf6df544d6caab635a031e91b02904e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf6df544d6caab635a031e91b02904e3">&#9670;&nbsp;</a></span>x1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float lin_t::x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5cecbd3de7b2455b25183120e6f04ff1" name="ga5cecbd3de7b2455b25183120e6f04ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5cecbd3de7b2455b25183120e6f04ff1">&#9670;&nbsp;</a></span>y0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float lin_t::y0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaaf36c9570419a74a6b04b5813537016a" name="gaaf36c9570419a74a6b04b5813537016a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf36c9570419a74a6b04b5813537016a">&#9670;&nbsp;</a></span>y1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float lin_t::y1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

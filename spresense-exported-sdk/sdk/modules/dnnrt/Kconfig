@@ -1,0 +1,46 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+menu "DNN runtime library"
+config DNN_RT
+	bool "DNN runtime library"
+	depends on EXTERNALS_CMSIS_NN
+	select EXTERNALS_NNABLART
+	default n
+	---help---
+		Enable or disable deep neural network library.
+
+if DNN_RT
+
+config DNN_RT_MP
+	bool "Use multicore processing"
+	default n
+	---help---
+		Enable or disable multicore processing.
+
+if DNN_RT_MP
+
+config DNN_RT_MPCOMM
+	bool "Use MPCOMM framework"
+	select MPCOMM
+	default n
+	---help---
+		Enable to use module based on MPCOMM framework.
+
+if DNN_RT_MPCOMM
+
+config DNN_RT_MPCOMM_PATH
+	string "MPCOMM DNNRT-MP ELF file path"
+	default "/mnt/sd0/BIN/DNNRT-MP"
+	---help---
+		Set path to MPCOMM DNNRT-MP worker program ELF file on the board.
+
+endif
+
+endif
+
+endif
+
+endmenu # DNN_RT

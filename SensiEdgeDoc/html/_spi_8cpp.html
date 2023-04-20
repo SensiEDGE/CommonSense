@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SensiEdgeDoc: libraries/Spi/Spi.cpp File Reference</title>
+<title>SensiEdgeDoc: libraries/Drivers/CXD5602/Spi/Spi.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_4ab765092bccb54d37d6c13114697049.html">Spi</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_cfc7d16331ab447fc90cc53aebf2da65.html">Drivers</a></li><li class="navelem"><a class="el" href="dir_ddf2aa6299a67cbed9296dd18546c154.html">CXD5602</a></li><li class="navelem"><a class="el" href="dir_112d4b10b049552c474a6273874ecdb0.html">Spi</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -78,7 +78,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_spi_8h_source.html">Spi.h</a>&quot;</code><br />
 <code>#include &quot;arch/board/board.h&quot;</code><br />
-<code>#include &quot;../../Appdefines.h&quot;</code><br />
+<code>#include &quot;../../../../Appdefines.h&quot;</code><br />
 <code>#include &quot;cxd56_gpio.h&quot;</code><br />
 <code>#include &lt;nuttx/config.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
@@ -90,7 +90,7 @@ $(function() {
 <code>#include &lt;nuttx/spi/spi_transfer.h&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="_string_8h_source.html">string.h</a>&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;nuttx/kmalloc.h&gt;</code><br />
 <code>#include &lt;nuttx/fs/fs.h&gt;</code><br />
@@ -107,14 +107,11 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa3847caa8b7ba160e5f3e83cf9e1f239"><td class="memItemLeft" align="right" valign="top"><a id="aa3847caa8b7ba160e5f3e83cf9e1f239" name="aa3847caa8b7ba160e5f3e83cf9e1f239"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPIDEV_PORT_5</b>&#160;&#160;&#160;(5)</td></tr>
+<tr class="memitem:aa3847caa8b7ba160e5f3e83cf9e1f239"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_spi_8cpp.html#aa3847caa8b7ba160e5f3e83cf9e1f239">SPIDEV_PORT_5</a>&#160;&#160;&#160;(5)</td></tr>
 <tr class="separator:aa3847caa8b7ba160e5f3e83cf9e1f239"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c7ef42eff02618bde70868af4944d81"><td class="memItemLeft" align="right" valign="top"><a id="a1c7ef42eff02618bde70868af4944d81" name="a1c7ef42eff02618bde70868af4944d81"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MSBFIRST</b>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a1c7ef42eff02618bde70868af4944d81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_spi_8cpp.html#a1c7ef42eff02618bde70868af4944d81">MSBFIRST</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a1c7ef42eff02618bde70868af4944d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5811613d98580676f67f0dde8125433e"><td class="memItemLeft" align="right" valign="top"><a id="a5811613d98580676f67f0dde8125433e" name="a5811613d98580676f67f0dde8125433e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LSBFIRST</b>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a5811613d98580676f67f0dde8125433e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_spi_8cpp.html#a5811613d98580676f67f0dde8125433e">LSBFIRST</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a5811613d98580676f67f0dde8125433e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -128,30 +125,75 @@ Functions</h2></td></tr>
 <tr class="memitem:a5f2fd6b9d5493389eab1ceea802478c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_spi_8cpp.html#a5f2fd6b9d5493389eab1ceea802478c0">spi_send_16</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> data)</td></tr>
 <tr class="memdesc:a5f2fd6b9d5493389eab1ceea802478c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send and receive data via SPI 16 bits.  <a href="_spi_8cpp.html#a5f2fd6b9d5493389eab1ceea802478c0">More...</a><br /></td></tr>
 <tr class="separator:a5f2fd6b9d5493389eab1ceea802478c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0253ffc4d3ecdb5d744ccce83f275d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_spi_8cpp.html#aa0253ffc4d3ecdb5d744ccce83f275d4">set_spi_mode</a> (spi_mode_t spi_mode)</td></tr>
+<tr class="memitem:aa0253ffc4d3ecdb5d744ccce83f275d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_spi_8cpp.html#aa0253ffc4d3ecdb5d744ccce83f275d4">set_spi_mode</a> (<a class="el" href="_spi_8h.html#ac4b206a51636d91c5cffcbcee458c3cb">spi_mode_t</a> spi_mode)</td></tr>
 <tr class="memdesc:aa0253ffc4d3ecdb5d744ccce83f275d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set SPI mode.  <a href="_spi_8cpp.html#aa0253ffc4d3ecdb5d744ccce83f275d4">More...</a><br /></td></tr>
 <tr class="separator:aa0253ffc4d3ecdb5d744ccce83f275d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61a4214c73b772e2f050423d060bf1f0"><td class="memItemLeft" align="right" valign="top">spi_mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_spi_8cpp.html#a61a4214c73b772e2f050423d060bf1f0">get_spi_mode</a> (void)</td></tr>
+<tr class="memitem:a61a4214c73b772e2f050423d060bf1f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_spi_8h.html#ac4b206a51636d91c5cffcbcee458c3cb">spi_mode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_spi_8cpp.html#a61a4214c73b772e2f050423d060bf1f0">get_spi_mode</a> (void)</td></tr>
 <tr class="memdesc:a61a4214c73b772e2f050423d060bf1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current SPI mode.  <a href="_spi_8cpp.html#a61a4214c73b772e2f050423d060bf1f0">More...</a><br /></td></tr>
 <tr class="separator:a61a4214c73b772e2f050423d060bf1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9132cba2ab0fc3775594f41930ee7d0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_spi_8cpp.html#a9132cba2ab0fc3775594f41930ee7d0f">spi_set_speed</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> speed)</td></tr>
+<tr class="memdesc:a9132cba2ab0fc3775594f41930ee7d0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set SPI speed Hz.  <a href="_spi_8cpp.html#a9132cba2ab0fc3775594f41930ee7d0f">More...</a><br /></td></tr>
+<tr class="separator:a9132cba2ab0fc3775594f41930ee7d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a873095e9c06a84fd5b10ed502144dd5a"><td class="memItemLeft" align="right" valign="top"><a id="a873095e9c06a84fd5b10ed502144dd5a" name="a873095e9c06a84fd5b10ed502144dd5a"></a>
-FAR struct spi_dev_s *&#160;</td><td class="memItemRight" valign="bottom"><b>spi_dev</b> = 0</td></tr>
+<tr class="memitem:a873095e9c06a84fd5b10ed502144dd5a"><td class="memItemLeft" align="right" valign="top">FAR struct spi_dev_s *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_spi_8cpp.html#a873095e9c06a84fd5b10ed502144dd5a">spi_dev</a> = 0</td></tr>
 <tr class="separator:a873095e9c06a84fd5b10ed502144dd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Spi driver. </p>
 <dl class="section date"><dt>Date</dt><dd>25 March 2022</dd></dl>
-<p>COPYRIGHT(c) 2022 Droid-Technologies LLC</p>
+<p>COPYRIGHT(c) 2022 EDGE Impulse</p>
 <p >Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p><ol type="1">
 <li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
 <li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-<li>Neither the name of Droid-Technologies LLC nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+<li>Neither the name of EDGE Impulse nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
 </ol>
 <p >THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a5811613d98580676f67f0dde8125433e" name="a5811613d98580676f67f0dde8125433e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5811613d98580676f67f0dde8125433e">&#9670;&nbsp;</a></span>LSBFIRST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LSBFIRST&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c7ef42eff02618bde70868af4944d81" name="a1c7ef42eff02618bde70868af4944d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c7ef42eff02618bde70868af4944d81">&#9670;&nbsp;</a></span>MSBFIRST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSBFIRST&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3847caa8b7ba160e5f3e83cf9e1f239" name="aa3847caa8b7ba160e5f3e83cf9e1f239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3847caa8b7ba160e5f3e83cf9e1f239">&#9670;&nbsp;</a></span>SPIDEV_PORT_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPIDEV_PORT_5&#160;&#160;&#160;(5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a61a4214c73b772e2f050423d060bf1f0" name="a61a4214c73b772e2f050423d060bf1f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61a4214c73b772e2f050423d060bf1f0">&#9670;&nbsp;</a></span>get_spi_mode()</h2>
 
@@ -159,7 +201,7 @@ FAR struct spi_dev_s *&#160;</td><td class="memItemRight" valign="bottom"><b>spi
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">spi_mode_t get_spi_mode </td>
+          <td class="memname"><a class="el" href="_spi_8h.html#ac4b206a51636d91c5cffcbcee458c3cb">spi_mode_t</a> get_spi_mode </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -193,7 +235,7 @@ FAR struct spi_dev_s *&#160;</td><td class="memItemRight" valign="bottom"><b>spi
         <tr>
           <td class="memname">void set_spi_mode </td>
           <td>(</td>
-          <td class="paramtype">spi_mode_t&#160;</td>
+          <td class="paramtype"><a class="el" href="_spi_8h.html#ac4b206a51636d91c5cffcbcee458c3cb">spi_mode_t</a>&#160;</td>
           <td class="paramname"><em>spi_mode</em></td><td>)</td>
           <td></td>
         </tr>
@@ -309,6 +351,53 @@ FAR struct spi_dev_s *&#160;</td><td class="memItemRight" valign="bottom"><b>spi
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a9132cba2ab0fc3775594f41930ee7d0f" name="a9132cba2ab0fc3775594f41930ee7d0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9132cba2ab0fc3775594f41930ee7d0f">&#9670;&nbsp;</a></span>spi_set_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spi_set_speed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set SPI speed Hz. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">current</td><td>SPI mode from spi_mode_t </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a873095e9c06a84fd5b10ed502144dd5a" name="a873095e9c06a84fd5b10ed502144dd5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a873095e9c06a84fd5b10ed502144dd5a">&#9670;&nbsp;</a></span>spi_dev</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FAR struct spi_dev_s* spi_dev = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

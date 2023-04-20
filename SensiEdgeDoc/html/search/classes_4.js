@@ -4,5 +4,6 @@ var searchData=
   ['fil_1',['FIL',['../struct_f_i_l.html',1,'']]],
   ['file_2',['File',['../class_file.html',1,'']]],
   ['filinfo_3',['FILINFO',['../struct_f_i_l_i_n_f_o.html',1,'']]],
-  ['fixedareas_4',['FixedAreas',['../classmem__layout_1_1_fixed_areas.html',1,'mem_layout']]]
+  ['fixedareas_4',['FixedAreas',['../classmem__layout_1_1_fixed_areas.html',1,'mem_layout']]],
+  ['flags_5ft_5',['flags_t',['../structflags__t.html',1,'']]]
 ];

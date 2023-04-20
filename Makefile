@@ -38,33 +38,41 @@ INC_SPR += \
 	-I$(SPRESENSE_SDK)/sdk/modules/include \
 	-I edge_impulse \
 	-I edge_impulse/ingestion-sdk-platform/sony-spresense \
-	-I libraries/Audio \
-	-I libraries/MemoryUtil \
-	-I libraries/File \
-	-I libraries/Wire \
-	-I libraries/KXxx \
-	-I libraries/Spi \
-	-I libraries/Max7317 \
-	-I libraries/Hts221 \
-	-I libraries/Lis2mdl \
-	-I libraries/Lps22hh \
-	-I libraries/Lsm6dso32 \
-	-I libraries/Vl53l1x \
-	-I libraries/Sgp4x \
-	-I libraries/Apds9250 \
-	-I libraries/Pwm \
-	-I libraries/LowPower \
-	-I libraries/RTC \
-	-I libraries/Mp34dt05 \
-	-I libraries/SDHCI \
-	-I libraries/Storage \
-	-I libraries/Sdcard \
-	-I libraries/Fatfs \
-	-I libraries/I2c \
-	-I libraries/Led \
-	-I libraries/Button \
-	-I libraries/Gnss \
-	-I libraries/Pca9538 \
+	-I libraries/ThirdParty/Audio \
+	-I libraries/Tools/MemoryUtil \
+	-I libraries/ThirdParty/File \
+	-I libraries/Drivers/CXD5602/Wire \
+	-I libraries/Hardware/KXxx \
+	-I libraries/Drivers/CXD5602/Spi \
+	-I libraries/Hardware/Max7317 \
+	-I libraries/Hardware/Hts221 \
+	-I libraries/Hardware/Lis2mdl \
+	-I libraries/Hardware/Lps22hh \
+	-I libraries/Hardware/Lsm6dso32 \
+	-I libraries/Hardware/Vl53l1x \
+	-I libraries/Hardware/Sgp4x \
+	-I libraries/Hardware/Apds9250 \
+	-I libraries/Drivers/CXD5602/Pwm \
+	-I libraries/Drivers/CXD5602/RTC \
+	-I libraries/Hardware/SDHCI \
+	-I libraries/ThirdParty/Storage \
+	-I libraries/Hardware/Sdcard \
+	-I libraries/ThirdParty/Fatfs \
+	-I libraries/Drivers/CXD5602/I2c \
+	-I libraries/Hardware/Led \
+	-I libraries/Hardware/Button \
+	-I libraries/Drivers/CXD5602/Gnss \
+	-I libraries/Hardware/Pca9538 \
+	-I libraries/Drivers/CXD5602/Uart \
+	-I libraries/Protocol/Protocol \
+	-I libraries/Hardware/M24c32 \
+	-I libraries/Tools/Settings \
+	-I libraries/Hardware/Bq27441 \
+	-I libraries/Hardware/Battery \
+	-I libraries/Hardware/LightSensor \
+	-I libraries/Hardware/Gps \
+	-I libraries/Hardware/Microphone \
+	-I libraries/Drivers/CXD5602/LowPower \
 
 INC_APP += \
 	-I$(BUILD) \
@@ -177,7 +185,6 @@ SRC_SPR_CXX += \
 	File.cpp \
 	MemoryUtil.cpp \
 	Wire.cpp \
-	KX126.cpp \
 	ei_camera_driver_sony.cpp \
 	Spi.cpp \
 	Max7317.cpp \
@@ -195,9 +202,7 @@ SRC_SPR_CXX += \
 	Sgp41_i2c.cpp \
 	Apds9250.cpp \
 	Pwm.cpp \
-	LowPower.cpp \
 	RTC.cpp \
-	Mp34dt05.cpp \
 	SDHCI.cpp \
 	Storage.cpp \
 	Sdcard.cpp \
@@ -208,12 +213,23 @@ SRC_SPR_CXX += \
 	Led.cpp \
 	Gnss.cpp \
 	Pca9538.cpp \
-	Button.cpp
+	Uart.cpp \
+	Protocol.cpp \
+	M24c32.cpp \
+	Settings.cpp \
+	Bq27441.cpp \
+	Battery.cpp \
+	ei_main.cpp \
+	LightSensor.cpp \
+	Gps.cpp \
+	Microphone.cpp \
+	Button.cpp \
+        sensirion_voc_algorithm.cpp \
+	LowPower.cpp
 
 
 SRC_APP_CXX += \
 	ei_main.cpp \
-	ei_run_impulse.cpp \
 	$(notdir $(wildcard edge_impulse/edge-impulse-sdk/porting/sony/*.cpp)) \
 	$(notdir $(wildcard edge_impulse/firmware-sdk/*.cpp)) \
 	$(notdir $(wildcard edge_impulse/edge-impulse-sdk/dsp/dct/*.cpp)) \
@@ -284,33 +300,41 @@ VPATH += stdlib \
 	edge_impulse/tflite-model \
 	sensors \
 	sensors_sony_includes \
-	libraries/Audio \
-	libraries/MemoryUtil \
-	libraries/File \
-	libraries/Wire \
-	libraries/KXxx \
-	libraries/Spi \
-	libraries/Max7317 \
-	libraries/Hts221 \
-	libraries/Lis2mdl \
-	libraries/Lps22hh \
-	libraries/Lsm6dso32 \
-	libraries/Vl53l1x \
-	libraries/Sgp4x \
-	libraries/Apds9250 \
-	libraries/Pwm \
-	libraries/LowPower \
-	libraries/RTC \
-	libraries/Mp34dt05 \
-	libraries/SDHCI \
-	libraries/Storage \
-	libraries/Sdcard \
-	libraries/Fatfs \
-	libraries/I2c \
-	libraries/Led \
-	libraries/Button \
-	libraries/Gnss \
-	libraries/Pca9538 \
+	libraries/ThirdParty/Audio \
+	libraries/Tools/MemoryUtil \
+	libraries/ThirdParty/File \
+	libraries/Drivers/CXD5602/Wire \
+	libraries/Hardware/KXxx \
+	libraries/Drivers/CXD5602/Spi \
+	libraries/Hardware/Max7317 \
+	libraries/Hardware/Hts221 \
+	libraries/Hardware/Lis2mdl \
+	libraries/Hardware/Lps22hh \
+	libraries/Hardware/Lsm6dso32 \
+	libraries/Hardware/Vl53l1x \
+	libraries/Hardware/Sgp4x \
+	libraries/Hardware/Apds9250 \
+	libraries/Drivers/CXD5602/Pwm \
+	libraries/Drivers/CXD5602/RTC \
+	libraries/Hardware/SDHCI \
+	libraries/ThirdParty/Storage \
+	libraries/Hardware/Sdcard \
+	libraries/ThirdParty/Fatfs \
+	libraries/Drivers/CXD5602/I2c \
+	libraries/Hardware/Led \
+	libraries/Hardware/Button \
+	libraries/Drivers/CXD5602/Gnss \
+	libraries/Hardware/Pca9538 \
+	libraries/Drivers/CXD5602/Uart \
+	libraries/Protocol \
+	libraries/Hardware/M24c32 \
+	libraries/Tools/Settings \
+	libraries/Hardware/Bq27441 \
+	libraries/Hardware/Battery \
+	libraries/Hardware/LightSensor \
+	libraries/Hardware/Gps \
+	libraries/Hardware/Microphone \
+	libraries/Drivers/CXD5602/LowPower \
 
 OBJ = $(addprefix $(BUILD)/spr/, $(SRC_SPR_CXX:.cpp=.o))
 OBJ += $(addprefix $(BUILD)/app/, $(SRC_APP_CXX:.cpp=.o))

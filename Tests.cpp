@@ -5,7 +5,7 @@
  * @brief   Tests
  ******************************************************************************
  *
- * COPYRIGHT(c) 2022 Droid-Technologies LLC
+ * COPYRIGHT(c) 2022 EDGE Impulse
  *
  * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
@@ -14,7 +14,7 @@
  *   2. Redistributions in binary form must reproduce the above copyright notice,
  *      this list of conditions and the following disclaimer in the documentation
  *      and/or other materials provided with the distribution.
- *   3. Neither the name of Droid-Technologies LLC nor the names of its contributors may
+ *   3. Neither the name of EDGE Impulse nor the names of its contributors may
  *      be used to endorse or promote products derived from this software
  *      without specific prior written permission.
  *
@@ -39,33 +39,40 @@
 #include "spresense-exported-sdk/nuttx/include/nuttx/timers/pwm.h"
 
 #include "Appdefines.h"
-#include "libraries/Max7317/Max7317.h"
-#include "libraries/I2c/I2c.h"
-#include "libraries/Hts221/Hts221.h"
-#include "libraries/Lis2mdl/Lis2mdl.h"
-#include "libraries/Lps22hh/Lps22hh.h"
-#include "libraries/Lsm6dso32/Lsm6dso32.h"
-#include "libraries/Vl53l1x/VL53L1X_api.h"
-#include "libraries/Sgp4x/sensirion_common.h"
-#include "libraries/Sgp4x/sensirion_i2c.h"
-#include "libraries/Sgp4x/sensirion_i2c_hal.h"
-#include "libraries/Sgp4x/sgp41_i2c.h"
-#include "libraries/Sgp4x/sgp40_i2c.h"
-#include "libraries/Apds9250/Apds9250.h"
-#include "libraries/Pwm/Pwm.h"
-#include "libraries/LowPower/LowPower.h"
-#include "libraries/Mp34dt05/Mp34dt05.h"
-#include "libraries/Sdcard/Sdcard.h"
-#include "libraries/Fatfs/ff.h"
-#include "libraries/Led/Led.h"
-#include "libraries/Button/Button.h"
-#include "libraries/Gnss/Gnss.h"
-
-
-
+#include "libraries/Hardware/Max7317/Max7317.h"
+#include "libraries/Drivers/CXD5602/I2c/I2c.h"
+#include "libraries/Hardware/Hts221/Hts221.h"
+#include "libraries/Hardware/Lis2mdl/Lis2mdl.h"
+#include "libraries/Hardware/Lps22hh/Lps22hh.h"
+#include "libraries/Hardware/Lsm6dso32/Lsm6dso32.h"
+#include "libraries/Hardware/Vl53l1x/VL53L1X_api.h"
+#include "libraries/Hardware/Sgp4x/sensirion_common.h"
+#include "libraries/Hardware/Sgp4x/sensirion_i2c.h"
+#include "libraries/Hardware/Sgp4x/sensirion_i2c_hal.h"
+#include "libraries/Hardware/Sgp4x/sgp41_i2c.h"
+#include "libraries/Hardware/Sgp4x/sgp40_i2c.h"
+#include "libraries/Hardware/Apds9250/Apds9250.h"
+#include "libraries/Drivers/CXD5602/Pwm/Pwm.h"
+//#include "libraries/Drivers/CXD5602/LowPower/LowPower.h"
+//#include "libraries/Hardware/Mp34dt05/Mp34dt05.h"
+#include "libraries/Hardware/Sdcard/Sdcard.h"
+#include "libraries/ThirdParty/Fatfs/ff.h"
+#include "libraries/Hardware/Led/Led.h"
+#include "libraries/Hardware/Button/Button.h"
+#include "libraries/Drivers/CXD5602/Gnss/Gnss.h"
+#include "libraries/Drivers/CXD5602/Uart/Uart.h"
+#include "libraries/Drivers/CXD5602/Spi/Spi.h"
+#include "libraries/Protocol/Protocol.h"
+#include "libraries/Tools/Settings/Settings.h"
+#include "libraries/Hardware/Bq27441/Bq27441.h"
+#include "libraries/Hardware/M24c32/M24c32.h"
+#include "libraries/Hardware/Microphone/Microphone.h"
+#include "cxd56_gpio.h"
+#include "arch/board/board.h"
+#include "Appdefines.h"
 // TESTS
 
-#define ALL_TESTS
+//#define ALL_TESTS
 
 #ifdef ALL_TESTS
 
@@ -76,14 +83,18 @@
 #define VL53L1_TEST
 #define PWM_TEST
 #define APDS9250_TEST
-#define LOW_POWER_TEST
+//#define LOW_POWER_TEST
 #define SGP40_TEST
-//#define MP34DT05_TEST // doesn't work
-//#define SD_CARD_TEST // doesn't work
-//#define FAT_FS_TEST // doesn't work
+//#define SD_CARD_TEST
+//#define FAT_FS_TEST
 #define LED_TEST
 #define BTN_TEST
 #define GPS_TEST
+#define UART_TEST
+#define PROTOCOL_TEST
+#define BQ27441_TEST
+#define EEPROM_TEST
+
 
 #else
 
@@ -97,12 +108,17 @@
 //#define APDS9250_TEST
 //#define LOW_POWER_TEST
 //#define SGP40_TEST
-//#define MP34DT05_TEST // doesn't work
 //#define SD_CARD_TEST
-//#define FAT_FS_TEST
+#define FAT_FS_TEST
 //#define LED_TEST
 //#define BTN_TEST
 //#define GPS_TEST
+//#define UART_TEST
+//#define PROTOCOL_TEST
+//#define BQ27441_TEST
+//#define EEPROM_TEST
+//#define MIC_GPIO_TEST
+
 
 #endif
 
@@ -131,10 +147,10 @@ static float linear_interpolation(lin_t *lin, int16_t x) {
          / (lin->x1 - lin->x0);
 }
 
-static void hts221_init(void) {
+static void hts221_initt(void) {
     i2c_init();
     hts221_device_id_get(nullptr, &hts221_whoamI);
-    printf("hts221_whoamI = %d\r\n", hts221_whoamI);
+    //printf("hts221_whoamI = %d\r\n", hts221_whoamI);
 
     /* Read humidity calibration coefficient */
     hts221_hum_adc_point_0_get(nullptr, &lin_hum.x0);
@@ -165,16 +181,16 @@ static void hts221_loop(void) {
         hts221_humidity_raw_get(nullptr, (uint8_t*) &hts221_data_raw_humidity);
         hts221_humidity_perc = linear_interpolation(&lin_hum, hts221_data_raw_humidity);
         printf("Hymidity_raw = %d\r\n", hts221_data_raw_humidity);
-        hts221_humidity_perc = 0.0 - hts221_humidity_perc;
-        if (hts221_humidity_perc < 0) {
-            hts221_humidity_perc = 0;
+        //hts221_humidity_perc = 0.0 - hts221_humidity_perc;
+        if (hts221_humidity_perc < 0.0) {
+            hts221_humidity_perc = 0.0;
         }
 
-        if (hts221_humidity_perc > 100) {
-            hts221_humidity_perc = 100;
+        if (hts221_humidity_perc > 100.0) {
+            hts221_humidity_perc = 100.0;
         }
 
-        printf("Humidity [%%]:%3.2f\r\n", hts221_humidity_perc);
+        printf("Humidity [\%]:%.2lf\r\n", hts221_humidity_perc);
         reg.status_reg.h_da = 0;
     }
 
@@ -183,7 +199,8 @@ static void hts221_loop(void) {
         memset(&hts221_data_raw_temperature, 0x00, sizeof(int16_t));
         hts221_temperature_raw_get(nullptr, (uint8_t*) &hts221_data_raw_temperature);
         hts221_temperature_degC = linear_interpolation(&lin_temp, hts221_data_raw_temperature);
-        printf("Temperature [degC]:%6.2f\r\n", hts221_temperature_degC );
+        printf("Temperature_raw = %d\r\n", hts221_data_raw_temperature);
+        printf("Temperature [degC]:%.2lf\r\n", hts221_temperature_degC );
         reg.status_reg.t_da = 0;
     }
 }
@@ -207,7 +224,7 @@ static float magnetic_mG[3];
 static float lis2_temperature_degC;
 static uint8_t lis2_whoamI, lis2_rst;
 
-static void lis2mdl_init(void) {
+static void lis2mdl_test_init(void) {
     i2c_init();
     /* Check device ID */
     lis2mdl_device_id_get(nullptr, &lis2_whoamI);
@@ -266,7 +283,7 @@ static void lis2mdl_loop(void) {
 }
 
 static void lis2mdl_test(void) {    
-    lis2mdl_init();
+    lis2mdl_test_init();
     while (1) {
         lis2mdl_loop();
         usleep(1000 * 1000);
@@ -293,7 +310,7 @@ static void tx_com( uint8_t *tx_buffer, uint16_t len );
 static void platform_delay(uint32_t ms);
 static void platform_init(void);
 
-static void lps22hh_init(void) {
+static void lps22hh_test_init(void) {
     i2c_init();
     /* Check device ID */
     lps22_whoamI = 0;
@@ -342,7 +359,7 @@ static void lps22hh_loop(void) {
 
 static void lps22hh_test(void) {    
     
-    lps22hh_init();
+    lps22hh_test_init();
 
     /* Read samples in polling mode (no int) */
     while (1) {
@@ -382,7 +399,7 @@ static void tx_com( uint8_t *tx_buffer, uint16_t len );
 static void platform_delay(uint32_t ms);
 static void platform_init(void);
 
-static void lsm6dso32_init(void) {
+static void lsm6dso32_initt(void) {
     
     i2c_init();
     /* Check device ID */
@@ -628,19 +645,19 @@ static void sgp41_test (void) {
 
 #ifdef APDS9250_TEST
 
-Apds9250 myApds9250;
+Apds9250 test_pds9250;
 
 static void apds9259_init(void) {
     i2c_init();
-    if (myApds9250.begin())
+    if (test_pds9250.begin())
     {
-        printf("myApds9250.begin() OK\r\n");
+        printf("test_pds9250.begin() OK\r\n");
     }
 
-    myApds9250.setMode(modeColorSensor);
-    myApds9250.setResolution(res18bit);
-    myApds9250.setGain(gain1);
-    myApds9250.setMeasurementRate(rate100ms);
+    test_pds9250.setMode(modeColorSensor);
+    test_pds9250.setResolution(res18bit);
+    test_pds9250.setGain(gain1);
+    test_pds9250.setMeasurementRate(rate100ms);
 }
 
 static void apds9259_loop(void) {
@@ -648,7 +665,7 @@ static void apds9259_loop(void) {
     uint32_t green = 0;
     uint32_t blue = 0;
     uint32_t ir = 0;
-    myApds9250.getAll(&red, &green, &blue, &ir);
+    test_pds9250.getAll(&red, &green, &blue, &ir);
     printf("red = %lu\r\ngreen = %lu\r\nblue = %lu\r\nir = %lu\r\n", red, green, blue, ir); 
 }
 
@@ -714,7 +731,7 @@ static uint8_t serial_number_size = 3;
 static uint16_t default_rh = 0x8000;
 static uint16_t default_t = 0x6666;
 
-static void sgp40_init(void) {
+static void sgp40_test_init(void) {
     i2c_init();
     error = sgp40_get_serial_number(serial_number, serial_number_size);
 
@@ -739,7 +756,7 @@ static void sgp40_loop(void) {
 
 static void sgp40_test(void) {    
 
-    sgp40_init();
+    sgp40_test_init();
 
     while (1) {
         sgp40_loop();
@@ -748,17 +765,6 @@ static void sgp40_test(void) {
 }
 
 #endif // SGP40_TEST
-
-#ifdef MP34DT05_TEST
-
-static void mp34dt05_test (void) {    
-    Mp34dt05Init();
-    while (1) {    
-
-    }
-}
-
-#endif // MP34DT05_TEST
 
 #ifdef SD_CARD_TEST
 
@@ -872,7 +878,7 @@ static void btn_loop(void) {
     bool btn_state = button_is_pressed();
     if (btn_state != old_btn_state) {
         old_btn_state = btn_state;
-        if (btn_state != false) {
+        if (btn_state == false) {
             printf("Btn_relased\r\n");
         } else {
             printf("Btn_pressed\r\n");
@@ -1022,7 +1028,7 @@ static void print_condition(SpNavData *pNavData) {
 
 
 
-static void gps_init(void) {
+static void gps_test_init(void) {
     int error_flag = 0;
     usleep(1000 * 3000);
     gnss.setDebugMode(PrintInfo);
@@ -1175,7 +1181,7 @@ static void gps_loop(void) {
 
 static void gps_test(void) {
     
-    gps_init();
+    gps_test_init();
     while (1) {
         gps_loop();
     }
@@ -1183,17 +1189,178 @@ static void gps_test(void) {
 
 #endif // GPS_TEST
 
+#ifdef UART_TEST
+
+static void uart_loop (void) {
+    uint16_t rx_size = uart_act();
+    if (rx_size != 0) {
+        char data[UART_RX_BUFER_SIZE];
+        uint16_t size = uart_get_data(data);
+        uart_send_data(data, size);
+    }
+    usleep(1000*500);
+}
+
+static void uart_test (void) {
+    uart_init();
+    while (1)
+    {
+        uart_loop();
+    }
+    
+}
 
 
+#endif // UART_TEST
 
-void tests (void) {    
 
+#ifdef PROTOCOL_TEST
+
+static void protocol_loop (void) {
+    protocol_act();
+}
+
+static void protocol_test (void) {
+    protocol_init();
+    while (1)
+    {
+        protocol_act();
+    }
+    
+}
+
+
+#endif // PROTOCOL_TEST
+
+
+#ifdef BQ27441_TEST
+
+static void bq27441_loop (void) {
+    bq27441_g1_get_control_status();
+    float temp = bq27441_g1_get_temperature();
+    uint16_t soc = bq27441_g1_get_state_of_charge_unfiltered();
+    bq27441_g1_get_nominal_available_capacity();
+
+    uint16_t devt = bq27441_g1_get_device_type();
+    //fwv = bq27441_g1_GetFwVersion();
+    //code = bq27441_g1_GetDmCode();
+    //chem = bq27441_g1_GetChemId();
+
+
+    bq27441_g1_get_flags();
+    uint16_t descap = bq27441_g1_get_design_capacity();
+    bq27441_g1_get_state_of_health();
+    uint16_t cur = bq27441_g1_get_average_current();
+    bq27441_g1_get_op_config();
+    uint16_t remcap = bq27441_g1_get_remaining_capacity_unfiltered();
+    uint16_t fullcap = bq27441_g1_get_full_charge_capacity_unfiltered();
+    printf("bq27441_g1_get_temperature = %f\r\n", temp);
+    printf("bq27441_g1_get_state_of_charge_unfiltered = %d\r\n", soc);
+    printf("bq27441_g1_get_device_type = %d\r\n", devt);
+    printf("bq27441_g1_get_design_capacity = %d\r\n", descap);
+    printf("bq27441_g1_get_average_current = %d\r\n", cur);
+    printf("bq27441_g1_get_remaining_capacity_unfiltered = %d\r\n", remcap);
+    printf("bq27441_g1_get_full_charge_capacity_unfiltered = %d\r\n", fullcap);
+}
+
+static void bq27441_test (void) {
+    bq27441_init();
+    while (1) {
+        bq27441_loop();
+        usleep(1000 * 1000);
+    }
+    
+}
+
+
+#endif // BQ27441_TEST
+
+#ifdef EEPROM_TEST
+
+static void eeprom_test (void) {
+    uint8_t blockDataWr [100] = {0};
+    for (uint8_t i = 0; i < sizeof(blockDataWr); i++) {    
+        blockDataWr[i] = i;
+    }
+    printf("m24c32_init:\r\n");
+    m24c32_init();
+    for (uint8_t i = 0; i < sizeof(blockDataWr); i++) {  
+        m24c32_write_byte(i, blockDataWr[i]);
+        //usleep(200 * 1000);
+    }
+    printf("EEPROM data:\r\n");
+    for (uint8_t i = 0; i < sizeof(blockDataWr); i++) {  
+        if ((i % 8) == 0) {
+            printf("\r\n");
+        }     
+        uint8_t data = m24c32_read_byte(i);  
+        printf("%02X ",data);
+    }
+    
+}
+
+#endif // EEPROM_TEST
+
+#ifdef MIC_GPIO_TEST
+
+#define MIC_DATA_SIZE 2048
+uint16_t mic_data[MIC_DATA_SIZE];
+
+static void mic_gpio_test(void) {
+    
+
+    uint8_t retUSER = 0;    /* Return value for USER */
+    char USERPath[4] = {"0:/"};   /* USER logical drive path */
+    FATFS USERFatFS = {0};    /* File system object for USER logical drive */
+    FIL USERFile = {0};       /* File object for USER */
+    char FilePath[32]={0};
+    bool measure_run = false;
+
+
+    if (sdcard_init() == 0) {
+        printf("SD card OK\r\n");
+    } else {
+        printf("SD card FALSE\r\n");
+    }
+    if( f_mount(&USERFatFS,(TCHAR const*)USERPath, 0) != FR_OK) {    
+        printf("FS mount FALSE\r\n");
+    } else {
+        printf("FS mount OK\r\n");
+    }
+    printf("Recording START\r\n");
+    microphone_gpio_simple_test(mic_data, MIC_DATA_SIZE);
+    printf("Recording DONE\r\n");
+    printf("Printing data:\r\n");
+    for(volatile uint32_t i = 0; i < MIC_DATA_SIZE; i++) {
+        if ((i % 16) == 0) {
+            printf(" \r\n");
+        }
+        printf ("%04X ", mic_data[i]);
+    }
+    printf(" \r\n");
+    sprintf(FilePath, "%s%s\0", USERPath, "mic.wav");
+    retUSER = f_open(&USERFile, FilePath, FA_WRITE | FA_OPEN_ALWAYS);
+    if (retUSER == FR_OK) {
+        printf("File write START\r\n");
+        microphone_write_to_wav(&USERFile, (uint8_t*) mic_data, sizeof(mic_data));
+        f_close(&USERFile);
+        printf("File write DONE\r\n");
+    } else {
+        printf("File open false\r\n");
+    }
+
+}
+
+#endif // MIC_GPIO_TEST
+
+void tests (void) {
+    printf("tests();\r\n");
 #ifdef ALL_TESTS
     hts221_init();
     usleep(1000 * 100);
-    lis2mdl_init();
+    lis2mdl_test_init();
     usleep(1000 * 100);
-    lps22hh_init();
+    lps22hh_test_init();
     usleep(1000 * 100);
     lsm6dso32_init();
     usleep(1000 * 100);
@@ -1202,12 +1369,15 @@ void tests (void) {
     apds9259_init();
     usleep(1000 * 100);
     pwm_init();
-    sgp40_init();
+    sgp40_test_init();
     usleep(1000 * 100);
     led_init();
     btn_init();
-    gps_init();
-
+    gps_test_init();
+    uart_init();
+    protocol_init();
+    bq27441_init();
+    eeprom_test();
     while(1) {
         printf("hts221:\r\n");
         hts221_loop();
@@ -1225,12 +1395,17 @@ void tests (void) {
         pwm_loop();
         printf("sgp40:\r\n");
         sgp40_loop();
-        printf("led:\r\n");
-        led_loop();
-        printf("btn:\r\n");
-        btn_loop();
+        // printf("led:\r\n");
+        // led_loop();
+        // printf("btn:\r\n");
+        // btn_loop();
         printf("gps:\r\n");
         gps_loop();
+        //uart_act();
+        protocol_act();
+        printf("bq27441:\r\n");
+        bq27441_loop();
+        protocol_loop();
         usleep(1000 * 1000);
     }
 
@@ -1330,6 +1505,36 @@ void tests (void) {
     gps_test();
 
 #endif // GPS_TEST
+
+#ifdef UART_TEST
+
+    uart_test();
+
+#endif // UART_TEST
+
+#ifdef PROTOCOL_TEST
+
+    protocol_test();
+
+#endif // PROTOCOL_TEST
+
+#ifdef BQ27441_TEST
+
+    bq27441_test ();
+
+#endif // BQ27441_TEST
+
+#ifdef EEPROM_TEST
+    printf("EERPOM TEST\r\n");
+    eeprom_test();
+    while(1);
+
+#endif // EEPROM_TEST
+
+#ifdef MIC_GPIO_TEST
+    mic_gpio_test();
+    while(1);
+#endif // MIC_GPIO_TEST
 
 #endif // ALL_TESTS
 }

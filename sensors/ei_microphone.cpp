@@ -33,10 +33,12 @@
 #include "sensor_aq_mbedtls_hs256.h"
 #include "sensor_aq_none.h"
 #include "arm_math.h"
+#include "ei_config.h"
 
 /* Extern sony lib functions */
 extern bool spresense_startStopAudio(bool start);
 extern bool spresense_getAudio(char *audio_buffer, unsigned int* size);
+extern ei_config_t *ei_config_get_config();
 
 /* Audio sampling config */
 #define AUDIO_SAMPLING_FREQUENCY            16000

@@ -5,7 +5,7 @@
  * @brief   App defines
  ******************************************************************************
  *
- * COPYRIGHT(c) 2022 Droid-Technologies LLC
+ * COPYRIGHT(c) 2022 EDGE Impulse
  *
  * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
@@ -14,7 +14,7 @@
  *   2. Redistributions in binary form must reproduce the above copyright notice,
  *      this list of conditions and the following disclaimer in the documentation
  *      and/or other materials provided with the distribution.
- *   3. Neither the name of Droid-Technologies LLC nor the names of its contributors may
+ *   3. Neither the name of EDGE Impulse nor the names of its contributors may
  *      be used to endorse or promote products derived from this software
  *      without specific prior written permission.
  *
@@ -35,7 +35,18 @@
 #ifndef APPDEFINES_H
 #define APPDEFINES_H
 
-#if 1 // Port expander is MAX7317
+#define DEVICE_NAME "SensiEDGE"
+#define DEVICE_NAME_LEN sizeof(DEVICE_NAME)
+#define DEVICE_VER  1
+#define DEVICE_SUBVER 1
+
+#define STORAGE_SETTINGS_START_ADDR 0
+
+// Test definitions
+#define PROTOCOL_CRC_TEST // if defined you may send CRC FFFF insteed correct CRC
+// End test definitions
+
+#if 0 // Port expander is MAX7317
 #define PORT_EXPANDER_MAX7317
 #else // Port expander is PCA9538
 #define PORT_EXPANDER_PCA9538

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SensiEdgeDoc: libraries/Vl53l1x/VL53L1X_api.h File Reference</title>
+<title>SensiEdgeDoc: libraries/Hardware/Vl53l1x/VL53L1X_api.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_6929f41673591724bf6f55f6a34d7e98.html">Vl53l1x</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_30ec792bae0d62409ac0d542d335de12.html">Hardware</a></li><li class="navelem"><a class="el" href="dir_5d21181f4ad63981812a5a7b1389c208.html">Vl53l1x</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,12 +70,13 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">VL53L1X_api.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Functions definition.  
+<p>VL53L1X header driver.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="vl53l1__platform_8h_source.html">vl53l1_platform.h</a>&quot;</code><br />
 </div>
@@ -89,275 +90,223 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_v_l53_l1_x___result__t.html">VL53L1X_Result_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines packed reading results type  <a href="struct_v_l53_l1_x___result__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvl53l1x__mode__t.html">vl53l1x_mode_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a542371c8c3204d2a190bebed741a741e"><td class="memItemLeft" align="right" valign="top"><a id="a542371c8c3204d2a190bebed741a741e" name="a542371c8c3204d2a190bebed741a741e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1X_IMPLEMENTATION_VER_MAJOR</b>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:a542371c8c3204d2a190bebed741a741e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a542371c8c3204d2a190bebed741a741e">VL53L1X_IMPLEMENTATION_VER_MAJOR</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:a542371c8c3204d2a190bebed741a741e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb992f2c9bfd1c73dcfae9ebc7180fad"><td class="memItemLeft" align="right" valign="top"><a id="aeb992f2c9bfd1c73dcfae9ebc7180fad" name="aeb992f2c9bfd1c73dcfae9ebc7180fad"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1X_IMPLEMENTATION_VER_MINOR</b>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:aeb992f2c9bfd1c73dcfae9ebc7180fad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#aeb992f2c9bfd1c73dcfae9ebc7180fad">VL53L1X_IMPLEMENTATION_VER_MINOR</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:aeb992f2c9bfd1c73dcfae9ebc7180fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abccaf6e0c198fe271bde715a90f23b34"><td class="memItemLeft" align="right" valign="top"><a id="abccaf6e0c198fe271bde715a90f23b34" name="abccaf6e0c198fe271bde715a90f23b34"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1X_IMPLEMENTATION_VER_SUB</b>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:abccaf6e0c198fe271bde715a90f23b34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#abccaf6e0c198fe271bde715a90f23b34">VL53L1X_IMPLEMENTATION_VER_SUB</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:abccaf6e0c198fe271bde715a90f23b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aede005dde2f068571499b6f56a2e191f"><td class="memItemLeft" align="right" valign="top"><a id="aede005dde2f068571499b6f56a2e191f" name="aede005dde2f068571499b6f56a2e191f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1X_IMPLEMENTATION_VER_REVISION</b>&#160;&#160;&#160;0000</td></tr>
+<tr class="memitem:aede005dde2f068571499b6f56a2e191f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#aede005dde2f068571499b6f56a2e191f">VL53L1X_IMPLEMENTATION_VER_REVISION</a>&#160;&#160;&#160;0000</td></tr>
 <tr class="separator:aede005dde2f068571499b6f56a2e191f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74625341a79e3484830c401d8947443c"><td class="memItemLeft" align="right" valign="top"><a id="a74625341a79e3484830c401d8947443c" name="a74625341a79e3484830c401d8947443c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SOFT_RESET</b>&#160;&#160;&#160;0x0000</td></tr>
+<tr class="memitem:a74625341a79e3484830c401d8947443c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a74625341a79e3484830c401d8947443c">SOFT_RESET</a>&#160;&#160;&#160;0x0000</td></tr>
 <tr class="separator:a74625341a79e3484830c401d8947443c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af09585764ab1dde6627bad6098cd5e6e"><td class="memItemLeft" align="right" valign="top"><a id="af09585764ab1dde6627bad6098cd5e6e" name="af09585764ab1dde6627bad6098cd5e6e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1_I2C_SLAVE__DEVICE_ADDRESS</b>&#160;&#160;&#160;0x0001</td></tr>
+<tr class="memitem:af09585764ab1dde6627bad6098cd5e6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#af09585764ab1dde6627bad6098cd5e6e">VL53L1_I2C_SLAVE__DEVICE_ADDRESS</a>&#160;&#160;&#160;0x0001</td></tr>
 <tr class="separator:af09585764ab1dde6627bad6098cd5e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b554c56b9617df6b957f26e407ce54d"><td class="memItemLeft" align="right" valign="top"><a id="a0b554c56b9617df6b957f26e407ce54d" name="a0b554c56b9617df6b957f26e407ce54d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1_VHV_CONFIG__TIMEOUT_MACROP_LOOP_BOUND</b>&#160;&#160;&#160;0x0008</td></tr>
+<tr class="memitem:a0b554c56b9617df6b957f26e407ce54d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a0b554c56b9617df6b957f26e407ce54d">VL53L1_VHV_CONFIG__TIMEOUT_MACROP_LOOP_BOUND</a>&#160;&#160;&#160;0x0008</td></tr>
 <tr class="separator:a0b554c56b9617df6b957f26e407ce54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55aa3ef1d347f822cc5f6028f2ddf56f"><td class="memItemLeft" align="right" valign="top"><a id="a55aa3ef1d347f822cc5f6028f2ddf56f" name="a55aa3ef1d347f822cc5f6028f2ddf56f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ALGO__CROSSTALK_COMPENSATION_PLANE_OFFSET_KCPS</b>&#160;&#160;&#160;0x0016</td></tr>
+<tr class="memitem:a55aa3ef1d347f822cc5f6028f2ddf56f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a55aa3ef1d347f822cc5f6028f2ddf56f">ALGO__CROSSTALK_COMPENSATION_PLANE_OFFSET_KCPS</a>&#160;&#160;&#160;0x0016</td></tr>
 <tr class="separator:a55aa3ef1d347f822cc5f6028f2ddf56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af25151d720c6f6d003e61d92ad738c4c"><td class="memItemLeft" align="right" valign="top"><a id="af25151d720c6f6d003e61d92ad738c4c" name="af25151d720c6f6d003e61d92ad738c4c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ALGO__CROSSTALK_COMPENSATION_X_PLANE_GRADIENT_KCPS</b>&#160;&#160;&#160;0x0018</td></tr>
+<tr class="memitem:af25151d720c6f6d003e61d92ad738c4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#af25151d720c6f6d003e61d92ad738c4c">ALGO__CROSSTALK_COMPENSATION_X_PLANE_GRADIENT_KCPS</a>&#160;&#160;&#160;0x0018</td></tr>
 <tr class="separator:af25151d720c6f6d003e61d92ad738c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25a78b1dc1070a5e72e19645f8f52d33"><td class="memItemLeft" align="right" valign="top"><a id="a25a78b1dc1070a5e72e19645f8f52d33" name="a25a78b1dc1070a5e72e19645f8f52d33"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ALGO__CROSSTALK_COMPENSATION_Y_PLANE_GRADIENT_KCPS</b>&#160;&#160;&#160;0x001A</td></tr>
+<tr class="memitem:a25a78b1dc1070a5e72e19645f8f52d33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a25a78b1dc1070a5e72e19645f8f52d33">ALGO__CROSSTALK_COMPENSATION_Y_PLANE_GRADIENT_KCPS</a>&#160;&#160;&#160;0x001A</td></tr>
 <tr class="separator:a25a78b1dc1070a5e72e19645f8f52d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ab0e4617017e0bd940200ba07be4d34"><td class="memItemLeft" align="right" valign="top"><a id="a2ab0e4617017e0bd940200ba07be4d34" name="a2ab0e4617017e0bd940200ba07be4d34"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ALGO__PART_TO_PART_RANGE_OFFSET_MM</b>&#160;&#160;&#160;0x001E</td></tr>
+<tr class="memitem:a2ab0e4617017e0bd940200ba07be4d34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a2ab0e4617017e0bd940200ba07be4d34">ALGO__PART_TO_PART_RANGE_OFFSET_MM</a>&#160;&#160;&#160;0x001E</td></tr>
 <tr class="separator:a2ab0e4617017e0bd940200ba07be4d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88617357dbed400268cfc2ee563f5396"><td class="memItemLeft" align="right" valign="top"><a id="a88617357dbed400268cfc2ee563f5396" name="a88617357dbed400268cfc2ee563f5396"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MM_CONFIG__INNER_OFFSET_MM</b>&#160;&#160;&#160;0x0020</td></tr>
+<tr class="memitem:a88617357dbed400268cfc2ee563f5396"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a88617357dbed400268cfc2ee563f5396">MM_CONFIG__INNER_OFFSET_MM</a>&#160;&#160;&#160;0x0020</td></tr>
 <tr class="separator:a88617357dbed400268cfc2ee563f5396"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f7f279509c4971c0027dd4004007c2f"><td class="memItemLeft" align="right" valign="top"><a id="a3f7f279509c4971c0027dd4004007c2f" name="a3f7f279509c4971c0027dd4004007c2f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MM_CONFIG__OUTER_OFFSET_MM</b>&#160;&#160;&#160;0x0022</td></tr>
+<tr class="memitem:a3f7f279509c4971c0027dd4004007c2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a3f7f279509c4971c0027dd4004007c2f">MM_CONFIG__OUTER_OFFSET_MM</a>&#160;&#160;&#160;0x0022</td></tr>
 <tr class="separator:a3f7f279509c4971c0027dd4004007c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2b6c32911c2c553477f19bb3c25ce89"><td class="memItemLeft" align="right" valign="top"><a id="ac2b6c32911c2c553477f19bb3c25ce89" name="ac2b6c32911c2c553477f19bb3c25ce89"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIO_HV_MUX__CTRL</b>&#160;&#160;&#160;0x0030</td></tr>
+<tr class="memitem:ac2b6c32911c2c553477f19bb3c25ce89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ac2b6c32911c2c553477f19bb3c25ce89">GPIO_HV_MUX__CTRL</a>&#160;&#160;&#160;0x0030</td></tr>
 <tr class="separator:ac2b6c32911c2c553477f19bb3c25ce89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2806961b4373aaf95b11489324e8f84b"><td class="memItemLeft" align="right" valign="top"><a id="a2806961b4373aaf95b11489324e8f84b" name="a2806961b4373aaf95b11489324e8f84b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIO__TIO_HV_STATUS</b>&#160;&#160;&#160;0x0031</td></tr>
+<tr class="memitem:a2806961b4373aaf95b11489324e8f84b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a2806961b4373aaf95b11489324e8f84b">GPIO__TIO_HV_STATUS</a>&#160;&#160;&#160;0x0031</td></tr>
 <tr class="separator:a2806961b4373aaf95b11489324e8f84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97207a2ee20535cd0102a4bb05779127"><td class="memItemLeft" align="right" valign="top"><a id="a97207a2ee20535cd0102a4bb05779127" name="a97207a2ee20535cd0102a4bb05779127"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYSTEM__INTERRUPT_CONFIG_GPIO</b>&#160;&#160;&#160;0x0046</td></tr>
+<tr class="memitem:a97207a2ee20535cd0102a4bb05779127"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a97207a2ee20535cd0102a4bb05779127">SYSTEM__INTERRUPT_CONFIG_GPIO</a>&#160;&#160;&#160;0x0046</td></tr>
 <tr class="separator:a97207a2ee20535cd0102a4bb05779127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab27d045e59238e549647e80fae3573f8"><td class="memItemLeft" align="right" valign="top"><a id="ab27d045e59238e549647e80fae3573f8" name="ab27d045e59238e549647e80fae3573f8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PHASECAL_CONFIG__TIMEOUT_MACROP</b>&#160;&#160;&#160;0x004B</td></tr>
+<tr class="memitem:ab27d045e59238e549647e80fae3573f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ab27d045e59238e549647e80fae3573f8">PHASECAL_CONFIG__TIMEOUT_MACROP</a>&#160;&#160;&#160;0x004B</td></tr>
 <tr class="separator:ab27d045e59238e549647e80fae3573f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02495d4260afeb98fc3ad68be4fe3c42"><td class="memItemLeft" align="right" valign="top"><a id="a02495d4260afeb98fc3ad68be4fe3c42" name="a02495d4260afeb98fc3ad68be4fe3c42"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RANGE_CONFIG__TIMEOUT_MACROP_A_HI</b>&#160;&#160;&#160;0x005E</td></tr>
+<tr class="memitem:a02495d4260afeb98fc3ad68be4fe3c42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a02495d4260afeb98fc3ad68be4fe3c42">RANGE_CONFIG__TIMEOUT_MACROP_A_HI</a>&#160;&#160;&#160;0x005E</td></tr>
 <tr class="separator:a02495d4260afeb98fc3ad68be4fe3c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18bc9ac87e860bbc9106f09d8f35491e"><td class="memItemLeft" align="right" valign="top"><a id="a18bc9ac87e860bbc9106f09d8f35491e" name="a18bc9ac87e860bbc9106f09d8f35491e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RANGE_CONFIG__VCSEL_PERIOD_A</b>&#160;&#160;&#160;0x0060</td></tr>
+<tr class="memitem:a18bc9ac87e860bbc9106f09d8f35491e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a18bc9ac87e860bbc9106f09d8f35491e">RANGE_CONFIG__VCSEL_PERIOD_A</a>&#160;&#160;&#160;0x0060</td></tr>
 <tr class="separator:a18bc9ac87e860bbc9106f09d8f35491e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab18472732f386d61b67e5fa6e35a57e9"><td class="memItemLeft" align="right" valign="top"><a id="ab18472732f386d61b67e5fa6e35a57e9" name="ab18472732f386d61b67e5fa6e35a57e9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RANGE_CONFIG__VCSEL_PERIOD_B</b>&#160;&#160;&#160;0x0063</td></tr>
+<tr class="memitem:ab18472732f386d61b67e5fa6e35a57e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ab18472732f386d61b67e5fa6e35a57e9">RANGE_CONFIG__VCSEL_PERIOD_B</a>&#160;&#160;&#160;0x0063</td></tr>
 <tr class="separator:ab18472732f386d61b67e5fa6e35a57e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae73e835209b048757aab1021f6a72e41"><td class="memItemLeft" align="right" valign="top"><a id="ae73e835209b048757aab1021f6a72e41" name="ae73e835209b048757aab1021f6a72e41"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RANGE_CONFIG__TIMEOUT_MACROP_B_HI</b>&#160;&#160;&#160;0x0061</td></tr>
+<tr class="memitem:ae73e835209b048757aab1021f6a72e41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ae73e835209b048757aab1021f6a72e41">RANGE_CONFIG__TIMEOUT_MACROP_B_HI</a>&#160;&#160;&#160;0x0061</td></tr>
 <tr class="separator:ae73e835209b048757aab1021f6a72e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcec89cc9a8ff7a7392266f8470a2605"><td class="memItemLeft" align="right" valign="top"><a id="abcec89cc9a8ff7a7392266f8470a2605" name="abcec89cc9a8ff7a7392266f8470a2605"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RANGE_CONFIG__TIMEOUT_MACROP_B_LO</b>&#160;&#160;&#160;0x0062</td></tr>
+<tr class="memitem:abcec89cc9a8ff7a7392266f8470a2605"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#abcec89cc9a8ff7a7392266f8470a2605">RANGE_CONFIG__TIMEOUT_MACROP_B_LO</a>&#160;&#160;&#160;0x0062</td></tr>
 <tr class="separator:abcec89cc9a8ff7a7392266f8470a2605"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab72c85000f194caedd5a9137e962fde4"><td class="memItemLeft" align="right" valign="top"><a id="ab72c85000f194caedd5a9137e962fde4" name="ab72c85000f194caedd5a9137e962fde4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RANGE_CONFIG__SIGMA_THRESH</b>&#160;&#160;&#160;0x0064</td></tr>
+<tr class="memitem:ab72c85000f194caedd5a9137e962fde4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ab72c85000f194caedd5a9137e962fde4">RANGE_CONFIG__SIGMA_THRESH</a>&#160;&#160;&#160;0x0064</td></tr>
 <tr class="separator:ab72c85000f194caedd5a9137e962fde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad0f40d4cfe841c8ea1df480bda90151"><td class="memItemLeft" align="right" valign="top"><a id="aad0f40d4cfe841c8ea1df480bda90151" name="aad0f40d4cfe841c8ea1df480bda90151"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RANGE_CONFIG__MIN_COUNT_RATE_RTN_LIMIT_MCPS</b>&#160;&#160;&#160;0x0066</td></tr>
+<tr class="memitem:aad0f40d4cfe841c8ea1df480bda90151"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#aad0f40d4cfe841c8ea1df480bda90151">RANGE_CONFIG__MIN_COUNT_RATE_RTN_LIMIT_MCPS</a>&#160;&#160;&#160;0x0066</td></tr>
 <tr class="separator:aad0f40d4cfe841c8ea1df480bda90151"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7f3c335c97795f0220d04a8feadc3ca"><td class="memItemLeft" align="right" valign="top"><a id="ad7f3c335c97795f0220d04a8feadc3ca" name="ad7f3c335c97795f0220d04a8feadc3ca"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RANGE_CONFIG__VALID_PHASE_HIGH</b>&#160;&#160;&#160;0x0069</td></tr>
+<tr class="memitem:ad7f3c335c97795f0220d04a8feadc3ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ad7f3c335c97795f0220d04a8feadc3ca">RANGE_CONFIG__VALID_PHASE_HIGH</a>&#160;&#160;&#160;0x0069</td></tr>
 <tr class="separator:ad7f3c335c97795f0220d04a8feadc3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaf7ce8aa0b5888276751194bcf5f931"><td class="memItemLeft" align="right" valign="top"><a id="afaf7ce8aa0b5888276751194bcf5f931" name="afaf7ce8aa0b5888276751194bcf5f931"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1_SYSTEM__INTERMEASUREMENT_PERIOD</b>&#160;&#160;&#160;0x006C</td></tr>
+<tr class="memitem:afaf7ce8aa0b5888276751194bcf5f931"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#afaf7ce8aa0b5888276751194bcf5f931">VL53L1_SYSTEM__INTERMEASUREMENT_PERIOD</a>&#160;&#160;&#160;0x006C</td></tr>
 <tr class="separator:afaf7ce8aa0b5888276751194bcf5f931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa430f8d2f8ee1a40476f5202f16807ae"><td class="memItemLeft" align="right" valign="top"><a id="aa430f8d2f8ee1a40476f5202f16807ae" name="aa430f8d2f8ee1a40476f5202f16807ae"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYSTEM__THRESH_HIGH</b>&#160;&#160;&#160;0x0072</td></tr>
+<tr class="memitem:aa430f8d2f8ee1a40476f5202f16807ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#aa430f8d2f8ee1a40476f5202f16807ae">SYSTEM__THRESH_HIGH</a>&#160;&#160;&#160;0x0072</td></tr>
 <tr class="separator:aa430f8d2f8ee1a40476f5202f16807ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ff4642b47201d4d821fecc72ff8513c"><td class="memItemLeft" align="right" valign="top"><a id="a9ff4642b47201d4d821fecc72ff8513c" name="a9ff4642b47201d4d821fecc72ff8513c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYSTEM__THRESH_LOW</b>&#160;&#160;&#160;0x0074</td></tr>
+<tr class="memitem:a9ff4642b47201d4d821fecc72ff8513c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a9ff4642b47201d4d821fecc72ff8513c">SYSTEM__THRESH_LOW</a>&#160;&#160;&#160;0x0074</td></tr>
 <tr class="separator:a9ff4642b47201d4d821fecc72ff8513c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a16e9c2ee589cd21957f1302d6654f1"><td class="memItemLeft" align="right" valign="top"><a id="a6a16e9c2ee589cd21957f1302d6654f1" name="a6a16e9c2ee589cd21957f1302d6654f1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SD_CONFIG__WOI_SD0</b>&#160;&#160;&#160;0x0078</td></tr>
+<tr class="memitem:a6a16e9c2ee589cd21957f1302d6654f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a6a16e9c2ee589cd21957f1302d6654f1">SD_CONFIG__WOI_SD0</a>&#160;&#160;&#160;0x0078</td></tr>
 <tr class="separator:a6a16e9c2ee589cd21957f1302d6654f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea5e68cc5ce6336be7979caf62305db2"><td class="memItemLeft" align="right" valign="top"><a id="aea5e68cc5ce6336be7979caf62305db2" name="aea5e68cc5ce6336be7979caf62305db2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SD_CONFIG__INITIAL_PHASE_SD0</b>&#160;&#160;&#160;0x007A</td></tr>
+<tr class="memitem:aea5e68cc5ce6336be7979caf62305db2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#aea5e68cc5ce6336be7979caf62305db2">SD_CONFIG__INITIAL_PHASE_SD0</a>&#160;&#160;&#160;0x007A</td></tr>
 <tr class="separator:aea5e68cc5ce6336be7979caf62305db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a706cd1aa011becfc35c7b496f599a30f"><td class="memItemLeft" align="right" valign="top"><a id="a706cd1aa011becfc35c7b496f599a30f" name="a706cd1aa011becfc35c7b496f599a30f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ROI_CONFIG__USER_ROI_CENTRE_SPAD</b>&#160;&#160;&#160;0x007F</td></tr>
+<tr class="memitem:a706cd1aa011becfc35c7b496f599a30f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a706cd1aa011becfc35c7b496f599a30f">ROI_CONFIG__USER_ROI_CENTRE_SPAD</a>&#160;&#160;&#160;0x007F</td></tr>
 <tr class="separator:a706cd1aa011becfc35c7b496f599a30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a279ad59723f100caf9bf056bbde528fa"><td class="memItemLeft" align="right" valign="top"><a id="a279ad59723f100caf9bf056bbde528fa" name="a279ad59723f100caf9bf056bbde528fa"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ROI_CONFIG__USER_ROI_REQUESTED_GLOBAL_XY_SIZE</b>&#160;&#160;&#160;0x0080</td></tr>
+<tr class="memitem:a279ad59723f100caf9bf056bbde528fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a279ad59723f100caf9bf056bbde528fa">ROI_CONFIG__USER_ROI_REQUESTED_GLOBAL_XY_SIZE</a>&#160;&#160;&#160;0x0080</td></tr>
 <tr class="separator:a279ad59723f100caf9bf056bbde528fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae05b913fc1e0f18186c4a2bd44ff49b2"><td class="memItemLeft" align="right" valign="top"><a id="ae05b913fc1e0f18186c4a2bd44ff49b2" name="ae05b913fc1e0f18186c4a2bd44ff49b2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYSTEM__SEQUENCE_CONFIG</b>&#160;&#160;&#160;0x0081</td></tr>
+<tr class="memitem:ae05b913fc1e0f18186c4a2bd44ff49b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ae05b913fc1e0f18186c4a2bd44ff49b2">SYSTEM__SEQUENCE_CONFIG</a>&#160;&#160;&#160;0x0081</td></tr>
 <tr class="separator:ae05b913fc1e0f18186c4a2bd44ff49b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01651ee9d6f60f7829478d87cf82b3da"><td class="memItemLeft" align="right" valign="top"><a id="a01651ee9d6f60f7829478d87cf82b3da" name="a01651ee9d6f60f7829478d87cf82b3da"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1_SYSTEM__GROUPED_PARAMETER_HOLD</b>&#160;&#160;&#160;0x0082</td></tr>
+<tr class="memitem:a01651ee9d6f60f7829478d87cf82b3da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a01651ee9d6f60f7829478d87cf82b3da">VL53L1_SYSTEM__GROUPED_PARAMETER_HOLD</a>&#160;&#160;&#160;0x0082</td></tr>
 <tr class="separator:a01651ee9d6f60f7829478d87cf82b3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0151356cafc31665554f71d408c248a0"><td class="memItemLeft" align="right" valign="top"><a id="a0151356cafc31665554f71d408c248a0" name="a0151356cafc31665554f71d408c248a0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYSTEM__INTERRUPT_CLEAR</b>&#160;&#160;&#160;0x0086</td></tr>
+<tr class="memitem:a0151356cafc31665554f71d408c248a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a0151356cafc31665554f71d408c248a0">SYSTEM__INTERRUPT_CLEAR</a>&#160;&#160;&#160;0x0086</td></tr>
 <tr class="separator:a0151356cafc31665554f71d408c248a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa430923f7d8ebfb9281163d17df1cc1e"><td class="memItemLeft" align="right" valign="top"><a id="aa430923f7d8ebfb9281163d17df1cc1e" name="aa430923f7d8ebfb9281163d17df1cc1e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYSTEM__MODE_START</b>&#160;&#160;&#160;0x0087</td></tr>
+<tr class="memitem:aa430923f7d8ebfb9281163d17df1cc1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#aa430923f7d8ebfb9281163d17df1cc1e">SYSTEM__MODE_START</a>&#160;&#160;&#160;0x0087</td></tr>
 <tr class="separator:aa430923f7d8ebfb9281163d17df1cc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a795c007a11b10559317dc29d6dd5b43e"><td class="memItemLeft" align="right" valign="top"><a id="a795c007a11b10559317dc29d6dd5b43e" name="a795c007a11b10559317dc29d6dd5b43e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1_RESULT__RANGE_STATUS</b>&#160;&#160;&#160;0x0089</td></tr>
+<tr class="memitem:a795c007a11b10559317dc29d6dd5b43e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a795c007a11b10559317dc29d6dd5b43e">VL53L1_RESULT__RANGE_STATUS</a>&#160;&#160;&#160;0x0089</td></tr>
 <tr class="separator:a795c007a11b10559317dc29d6dd5b43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa93dea9a0d4065a9c4e246ee26daef0"><td class="memItemLeft" align="right" valign="top"><a id="afa93dea9a0d4065a9c4e246ee26daef0" name="afa93dea9a0d4065a9c4e246ee26daef0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1_RESULT__DSS_ACTUAL_EFFECTIVE_SPADS_SD0</b>&#160;&#160;&#160;0x008C</td></tr>
+<tr class="memitem:afa93dea9a0d4065a9c4e246ee26daef0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#afa93dea9a0d4065a9c4e246ee26daef0">VL53L1_RESULT__DSS_ACTUAL_EFFECTIVE_SPADS_SD0</a>&#160;&#160;&#160;0x008C</td></tr>
 <tr class="separator:afa93dea9a0d4065a9c4e246ee26daef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fec1c1688c009c83fd1729042522710"><td class="memItemLeft" align="right" valign="top"><a id="a8fec1c1688c009c83fd1729042522710" name="a8fec1c1688c009c83fd1729042522710"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RESULT__AMBIENT_COUNT_RATE_MCPS_SD</b>&#160;&#160;&#160;0x0090</td></tr>
+<tr class="memitem:a8fec1c1688c009c83fd1729042522710"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a8fec1c1688c009c83fd1729042522710">RESULT__AMBIENT_COUNT_RATE_MCPS_SD</a>&#160;&#160;&#160;0x0090</td></tr>
 <tr class="separator:a8fec1c1688c009c83fd1729042522710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ac26737f5a5eb4915af98c2be6fb7c2"><td class="memItemLeft" align="right" valign="top"><a id="a7ac26737f5a5eb4915af98c2be6fb7c2" name="a7ac26737f5a5eb4915af98c2be6fb7c2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1_RESULT__FINAL_CROSSTALK_CORRECTED_RANGE_MM_SD0</b>&#160;&#160;&#160;0x0096</td></tr>
+<tr class="memitem:a7ac26737f5a5eb4915af98c2be6fb7c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a7ac26737f5a5eb4915af98c2be6fb7c2">VL53L1_RESULT__FINAL_CROSSTALK_CORRECTED_RANGE_MM_SD0</a>&#160;&#160;&#160;0x0096</td></tr>
 <tr class="separator:a7ac26737f5a5eb4915af98c2be6fb7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa80215477cc3130e21769999b9a2cfd4"><td class="memItemLeft" align="right" valign="top"><a id="aa80215477cc3130e21769999b9a2cfd4" name="aa80215477cc3130e21769999b9a2cfd4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1_RESULT__PEAK_SIGNAL_COUNT_RATE_CROSSTALK_CORRECTED_MCPS_SD0</b>&#160;&#160;&#160;0x0098</td></tr>
+<tr class="memitem:aa80215477cc3130e21769999b9a2cfd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#aa80215477cc3130e21769999b9a2cfd4">VL53L1_RESULT__PEAK_SIGNAL_COUNT_RATE_CROSSTALK_CORRECTED_MCPS_SD0</a>&#160;&#160;&#160;0x0098</td></tr>
 <tr class="separator:aa80215477cc3130e21769999b9a2cfd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80678a1ebe27c577e592c271e92194fe"><td class="memItemLeft" align="right" valign="top"><a id="a80678a1ebe27c577e592c271e92194fe" name="a80678a1ebe27c577e592c271e92194fe"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1_RESULT__OSC_CALIBRATE_VAL</b>&#160;&#160;&#160;0x00DE</td></tr>
+<tr class="memitem:a80678a1ebe27c577e592c271e92194fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a80678a1ebe27c577e592c271e92194fe">VL53L1_RESULT__OSC_CALIBRATE_VAL</a>&#160;&#160;&#160;0x00DE</td></tr>
 <tr class="separator:a80678a1ebe27c577e592c271e92194fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a095d61baf5e40ecde589a5dbf17b391a"><td class="memItemLeft" align="right" valign="top"><a id="a095d61baf5e40ecde589a5dbf17b391a" name="a095d61baf5e40ecde589a5dbf17b391a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1_FIRMWARE__SYSTEM_STATUS</b>&#160;&#160;&#160;0x00E5</td></tr>
+<tr class="memitem:a095d61baf5e40ecde589a5dbf17b391a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a095d61baf5e40ecde589a5dbf17b391a">VL53L1_FIRMWARE__SYSTEM_STATUS</a>&#160;&#160;&#160;0x00E5</td></tr>
 <tr class="separator:a095d61baf5e40ecde589a5dbf17b391a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a27dfef0795b6688aacd6cd158939be"><td class="memItemLeft" align="right" valign="top"><a id="a6a27dfef0795b6688aacd6cd158939be" name="a6a27dfef0795b6688aacd6cd158939be"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1_IDENTIFICATION__MODEL_ID</b>&#160;&#160;&#160;0x010F</td></tr>
+<tr class="memitem:a6a27dfef0795b6688aacd6cd158939be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a6a27dfef0795b6688aacd6cd158939be">VL53L1_IDENTIFICATION__MODEL_ID</a>&#160;&#160;&#160;0x010F</td></tr>
 <tr class="separator:a6a27dfef0795b6688aacd6cd158939be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af64a6267f55a636775a99c6c32b098b7"><td class="memItemLeft" align="right" valign="top"><a id="af64a6267f55a636775a99c6c32b098b7" name="af64a6267f55a636775a99c6c32b098b7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1_ROI_CONFIG__MODE_ROI_CENTRE_SPAD</b>&#160;&#160;&#160;0x013E</td></tr>
+<tr class="memitem:af64a6267f55a636775a99c6c32b098b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#af64a6267f55a636775a99c6c32b098b7">VL53L1_ROI_CONFIG__MODE_ROI_CENTRE_SPAD</a>&#160;&#160;&#160;0x013E</td></tr>
 <tr class="separator:af64a6267f55a636775a99c6c32b098b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aa2cba6efa144107fcf97e81be52802fc"><td class="memItemLeft" align="right" valign="top"><a id="aa2cba6efa144107fcf97e81be52802fc" name="aa2cba6efa144107fcf97e81be52802fc"></a>
-typedef <a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1X_ERROR</b></td></tr>
+<tr class="memitem:aa2cba6efa144107fcf97e81be52802fc"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a></td></tr>
 <tr class="separator:aa2cba6efa144107fcf97e81be52802fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a5dd19e87cacf2b037a35834a0f07d3cf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a5dd19e87cacf2b037a35834a0f07d3cf">vl53l1x_distance_t</a> { <a class="el" href="_v_l53_l1_x__api_8h.html#a5dd19e87cacf2b037a35834a0f07d3cfa730b9527dc509e9929d4aebaa304dad8">VL53_DISTANCE_SHORT</a>
+, <a class="el" href="_v_l53_l1_x__api_8h.html#a5dd19e87cacf2b037a35834a0f07d3cfa6f19a83923707e8c70b9afe7809456b4">VL53_DISTANCE_LONG</a>
+, <a class="el" href="_v_l53_l1_x__api_8h.html#a5dd19e87cacf2b037a35834a0f07d3cfa5b951876e8a8b579cd27a420d46e468b">VL53_DISTANCE_ENUM</a>
+ }</td></tr>
+<tr class="separator:a5dd19e87cacf2b037a35834a0f07d3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9071d86a1cd0028f917edc10aeb7a36d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a9071d86a1cd0028f917edc10aeb7a36d">vl53l1x_period_t</a> { <br />
+&#160;&#160;<a class="el" href="_v_l53_l1_x__api_8h.html#a9071d86a1cd0028f917edc10aeb7a36da1931548691bac93efb8ebd813eef38da">VL53_PERIOD_1S</a>
+, <a class="el" href="_v_l53_l1_x__api_8h.html#a9071d86a1cd0028f917edc10aeb7a36da8d950c56f377bdcfeac3ac5c93a6c2c3">VL53_PERIOD_2S</a>
+, <a class="el" href="_v_l53_l1_x__api_8h.html#a9071d86a1cd0028f917edc10aeb7a36da748f435e896fa6de11b58074aeaefacb">VL53_PERIOD_5S</a>
+, <a class="el" href="_v_l53_l1_x__api_8h.html#a9071d86a1cd0028f917edc10aeb7a36da624beb7c868b29e74edd34293f3b08dd">VL53_PERIOD_10S</a>
+, <br />
+&#160;&#160;<a class="el" href="_v_l53_l1_x__api_8h.html#a9071d86a1cd0028f917edc10aeb7a36dafaad4c4372874f21d66febd9fc0d8f34">VL53_PERIOD_ENUM</a>
+<br />
+ }</td></tr>
+<tr class="separator:a9071d86a1cd0028f917edc10aeb7a36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acc458faf9cbd22a57ad970e1788928a2"><td class="memItemLeft" align="right" valign="top"><a id="acc458faf9cbd22a57ad970e1788928a2" name="acc458faf9cbd22a57ad970e1788928a2"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_sw_version</b> (<a class="el" href="struct_v_l53_l1_x___version__t.html">VL53L1X_Version_t</a> *pVersion)</td></tr>
-<tr class="memdesc:acc458faf9cbd22a57ad970e1788928a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the SW driver version. <br /></td></tr>
+<tr class="memitem:acc458faf9cbd22a57ad970e1788928a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#acc458faf9cbd22a57ad970e1788928a2">vl53l1x_get_sw_version</a> (<a class="el" href="struct_v_l53_l1_x___version__t.html">VL53L1X_Version_t</a> *pVersion)</td></tr>
+<tr class="memdesc:acc458faf9cbd22a57ad970e1788928a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the SW driver version.  <a href="_v_l53_l1_x__api_8h.html#acc458faf9cbd22a57ad970e1788928a2">More...</a><br /></td></tr>
 <tr class="separator:acc458faf9cbd22a57ad970e1788928a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa68882f66d7fca16204c394ab6a64336"><td class="memItemLeft" align="right" valign="top"><a id="aa68882f66d7fca16204c394ab6a64336" name="aa68882f66d7fca16204c394ab6a64336"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_set_i2c_address</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> new_address)</td></tr>
-<tr class="memdesc:aa68882f66d7fca16204c394ab6a64336"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the sensor I2C address used in case multiple devices application, default address 0x52. <br /></td></tr>
+<tr class="memitem:aa68882f66d7fca16204c394ab6a64336"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#aa68882f66d7fca16204c394ab6a64336">vl53l1x_set_i2c_address</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> new_address)</td></tr>
+<tr class="memdesc:aa68882f66d7fca16204c394ab6a64336"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the sensor I2C address used in case multiple devices application, default address 0x52.  <a href="_v_l53_l1_x__api_8h.html#aa68882f66d7fca16204c394ab6a64336">More...</a><br /></td></tr>
 <tr class="separator:aa68882f66d7fca16204c394ab6a64336"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18b148227ffe7b68c46fa7f01133f92b"><td class="memItemLeft" align="right" valign="top">VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a18b148227ffe7b68c46fa7f01133f92b">vl53l1x_sensor_init</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev)</td></tr>
+<tr class="memitem:a18b148227ffe7b68c46fa7f01133f92b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a18b148227ffe7b68c46fa7f01133f92b">vl53l1x_sensor_init</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev)</td></tr>
 <tr class="memdesc:a18b148227ffe7b68c46fa7f01133f92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function loads the 135 bytes default values to initialize the sensor.  <a href="_v_l53_l1_x__api_8h.html#a18b148227ffe7b68c46fa7f01133f92b">More...</a><br /></td></tr>
 <tr class="separator:a18b148227ffe7b68c46fa7f01133f92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a495ffca8270f920990d74d0747405c"><td class="memItemLeft" align="right" valign="top"><a id="a5a495ffca8270f920990d74d0747405c" name="a5a495ffca8270f920990d74d0747405c"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_clear_interrupt</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev)</td></tr>
-<tr class="memdesc:a5a495ffca8270f920990d74d0747405c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function clears the interrupt, to be called after a ranging data reading to arm the interrupt for the next data ready event. <br /></td></tr>
+<tr class="memitem:a5a495ffca8270f920990d74d0747405c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a5a495ffca8270f920990d74d0747405c">vl53l1x_clear_interrupt</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev)</td></tr>
+<tr class="memdesc:a5a495ffca8270f920990d74d0747405c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function clears the interrupt, to be called after a ranging data reading to arm the interrupt for the next data ready event.  <a href="_v_l53_l1_x__api_8h.html#a5a495ffca8270f920990d74d0747405c">More...</a><br /></td></tr>
 <tr class="separator:a5a495ffca8270f920990d74d0747405c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9ec7832272fa55f4bbe03861027090e"><td class="memItemLeft" align="right" valign="top"><a id="ab9ec7832272fa55f4bbe03861027090e" name="ab9ec7832272fa55f4bbe03861027090e"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_setInterrupt_polarity</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> IntPol)</td></tr>
+<tr class="memitem:ab9ec7832272fa55f4bbe03861027090e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ab9ec7832272fa55f4bbe03861027090e">vl53l1x_setInterrupt_polarity</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> IntPol)</td></tr>
 <tr class="memdesc:ab9ec7832272fa55f4bbe03861027090e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs the interrupt polarity<br  />
-1=active high (default), 0=active low. <br /></td></tr>
+1=active high (default), 0=active low.  <a href="_v_l53_l1_x__api_8h.html#ab9ec7832272fa55f4bbe03861027090e">More...</a><br /></td></tr>
 <tr class="separator:ab9ec7832272fa55f4bbe03861027090e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0298b3938770f823467d83632116ac86"><td class="memItemLeft" align="right" valign="top"><a id="a0298b3938770f823467d83632116ac86" name="a0298b3938770f823467d83632116ac86"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_getInterrupt_polarity</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *pIntPol)</td></tr>
+<tr class="memitem:a0298b3938770f823467d83632116ac86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a0298b3938770f823467d83632116ac86">vl53l1x_getInterrupt_polarity</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *pIntPol)</td></tr>
 <tr class="memdesc:a0298b3938770f823467d83632116ac86"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current interrupt polarity<br  />
-1=active high (default), 0=active low. <br /></td></tr>
+1=active high (default), 0=active low.  <a href="_v_l53_l1_x__api_8h.html#a0298b3938770f823467d83632116ac86">More...</a><br /></td></tr>
 <tr class="separator:a0298b3938770f823467d83632116ac86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a185d9bc6b2942959bd3b2bde3f84d73f"><td class="memItemLeft" align="right" valign="top"><a id="a185d9bc6b2942959bd3b2bde3f84d73f" name="a185d9bc6b2942959bd3b2bde3f84d73f"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_start_ranging</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev)</td></tr>
+<tr class="memitem:a185d9bc6b2942959bd3b2bde3f84d73f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a185d9bc6b2942959bd3b2bde3f84d73f">vl53l1x_start_ranging</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev)</td></tr>
 <tr class="memdesc:a185d9bc6b2942959bd3b2bde3f84d73f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function starts the ranging distance operation<br  />
 The ranging operation is continuous. The clear interrupt has to be done after each get data to allow the interrupt to raise when the next data is ready<br  />
-1=active high (default), 0=active low, use SetInterruptPolarity() to change the interrupt polarity if required. <br /></td></tr>
+1=active high (default), 0=active low, use SetInterruptPolarity() to change the interrupt polarity if required.  <a href="_v_l53_l1_x__api_8h.html#a185d9bc6b2942959bd3b2bde3f84d73f">More...</a><br /></td></tr>
 <tr class="separator:a185d9bc6b2942959bd3b2bde3f84d73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01c26382aba58a8161c402ffbfa19943"><td class="memItemLeft" align="right" valign="top"><a id="a01c26382aba58a8161c402ffbfa19943" name="a01c26382aba58a8161c402ffbfa19943"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_stop_ranging</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev)</td></tr>
-<tr class="memdesc:a01c26382aba58a8161c402ffbfa19943"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function stops the ranging. <br /></td></tr>
+<tr class="memitem:a01c26382aba58a8161c402ffbfa19943"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a01c26382aba58a8161c402ffbfa19943">vl53l1x_stop_ranging</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev)</td></tr>
+<tr class="memdesc:a01c26382aba58a8161c402ffbfa19943"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function stops the ranging.  <a href="_v_l53_l1_x__api_8h.html#a01c26382aba58a8161c402ffbfa19943">More...</a><br /></td></tr>
 <tr class="separator:a01c26382aba58a8161c402ffbfa19943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade58db052597a1fd9acb34ead2030b16"><td class="memItemLeft" align="right" valign="top">VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ade58db052597a1fd9acb34ead2030b16">vl53l1x_check_for_data_ready</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *isDataReady)</td></tr>
+<tr class="memitem:ade58db052597a1fd9acb34ead2030b16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ade58db052597a1fd9acb34ead2030b16">vl53l1x_check_for_data_ready</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *isDataReady)</td></tr>
 <tr class="memdesc:ade58db052597a1fd9acb34ead2030b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function checks if the new ranging data is available by polling the dedicated register.  <a href="_v_l53_l1_x__api_8h.html#ade58db052597a1fd9acb34ead2030b16">More...</a><br /></td></tr>
 <tr class="separator:ade58db052597a1fd9acb34ead2030b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d7bdbc2d48141e15a0e95f841f3733a"><td class="memItemLeft" align="right" valign="top"><a id="a2d7bdbc2d48141e15a0e95f841f3733a" name="a2d7bdbc2d48141e15a0e95f841f3733a"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_set_timing_budgetIn_ms</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> TimingBudgetInMs)</td></tr>
-<tr class="memdesc:a2d7bdbc2d48141e15a0e95f841f3733a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs the timing budget in ms. Predefined values = 15, 20, 33, 50, 100(default), 200, 500. <br /></td></tr>
+<tr class="memitem:a2d7bdbc2d48141e15a0e95f841f3733a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a2d7bdbc2d48141e15a0e95f841f3733a">vl53l1x_set_timing_budgetIn_ms</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> TimingBudgetInMs)</td></tr>
+<tr class="memdesc:a2d7bdbc2d48141e15a0e95f841f3733a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs the timing budget in ms. Predefined values = 15, 20, 33, 50, 100(default), 200, 500.  <a href="_v_l53_l1_x__api_8h.html#a2d7bdbc2d48141e15a0e95f841f3733a">More...</a><br /></td></tr>
 <tr class="separator:a2d7bdbc2d48141e15a0e95f841f3733a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c33baf0aa0948cb891ab964e5c420b5"><td class="memItemLeft" align="right" valign="top"><a id="a3c33baf0aa0948cb891ab964e5c420b5" name="a3c33baf0aa0948cb891ab964e5c420b5"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_timing_budgetIn_ms</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *pTimingBudgetInMs)</td></tr>
-<tr class="memdesc:a3c33baf0aa0948cb891ab964e5c420b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current timing budget in ms. <br /></td></tr>
+<tr class="memitem:a3c33baf0aa0948cb891ab964e5c420b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a3c33baf0aa0948cb891ab964e5c420b5">vl53l1x_get_timing_budgetIn_ms</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *pTimingBudgetInMs)</td></tr>
+<tr class="memdesc:a3c33baf0aa0948cb891ab964e5c420b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current timing budget in ms.  <a href="_v_l53_l1_x__api_8h.html#a3c33baf0aa0948cb891ab964e5c420b5">More...</a><br /></td></tr>
 <tr class="separator:a3c33baf0aa0948cb891ab964e5c420b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f06c72fcb8a161d69d269516a6c20d7"><td class="memItemLeft" align="right" valign="top"><a id="a7f06c72fcb8a161d69d269516a6c20d7" name="a7f06c72fcb8a161d69d269516a6c20d7"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_set_distance_mode</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> DistanceMode)</td></tr>
+<tr class="memitem:a7f06c72fcb8a161d69d269516a6c20d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a7f06c72fcb8a161d69d269516a6c20d7">vl53l1x_set_distance_mode</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> DistanceMode)</td></tr>
 <tr class="memdesc:a7f06c72fcb8a161d69d269516a6c20d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs the distance mode (1=short, 2=long(default)). Short mode max distance is limited to 1.3 m but better ambient immunity.<br  />
-Long mode can range up to 4 m in the dark with 200 ms timing budget. <br /></td></tr>
+Long mode can range up to 4 m in the dark with 200 ms timing budget.  <a href="_v_l53_l1_x__api_8h.html#a7f06c72fcb8a161d69d269516a6c20d7">More...</a><br /></td></tr>
 <tr class="separator:a7f06c72fcb8a161d69d269516a6c20d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5d87fa18a970aef69aaa05cdb1d002b"><td class="memItemLeft" align="right" valign="top"><a id="ab5d87fa18a970aef69aaa05cdb1d002b" name="ab5d87fa18a970aef69aaa05cdb1d002b"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_distance_mode</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *pDistanceMode)</td></tr>
-<tr class="memdesc:ab5d87fa18a970aef69aaa05cdb1d002b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current distance mode (1=short, 2=long). <br /></td></tr>
+<tr class="memitem:ab5d87fa18a970aef69aaa05cdb1d002b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ab5d87fa18a970aef69aaa05cdb1d002b">vl53l1x_get_distance_mode</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *pDistanceMode)</td></tr>
+<tr class="memdesc:ab5d87fa18a970aef69aaa05cdb1d002b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current distance mode (1=short, 2=long).  <a href="_v_l53_l1_x__api_8h.html#ab5d87fa18a970aef69aaa05cdb1d002b">More...</a><br /></td></tr>
 <tr class="separator:ab5d87fa18a970aef69aaa05cdb1d002b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5709d87f22a28237516f4eb3b7cf63ae"><td class="memItemLeft" align="right" valign="top"><a id="a5709d87f22a28237516f4eb3b7cf63ae" name="a5709d87f22a28237516f4eb3b7cf63ae"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_set_inter_measurementIn_ms</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> InterMeasurementInMs)</td></tr>
+<tr class="memitem:a5709d87f22a28237516f4eb3b7cf63ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a5709d87f22a28237516f4eb3b7cf63ae">vl53l1x_set_inter_measurementIn_ms</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> InterMeasurementInMs)</td></tr>
 <tr class="memdesc:a5709d87f22a28237516f4eb3b7cf63ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs the Intermeasurement period in ms<br  />
-Intermeasurement period must be &gt;/= timing budget. This condition is not checked by the API, the customer has the duty to check the condition. Default = 100 ms. <br /></td></tr>
+Intermeasurement period must be &gt;/= timing budget. This condition is not checked by the API, the customer has the duty to check the condition. Default = 100 ms.  <a href="_v_l53_l1_x__api_8h.html#a5709d87f22a28237516f4eb3b7cf63ae">More...</a><br /></td></tr>
 <tr class="separator:a5709d87f22a28237516f4eb3b7cf63ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99d19f5f31668e37048d2cf729832f70"><td class="memItemLeft" align="right" valign="top"><a id="a99d19f5f31668e37048d2cf729832f70" name="a99d19f5f31668e37048d2cf729832f70"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_inter_measurementIn_ms</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *pIM)</td></tr>
-<tr class="memdesc:a99d19f5f31668e37048d2cf729832f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the Intermeasurement period in ms. <br /></td></tr>
+<tr class="memitem:a99d19f5f31668e37048d2cf729832f70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a99d19f5f31668e37048d2cf729832f70">vl53l1x_get_inter_measurementIn_ms</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *pIM)</td></tr>
+<tr class="memdesc:a99d19f5f31668e37048d2cf729832f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the Intermeasurement period in ms.  <a href="_v_l53_l1_x__api_8h.html#a99d19f5f31668e37048d2cf729832f70">More...</a><br /></td></tr>
 <tr class="separator:a99d19f5f31668e37048d2cf729832f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5569f4b76534e66bec3e9db58d7666e7"><td class="memItemLeft" align="right" valign="top"><a id="a5569f4b76534e66bec3e9db58d7666e7" name="a5569f4b76534e66bec3e9db58d7666e7"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_boot_state</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *state)</td></tr>
-<tr class="memdesc:a5569f4b76534e66bec3e9db58d7666e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the boot state of the device (1:booted, 0:not booted) <br /></td></tr>
+<tr class="memitem:a5569f4b76534e66bec3e9db58d7666e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a5569f4b76534e66bec3e9db58d7666e7">vl53l1x_boot_state</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *state)</td></tr>
+<tr class="memdesc:a5569f4b76534e66bec3e9db58d7666e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the boot state of the device (1:booted, 0:not booted)  <a href="_v_l53_l1_x__api_8h.html#a5569f4b76534e66bec3e9db58d7666e7">More...</a><br /></td></tr>
 <tr class="separator:a5569f4b76534e66bec3e9db58d7666e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ea0ad3ea32c2f104e2b787be3b96f54"><td class="memItemLeft" align="right" valign="top"><a id="a4ea0ad3ea32c2f104e2b787be3b96f54" name="a4ea0ad3ea32c2f104e2b787be3b96f54"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_sensorId</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *id)</td></tr>
-<tr class="memdesc:a4ea0ad3ea32c2f104e2b787be3b96f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the sensor id, sensor Id must be 0xEEAC. <br /></td></tr>
+<tr class="memitem:a4ea0ad3ea32c2f104e2b787be3b96f54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a4ea0ad3ea32c2f104e2b787be3b96f54">vl53l1x_get_sensorId</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *id)</td></tr>
+<tr class="memdesc:a4ea0ad3ea32c2f104e2b787be3b96f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the sensor id, sensor Id must be 0xEEAC.  <a href="_v_l53_l1_x__api_8h.html#a4ea0ad3ea32c2f104e2b787be3b96f54">More...</a><br /></td></tr>
 <tr class="separator:a4ea0ad3ea32c2f104e2b787be3b96f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6383c8c509e1a2f7f2b320f134c289ff"><td class="memItemLeft" align="right" valign="top"><a id="a6383c8c509e1a2f7f2b320f134c289ff" name="a6383c8c509e1a2f7f2b320f134c289ff"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_distance</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *distance)</td></tr>
-<tr class="memdesc:a6383c8c509e1a2f7f2b320f134c289ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the distance measured by the sensor in mm. <br /></td></tr>
+<tr class="memitem:a6383c8c509e1a2f7f2b320f134c289ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a6383c8c509e1a2f7f2b320f134c289ff">vl53l1x_get_distance</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *distance)</td></tr>
+<tr class="memdesc:a6383c8c509e1a2f7f2b320f134c289ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the distance measured by the sensor in mm.  <a href="_v_l53_l1_x__api_8h.html#a6383c8c509e1a2f7f2b320f134c289ff">More...</a><br /></td></tr>
 <tr class="separator:a6383c8c509e1a2f7f2b320f134c289ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08ea934c3cf3d6598281f8f383c831cc"><td class="memItemLeft" align="right" valign="top"><a id="a08ea934c3cf3d6598281f8f383c831cc" name="a08ea934c3cf3d6598281f8f383c831cc"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_signal_per_spad</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *signalPerSp)</td></tr>
-<tr class="memdesc:a08ea934c3cf3d6598281f8f383c831cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the returned signal per SPAD in kcps/SPAD. With kcps stands for Kilo Count Per Second. <br /></td></tr>
+<tr class="memitem:a08ea934c3cf3d6598281f8f383c831cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a08ea934c3cf3d6598281f8f383c831cc">vl53l1x_get_signal_per_spad</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *signalPerSp)</td></tr>
+<tr class="memdesc:a08ea934c3cf3d6598281f8f383c831cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the returned signal per SPAD in kcps/SPAD. With kcps stands for Kilo Count Per Second.  <a href="_v_l53_l1_x__api_8h.html#a08ea934c3cf3d6598281f8f383c831cc">More...</a><br /></td></tr>
 <tr class="separator:a08ea934c3cf3d6598281f8f383c831cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e94f28c228de54a040a3a25a6f0f3f0"><td class="memItemLeft" align="right" valign="top"><a id="a5e94f28c228de54a040a3a25a6f0f3f0" name="a5e94f28c228de54a040a3a25a6f0f3f0"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_ambient_per_spad</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *amb)</td></tr>
-<tr class="memdesc:a5e94f28c228de54a040a3a25a6f0f3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the ambient per SPAD in kcps/SPAD. <br /></td></tr>
+<tr class="memitem:a5e94f28c228de54a040a3a25a6f0f3f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a5e94f28c228de54a040a3a25a6f0f3f0">vl53l1x_get_ambient_per_spad</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *amb)</td></tr>
+<tr class="memdesc:a5e94f28c228de54a040a3a25a6f0f3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the ambient per SPAD in kcps/SPAD.  <a href="_v_l53_l1_x__api_8h.html#a5e94f28c228de54a040a3a25a6f0f3f0">More...</a><br /></td></tr>
 <tr class="separator:a5e94f28c228de54a040a3a25a6f0f3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33bd34fd2efc4945e0e4a7ee5eb37379"><td class="memItemLeft" align="right" valign="top"><a id="a33bd34fd2efc4945e0e4a7ee5eb37379" name="a33bd34fd2efc4945e0e4a7ee5eb37379"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_signal_rate</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *signalRate)</td></tr>
-<tr class="memdesc:a33bd34fd2efc4945e0e4a7ee5eb37379"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the returned signal in kcps. <br /></td></tr>
+<tr class="memitem:a33bd34fd2efc4945e0e4a7ee5eb37379"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a33bd34fd2efc4945e0e4a7ee5eb37379">vl53l1x_get_signal_rate</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *signalRate)</td></tr>
+<tr class="memdesc:a33bd34fd2efc4945e0e4a7ee5eb37379"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the returned signal in kcps.  <a href="_v_l53_l1_x__api_8h.html#a33bd34fd2efc4945e0e4a7ee5eb37379">More...</a><br /></td></tr>
 <tr class="separator:a33bd34fd2efc4945e0e4a7ee5eb37379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59c86784b36f7a45b720eba3191df585"><td class="memItemLeft" align="right" valign="top"><a id="a59c86784b36f7a45b720eba3191df585" name="a59c86784b36f7a45b720eba3191df585"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_spad_nb</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *spNb)</td></tr>
-<tr class="memdesc:a59c86784b36f7a45b720eba3191df585"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current number of enabled SPADs. <br /></td></tr>
+<tr class="memitem:a59c86784b36f7a45b720eba3191df585"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a59c86784b36f7a45b720eba3191df585">vl53l1x_get_spad_nb</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *spNb)</td></tr>
+<tr class="memdesc:a59c86784b36f7a45b720eba3191df585"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current number of enabled SPADs.  <a href="_v_l53_l1_x__api_8h.html#a59c86784b36f7a45b720eba3191df585">More...</a><br /></td></tr>
 <tr class="separator:a59c86784b36f7a45b720eba3191df585"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6441320a9b07c03d2fdad8c08b19e87"><td class="memItemLeft" align="right" valign="top"><a id="ae6441320a9b07c03d2fdad8c08b19e87" name="ae6441320a9b07c03d2fdad8c08b19e87"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_ambient_rate</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *ambRate)</td></tr>
-<tr class="memdesc:ae6441320a9b07c03d2fdad8c08b19e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the ambient rate in kcps. <br /></td></tr>
+<tr class="memitem:ae6441320a9b07c03d2fdad8c08b19e87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ae6441320a9b07c03d2fdad8c08b19e87">vl53l1x_get_ambient_rate</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *ambRate)</td></tr>
+<tr class="memdesc:ae6441320a9b07c03d2fdad8c08b19e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the ambient rate in kcps.  <a href="_v_l53_l1_x__api_8h.html#ae6441320a9b07c03d2fdad8c08b19e87">More...</a><br /></td></tr>
 <tr class="separator:ae6441320a9b07c03d2fdad8c08b19e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fbbe451739c4db54e8ae4f993d3d084"><td class="memItemLeft" align="right" valign="top"><a id="a8fbbe451739c4db54e8ae4f993d3d084" name="a8fbbe451739c4db54e8ae4f993d3d084"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_range_status</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *rangeStatus)</td></tr>
+<tr class="memitem:a8fbbe451739c4db54e8ae4f993d3d084"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a8fbbe451739c4db54e8ae4f993d3d084">vl53l1x_get_range_status</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *rangeStatus)</td></tr>
 <tr class="memdesc:a8fbbe451739c4db54e8ae4f993d3d084"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the ranging status error <br  />
-(0:no error, 1:sigma failed, 2:signal failed, ..., 7:wrap-around) <br /></td></tr>
+(0:no error, 1:sigma failed, 2:signal failed, ..., 7:wrap-around)  <a href="_v_l53_l1_x__api_8h.html#a8fbbe451739c4db54e8ae4f993d3d084">More...</a><br /></td></tr>
 <tr class="separator:a8fbbe451739c4db54e8ae4f993d3d084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a360e95a5ea41cba4f7ea49ba4547a811"><td class="memItemLeft" align="right" valign="top"><a id="a360e95a5ea41cba4f7ea49ba4547a811" name="a360e95a5ea41cba4f7ea49ba4547a811"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_result</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="struct_v_l53_l1_x___result__t.html">VL53L1X_Result_t</a> *pResult)</td></tr>
-<tr class="memdesc:a360e95a5ea41cba4f7ea49ba4547a811"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns measurements and the range status in a single read access. <br /></td></tr>
+<tr class="memitem:a360e95a5ea41cba4f7ea49ba4547a811"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a360e95a5ea41cba4f7ea49ba4547a811">vl53l1x_get_result</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="struct_v_l53_l1_x___result__t.html">VL53L1X_Result_t</a> *pResult)</td></tr>
+<tr class="memdesc:a360e95a5ea41cba4f7ea49ba4547a811"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns measurements and the range status in a single read access.  <a href="_v_l53_l1_x__api_8h.html#a360e95a5ea41cba4f7ea49ba4547a811">More...</a><br /></td></tr>
 <tr class="separator:a360e95a5ea41cba4f7ea49ba4547a811"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a419a238e52a6e1aab8ecd1c402b020d4"><td class="memItemLeft" align="right" valign="top">VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a419a238e52a6e1aab8ecd1c402b020d4">vl53l1x_set_offset</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> OffsetValue)</td></tr>
+<tr class="memitem:a419a238e52a6e1aab8ecd1c402b020d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a419a238e52a6e1aab8ecd1c402b020d4">vl53l1x_set_offset</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> OffsetValue)</td></tr>
 <tr class="memdesc:a419a238e52a6e1aab8ecd1c402b020d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs the offset correction in mm.  <a href="_v_l53_l1_x__api_8h.html#a419a238e52a6e1aab8ecd1c402b020d4">More...</a><br /></td></tr>
 <tr class="separator:a419a238e52a6e1aab8ecd1c402b020d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ba503af55715bf579363e4c37a6e8a4"><td class="memItemLeft" align="right" valign="top"><a id="a3ba503af55715bf579363e4c37a6e8a4" name="a3ba503af55715bf579363e4c37a6e8a4"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_offset</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *Offset)</td></tr>
-<tr class="memdesc:a3ba503af55715bf579363e4c37a6e8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the programmed offset correction value in mm. <br /></td></tr>
+<tr class="memitem:a3ba503af55715bf579363e4c37a6e8a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a3ba503af55715bf579363e4c37a6e8a4">vl53l1x_get_offset</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *Offset)</td></tr>
+<tr class="memdesc:a3ba503af55715bf579363e4c37a6e8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the programmed offset correction value in mm.  <a href="_v_l53_l1_x__api_8h.html#a3ba503af55715bf579363e4c37a6e8a4">More...</a><br /></td></tr>
 <tr class="separator:a3ba503af55715bf579363e4c37a6e8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b905674ead0c33ce4cd6f5e6531b3f1"><td class="memItemLeft" align="right" valign="top"><a id="a5b905674ead0c33ce4cd6f5e6531b3f1" name="a5b905674ead0c33ce4cd6f5e6531b3f1"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_set_xtalk</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> XtalkValue)</td></tr>
+<tr class="memitem:a5b905674ead0c33ce4cd6f5e6531b3f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a5b905674ead0c33ce4cd6f5e6531b3f1">vl53l1x_set_xtalk</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> XtalkValue)</td></tr>
 <tr class="memdesc:a5b905674ead0c33ce4cd6f5e6531b3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs the xtalk correction value in cps (Count Per Second).<br  />
-This is the number of photons reflected back from the cover glass in cps. <br /></td></tr>
+This is the number of photons reflected back from the cover glass in cps.  <a href="_v_l53_l1_x__api_8h.html#a5b905674ead0c33ce4cd6f5e6531b3f1">More...</a><br /></td></tr>
 <tr class="separator:a5b905674ead0c33ce4cd6f5e6531b3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8a21dad9f62c5ee8faac36acdaae85e"><td class="memItemLeft" align="right" valign="top"><a id="ad8a21dad9f62c5ee8faac36acdaae85e" name="ad8a21dad9f62c5ee8faac36acdaae85e"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_xtalk</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *Xtalk)</td></tr>
-<tr class="memdesc:ad8a21dad9f62c5ee8faac36acdaae85e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current programmed xtalk correction value in cps. <br /></td></tr>
+<tr class="memitem:ad8a21dad9f62c5ee8faac36acdaae85e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ad8a21dad9f62c5ee8faac36acdaae85e">vl53l1x_get_xtalk</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *Xtalk)</td></tr>
+<tr class="memdesc:ad8a21dad9f62c5ee8faac36acdaae85e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current programmed xtalk correction value in cps.  <a href="_v_l53_l1_x__api_8h.html#ad8a21dad9f62c5ee8faac36acdaae85e">More...</a><br /></td></tr>
 <tr class="separator:ad8a21dad9f62c5ee8faac36acdaae85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6cfe207acdc2bf2001da02928df206e"><td class="memItemLeft" align="right" valign="top">VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#aa6cfe207acdc2bf2001da02928df206e">vl53l1x_set_distance_threshold</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> ThreshLow, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> ThreshHigh, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Window, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> IntOnNoTarget)</td></tr>
+<tr class="memitem:aa6cfe207acdc2bf2001da02928df206e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#aa6cfe207acdc2bf2001da02928df206e">vl53l1x_set_distance_threshold</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> ThreshLow, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> ThreshHigh, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Window, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> IntOnNoTarget)</td></tr>
 <tr class="memdesc:aa6cfe207acdc2bf2001da02928df206e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs the threshold detection mode<br  />
 Example:<br  />
 vl53l1x_set_distance_threshold(dev,100,300,0,1): Below 100 <br  />
@@ -366,61 +315,794 @@ vl53l1x_set_distance_threshold(dev,100,300,2,1): Out of window <br  />
 vl53l1x_set_distance_threshold(dev,100,300,3,1): In window <br  />
 .  <a href="_v_l53_l1_x__api_8h.html#aa6cfe207acdc2bf2001da02928df206e">More...</a><br /></td></tr>
 <tr class="separator:aa6cfe207acdc2bf2001da02928df206e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e42eb941989de98eee5d58ee93cf453"><td class="memItemLeft" align="right" valign="top"><a id="a1e42eb941989de98eee5d58ee93cf453" name="a1e42eb941989de98eee5d58ee93cf453"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_distance_threshold_window</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *window)</td></tr>
-<tr class="memdesc:a1e42eb941989de98eee5d58ee93cf453"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the window detection mode (0=below; 1=above; 2=out; 3=in) <br /></td></tr>
+<tr class="memitem:a1e42eb941989de98eee5d58ee93cf453"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a1e42eb941989de98eee5d58ee93cf453">vl53l1x_get_distance_threshold_window</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *window)</td></tr>
+<tr class="memdesc:a1e42eb941989de98eee5d58ee93cf453"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the window detection mode (0=below; 1=above; 2=out; 3=in)  <a href="_v_l53_l1_x__api_8h.html#a1e42eb941989de98eee5d58ee93cf453">More...</a><br /></td></tr>
 <tr class="separator:a1e42eb941989de98eee5d58ee93cf453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab610f0ea2d0e3f328d79f73d7276e6d1"><td class="memItemLeft" align="right" valign="top"><a id="ab610f0ea2d0e3f328d79f73d7276e6d1" name="ab610f0ea2d0e3f328d79f73d7276e6d1"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_distance_threshold_low</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *low)</td></tr>
-<tr class="memdesc:ab610f0ea2d0e3f328d79f73d7276e6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the low threshold in mm. <br /></td></tr>
+<tr class="memitem:ab610f0ea2d0e3f328d79f73d7276e6d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ab610f0ea2d0e3f328d79f73d7276e6d1">vl53l1x_get_distance_threshold_low</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *low)</td></tr>
+<tr class="memdesc:ab610f0ea2d0e3f328d79f73d7276e6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the low threshold in mm.  <a href="_v_l53_l1_x__api_8h.html#ab610f0ea2d0e3f328d79f73d7276e6d1">More...</a><br /></td></tr>
 <tr class="separator:ab610f0ea2d0e3f328d79f73d7276e6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8746fec3b91e8116592d837e15519a9"><td class="memItemLeft" align="right" valign="top"><a id="ab8746fec3b91e8116592d837e15519a9" name="ab8746fec3b91e8116592d837e15519a9"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_distance_threshold_high</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *high)</td></tr>
-<tr class="memdesc:ab8746fec3b91e8116592d837e15519a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the high threshold in mm. <br /></td></tr>
+<tr class="memitem:ab8746fec3b91e8116592d837e15519a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ab8746fec3b91e8116592d837e15519a9">vl53l1x_get_distance_threshold_high</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *high)</td></tr>
+<tr class="memdesc:ab8746fec3b91e8116592d837e15519a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the high threshold in mm.  <a href="_v_l53_l1_x__api_8h.html#ab8746fec3b91e8116592d837e15519a9">More...</a><br /></td></tr>
 <tr class="separator:ab8746fec3b91e8116592d837e15519a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43969aaee999b1bf00e68dedcad9be10"><td class="memItemLeft" align="right" valign="top">VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a43969aaee999b1bf00e68dedcad9be10">vl53l1x_set_roi</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> X, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> Y)</td></tr>
+<tr class="memitem:a43969aaee999b1bf00e68dedcad9be10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a43969aaee999b1bf00e68dedcad9be10">vl53l1x_set_roi</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> X, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> Y)</td></tr>
 <tr class="memdesc:a43969aaee999b1bf00e68dedcad9be10"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs the ROI (Region of Interest)<br  />
 The ROI position is centered, only the ROI size can be reprogrammed.<br  />
 The smallest acceptable ROI size = 4<br  />
 .  <a href="_v_l53_l1_x__api_8h.html#a43969aaee999b1bf00e68dedcad9be10">More...</a><br /></td></tr>
 <tr class="separator:a43969aaee999b1bf00e68dedcad9be10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5907eab052463c151a31e7223698f680"><td class="memItemLeft" align="right" valign="top"><a id="a5907eab052463c151a31e7223698f680" name="a5907eab052463c151a31e7223698f680"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>VL53L1X_GetROI_XY</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *ROI_X, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *ROI_Y)</td></tr>
-<tr class="memdesc:a5907eab052463c151a31e7223698f680"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns width X and height Y. <br /></td></tr>
+<tr class="memitem:a5907eab052463c151a31e7223698f680"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a5907eab052463c151a31e7223698f680">VL53L1X_GetROI_XY</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *ROI_X, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *ROI_Y)</td></tr>
+<tr class="memdesc:a5907eab052463c151a31e7223698f680"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns width X and height Y.  <a href="_v_l53_l1_x__api_8h.html#a5907eab052463c151a31e7223698f680">More...</a><br /></td></tr>
 <tr class="separator:a5907eab052463c151a31e7223698f680"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b262d9f1c6e6f7f9cd63e65d9f6399f"><td class="memItemLeft" align="right" valign="top"><a id="a0b262d9f1c6e6f7f9cd63e65d9f6399f" name="a0b262d9f1c6e6f7f9cd63e65d9f6399f"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_set_roi_center</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ROICenter)</td></tr>
-<tr class="memdesc:a0b262d9f1c6e6f7f9cd63e65d9f6399f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs the new user ROI center, please to be aware that there is no check in this function. if the ROI center vs ROI size is out of border the ranging function return error #13. <br /></td></tr>
+<tr class="memitem:a0b262d9f1c6e6f7f9cd63e65d9f6399f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a0b262d9f1c6e6f7f9cd63e65d9f6399f">vl53l1x_set_roi_center</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ROICenter)</td></tr>
+<tr class="memdesc:a0b262d9f1c6e6f7f9cd63e65d9f6399f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs the new user ROI center, please to be aware that there is no check in this function. if the ROI center vs ROI size is out of border the ranging function return error #13.  <a href="_v_l53_l1_x__api_8h.html#a0b262d9f1c6e6f7f9cd63e65d9f6399f">More...</a><br /></td></tr>
 <tr class="separator:a0b262d9f1c6e6f7f9cd63e65d9f6399f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3dc7a7f9be92d3d317304efaef9b4cf"><td class="memItemLeft" align="right" valign="top"><a id="aa3dc7a7f9be92d3d317304efaef9b4cf" name="aa3dc7a7f9be92d3d317304efaef9b4cf"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_roi_center</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *ROICenter)</td></tr>
-<tr class="memdesc:aa3dc7a7f9be92d3d317304efaef9b4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current user ROI center. <br /></td></tr>
+<tr class="memitem:aa3dc7a7f9be92d3d317304efaef9b4cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#aa3dc7a7f9be92d3d317304efaef9b4cf">vl53l1x_get_roi_center</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *ROICenter)</td></tr>
+<tr class="memdesc:aa3dc7a7f9be92d3d317304efaef9b4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current user ROI center.  <a href="_v_l53_l1_x__api_8h.html#aa3dc7a7f9be92d3d317304efaef9b4cf">More...</a><br /></td></tr>
 <tr class="separator:aa3dc7a7f9be92d3d317304efaef9b4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a472b0f54fd352fe6745a5603dcc51b53"><td class="memItemLeft" align="right" valign="top"><a id="a472b0f54fd352fe6745a5603dcc51b53" name="a472b0f54fd352fe6745a5603dcc51b53"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_set_signal_threshold</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> signal)</td></tr>
+<tr class="memitem:a472b0f54fd352fe6745a5603dcc51b53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a472b0f54fd352fe6745a5603dcc51b53">vl53l1x_set_signal_threshold</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> signal)</td></tr>
 <tr class="memdesc:a472b0f54fd352fe6745a5603dcc51b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs a new signal threshold in kcps (default=1024 kcps<br  />
-. <br /></td></tr>
+.  <a href="_v_l53_l1_x__api_8h.html#a472b0f54fd352fe6745a5603dcc51b53">More...</a><br /></td></tr>
 <tr class="separator:a472b0f54fd352fe6745a5603dcc51b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ee226a29a6128661428c28858b1544f"><td class="memItemLeft" align="right" valign="top"><a id="a3ee226a29a6128661428c28858b1544f" name="a3ee226a29a6128661428c28858b1544f"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_signal_threshold</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *signal)</td></tr>
-<tr class="memdesc:a3ee226a29a6128661428c28858b1544f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current signal threshold in kcps. <br /></td></tr>
+<tr class="memitem:a3ee226a29a6128661428c28858b1544f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a3ee226a29a6128661428c28858b1544f">vl53l1x_get_signal_threshold</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *signal)</td></tr>
+<tr class="memdesc:a3ee226a29a6128661428c28858b1544f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current signal threshold in kcps.  <a href="_v_l53_l1_x__api_8h.html#a3ee226a29a6128661428c28858b1544f">More...</a><br /></td></tr>
 <tr class="separator:a3ee226a29a6128661428c28858b1544f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5796c53174f0cfa4f24d58e6cdee6d83"><td class="memItemLeft" align="right" valign="top"><a id="a5796c53174f0cfa4f24d58e6cdee6d83" name="a5796c53174f0cfa4f24d58e6cdee6d83"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_set_sigma_threshold</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> sigma)</td></tr>
-<tr class="memdesc:a5796c53174f0cfa4f24d58e6cdee6d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs a new sigma threshold in mm (default=15 mm) <br /></td></tr>
+<tr class="memitem:a5796c53174f0cfa4f24d58e6cdee6d83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a5796c53174f0cfa4f24d58e6cdee6d83">vl53l1x_set_sigma_threshold</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> sigma)</td></tr>
+<tr class="memdesc:a5796c53174f0cfa4f24d58e6cdee6d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function programs a new sigma threshold in mm (default=15 mm)  <a href="_v_l53_l1_x__api_8h.html#a5796c53174f0cfa4f24d58e6cdee6d83">More...</a><br /></td></tr>
 <tr class="separator:a5796c53174f0cfa4f24d58e6cdee6d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38ece38fb693b905a8dad00064f0da87"><td class="memItemLeft" align="right" valign="top"><a id="a38ece38fb693b905a8dad00064f0da87" name="a38ece38fb693b905a8dad00064f0da87"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_get_sigma_threshold</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *signal)</td></tr>
-<tr class="memdesc:a38ece38fb693b905a8dad00064f0da87"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current sigma threshold in mm. <br /></td></tr>
+<tr class="memitem:a38ece38fb693b905a8dad00064f0da87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a38ece38fb693b905a8dad00064f0da87">vl53l1x_get_sigma_threshold</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *signal)</td></tr>
+<tr class="memdesc:a38ece38fb693b905a8dad00064f0da87"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current sigma threshold in mm.  <a href="_v_l53_l1_x__api_8h.html#a38ece38fb693b905a8dad00064f0da87">More...</a><br /></td></tr>
 <tr class="separator:a38ece38fb693b905a8dad00064f0da87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0212a63feb0fa857397d2fdc71202330"><td class="memItemLeft" align="right" valign="top"><a id="a0212a63feb0fa857397d2fdc71202330" name="a0212a63feb0fa857397d2fdc71202330"></a>
-VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_start_temperature_update</b> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev)</td></tr>
-<tr class="memdesc:a0212a63feb0fa857397d2fdc71202330"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs the temperature calibration. It is recommended to call this function any time the temperature might have changed by more than 8 deg C without sensor ranging activity for an extended period. <br /></td></tr>
+<tr class="memitem:a0212a63feb0fa857397d2fdc71202330"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a0212a63feb0fa857397d2fdc71202330">vl53l1x_start_temperature_update</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dev)</td></tr>
+<tr class="memdesc:a0212a63feb0fa857397d2fdc71202330"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs the temperature calibration. It is recommended to call this function any time the temperature might have changed by more than 8 deg C without sensor ranging activity for an extended period.  <a href="_v_l53_l1_x__api_8h.html#a0212a63feb0fa857397d2fdc71202330">More...</a><br /></td></tr>
 <tr class="separator:a0212a63feb0fa857397d2fdc71202330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77b4d68676c8a18cea8082bc2730aa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ad77b4d68676c8a18cea8082bc2730aa5">vl53l1x_init</a> (void)</td></tr>
+<tr class="memdesc:ad77b4d68676c8a18cea8082bc2730aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">vl53l1x init  <a href="_v_l53_l1_x__api_8h.html#ad77b4d68676c8a18cea8082bc2730aa5">More...</a><br /></td></tr>
+<tr class="separator:ad77b4d68676c8a18cea8082bc2730aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3802a0bda8255559673660bd326cf4d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a3802a0bda8255559673660bd326cf4d6">vl53l1x_get_pheriod_ns</a> (<a class="el" href="_v_l53_l1_x__api_8h.html#a9071d86a1cd0028f917edc10aeb7a36d">vl53l1x_period_t</a> rate)</td></tr>
+<tr class="memdesc:a3802a0bda8255559673660bd326cf4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">get mesure pheriod [ns]  <a href="_v_l53_l1_x__api_8h.html#a3802a0bda8255559673660bd326cf4d6">More...</a><br /></td></tr>
+<tr class="separator:a3802a0bda8255559673660bd326cf4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9464712a8fe994b5c7d6be977c0219a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a9464712a8fe994b5c7d6be977c0219a9">vl53l1x_get_mode</a> (<a class="el" href="structvl53l1x__mode__t.html">vl53l1x_mode_t</a> *mode)</td></tr>
+<tr class="memdesc:a9464712a8fe994b5c7d6be977c0219a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">get vl53l1x current mode  <a href="_v_l53_l1_x__api_8h.html#a9464712a8fe994b5c7d6be977c0219a9">More...</a><br /></td></tr>
+<tr class="separator:a9464712a8fe994b5c7d6be977c0219a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad988bb99633d398767ba7321485ffeee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#ad988bb99633d398767ba7321485ffeee">vl53l1x_set_mode</a> (<a class="el" href="structvl53l1x__mode__t.html">vl53l1x_mode_t</a> *mode)</td></tr>
+<tr class="memdesc:ad988bb99633d398767ba7321485ffeee"><td class="mdescLeft">&#160;</td><td class="mdescRight">set vl53l1x current mode  <a href="_v_l53_l1_x__api_8h.html#ad988bb99633d398767ba7321485ffeee">More...</a><br /></td></tr>
+<tr class="separator:ad988bb99633d398767ba7321485ffeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6920a6defb8670c68e78c38cd1893758"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a6920a6defb8670c68e78c38cd1893758">vl53l1x_enable</a> (void)</td></tr>
+<tr class="memdesc:a6920a6defb8670c68e78c38cd1893758"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable vl53l1x  <a href="_v_l53_l1_x__api_8h.html#a6920a6defb8670c68e78c38cd1893758">More...</a><br /></td></tr>
+<tr class="separator:a6920a6defb8670c68e78c38cd1893758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32863c4eb4bd5fba8495c1a75cea61f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_l53_l1_x__api_8h.html#a32863c4eb4bd5fba8495c1a75cea61f8">vl53l1x_disable</a> (void)</td></tr>
+<tr class="memdesc:a32863c4eb4bd5fba8495c1a75cea61f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable vl53l1x  <a href="_v_l53_l1_x__api_8h.html#a32863c4eb4bd5fba8495c1a75cea61f8">More...</a><br /></td></tr>
+<tr class="separator:a32863c4eb4bd5fba8495c1a75cea61f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Functions definition. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+<div class="textblock"><p >VL53L1X header driver. </p>
+<p >Functions definition.</p>
+<dl class="section date"><dt>Date</dt><dd>20 Octpber 2022</dd></dl>
+<p>COPYRIGHT(c) 2022 EDGE Impulse</p>
+<p >Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p><ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+<li>Neither the name of EDGE Impulse nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+</ol>
+<p >THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, data, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a55aa3ef1d347f822cc5f6028f2ddf56f" name="a55aa3ef1d347f822cc5f6028f2ddf56f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55aa3ef1d347f822cc5f6028f2ddf56f">&#9670;&nbsp;</a></span>ALGO__CROSSTALK_COMPENSATION_PLANE_OFFSET_KCPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ALGO__CROSSTALK_COMPENSATION_PLANE_OFFSET_KCPS&#160;&#160;&#160;0x0016</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af25151d720c6f6d003e61d92ad738c4c" name="af25151d720c6f6d003e61d92ad738c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af25151d720c6f6d003e61d92ad738c4c">&#9670;&nbsp;</a></span>ALGO__CROSSTALK_COMPENSATION_X_PLANE_GRADIENT_KCPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ALGO__CROSSTALK_COMPENSATION_X_PLANE_GRADIENT_KCPS&#160;&#160;&#160;0x0018</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25a78b1dc1070a5e72e19645f8f52d33" name="a25a78b1dc1070a5e72e19645f8f52d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a78b1dc1070a5e72e19645f8f52d33">&#9670;&nbsp;</a></span>ALGO__CROSSTALK_COMPENSATION_Y_PLANE_GRADIENT_KCPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ALGO__CROSSTALK_COMPENSATION_Y_PLANE_GRADIENT_KCPS&#160;&#160;&#160;0x001A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ab0e4617017e0bd940200ba07be4d34" name="a2ab0e4617017e0bd940200ba07be4d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ab0e4617017e0bd940200ba07be4d34">&#9670;&nbsp;</a></span>ALGO__PART_TO_PART_RANGE_OFFSET_MM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ALGO__PART_TO_PART_RANGE_OFFSET_MM&#160;&#160;&#160;0x001E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2806961b4373aaf95b11489324e8f84b" name="a2806961b4373aaf95b11489324e8f84b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2806961b4373aaf95b11489324e8f84b">&#9670;&nbsp;</a></span>GPIO__TIO_HV_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIO__TIO_HV_STATUS&#160;&#160;&#160;0x0031</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2b6c32911c2c553477f19bb3c25ce89" name="ac2b6c32911c2c553477f19bb3c25ce89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2b6c32911c2c553477f19bb3c25ce89">&#9670;&nbsp;</a></span>GPIO_HV_MUX__CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIO_HV_MUX__CTRL&#160;&#160;&#160;0x0030</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88617357dbed400268cfc2ee563f5396" name="a88617357dbed400268cfc2ee563f5396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88617357dbed400268cfc2ee563f5396">&#9670;&nbsp;</a></span>MM_CONFIG__INNER_OFFSET_MM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MM_CONFIG__INNER_OFFSET_MM&#160;&#160;&#160;0x0020</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f7f279509c4971c0027dd4004007c2f" name="a3f7f279509c4971c0027dd4004007c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f7f279509c4971c0027dd4004007c2f">&#9670;&nbsp;</a></span>MM_CONFIG__OUTER_OFFSET_MM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MM_CONFIG__OUTER_OFFSET_MM&#160;&#160;&#160;0x0022</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab27d045e59238e549647e80fae3573f8" name="ab27d045e59238e549647e80fae3573f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27d045e59238e549647e80fae3573f8">&#9670;&nbsp;</a></span>PHASECAL_CONFIG__TIMEOUT_MACROP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PHASECAL_CONFIG__TIMEOUT_MACROP&#160;&#160;&#160;0x004B</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad0f40d4cfe841c8ea1df480bda90151" name="aad0f40d4cfe841c8ea1df480bda90151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0f40d4cfe841c8ea1df480bda90151">&#9670;&nbsp;</a></span>RANGE_CONFIG__MIN_COUNT_RATE_RTN_LIMIT_MCPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RANGE_CONFIG__MIN_COUNT_RATE_RTN_LIMIT_MCPS&#160;&#160;&#160;0x0066</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab72c85000f194caedd5a9137e962fde4" name="ab72c85000f194caedd5a9137e962fde4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab72c85000f194caedd5a9137e962fde4">&#9670;&nbsp;</a></span>RANGE_CONFIG__SIGMA_THRESH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RANGE_CONFIG__SIGMA_THRESH&#160;&#160;&#160;0x0064</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02495d4260afeb98fc3ad68be4fe3c42" name="a02495d4260afeb98fc3ad68be4fe3c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02495d4260afeb98fc3ad68be4fe3c42">&#9670;&nbsp;</a></span>RANGE_CONFIG__TIMEOUT_MACROP_A_HI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RANGE_CONFIG__TIMEOUT_MACROP_A_HI&#160;&#160;&#160;0x005E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae73e835209b048757aab1021f6a72e41" name="ae73e835209b048757aab1021f6a72e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73e835209b048757aab1021f6a72e41">&#9670;&nbsp;</a></span>RANGE_CONFIG__TIMEOUT_MACROP_B_HI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RANGE_CONFIG__TIMEOUT_MACROP_B_HI&#160;&#160;&#160;0x0061</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcec89cc9a8ff7a7392266f8470a2605" name="abcec89cc9a8ff7a7392266f8470a2605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcec89cc9a8ff7a7392266f8470a2605">&#9670;&nbsp;</a></span>RANGE_CONFIG__TIMEOUT_MACROP_B_LO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RANGE_CONFIG__TIMEOUT_MACROP_B_LO&#160;&#160;&#160;0x0062</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7f3c335c97795f0220d04a8feadc3ca" name="ad7f3c335c97795f0220d04a8feadc3ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7f3c335c97795f0220d04a8feadc3ca">&#9670;&nbsp;</a></span>RANGE_CONFIG__VALID_PHASE_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RANGE_CONFIG__VALID_PHASE_HIGH&#160;&#160;&#160;0x0069</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18bc9ac87e860bbc9106f09d8f35491e" name="a18bc9ac87e860bbc9106f09d8f35491e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18bc9ac87e860bbc9106f09d8f35491e">&#9670;&nbsp;</a></span>RANGE_CONFIG__VCSEL_PERIOD_A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RANGE_CONFIG__VCSEL_PERIOD_A&#160;&#160;&#160;0x0060</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab18472732f386d61b67e5fa6e35a57e9" name="ab18472732f386d61b67e5fa6e35a57e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18472732f386d61b67e5fa6e35a57e9">&#9670;&nbsp;</a></span>RANGE_CONFIG__VCSEL_PERIOD_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RANGE_CONFIG__VCSEL_PERIOD_B&#160;&#160;&#160;0x0063</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fec1c1688c009c83fd1729042522710" name="a8fec1c1688c009c83fd1729042522710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fec1c1688c009c83fd1729042522710">&#9670;&nbsp;</a></span>RESULT__AMBIENT_COUNT_RATE_MCPS_SD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESULT__AMBIENT_COUNT_RATE_MCPS_SD&#160;&#160;&#160;0x0090</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a706cd1aa011becfc35c7b496f599a30f" name="a706cd1aa011becfc35c7b496f599a30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706cd1aa011becfc35c7b496f599a30f">&#9670;&nbsp;</a></span>ROI_CONFIG__USER_ROI_CENTRE_SPAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ROI_CONFIG__USER_ROI_CENTRE_SPAD&#160;&#160;&#160;0x007F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a279ad59723f100caf9bf056bbde528fa" name="a279ad59723f100caf9bf056bbde528fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279ad59723f100caf9bf056bbde528fa">&#9670;&nbsp;</a></span>ROI_CONFIG__USER_ROI_REQUESTED_GLOBAL_XY_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ROI_CONFIG__USER_ROI_REQUESTED_GLOBAL_XY_SIZE&#160;&#160;&#160;0x0080</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea5e68cc5ce6336be7979caf62305db2" name="aea5e68cc5ce6336be7979caf62305db2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea5e68cc5ce6336be7979caf62305db2">&#9670;&nbsp;</a></span>SD_CONFIG__INITIAL_PHASE_SD0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_CONFIG__INITIAL_PHASE_SD0&#160;&#160;&#160;0x007A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a16e9c2ee589cd21957f1302d6654f1" name="a6a16e9c2ee589cd21957f1302d6654f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a16e9c2ee589cd21957f1302d6654f1">&#9670;&nbsp;</a></span>SD_CONFIG__WOI_SD0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_CONFIG__WOI_SD0&#160;&#160;&#160;0x0078</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74625341a79e3484830c401d8947443c" name="a74625341a79e3484830c401d8947443c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74625341a79e3484830c401d8947443c">&#9670;&nbsp;</a></span>SOFT_RESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOFT_RESET&#160;&#160;&#160;0x0000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0151356cafc31665554f71d408c248a0" name="a0151356cafc31665554f71d408c248a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0151356cafc31665554f71d408c248a0">&#9670;&nbsp;</a></span>SYSTEM__INTERRUPT_CLEAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM__INTERRUPT_CLEAR&#160;&#160;&#160;0x0086</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97207a2ee20535cd0102a4bb05779127" name="a97207a2ee20535cd0102a4bb05779127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97207a2ee20535cd0102a4bb05779127">&#9670;&nbsp;</a></span>SYSTEM__INTERRUPT_CONFIG_GPIO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM__INTERRUPT_CONFIG_GPIO&#160;&#160;&#160;0x0046</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa430923f7d8ebfb9281163d17df1cc1e" name="aa430923f7d8ebfb9281163d17df1cc1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa430923f7d8ebfb9281163d17df1cc1e">&#9670;&nbsp;</a></span>SYSTEM__MODE_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM__MODE_START&#160;&#160;&#160;0x0087</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae05b913fc1e0f18186c4a2bd44ff49b2" name="ae05b913fc1e0f18186c4a2bd44ff49b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05b913fc1e0f18186c4a2bd44ff49b2">&#9670;&nbsp;</a></span>SYSTEM__SEQUENCE_CONFIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM__SEQUENCE_CONFIG&#160;&#160;&#160;0x0081</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa430f8d2f8ee1a40476f5202f16807ae" name="aa430f8d2f8ee1a40476f5202f16807ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa430f8d2f8ee1a40476f5202f16807ae">&#9670;&nbsp;</a></span>SYSTEM__THRESH_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM__THRESH_HIGH&#160;&#160;&#160;0x0072</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ff4642b47201d4d821fecc72ff8513c" name="a9ff4642b47201d4d821fecc72ff8513c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ff4642b47201d4d821fecc72ff8513c">&#9670;&nbsp;</a></span>SYSTEM__THRESH_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM__THRESH_LOW&#160;&#160;&#160;0x0074</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a095d61baf5e40ecde589a5dbf17b391a" name="a095d61baf5e40ecde589a5dbf17b391a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a095d61baf5e40ecde589a5dbf17b391a">&#9670;&nbsp;</a></span>VL53L1_FIRMWARE__SYSTEM_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1_FIRMWARE__SYSTEM_STATUS&#160;&#160;&#160;0x00E5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af09585764ab1dde6627bad6098cd5e6e" name="af09585764ab1dde6627bad6098cd5e6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af09585764ab1dde6627bad6098cd5e6e">&#9670;&nbsp;</a></span>VL53L1_I2C_SLAVE__DEVICE_ADDRESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1_I2C_SLAVE__DEVICE_ADDRESS&#160;&#160;&#160;0x0001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a27dfef0795b6688aacd6cd158939be" name="a6a27dfef0795b6688aacd6cd158939be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a27dfef0795b6688aacd6cd158939be">&#9670;&nbsp;</a></span>VL53L1_IDENTIFICATION__MODEL_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1_IDENTIFICATION__MODEL_ID&#160;&#160;&#160;0x010F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa93dea9a0d4065a9c4e246ee26daef0" name="afa93dea9a0d4065a9c4e246ee26daef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa93dea9a0d4065a9c4e246ee26daef0">&#9670;&nbsp;</a></span>VL53L1_RESULT__DSS_ACTUAL_EFFECTIVE_SPADS_SD0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1_RESULT__DSS_ACTUAL_EFFECTIVE_SPADS_SD0&#160;&#160;&#160;0x008C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ac26737f5a5eb4915af98c2be6fb7c2" name="a7ac26737f5a5eb4915af98c2be6fb7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac26737f5a5eb4915af98c2be6fb7c2">&#9670;&nbsp;</a></span>VL53L1_RESULT__FINAL_CROSSTALK_CORRECTED_RANGE_MM_SD0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1_RESULT__FINAL_CROSSTALK_CORRECTED_RANGE_MM_SD0&#160;&#160;&#160;0x0096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80678a1ebe27c577e592c271e92194fe" name="a80678a1ebe27c577e592c271e92194fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80678a1ebe27c577e592c271e92194fe">&#9670;&nbsp;</a></span>VL53L1_RESULT__OSC_CALIBRATE_VAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1_RESULT__OSC_CALIBRATE_VAL&#160;&#160;&#160;0x00DE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa80215477cc3130e21769999b9a2cfd4" name="aa80215477cc3130e21769999b9a2cfd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa80215477cc3130e21769999b9a2cfd4">&#9670;&nbsp;</a></span>VL53L1_RESULT__PEAK_SIGNAL_COUNT_RATE_CROSSTALK_CORRECTED_MCPS_SD0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1_RESULT__PEAK_SIGNAL_COUNT_RATE_CROSSTALK_CORRECTED_MCPS_SD0&#160;&#160;&#160;0x0098</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a795c007a11b10559317dc29d6dd5b43e" name="a795c007a11b10559317dc29d6dd5b43e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795c007a11b10559317dc29d6dd5b43e">&#9670;&nbsp;</a></span>VL53L1_RESULT__RANGE_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1_RESULT__RANGE_STATUS&#160;&#160;&#160;0x0089</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af64a6267f55a636775a99c6c32b098b7" name="af64a6267f55a636775a99c6c32b098b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64a6267f55a636775a99c6c32b098b7">&#9670;&nbsp;</a></span>VL53L1_ROI_CONFIG__MODE_ROI_CENTRE_SPAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1_ROI_CONFIG__MODE_ROI_CENTRE_SPAD&#160;&#160;&#160;0x013E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01651ee9d6f60f7829478d87cf82b3da" name="a01651ee9d6f60f7829478d87cf82b3da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01651ee9d6f60f7829478d87cf82b3da">&#9670;&nbsp;</a></span>VL53L1_SYSTEM__GROUPED_PARAMETER_HOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1_SYSTEM__GROUPED_PARAMETER_HOLD&#160;&#160;&#160;0x0082</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaf7ce8aa0b5888276751194bcf5f931" name="afaf7ce8aa0b5888276751194bcf5f931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaf7ce8aa0b5888276751194bcf5f931">&#9670;&nbsp;</a></span>VL53L1_SYSTEM__INTERMEASUREMENT_PERIOD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1_SYSTEM__INTERMEASUREMENT_PERIOD&#160;&#160;&#160;0x006C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b554c56b9617df6b957f26e407ce54d" name="a0b554c56b9617df6b957f26e407ce54d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b554c56b9617df6b957f26e407ce54d">&#9670;&nbsp;</a></span>VL53L1_VHV_CONFIG__TIMEOUT_MACROP_LOOP_BOUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1_VHV_CONFIG__TIMEOUT_MACROP_LOOP_BOUND&#160;&#160;&#160;0x0008</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a542371c8c3204d2a190bebed741a741e" name="a542371c8c3204d2a190bebed741a741e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a542371c8c3204d2a190bebed741a741e">&#9670;&nbsp;</a></span>VL53L1X_IMPLEMENTATION_VER_MAJOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1X_IMPLEMENTATION_VER_MAJOR&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb992f2c9bfd1c73dcfae9ebc7180fad" name="aeb992f2c9bfd1c73dcfae9ebc7180fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb992f2c9bfd1c73dcfae9ebc7180fad">&#9670;&nbsp;</a></span>VL53L1X_IMPLEMENTATION_VER_MINOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1X_IMPLEMENTATION_VER_MINOR&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aede005dde2f068571499b6f56a2e191f" name="aede005dde2f068571499b6f56a2e191f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede005dde2f068571499b6f56a2e191f">&#9670;&nbsp;</a></span>VL53L1X_IMPLEMENTATION_VER_REVISION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1X_IMPLEMENTATION_VER_REVISION&#160;&#160;&#160;0000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abccaf6e0c198fe271bde715a90f23b34" name="abccaf6e0c198fe271bde715a90f23b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abccaf6e0c198fe271bde715a90f23b34">&#9670;&nbsp;</a></span>VL53L1X_IMPLEMENTATION_VER_SUB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VL53L1X_IMPLEMENTATION_VER_SUB&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="aa2cba6efa144107fcf97e81be52802fc" name="aa2cba6efa144107fcf97e81be52802fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2cba6efa144107fcf97e81be52802fc">&#9670;&nbsp;</a></span>VL53L1X_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a5dd19e87cacf2b037a35834a0f07d3cf" name="a5dd19e87cacf2b037a35834a0f07d3cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd19e87cacf2b037a35834a0f07d3cf">&#9670;&nbsp;</a></span>vl53l1x_distance_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_v_l53_l1_x__api_8h.html#a5dd19e87cacf2b037a35834a0f07d3cf">vl53l1x_distance_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5dd19e87cacf2b037a35834a0f07d3cfa730b9527dc509e9929d4aebaa304dad8" name="a5dd19e87cacf2b037a35834a0f07d3cfa730b9527dc509e9929d4aebaa304dad8"></a>VL53_DISTANCE_SHORT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5dd19e87cacf2b037a35834a0f07d3cfa6f19a83923707e8c70b9afe7809456b4" name="a5dd19e87cacf2b037a35834a0f07d3cfa6f19a83923707e8c70b9afe7809456b4"></a>VL53_DISTANCE_LONG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5dd19e87cacf2b037a35834a0f07d3cfa5b951876e8a8b579cd27a420d46e468b" name="a5dd19e87cacf2b037a35834a0f07d3cfa5b951876e8a8b579cd27a420d46e468b"></a>VL53_DISTANCE_ENUM&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9071d86a1cd0028f917edc10aeb7a36d" name="a9071d86a1cd0028f917edc10aeb7a36d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9071d86a1cd0028f917edc10aeb7a36d">&#9670;&nbsp;</a></span>vl53l1x_period_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_v_l53_l1_x__api_8h.html#a9071d86a1cd0028f917edc10aeb7a36d">vl53l1x_period_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9071d86a1cd0028f917edc10aeb7a36da1931548691bac93efb8ebd813eef38da" name="a9071d86a1cd0028f917edc10aeb7a36da1931548691bac93efb8ebd813eef38da"></a>VL53_PERIOD_1S&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9071d86a1cd0028f917edc10aeb7a36da8d950c56f377bdcfeac3ac5c93a6c2c3" name="a9071d86a1cd0028f917edc10aeb7a36da8d950c56f377bdcfeac3ac5c93a6c2c3"></a>VL53_PERIOD_2S&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9071d86a1cd0028f917edc10aeb7a36da748f435e896fa6de11b58074aeaefacb" name="a9071d86a1cd0028f917edc10aeb7a36da748f435e896fa6de11b58074aeaefacb"></a>VL53_PERIOD_5S&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9071d86a1cd0028f917edc10aeb7a36da624beb7c868b29e74edd34293f3b08dd" name="a9071d86a1cd0028f917edc10aeb7a36da624beb7c868b29e74edd34293f3b08dd"></a>VL53_PERIOD_10S&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9071d86a1cd0028f917edc10aeb7a36dafaad4c4372874f21d66febd9fc0d8f34" name="a9071d86a1cd0028f917edc10aeb7a36dafaad4c4372874f21d66febd9fc0d8f34"></a>VL53_PERIOD_ENUM&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a5569f4b76534e66bec3e9db58d7666e7" name="a5569f4b76534e66bec3e9db58d7666e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5569f4b76534e66bec3e9db58d7666e7">&#9670;&nbsp;</a></span>vl53l1x_boot_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_boot_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the boot state of the device (1:booted, 0:not booted) </p>
+
+</div>
+</div>
 <a id="ade58db052597a1fd9acb34ead2030b16" name="ade58db052597a1fd9acb34ead2030b16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade58db052597a1fd9acb34ead2030b16">&#9670;&nbsp;</a></span>vl53l1x_check_for_data_ready()</h2>
 
@@ -428,7 +1110,7 @@ VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_star
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VL53L1X_ERROR vl53l1x_check_for_data_ready </td>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_check_for_data_ready </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
@@ -457,6 +1139,886 @@ VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_star
 
 </div>
 </div>
+<a id="a5a495ffca8270f920990d74d0747405c" name="a5a495ffca8270f920990d74d0747405c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a495ffca8270f920990d74d0747405c">&#9670;&nbsp;</a></span>vl53l1x_clear_interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_clear_interrupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function clears the interrupt, to be called after a ranging data reading to arm the interrupt for the next data ready event. </p>
+
+</div>
+</div>
+<a id="a32863c4eb4bd5fba8495c1a75cea61f8" name="a32863c4eb4bd5fba8495c1a75cea61f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32863c4eb4bd5fba8495c1a75cea61f8">&#9670;&nbsp;</a></span>vl53l1x_disable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vl53l1x_disable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>disable vl53l1x </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6920a6defb8670c68e78c38cd1893758" name="a6920a6defb8670c68e78c38cd1893758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6920a6defb8670c68e78c38cd1893758">&#9670;&nbsp;</a></span>vl53l1x_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vl53l1x_enable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enable vl53l1x </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5e94f28c228de54a040a3a25a6f0f3f0" name="a5e94f28c228de54a040a3a25a6f0f3f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e94f28c228de54a040a3a25a6f0f3f0">&#9670;&nbsp;</a></span>vl53l1x_get_ambient_per_spad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_ambient_per_spad </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>amb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the ambient per SPAD in kcps/SPAD. </p>
+
+</div>
+</div>
+<a id="ae6441320a9b07c03d2fdad8c08b19e87" name="ae6441320a9b07c03d2fdad8c08b19e87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6441320a9b07c03d2fdad8c08b19e87">&#9670;&nbsp;</a></span>vl53l1x_get_ambient_rate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_ambient_rate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>ambRate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the ambient rate in kcps. </p>
+
+</div>
+</div>
+<a id="a6383c8c509e1a2f7f2b320f134c289ff" name="a6383c8c509e1a2f7f2b320f134c289ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6383c8c509e1a2f7f2b320f134c289ff">&#9670;&nbsp;</a></span>vl53l1x_get_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_distance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>distance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the distance measured by the sensor in mm. </p>
+
+</div>
+</div>
+<a id="ab5d87fa18a970aef69aaa05cdb1d002b" name="ab5d87fa18a970aef69aaa05cdb1d002b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5d87fa18a970aef69aaa05cdb1d002b">&#9670;&nbsp;</a></span>vl53l1x_get_distance_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_distance_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>pDistanceMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the current distance mode (1=short, 2=long). </p>
+
+</div>
+</div>
+<a id="ab8746fec3b91e8116592d837e15519a9" name="ab8746fec3b91e8116592d837e15519a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8746fec3b91e8116592d837e15519a9">&#9670;&nbsp;</a></span>vl53l1x_get_distance_threshold_high()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_distance_threshold_high </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>high</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the high threshold in mm. </p>
+
+</div>
+</div>
+<a id="ab610f0ea2d0e3f328d79f73d7276e6d1" name="ab610f0ea2d0e3f328d79f73d7276e6d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab610f0ea2d0e3f328d79f73d7276e6d1">&#9670;&nbsp;</a></span>vl53l1x_get_distance_threshold_low()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_distance_threshold_low </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>low</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the low threshold in mm. </p>
+
+</div>
+</div>
+<a id="a1e42eb941989de98eee5d58ee93cf453" name="a1e42eb941989de98eee5d58ee93cf453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e42eb941989de98eee5d58ee93cf453">&#9670;&nbsp;</a></span>vl53l1x_get_distance_threshold_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_distance_threshold_window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the window detection mode (0=below; 1=above; 2=out; 3=in) </p>
+
+</div>
+</div>
+<a id="a99d19f5f31668e37048d2cf729832f70" name="a99d19f5f31668e37048d2cf729832f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99d19f5f31668e37048d2cf729832f70">&#9670;&nbsp;</a></span>vl53l1x_get_inter_measurementIn_ms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_inter_measurementIn_ms </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>pIM</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the Intermeasurement period in ms. </p>
+
+</div>
+</div>
+<a id="a9464712a8fe994b5c7d6be977c0219a9" name="a9464712a8fe994b5c7d6be977c0219a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9464712a8fe994b5c7d6be977c0219a9">&#9670;&nbsp;</a></span>vl53l1x_get_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vl53l1x_get_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structvl53l1x__mode__t.html">vl53l1x_mode_t</a> *&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get vl53l1x current mode </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">mode</td><td>from <a class="el" href="structvl53l1x__mode__t.html">vl53l1x_mode_t</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3ba503af55715bf579363e4c37a6e8a4" name="a3ba503af55715bf579363e4c37a6e8a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ba503af55715bf579363e4c37a6e8a4">&#9670;&nbsp;</a></span>vl53l1x_get_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_offset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *&#160;</td>
+          <td class="paramname"><em>Offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the programmed offset correction value in mm. </p>
+
+</div>
+</div>
+<a id="a3802a0bda8255559673660bd326cf4d6" name="a3802a0bda8255559673660bd326cf4d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3802a0bda8255559673660bd326cf4d6">&#9670;&nbsp;</a></span>vl53l1x_get_pheriod_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> vl53l1x_get_pheriod_ns </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_v_l53_l1_x__api_8h.html#a9071d86a1cd0028f917edc10aeb7a36d">vl53l1x_period_t</a>&#160;</td>
+          <td class="paramname"><em>rate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get mesure pheriod [ns] </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rate</td><td>measure rate from vl53l1x_period_t </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">measure</td><td>pheriod [ns] 0 if off, 0xffffffffffffffff in other caces</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rate</td><td>measure rate from vl53l1x_period_t </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">measure</td><td>pheriod [ns], 0xffffffffffffffff in other caces </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8fbbe451739c4db54e8ae4f993d3d084" name="a8fbbe451739c4db54e8ae4f993d3d084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fbbe451739c4db54e8ae4f993d3d084">&#9670;&nbsp;</a></span>vl53l1x_get_range_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_range_status </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>rangeStatus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the ranging status error <br  />
+(0:no error, 1:sigma failed, 2:signal failed, ..., 7:wrap-around) </p>
+
+</div>
+</div>
+<a id="a360e95a5ea41cba4f7ea49ba4547a811" name="a360e95a5ea41cba4f7ea49ba4547a811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360e95a5ea41cba4f7ea49ba4547a811">&#9670;&nbsp;</a></span>vl53l1x_get_result()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_result </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_v_l53_l1_x___result__t.html">VL53L1X_Result_t</a> *&#160;</td>
+          <td class="paramname"><em>pResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns measurements and the range status in a single read access. </p>
+
+</div>
+</div>
+<a id="aa3dc7a7f9be92d3d317304efaef9b4cf" name="aa3dc7a7f9be92d3d317304efaef9b4cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3dc7a7f9be92d3d317304efaef9b4cf">&#9670;&nbsp;</a></span>vl53l1x_get_roi_center()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_roi_center </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>ROICenter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the current user ROI center. </p>
+
+</div>
+</div>
+<a id="a4ea0ad3ea32c2f104e2b787be3b96f54" name="a4ea0ad3ea32c2f104e2b787be3b96f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea0ad3ea32c2f104e2b787be3b96f54">&#9670;&nbsp;</a></span>vl53l1x_get_sensorId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_sensorId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the sensor id, sensor Id must be 0xEEAC. </p>
+
+</div>
+</div>
+<a id="a38ece38fb693b905a8dad00064f0da87" name="a38ece38fb693b905a8dad00064f0da87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ece38fb693b905a8dad00064f0da87">&#9670;&nbsp;</a></span>vl53l1x_get_sigma_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_sigma_threshold </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>signal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the current sigma threshold in mm. </p>
+
+</div>
+</div>
+<a id="a08ea934c3cf3d6598281f8f383c831cc" name="a08ea934c3cf3d6598281f8f383c831cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ea934c3cf3d6598281f8f383c831cc">&#9670;&nbsp;</a></span>vl53l1x_get_signal_per_spad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_signal_per_spad </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>signalPerSp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the returned signal per SPAD in kcps/SPAD. With kcps stands for Kilo Count Per Second. </p>
+
+</div>
+</div>
+<a id="a33bd34fd2efc4945e0e4a7ee5eb37379" name="a33bd34fd2efc4945e0e4a7ee5eb37379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33bd34fd2efc4945e0e4a7ee5eb37379">&#9670;&nbsp;</a></span>vl53l1x_get_signal_rate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_signal_rate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>signalRate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the returned signal in kcps. </p>
+
+</div>
+</div>
+<a id="a3ee226a29a6128661428c28858b1544f" name="a3ee226a29a6128661428c28858b1544f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ee226a29a6128661428c28858b1544f">&#9670;&nbsp;</a></span>vl53l1x_get_signal_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_signal_threshold </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>signal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the current signal threshold in kcps. </p>
+
+</div>
+</div>
+<a id="a59c86784b36f7a45b720eba3191df585" name="a59c86784b36f7a45b720eba3191df585"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c86784b36f7a45b720eba3191df585">&#9670;&nbsp;</a></span>vl53l1x_get_spad_nb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_spad_nb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>spNb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the current number of enabled SPADs. </p>
+
+</div>
+</div>
+<a id="acc458faf9cbd22a57ad970e1788928a2" name="acc458faf9cbd22a57ad970e1788928a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc458faf9cbd22a57ad970e1788928a2">&#9670;&nbsp;</a></span>vl53l1x_get_sw_version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_sw_version </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_v_l53_l1_x___version__t.html">VL53L1X_Version_t</a> *&#160;</td>
+          <td class="paramname"><em>pVersion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the SW driver version. </p>
+
+</div>
+</div>
+<a id="a3c33baf0aa0948cb891ab964e5c420b5" name="a3c33baf0aa0948cb891ab964e5c420b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c33baf0aa0948cb891ab964e5c420b5">&#9670;&nbsp;</a></span>vl53l1x_get_timing_budgetIn_ms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_timing_budgetIn_ms </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>pTimingBudgetInMs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the current timing budget in ms. </p>
+
+</div>
+</div>
+<a id="ad8a21dad9f62c5ee8faac36acdaae85e" name="ad8a21dad9f62c5ee8faac36acdaae85e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a21dad9f62c5ee8faac36acdaae85e">&#9670;&nbsp;</a></span>vl53l1x_get_xtalk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_get_xtalk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>Xtalk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the current programmed xtalk correction value in cps. </p>
+
+</div>
+</div>
+<a id="a0298b3938770f823467d83632116ac86" name="a0298b3938770f823467d83632116ac86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0298b3938770f823467d83632116ac86">&#9670;&nbsp;</a></span>vl53l1x_getInterrupt_polarity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_getInterrupt_polarity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>pIntPol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the current interrupt polarity<br  />
+1=active high (default), 0=active low. </p>
+
+</div>
+</div>
+<a id="a5907eab052463c151a31e7223698f680" name="a5907eab052463c151a31e7223698f680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5907eab052463c151a31e7223698f680">&#9670;&nbsp;</a></span>VL53L1X_GetROI_XY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> VL53L1X_GetROI_XY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>ROI_X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>ROI_Y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns width X and height Y. </p>
+
+</div>
+</div>
+<a id="ad77b4d68676c8a18cea8082bc2730aa5" name="ad77b4d68676c8a18cea8082bc2730aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad77b4d68676c8a18cea8082bc2730aa5">&#9670;&nbsp;</a></span>vl53l1x_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vl53l1x_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>vl53l1x init </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">non</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a18b148227ffe7b68c46fa7f01133f92b" name="a18b148227ffe7b68c46fa7f01133f92b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18b148227ffe7b68c46fa7f01133f92b">&#9670;&nbsp;</a></span>vl53l1x_sensor_init()</h2>
 
@@ -464,7 +2026,7 @@ VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_star
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VL53L1X_ERROR vl53l1x_sensor_init </td>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_sensor_init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>dev</em></td><td>)</td>
@@ -484,6 +2046,37 @@ VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_star
 
 </div>
 </div>
+<a id="a7f06c72fcb8a161d69d269516a6c20d7" name="a7f06c72fcb8a161d69d269516a6c20d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f06c72fcb8a161d69d269516a6c20d7">&#9670;&nbsp;</a></span>vl53l1x_set_distance_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_set_distance_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>DistanceMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function programs the distance mode (1=short, 2=long(default)). Short mode max distance is limited to 1.3 m but better ambient immunity.<br  />
+Long mode can range up to 4 m in the dark with 200 ms timing budget. </p>
+
+</div>
+</div>
 <a id="aa6cfe207acdc2bf2001da02928df206e" name="aa6cfe207acdc2bf2001da02928df206e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa6cfe207acdc2bf2001da02928df206e">&#9670;&nbsp;</a></span>vl53l1x_set_distance_threshold()</h2>
 
@@ -491,7 +2084,7 @@ VL53L1X_ERROR&#160;</td><td class="memItemRight" valign="bottom"><b>vl53l1x_star
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VL53L1X_ERROR vl53l1x_set_distance_threshold </td>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_set_distance_threshold </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
@@ -548,6 +2141,99 @@ vl53l1x_set_distance_threshold(dev,100,300,3,1): In window <br  />
 
 </div>
 </div>
+<a id="aa68882f66d7fca16204c394ab6a64336" name="aa68882f66d7fca16204c394ab6a64336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68882f66d7fca16204c394ab6a64336">&#9670;&nbsp;</a></span>vl53l1x_set_i2c_address()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_set_i2c_address </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>new_address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function sets the sensor I2C address used in case multiple devices application, default address 0x52. </p>
+
+</div>
+</div>
+<a id="a5709d87f22a28237516f4eb3b7cf63ae" name="a5709d87f22a28237516f4eb3b7cf63ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5709d87f22a28237516f4eb3b7cf63ae">&#9670;&nbsp;</a></span>vl53l1x_set_inter_measurementIn_ms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_set_inter_measurementIn_ms </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>InterMeasurementInMs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function programs the Intermeasurement period in ms<br  />
+Intermeasurement period must be &gt;/= timing budget. This condition is not checked by the API, the customer has the duty to check the condition. Default = 100 ms. </p>
+
+</div>
+</div>
+<a id="ad988bb99633d398767ba7321485ffeee" name="ad988bb99633d398767ba7321485ffeee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad988bb99633d398767ba7321485ffeee">&#9670;&nbsp;</a></span>vl53l1x_set_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vl53l1x_set_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structvl53l1x__mode__t.html">vl53l1x_mode_t</a> *&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set vl53l1x current mode </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>from <a class="el" href="structvl53l1x__mode__t.html">vl53l1x_mode_t</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a419a238e52a6e1aab8ecd1c402b020d4" name="a419a238e52a6e1aab8ecd1c402b020d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a419a238e52a6e1aab8ecd1c402b020d4">&#9670;&nbsp;</a></span>vl53l1x_set_offset()</h2>
 
@@ -555,7 +2241,7 @@ vl53l1x_set_distance_threshold(dev,100,300,3,1): In window <br  />
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VL53L1X_ERROR vl53l1x_set_offset </td>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_set_offset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
@@ -591,7 +2277,7 @@ vl53l1x_set_distance_threshold(dev,100,300,3,1): In window <br  />
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VL53L1X_ERROR vl53l1x_set_roi </td>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_set_roi </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
@@ -626,6 +2312,251 @@ The smallest acceptable ROI size = 4<br  />
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a0b262d9f1c6e6f7f9cd63e65d9f6399f" name="a0b262d9f1c6e6f7f9cd63e65d9f6399f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b262d9f1c6e6f7f9cd63e65d9f6399f">&#9670;&nbsp;</a></span>vl53l1x_set_roi_center()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_set_roi_center </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>ROICenter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function programs the new user ROI center, please to be aware that there is no check in this function. if the ROI center vs ROI size is out of border the ranging function return error #13. </p>
+
+</div>
+</div>
+<a id="a5796c53174f0cfa4f24d58e6cdee6d83" name="a5796c53174f0cfa4f24d58e6cdee6d83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5796c53174f0cfa4f24d58e6cdee6d83">&#9670;&nbsp;</a></span>vl53l1x_set_sigma_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_set_sigma_threshold </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>sigma</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function programs a new sigma threshold in mm (default=15 mm) </p>
+
+</div>
+</div>
+<a id="a472b0f54fd352fe6745a5603dcc51b53" name="a472b0f54fd352fe6745a5603dcc51b53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472b0f54fd352fe6745a5603dcc51b53">&#9670;&nbsp;</a></span>vl53l1x_set_signal_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_set_signal_threshold </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>signal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function programs a new signal threshold in kcps (default=1024 kcps<br  />
+. </p>
+
+</div>
+</div>
+<a id="a2d7bdbc2d48141e15a0e95f841f3733a" name="a2d7bdbc2d48141e15a0e95f841f3733a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d7bdbc2d48141e15a0e95f841f3733a">&#9670;&nbsp;</a></span>vl53l1x_set_timing_budgetIn_ms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_set_timing_budgetIn_ms </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>TimingBudgetInMs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function programs the timing budget in ms. Predefined values = 15, 20, 33, 50, 100(default), 200, 500. </p>
+
+</div>
+</div>
+<a id="a5b905674ead0c33ce4cd6f5e6531b3f1" name="a5b905674ead0c33ce4cd6f5e6531b3f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b905674ead0c33ce4cd6f5e6531b3f1">&#9670;&nbsp;</a></span>vl53l1x_set_xtalk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_set_xtalk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>XtalkValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function programs the xtalk correction value in cps (Count Per Second).<br  />
+This is the number of photons reflected back from the cover glass in cps. </p>
+
+</div>
+</div>
+<a id="ab9ec7832272fa55f4bbe03861027090e" name="ab9ec7832272fa55f4bbe03861027090e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ec7832272fa55f4bbe03861027090e">&#9670;&nbsp;</a></span>vl53l1x_setInterrupt_polarity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_setInterrupt_polarity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>IntPol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function programs the interrupt polarity<br  />
+1=active high (default), 0=active low. </p>
+
+</div>
+</div>
+<a id="a185d9bc6b2942959bd3b2bde3f84d73f" name="a185d9bc6b2942959bd3b2bde3f84d73f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a185d9bc6b2942959bd3b2bde3f84d73f">&#9670;&nbsp;</a></span>vl53l1x_start_ranging()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_start_ranging </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function starts the ranging distance operation<br  />
+The ranging operation is continuous. The clear interrupt has to be done after each get data to allow the interrupt to raise when the next data is ready<br  />
+1=active high (default), 0=active low, use SetInterruptPolarity() to change the interrupt polarity if required. </p>
+
+</div>
+</div>
+<a id="a0212a63feb0fa857397d2fdc71202330" name="a0212a63feb0fa857397d2fdc71202330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0212a63feb0fa857397d2fdc71202330">&#9670;&nbsp;</a></span>vl53l1x_start_temperature_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_start_temperature_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function performs the temperature calibration. It is recommended to call this function any time the temperature might have changed by more than 8 deg C without sensor ranging activity for an extended period. </p>
+
+</div>
+</div>
+<a id="a01c26382aba58a8161c402ffbfa19943" name="a01c26382aba58a8161c402ffbfa19943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01c26382aba58a8161c402ffbfa19943">&#9670;&nbsp;</a></span>vl53l1x_stop_ranging()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_v_l53_l1_x__api_8h.html#aa2cba6efa144107fcf97e81be52802fc">VL53L1X_ERROR</a> vl53l1x_stop_ranging </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function stops the ranging. </p>
 
 </div>
 </div>
