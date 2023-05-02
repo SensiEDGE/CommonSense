@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hts221_2ecpp_0',['Hts221.cpp',['../_hts221_8cpp.html',1,'']]],
-  ['hts221_2eh_1',['Hts221.h',['../_hts221_8h.html',1,'']]]
+  ['i2c_2ecpp_0',['I2c.cpp',['../_i2c_8cpp.html',1,'']]],
+  ['i2c_2eh_1',['I2c.h',['../_i2c_8h.html',1,'']]]
 ];

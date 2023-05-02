@@ -1,25 +1,8 @@
 var searchData=
 [
-  ['c_5fstr_0',['c_str',['../class_string.html#ab92e6017bdb72ff5ee8f4281df7c8f8e',1,'String']]],
-  ['cache_5falign_1',['cache_align',['../namespacemsgq__layout.html#a65a2d4d5834fb33fa594a986692fdf1a',1,'msgq_layout']]],
-  ['cancelalarm_2',['cancelAlarm',['../class_rtc_class.html#aa118e507771c0980626c5df719aafb18',1,'RtcClass']]],
-  ['capacity_3',['capacity',['../class_string.html#a77b0eac22e2e79c9bbd4c07f9adfe07e',1,'String']]],
-  ['char_4',['Char',['../class_string_1_1_char.html#ae1e81094646e922e41ae05a8729a3b7c',1,'String::Char']]],
-  ['check_5fand_5fset_5farg_5',['check_and_set_arg',['../classmem__layout_1_1_memory_devices.html#aed3891f3211a89094a277115cf0b2181',1,'mem_layout.MemoryDevices.check_and_set_arg()'],['../classmem__layout_1_1_fixed_areas.html#aaadbe2ebe418013ab94773c91435f1fd',1,'mem_layout.FixedAreas.check_and_set_arg()'],['../classmem__layout_1_1_pool_layout.html#a3916ceff7b1e714325d5c123022b1fad',1,'mem_layout.PoolLayout.check_and_set_arg()']]],
-  ['clearlayout_6',['clearLayout',['../class_memory_util_class.html#a6aa7e6405a753941a23ae2c318944d77',1,'MemoryUtilClass']]],
-  ['clearwiretimeoutflag_7',['clearWireTimeoutFlag',['../class_two_wire.html#a8a4dc7bcbde6fc35ae2fa8a9c572ccc6',1,'TwoWire']]],
-  ['clockmode_8',['clockMode',['../class_low_power_class.html#a6d40c01d64c8d8d72bc7313f33e8e5ed',1,'LowPowerClass']]],
-  ['close_9',['close',['../class_file.html#a83cbce54d6c3b8c2f417b51f6b3f488c',1,'File::close()'],['../classmem__layout_1_1_header_file.html#afbc1e203b8a20bfb31b4a32f58b71e68',1,'mem_layout.HeaderFile.close()']]],
-  ['closeoutputfile_10',['closeOutputFile',['../class_audio_class.html#a086ced33e446bb2b48c858782ea83bbc',1,'AudioClass']]],
-  ['clust2sect_11',['clust2sect',['../ff_8cpp.html#a7519abb60fe91f6aa1d17f64fbae123a',1,'ff.cpp']]],
-  ['coldsleep_12',['coldSleep',['../class_low_power_class.html#ad547f529838fdda4b2ffc80bcdb8cfd8',1,'LowPowerClass::coldSleep()'],['../class_low_power_class.html#aa9054b2a953f58d59f2b890b24b265d8',1,'LowPowerClass::coldSleep(uint32_t seconds)']]],
-  ['collectitem_13',['collectItem',['../namespacemsgq__layout.html#a2d83fd1e2ef9347bcc86c38d8c1413e3',1,'msgq_layout']]],
-  ['conflict_14',['conflict',['../classmem__layout_1_1_base_entry.html#adcc9c160beceab576e0e9bce8685184b',1,'mem_layout::BaseEntry']]],
-  ['conv_5fhex_5fto_5fuint16_15',['conv_hex_to_uint16',['../_protocol_8cpp.html#a0255dbff4ab49bbc8e074a8e43776ae5',1,'Protocol.cpp']]],
-  ['convertlightdata_16',['ConvertLightData',['../class_apds9250.html#a6a3e0a809cfcc5ce5b6d2b5e64a67a06',1,'Apds9250']]],
-  ['create_17',['create',['../classmem__layout_1_1_header_file.html#a563d218e2cfe9c054fb901b8cc4e084e',1,'mem_layout::HeaderFile']]],
-  ['create_5fmsgq_5fids_18',['create_msgq_ids',['../namespacemsgq__layout.html#aaa60605f2862d52443ed5906667e458d',1,'msgq_layout']]],
-  ['create_5fnot_5fused_5fshare_5fmemory_19',['create_not_used_share_memory',['../classmem__layout_1_1_header_file.html#a79f8514a711c5c823a5e8da4bea84c9e',1,'mem_layout::HeaderFile']]],
-  ['createstaticpools_20',['createStaticPools',['../_memory_util_8cpp.html#a0c283305f89c552be2ca82b722b9cbee',1,'createStaticPools(uint8_t layout_no):&#160;MemoryUtil.cpp'],['../_memory_util_8cpp.html#a580eea49ad0535d8b9397a51151733ad',1,'createStaticPools(uint8_t sec_no, uint8_t layout_no):&#160;MemoryUtil.cpp'],['../_memory_util_8h.html#a0c283305f89c552be2ca82b722b9cbee',1,'createStaticPools(uint8_t layout_no):&#160;MemoryUtil.cpp'],['../_memory_util_8h.html#a580eea49ad0535d8b9397a51151733ad',1,'createStaticPools(uint8_t sec_no, uint8_t layout_no):&#160;MemoryUtil.cpp']]],
-  ['culate_5fcrc16_21',['culate_crc16',['../_protocol_8cpp.html#a62a2665584e52ec26f5a7b98c56fb91c',1,'culate_crc16(char *pc_block, uint16_t len):&#160;Protocol.cpp'],['../_protocol_8h.html#a62a2665584e52ec26f5a7b98c56fb91c',1,'culate_crc16(char *pc_block, uint16_t len):&#160;Protocol.cpp']]]
+  ['deepsleep_0',['deepSleep',['../class_low_power_class.html#a88517a45855821809d5e05db72b9f46d',1,'LowPowerClass::deepSleep()'],['../class_low_power_class.html#ad89302bd1915509cb4a3672181ae0fa2',1,'LowPowerClass::deepSleep(uint32_t seconds)']]],
+  ['deselect_1',['deselect',['../class_sp_gnss.html#aec39958ae3be3143479e360706ce2022',1,'SpGnss']]],
+  ['detachalarm_2',['detachAlarm',['../class_rtc_class.html#aeee6044d08e492330ad2720ee9a90b4e',1,'RtcClass']]],
+  ['disable_3',['disable',['../class_apds9250.html#a1d8c251138e173017438fc6f98121be6',1,'Apds9250']]],
+  ['disablebootcause_4',['disableBootCause',['../class_low_power_class.html#ac858ee26bd656143d8249d365ac55b09',1,'LowPowerClass::disableBootCause(bootcause_e bc)'],['../class_low_power_class.html#a0950365b094f5f70575ee7e5ebcd896d',1,'LowPowerClass::disableBootCause(uint8_t pin)']]]
 ];

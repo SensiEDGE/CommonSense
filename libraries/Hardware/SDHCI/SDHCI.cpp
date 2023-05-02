@@ -29,14 +29,11 @@
 
 #include <sdk/config.h>
 
-//#include <Arduino.h>
 #include <SDHCI.h>
 
 #include <sys/boardctl.h>
 #include <nuttx/usb/usbdev.h>
-//#include <../../fsutils/mkfatfs.h>
 #include <../../../spresense-exported-sdk/sdk/apps/include/fsutils/mkfatfs.h>
-//#include ""
 
 #ifndef CONFIG_SYSTEM_USBMSC_NLUNS
 #  define CONFIG_SYSTEM_USBMSC_NLUNS 1

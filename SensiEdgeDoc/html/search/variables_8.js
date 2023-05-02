@@ -1,19 +1,7 @@
 var searchData=
 [
-  ['h_5fda_0',['h_da',['../structhts221__status__reg__t.html#aa27a908a8e1596cd01c58f2dc1d6692b',1,'hts221_status_reg_t']]],
-  ['h_5flactive_1',['h_lactive',['../structlsm6dso32__ctrl3__c__t.html#af4cfc5cd7b0cf660bc3d9b1adb4ea2f9',1,'lsm6dso32_ctrl3_c_t']]],
-  ['handle_2',['handle',['../structstmdev__ctx__t.html#a90a65adf05d7dfc52fb80cb15a09a871',1,'stmdev_ctx_t']]],
-  ['hdop_3',['hdop',['../class_sp_nav_data.html#a70ec6a39b4c4e84834f122e1eafb1be5',1,'SpNavData']]],
-  ['headerfile_4',['HeaderFile',['../namespacemem__layout.html#a11aae461cf0f3d8ba7e31d91b111f70a',1,'mem_layout']]],
-  ['heater_5',['heater',['../structhts221__ctrl__reg2__t.html#a8f0b55f98d3fa1cde9447b6b8afe95c1',1,'hts221_ctrl_reg2_t']]],
-  ['hibernate_6',['hibernate',['../structcontrol__status__t.html#a9b28c42551c1109aa30aa7da144ba696',1,'control_status_t']]],
-  ['hour_7',['hour',['../class_sp_gnss_time.html#a35f60715b59d36b95d96480160e74cea',1,'SpGnssTime']]],
-  ['hp_5fen_5fg_8',['hp_en_g',['../structlsm6dso32__ctrl7__g__t.html#aa82ee3e651096b62d7c2505fba11fb91',1,'lsm6dso32_ctrl7_g_t']]],
-  ['hp_5fref_5fmode_5fxl_9',['hp_ref_mode_xl',['../structlsm6dso32__ctrl8__xl__t.html#ad0cb6de01b348044e4ba4673826749a6',1,'lsm6dso32_ctrl8_xl_t']]],
-  ['hp_5fslope_5fxl_5fen_10',['hp_slope_xl_en',['../structlsm6dso32__ctrl8__xl__t.html#a0fc306e5fbf378321e5bb25d0097c496',1,'lsm6dso32_ctrl8_xl_t']]],
-  ['hpcf_5fxl_11',['hpcf_xl',['../structlsm6dso32__ctrl8__xl__t.html#a1c5a3fd3f50ae03f28c30d3b11618c5b',1,'lsm6dso32_ctrl8_xl_t']]],
-  ['hpm_5fg_12',['hpm_g',['../structlsm6dso32__ctrl7__g__t.html#a4b2e8e0219a16559bc9addb780bfa2e2',1,'lsm6dso32_ctrl7_g_t']]],
-  ['hts221_5favgh_13',['hts221_avgh',['../structhts221__mode__t.html#a831d947e0a87fef9a1625b7e8e8a4c38',1,'hts221_mode_t']]],
-  ['hts221_5favgt_14',['hts221_avgt',['../structhts221__mode__t.html#aba7ba149827d6332e8a6a81320aa140e',1,'hts221_mode_t']]],
-  ['hts221_5fmode_15',['hts221_mode',['../struct_settings__t.html#a81fa782f16447f2adcaf07ad50be4e27',1,'Settings_t::hts221_mode()'],['../_hts221_8cpp.html#ad1939e65deceda0f5877644ca1d73086',1,'hts221_mode():&#160;Hts221.cpp']]]
+  ['pdop_0',['pdop',['../class_sp_nav_data.html#a81a1a347150006fbab64db6f5140e4cd',1,'SpNavData']]],
+  ['posdataexist_1',['posDataExist',['../class_sp_nav_data.html#ac5e4ef49b6a47fb19fd6857ac04f766b',1,'SpNavData']]],
+  ['posfixmode_2',['posFixMode',['../class_sp_nav_data.html#a17e995916c7569543bf037321283678c',1,'SpNavData']]],
+  ['possatellitetype_3',['posSatelliteType',['../class_sp_nav_data.html#a7dd1f9b371a0d394443e925d86be7731',1,'SpNavData']]]
 ];

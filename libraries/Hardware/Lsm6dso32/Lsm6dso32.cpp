@@ -1,6 +1,6 @@
 /*
  ******************************************************************************
- * @file    lsm6dso32_reg.c
+ * @file    lsm6dso32_reg.cpp
  * @author  Sensors Software Solution Team
  * @brief   LSM6DSO32 driver file
  ******************************************************************************

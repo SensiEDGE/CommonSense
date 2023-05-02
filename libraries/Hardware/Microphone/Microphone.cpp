@@ -1,6 +1,6 @@
 /**
  ******************************************************************************
- * @file    Microphone.h
+ * @file    Microphone.cpp
  * @date    26 December 2022
  * @brief   Microphone driver
  ******************************************************************************
@@ -38,7 +38,6 @@
 
 #include <nuttx/config.h>
 #include <stdio.h>
-//#include <dirent.h>
 #include <strings.h>
 #include <asmp/mpshm.h>
 #include <sys/stat.h>
@@ -265,19 +264,21 @@ static void outputDeviceCallback(uint32_t size)
 
 static bool app_update_wav_file_size(void)
 {
-//   fseek(s_recorder_info.file.fd, 0, SEEK_SET);
+#if 0 // Currently don't need
+  fseek(s_recorder_info.file.fd, 0, SEEK_SET);
 
-//   s_container_format->getHeader(&s_wav_header, s_recorder_info.file.size);
+  s_container_format->getHeader(&s_wav_header, s_recorder_info.file.size);
 
-//   size_t ret = fwrite((const void *)&s_wav_header,
-//                       1,
-//                       sizeof(WAVHEADER),
-//                       s_recorder_info.file.fd);
-//   if (ret != sizeof(WAVHEADER))
-//     {
-//       printf("Fail to write file(wav header)\n");
-//       return false;
-//     }
+  size_t ret = fwrite((const void *)&s_wav_header,
+                      1,
+                      sizeof(WAVHEADER),
+                      s_recorder_info.file.fd);
+  if (ret != sizeof(WAVHEADER))
+    {
+      printf("Fail to write file(wav header)\n");
+      return false;
+    }
+#endif
   return true;
 }
 
@@ -339,43 +340,48 @@ static bool app_open_output_file(void)
     }
 
   /* Use date time as recording file name. */
+#if 0 // Currently don't need
+  clock_gettime(CLOCK_REALTIME, &cur_sec);
+  cur_time = gmtime(&cur_sec.tv_sec);
+#else
+  cur_time = 0;
+#endif
 
-  //clock_gettime(CLOCK_REALTIME, &cur_sec);
-  cur_time = 0; //= gmtime(&cur_sec.tv_sec);
-
-//   snprintf(fname,
-//            MAX_PATH_LENGTH,
-//            "%s/%04d%02d%02d_%02d%02d%02d.%s",
-//            RECFILE_ROOTPATH,
-//            cur_time->tm_year + 1900,
-//            cur_time->tm_mon + 1,
-//            cur_time->tm_mday,
-//            cur_time->tm_hour,
-//            cur_time->tm_min,
-//            cur_time->tm_sec,
-//            ext);
+#if 0 // Currently don't need
+   snprintf(fname,
+            MAX_PATH_LENGTH,
+            "%s/%04d%02d%02d_%02d%02d%02d.%s",
+            RECFILE_ROOTPATH,
+            cur_time->tm_year + 1900,
+            cur_time->tm_mon + 1,
+            cur_time->tm_mday,
+            cur_time->tm_hour,
+            cur_time->tm_min,
+            cur_time->tm_sec,
+            ext);
 
   /* Create a file with the name created above */
 
-//   for (int i = 0; i < NUMBER_OF_RETRY; i++)
-//     {
-//       s_recorder_info.file.fd = fopen(fname, "w");
+   for (int i = 0; i < NUMBER_OF_RETRY; i++)
+     {
+       s_recorder_info.file.fd = fopen(fname, "w");
 
-//       if(s_recorder_info.file.fd)
-//         {
-//           break;
-//         }
+       if(s_recorder_info.file.fd)
+         {
+           break;
+         }
 
-//       /* Retry due to incomplete SD card mounting. */
+       /* Retry due to incomplete SD card mounting. */
 
-//       usleep(100 * 1000);
-//     }
+       usleep(100 * 1000);
+     }
 
-//   if (s_recorder_info.file.fd == 0)
-//     {
-//       printf("open err(%s)\n", fname);
-//       //return false;
-//     }
+   if (s_recorder_info.file.fd == 0)
+     {
+       printf("open err(%s)\n", fname);
+       return false;
+     }
+#endif
 
   setvbuf(s_recorder_info.file.fd, NULL, _IOLBF, STDIO_BUFFER_SIZE);
 
@@ -383,11 +389,13 @@ static bool app_open_output_file(void)
 
   if (target_codec_type == AS_CODECTYPE_LPCM)
     {
-    //   if (!app_write_wav_header())
-    //     {
-    //       printf("Error: app_write_wav_header() failure.\n");
-    //       //return false;
-    //     }
+#if 0 // Currently don't need
+       if (!app_write_wav_header())
+         {
+           printf("Error: app_write_wav_header() failure.\n");
+           return false;
+         }
+#endif
     }
 
   return true;
@@ -414,13 +422,14 @@ static void app_write_output_file(uint32_t size)
       printf("ERROR: Fail to get data from simple FIFO.\n");
       return;
     }
-
-//   ret = fwrite(s_recorder_info.fifo.write_buf, 1, size, s_recorder_info.file.fd);
-//   if (ret <= 0) {
-//     printf("ERROR: Cannot write recorded data to output file.\n");
-//     app_close_output_file();
-//     return;
-//   }
+#if 0 // Currently don't need
+   ret = fwrite(s_recorder_info.fifo.write_buf, 1, size, s_recorder_info.file.fd);
+   if (ret <= 0) {
+     printf("ERROR: Cannot write recorded data to output file.\n");
+     app_close_output_file();
+     return;
+   }
+#endif
   s_recorder_info.file.size += size;
 }
 
@@ -842,34 +851,37 @@ static bool app_set_clkmode(void)
 
 static bool app_open_file_dir(void)
 {
-//   DIR *dirp;
-//   int ret;
-//   const char *name = RECFILE_ROOTPATH;
+#if 0 // Currently don't need
+   DIR *dirp;
+   int ret;
+   const char *name = RECFILE_ROOTPATH;
 
-//   dirp = opendir("/mnt");
-//   if (!dirp)
-//     {
-//       printf("opendir err(errno:%d)\n",errno);
-//       return false;
-//     }
-//   ret = mkdir(name, 0777);
-//   if (ret != 0)
-//     {
-//       if(errno != EEXIST)
-//         {
-//           printf("mkdir err(errno:%d)\n",errno);
-//           return false;
-//         }
-//     }
+   dirp = opendir("/mnt");
+   if (!dirp)
+     {
+       printf("opendir err(errno:%d)\n",errno);
+       return false;
+     }
+   ret = mkdir(name, 0777);
+   if (ret != 0)
+     {
+       if(errno != EEXIST)
+         {
+           printf("mkdir err(errno:%d)\n",errno);
+           return false;
+         }
+     }
 
-//   s_recorder_info.file.dirp = dirp;
+   s_recorder_info.file.dirp = dirp;
+#endif
   return true;
 }
 
 static bool app_close_file_dir(void)
 {
-  //closedir(s_recorder_info.file.dirp);
-
+#if 0 // Currently don't need
+  closedir(s_recorder_info.file.dirp);
+#endif
   return true;
 }
 

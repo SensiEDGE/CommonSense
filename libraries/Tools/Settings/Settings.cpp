@@ -55,6 +55,9 @@ void settings_init (void) {
  * @retval false if false
  */
 bool settings_get_from_storage (Settings_t *settings) {
+    if (settings == nullptr) {
+        return false;
+    }
     uint8_t* pnt = (uint8_t*) settings;
     for (uint16_t i = 0; i < sizeof (Settings_t); i++){
         pnt[i] = m24c32_read_byte(STORAGE_SETTINGS_START_ADDR + i);
@@ -68,6 +71,9 @@ bool settings_get_from_storage (Settings_t *settings) {
  * @retval false if false
  */
 bool settings_set_to_storage (Settings_t *settings) {
+    if (settings == nullptr) {
+        return false;
+    }
     uint8_t* pnt = (uint8_t*) settings;
     for (uint16_t i = 0; i < sizeof (Settings_t); i++){
         m24c32_write_byte(STORAGE_SETTINGS_START_ADDR + i, pnt[i]);
@@ -82,6 +88,9 @@ bool settings_set_to_storage (Settings_t *settings) {
  */
 uint16_t settings_check (Settings_t *settings) {
 
+    if (settings == nullptr) {
+        return 0xffff;
+    }
     volatile uint16_t a = 0;
     if (memcmp(settings->device_name, DEVICE_NAME, DEVICE_NAME_LEN) != 0) {
         a++;
@@ -152,6 +161,9 @@ uint16_t settings_check (Settings_t *settings) {
  * @retval false if false
  */
 bool settings_load_default (Settings_t *settings) {
+    if (settings == nullptr) {
+        return false;
+    }
     memset(settings, 0, sizeof(Settings_t));
     memcpy(settings->device_name, DEVICE_NAME, DEVICE_NAME_LEN);
     settings->device_version = DEVICE_VER;
@@ -200,6 +212,9 @@ Settings_t *get_settings(void) {
  * @retval none
  */
 void settings_print(Settings_t *settings) {
+    if (settings == nullptr) {
+        return;
+    }
     printf ("lsm6dso32_mode.enable = %d\r\n", settings->lsm6dso32_mode.enable);
     printf ("lsm6dso32_mode.acc_data_rate = %d\r\n", settings->lsm6dso32_mode.acc_data_rate);
     printf ("lsm6dso32_mode.gyro_data_rate = %d\r\n", settings->lsm6dso32_mode.gyro_data_rate = LSM6DSO32_12Hz5);

@@ -39,10 +39,21 @@
 #if defined (PORT_EXPANDER_MAX7317)
 
 #include "../../libraries/Max7317/Max7317.h"
+
+/**
+ * @brief  Button init
+ * @param  None
+ * @retval None
+ */
 void button_init(void) {
     max7317_init();
 }
 
+/**
+ * @brief  Check, if button pressed
+ * @param  None
+ * @retval true if pressed
+ */
 bool button_is_pressed(void) {
     uint16_t a = max7317_get_pins();
     //printf("max7317_get_pins = %d\r\n", a);

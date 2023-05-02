@@ -78,7 +78,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_i2c_8h_source.html">I2c.h</a>&quot;</code><br />
 <code>#include &lt;sdk/config.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="_string_8h_source.html">string.h</a>&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;cxd56_i2c.h&gt;</code><br />
 <code>#include &lt;cxd56_pmic.h&gt;</code><br />
@@ -86,11 +86,14 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af7b7dc9a200cb1404c280bd500fd1551"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#af7b7dc9a200cb1404c280bd500fd1551">BUFFER_LENGTH</a>&#160;&#160;&#160;(32)</td></tr>
+<tr class="memitem:af7b7dc9a200cb1404c280bd500fd1551"><td class="memItemLeft" align="right" valign="top"><a id="af7b7dc9a200cb1404c280bd500fd1551" name="af7b7dc9a200cb1404c280bd500fd1551"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BUFFER_LENGTH</b>&#160;&#160;&#160;(32)</td></tr>
 <tr class="separator:af7b7dc9a200cb1404c280bd500fd1551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a991ea430f39fd43f6e11129fd67abf1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#a991ea430f39fd43f6e11129fd67abf1c">I2C_TX_BUF_LEN</a>&#160;&#160;&#160;<a class="el" href="_wire_8h.html#af7b7dc9a200cb1404c280bd500fd1551">BUFFER_LENGTH</a></td></tr>
+<tr class="memitem:a991ea430f39fd43f6e11129fd67abf1c"><td class="memItemLeft" align="right" valign="top"><a id="a991ea430f39fd43f6e11129fd67abf1c" name="a991ea430f39fd43f6e11129fd67abf1c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>I2C_TX_BUF_LEN</b>&#160;&#160;&#160;BUFFER_LENGTH</td></tr>
 <tr class="separator:a991ea430f39fd43f6e11129fd67abf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8037e3f6a6fa9c8d1e8795b6676ab5a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#a8037e3f6a6fa9c8d1e8795b6676ab5a3">I2C_RX_BUF_LEN</a>&#160;&#160;&#160;<a class="el" href="_wire_8h.html#af7b7dc9a200cb1404c280bd500fd1551">BUFFER_LENGTH</a></td></tr>
+<tr class="memitem:a8037e3f6a6fa9c8d1e8795b6676ab5a3"><td class="memItemLeft" align="right" valign="top"><a id="a8037e3f6a6fa9c8d1e8795b6676ab5a3" name="a8037e3f6a6fa9c8d1e8795b6676ab5a3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>I2C_RX_BUF_LEN</b>&#160;&#160;&#160;BUFFER_LENGTH</td></tr>
 <tr class="separator:a8037e3f6a6fa9c8d1e8795b6676ab5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -125,27 +128,35 @@ Functions</h2></td></tr>
 <tr class="memitem:ac7db59d6305b1865f13808d128c1a800"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#ac7db59d6305b1865f13808d128c1a800">i2c_read_regs_16addr</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_addr, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> reg_addr, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
 <tr class="memdesc:ac7db59d6305b1865f13808d128c1a800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read device registers via I2C with 16 bit addres.  <a href="_i2c_8cpp.html#ac7db59d6305b1865f13808d128c1a800">More...</a><br /></td></tr>
 <tr class="separator:ac7db59d6305b1865f13808d128c1a800"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8a520de34fc94c3fc08d60c24a4fa2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sensirion__config_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#ab8a520de34fc94c3fc08d60c24a4fa2a">i2c_is_bevice_present</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_addr)</td></tr>
+<tr class="memitem:ab8a520de34fc94c3fc08d60c24a4fa2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#ab8a520de34fc94c3fc08d60c24a4fa2a">i2c_is_bevice_present</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i2c_addr)</td></tr>
 <tr class="memdesc:ab8a520de34fc94c3fc08d60c24a4fa2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if device present or ready.  <a href="_i2c_8cpp.html#ab8a520de34fc94c3fc08d60c24a4fa2a">More...</a><br /></td></tr>
 <tr class="separator:ab8a520de34fc94c3fc08d60c24a4fa2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a5b35a66ba0f209164f68a7ac6e494915"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#a5b35a66ba0f209164f68a7ac6e494915">_tx_buf</a> [<a class="el" href="_i2c_8cpp.html#a991ea430f39fd43f6e11129fd67abf1c">I2C_TX_BUF_LEN</a>]</td></tr>
+<tr class="memitem:a5b35a66ba0f209164f68a7ac6e494915"><td class="memItemLeft" align="right" valign="top"><a id="a5b35a66ba0f209164f68a7ac6e494915" name="a5b35a66ba0f209164f68a7ac6e494915"></a>
+<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_tx_buf</b> [I2C_TX_BUF_LEN]</td></tr>
 <tr class="separator:a5b35a66ba0f209164f68a7ac6e494915"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a11128983df0a00ee70f205eeb0fe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#af1a11128983df0a00ee70f205eeb0fe0">_tx_buf_index</a> = 0</td></tr>
+<tr class="memitem:af1a11128983df0a00ee70f205eeb0fe0"><td class="memItemLeft" align="right" valign="top"><a id="af1a11128983df0a00ee70f205eeb0fe0" name="af1a11128983df0a00ee70f205eeb0fe0"></a>
+<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_tx_buf_index</b> = 0</td></tr>
 <tr class="separator:af1a11128983df0a00ee70f205eeb0fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b36f1cfd007dcd4ef795be9b8b0224d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#a3b36f1cfd007dcd4ef795be9b8b0224d">_tx_buf_len</a> = 0</td></tr>
+<tr class="memitem:a3b36f1cfd007dcd4ef795be9b8b0224d"><td class="memItemLeft" align="right" valign="top"><a id="a3b36f1cfd007dcd4ef795be9b8b0224d" name="a3b36f1cfd007dcd4ef795be9b8b0224d"></a>
+<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_tx_buf_len</b> = 0</td></tr>
 <tr class="separator:a3b36f1cfd007dcd4ef795be9b8b0224d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fbf3d5ecaa4fb64ef4aff3ab657a6d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#a5fbf3d5ecaa4fb64ef4aff3ab657a6d5">_rx_buf</a> [<a class="el" href="_i2c_8cpp.html#a8037e3f6a6fa9c8d1e8795b6676ab5a3">I2C_RX_BUF_LEN</a>]</td></tr>
+<tr class="memitem:a5fbf3d5ecaa4fb64ef4aff3ab657a6d5"><td class="memItemLeft" align="right" valign="top"><a id="a5fbf3d5ecaa4fb64ef4aff3ab657a6d5" name="a5fbf3d5ecaa4fb64ef4aff3ab657a6d5"></a>
+<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_rx_buf</b> [I2C_RX_BUF_LEN]</td></tr>
 <tr class="separator:a5fbf3d5ecaa4fb64ef4aff3ab657a6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adab9cbf5dab689894dc72610c81fe244"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#adab9cbf5dab689894dc72610c81fe244">_rx_buf_index</a> = 0</td></tr>
+<tr class="memitem:adab9cbf5dab689894dc72610c81fe244"><td class="memItemLeft" align="right" valign="top"><a id="adab9cbf5dab689894dc72610c81fe244" name="adab9cbf5dab689894dc72610c81fe244"></a>
+<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_rx_buf_index</b> = 0</td></tr>
 <tr class="separator:adab9cbf5dab689894dc72610c81fe244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a4cc3f74e5ee91f6884f4eca0a8c30a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#a4a4cc3f74e5ee91f6884f4eca0a8c30a">_rx_buf_len</a> = 0</td></tr>
+<tr class="memitem:a4a4cc3f74e5ee91f6884f4eca0a8c30a"><td class="memItemLeft" align="right" valign="top"><a id="a4a4cc3f74e5ee91f6884f4eca0a8c30a" name="a4a4cc3f74e5ee91f6884f4eca0a8c30a"></a>
+<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_rx_buf_len</b> = 0</td></tr>
 <tr class="separator:a4a4cc3f74e5ee91f6884f4eca0a8c30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dcd672151239451cff872079b1d4eab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#a6dcd672151239451cff872079b1d4eab">_freq</a> = <a class="el" href="_i2c_8h.html#a97f7a7a9186944a07322d0397216311e">I2C_FREQ_100KHZ</a></td></tr>
+<tr class="memitem:a6dcd672151239451cff872079b1d4eab"><td class="memItemLeft" align="right" valign="top"><a id="a6dcd672151239451cff872079b1d4eab" name="a6dcd672151239451cff872079b1d4eab"></a>
+<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_freq</b> = I2C_FREQ_100KHZ</td></tr>
 <tr class="separator:a6dcd672151239451cff872079b1d4eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dc1f28883287929df9760aba10d3f92"><td class="memItemLeft" align="right" valign="top">FAR struct i2c_master_s *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_i2c_8cpp.html#a4dc1f28883287929df9760aba10d3f92">_dev</a></td></tr>
+<tr class="memitem:a4dc1f28883287929df9760aba10d3f92"><td class="memItemLeft" align="right" valign="top"><a id="a4dc1f28883287929df9760aba10d3f92" name="a4dc1f28883287929df9760aba10d3f92"></a>
+FAR struct i2c_master_s *&#160;</td><td class="memItemRight" valign="bottom"><b>_dev</b></td></tr>
 <tr class="separator:a4dc1f28883287929df9760aba10d3f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -158,50 +169,7 @@ Variables</h2></td></tr>
 <li>Neither the name of EDGE Impulse nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
 </ol>
 <p >THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="af7b7dc9a200cb1404c280bd500fd1551" name="af7b7dc9a200cb1404c280bd500fd1551"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7b7dc9a200cb1404c280bd500fd1551">&#9670;&nbsp;</a></span>BUFFER_LENGTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BUFFER_LENGTH&#160;&#160;&#160;(32)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8037e3f6a6fa9c8d1e8795b6676ab5a3" name="a8037e3f6a6fa9c8d1e8795b6676ab5a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8037e3f6a6fa9c8d1e8795b6676ab5a3">&#9670;&nbsp;</a></span>I2C_RX_BUF_LEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I2C_RX_BUF_LEN&#160;&#160;&#160;<a class="el" href="_wire_8h.html#af7b7dc9a200cb1404c280bd500fd1551">BUFFER_LENGTH</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a991ea430f39fd43f6e11129fd67abf1c" name="a991ea430f39fd43f6e11129fd67abf1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a991ea430f39fd43f6e11129fd67abf1c">&#9670;&nbsp;</a></span>I2C_TX_BUF_LEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I2C_TX_BUF_LEN&#160;&#160;&#160;<a class="el" href="_wire_8h.html#af7b7dc9a200cb1404c280bd500fd1551">BUFFER_LENGTH</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a5730d9445429351b9f750084c5cb5aae" name="a5730d9445429351b9f750084c5cb5aae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5730d9445429351b9f750084c5cb5aae">&#9670;&nbsp;</a></span>i2c_init()</h2>
 
@@ -241,7 +209,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="sensirion__config_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> i2c_is_bevice_present </td>
+          <td class="memname">bool i2c_is_bevice_present </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>i2c_addr</em></td><td>)</td>
@@ -723,119 +691,6 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a4dc1f28883287929df9760aba10d3f92" name="a4dc1f28883287929df9760aba10d3f92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dc1f28883287929df9760aba10d3f92">&#9670;&nbsp;</a></span>_dev</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FAR struct i2c_master_s* _dev</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6dcd672151239451cff872079b1d4eab" name="a6dcd672151239451cff872079b1d4eab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dcd672151239451cff872079b1d4eab">&#9670;&nbsp;</a></span>_freq</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> _freq = <a class="el" href="_i2c_8h.html#a97f7a7a9186944a07322d0397216311e">I2C_FREQ_100KHZ</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5fbf3d5ecaa4fb64ef4aff3ab657a6d5" name="a5fbf3d5ecaa4fb64ef4aff3ab657a6d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fbf3d5ecaa4fb64ef4aff3ab657a6d5">&#9670;&nbsp;</a></span>_rx_buf</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _rx_buf[<a class="el" href="_i2c_8cpp.html#a8037e3f6a6fa9c8d1e8795b6676ab5a3">I2C_RX_BUF_LEN</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adab9cbf5dab689894dc72610c81fe244" name="adab9cbf5dab689894dc72610c81fe244"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adab9cbf5dab689894dc72610c81fe244">&#9670;&nbsp;</a></span>_rx_buf_index</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _rx_buf_index = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4a4cc3f74e5ee91f6884f4eca0a8c30a" name="a4a4cc3f74e5ee91f6884f4eca0a8c30a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a4cc3f74e5ee91f6884f4eca0a8c30a">&#9670;&nbsp;</a></span>_rx_buf_len</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _rx_buf_len = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5b35a66ba0f209164f68a7ac6e494915" name="a5b35a66ba0f209164f68a7ac6e494915"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b35a66ba0f209164f68a7ac6e494915">&#9670;&nbsp;</a></span>_tx_buf</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _tx_buf[<a class="el" href="_i2c_8cpp.html#a991ea430f39fd43f6e11129fd67abf1c">I2C_TX_BUF_LEN</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af1a11128983df0a00ee70f205eeb0fe0" name="af1a11128983df0a00ee70f205eeb0fe0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1a11128983df0a00ee70f205eeb0fe0">&#9670;&nbsp;</a></span>_tx_buf_index</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _tx_buf_index = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3b36f1cfd007dcd4ef795be9b8b0224d" name="a3b36f1cfd007dcd4ef795be9b8b0224d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b36f1cfd007dcd4ef795be9b8b0224d">&#9670;&nbsp;</a></span>_tx_buf_len</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _tx_buf_len = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

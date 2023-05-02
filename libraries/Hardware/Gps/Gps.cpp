@@ -167,9 +167,11 @@ static void print_condition(SpNavData *pNavData) {
     }
 }
 
-
-
-
+/**
+ * @brief  gps init
+ * @param  none
+ * @retval none
+ */
 void gps_init(void) {
     int error_flag = 0;
     usleep(1000 * 3000);
@@ -255,6 +257,11 @@ void gps_init(void) {
     }
 }
 
+/**
+ * @brief  gps activity
+ * @param  none
+ * @retval statis from gps_act_status_t
+ */
 gps_act_status_t gps_act(void) {
     static int LoopCount = 0;
     static int LastPrintMin = 0;

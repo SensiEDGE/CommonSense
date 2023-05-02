@@ -35,7 +35,6 @@
 #include "Uart.h"
 #include <cxd56_uart.h>
 #include <../../include/nuttx/serial/serial.h>
-//#include <irq.h>
 #include <string.h>
 #include <stdio.h>
 

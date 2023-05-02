@@ -35,7 +35,6 @@
 #include "M24c32.h"
 #include "../../Drivers/CXD5602/I2c/I2c.h"
 #include <stdint.h>
-//#include <sys/types.h>
 
 #define M42C32_I2C_ADDRES_MEMORY 0xA0 >> 1
 #define M42C32_I2C_ADDRES_ID 0xB0 >> 1
@@ -70,6 +69,11 @@ static void m24c32_i2c_read (uint16_t addres, uint8_t* data, uint16_t size) {
     i2c_read_regs_16addr(M42C32_I2C_ADDRES_MEMORY, addres, data, size);
 }
 
+/**
+ * @brief  check if M24C32 ready
+ * @param  None
+ * @retval false if not ready
+ */
 static bool is_m24c32_ready (void) {
     return i2c_is_bevice_present(M42C32_I2C_ADDRES_MEMORY);
 }

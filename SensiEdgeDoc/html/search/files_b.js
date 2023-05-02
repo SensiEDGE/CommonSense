@@ -1,28 +1,5 @@
 var searchData=
 [
-  ['sdcard_2ecpp_0',['Sdcard.cpp',['../_sdcard_8cpp.html',1,'']]],
-  ['sdcard_2eh_1',['Sdcard.h',['../_sdcard_8h.html',1,'']]],
-  ['sdhci_2ecpp_2',['SDHCI.cpp',['../_s_d_h_c_i_8cpp.html',1,'']]],
-  ['sdhci_2eh_3',['SDHCI.h',['../_s_d_h_c_i_8h.html',1,'']]],
-  ['sensirion_5farch_5fconfig_2eh_4',['sensirion_arch_config.h',['../sensirion__arch__config_8h.html',1,'']]],
-  ['sensirion_5fcommon_2ecpp_5',['sensirion_common.cpp',['../sensirion__common_8cpp.html',1,'']]],
-  ['sensirion_5fcommon_2eh_6',['sensirion_common.h',['../sensirion__common_8h.html',1,'']]],
-  ['sensirion_5fconfig_2eh_7',['sensirion_config.h',['../sensirion__config_8h.html',1,'']]],
-  ['sensirion_5fi2c_2ecpp_8',['sensirion_i2c.cpp',['../sensirion__i2c_8cpp.html',1,'']]],
-  ['sensirion_5fi2c_2eh_9',['sensirion_i2c.h',['../sensirion__i2c_8h.html',1,'']]],
-  ['sensirion_5fi2c_5fhal_2ecpp_10',['sensirion_i2c_hal.cpp',['../sensirion__i2c__hal_8cpp.html',1,'']]],
-  ['sensirion_5fi2c_5fhal_2eh_11',['sensirion_i2c_hal.h',['../sensirion__i2c__hal_8h.html',1,'']]],
-  ['sensirion_5fvoc_5falgorithm_2ecpp_12',['sensirion_voc_algorithm.cpp',['../sensirion__voc__algorithm_8cpp.html',1,'']]],
-  ['sensirion_5fvoc_5falgorithm_2eh_13',['sensirion_voc_algorithm.h',['../sensirion__voc__algorithm_8h.html',1,'']]],
-  ['settings_2ecpp_14',['Settings.cpp',['../_settings_8cpp.html',1,'']]],
-  ['settings_2eh_15',['Settings.h',['../_settings_8h.html',1,'']]],
-  ['sgp40_5fi2c_2ecpp_16',['Sgp40_i2c.cpp',['../_sgp40__i2c_8cpp.html',1,'']]],
-  ['sgp40_5fi2c_2eh_17',['sgp40_i2c.h',['../sgp40__i2c_8h.html',1,'']]],
-  ['sgp41_5fi2c_2ecpp_18',['Sgp41_i2c.cpp',['../_sgp41__i2c_8cpp.html',1,'']]],
-  ['sgp41_5fi2c_2eh_19',['sgp41_i2c.h',['../sgp41__i2c_8h.html',1,'']]],
-  ['spi_2ecpp_20',['Spi.cpp',['../_spi_8cpp.html',1,'']]],
-  ['spi_2eh_21',['Spi.h',['../_spi_8h.html',1,'']]],
-  ['storage_2ecpp_22',['Storage.cpp',['../_storage_8cpp.html',1,'']]],
-  ['storage_2eh_23',['Storage.h',['../_storage_8h.html',1,'']]],
-  ['string_2eh_24',['String.h',['../_string_8h.html',1,'']]]
+  ['uart_2ecpp_0',['Uart.cpp',['../_uart_8cpp.html',1,'']]],
+  ['uart_2eh_1',['Uart.h',['../_uart_8h.html',1,'']]]
 ];

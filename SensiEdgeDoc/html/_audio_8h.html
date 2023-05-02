@@ -94,49 +94,68 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga1e912ef8b1d61a7062f2de3f8910b144"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga1e912ef8b1d61a7062f2de3f8910b144">WRITE_FIFO_FRAME_NUM</a>&#160;&#160;&#160;(4)</td></tr>
+<tr class="memitem:ga1e912ef8b1d61a7062f2de3f8910b144"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WRITE_FIFO_FRAME_NUM</b>&#160;&#160;&#160;(4)</td></tr>
 <tr class="separator:ga1e912ef8b1d61a7062f2de3f8910b144"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a5f20968e1ad603efbf608892e19616"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga0a5f20968e1ad603efbf608892e19616">WRITE_FIFO_FRAME_SIZE</a>&#160;&#160;&#160;(1024*2*3)</td></tr>
+<tr class="memitem:ga0a5f20968e1ad603efbf608892e19616"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WRITE_FIFO_FRAME_SIZE</b>&#160;&#160;&#160;(1024*2*3)</td></tr>
 <tr class="separator:ga0a5f20968e1ad603efbf608892e19616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadad24756bf4c417f225c47af5a6f0a94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#gadad24756bf4c417f225c47af5a6f0a94">WRITE_BUF_SIZE</a>&#160;&#160;&#160;(<a class="el" href="group__audio.html#ga1e912ef8b1d61a7062f2de3f8910b144">WRITE_FIFO_FRAME_NUM</a> * <a class="el" href="group__audio.html#ga0a5f20968e1ad603efbf608892e19616">WRITE_FIFO_FRAME_SIZE</a>)</td></tr>
+<tr class="memitem:gadad24756bf4c417f225c47af5a6f0a94"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WRITE_BUF_SIZE</b>&#160;&#160;&#160;(WRITE_FIFO_FRAME_NUM * WRITE_FIFO_FRAME_SIZE)</td></tr>
 <tr class="separator:gadad24756bf4c417f225c47af5a6f0a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab743ad5b25f830584896ee6e1c24623f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#gab743ad5b25f830584896ee6e1c24623f">READ_FIFO_FRAME_NUM</a>&#160;&#160;&#160;(4)</td></tr>
+<tr class="memitem:gab743ad5b25f830584896ee6e1c24623f"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>READ_FIFO_FRAME_NUM</b>&#160;&#160;&#160;(4)</td></tr>
 <tr class="separator:gab743ad5b25f830584896ee6e1c24623f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1da302764de8f1652e6f075c178cd4bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga1da302764de8f1652e6f075c178cd4bf">READ_FIFO_FRAME_SIZE</a>&#160;&#160;&#160;(1024*2*8)</td></tr>
+<tr class="memitem:ga1da302764de8f1652e6f075c178cd4bf"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>READ_FIFO_FRAME_SIZE</b>&#160;&#160;&#160;(1024*2*8)</td></tr>
 <tr class="separator:ga1da302764de8f1652e6f075c178cd4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4245ea3fba0358165b402a7a615419bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga4245ea3fba0358165b402a7a615419bb">READ_BUF_SIZE</a>&#160;&#160;&#160;(<a class="el" href="group__audio.html#gab743ad5b25f830584896ee6e1c24623f">READ_FIFO_FRAME_NUM</a> * <a class="el" href="group__audio.html#ga1da302764de8f1652e6f075c178cd4bf">READ_FIFO_FRAME_SIZE</a>)</td></tr>
+<tr class="memitem:ga4245ea3fba0358165b402a7a615419bb"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>READ_BUF_SIZE</b>&#160;&#160;&#160;(READ_FIFO_FRAME_NUM * READ_FIFO_FRAME_SIZE)</td></tr>
 <tr class="separator:ga4245ea3fba0358165b402a7a615419bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a978df20f463eee83e7a3cb840e3ad4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga1a978df20f463eee83e7a3cb840e3ad4">FIFO_FRAME_SIZE</a></td></tr>
 <tr class="separator:ga1a978df20f463eee83e7a3cb840e3ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad0be9ddacb94e9b486b1954795e19132"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#gad0be9ddacb94e9b486b1954795e19132">SIMPLE_FIFO_BUF_SIZE</a></td></tr>
 <tr class="separator:gad0be9ddacb94e9b486b1954795e19132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga11c8775524344c177a10bb90336f296b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga11c8775524344c177a10bb90336f296b">print_err</a>&#160;&#160;&#160;(void)</td></tr>
+<tr class="memitem:ga11c8775524344c177a10bb90336f296b"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>print_err</b>&#160;&#160;&#160;(void)</td></tr>
 <tr class="separator:ga11c8775524344c177a10bb90336f296b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga587f4b98aa2f465051f2ad0c61d74d16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga587f4b98aa2f465051f2ad0c61d74d16">print_dbg</a>(x...)</td></tr>
+<tr class="memitem:ga587f4b98aa2f465051f2ad0c61d74d16"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>print_dbg</b>(x...)</td></tr>
 <tr class="separator:ga587f4b98aa2f465051f2ad0c61d74d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad018f7e2c5f8fd25b8744a36ee0dce65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#gad018f7e2c5f8fd25b8744a36ee0dce65">AS_CODECTYPE_PCM</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memitem:gad018f7e2c5f8fd25b8744a36ee0dce65"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AS_CODECTYPE_PCM</b>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:gad018f7e2c5f8fd25b8744a36ee0dce65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9b9fdb65b07b208feef874d26cf1367d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga9b9fdb65b07b208feef874d26cf1367d">AUDIOLIB_ECODE_OK</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ga9b9fdb65b07b208feef874d26cf1367d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23ac5263d61641a3a5e9b0eed463c759"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga23ac5263d61641a3a5e9b0eed463c759">AUDIOLIB_ECODE_SHARED_MEMORY_ERROR</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:ga23ac5263d61641a3a5e9b0eed463c759"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AUDIOLIB_ECODE_SHARED_MEMORY_ERROR</b>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:ga23ac5263d61641a3a5e9b0eed463c759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac01d5a582b6ee2d08e92921eeb7bde5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#gac01d5a582b6ee2d08e92921eeb7bde5b">AUDIOLIB_ECODE_SIMPLEFIFO_ERROR</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:gac01d5a582b6ee2d08e92921eeb7bde5b"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AUDIOLIB_ECODE_SIMPLEFIFO_ERROR</b>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:gac01d5a582b6ee2d08e92921eeb7bde5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae9110e1b7cacb2416eab492ad1402a4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#gae9110e1b7cacb2416eab492ad1402a4a">AUDIOLIB_ECODE_AUDIOCOMMAND_ERROR</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:gae9110e1b7cacb2416eab492ad1402a4a"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AUDIOLIB_ECODE_AUDIOCOMMAND_ERROR</b>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:gae9110e1b7cacb2416eab492ad1402a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb7ee8ebb0c0eecd2218182f25a3c755"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#gafb7ee8ebb0c0eecd2218182f25a3c755">AUDIOLIB_ECODE_FILEACCESS_ERROR</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memitem:gafb7ee8ebb0c0eecd2218182f25a3c755"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AUDIOLIB_ECODE_FILEACCESS_ERROR</b>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:gafb7ee8ebb0c0eecd2218182f25a3c755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4688bdcb4548b2336ce08b1b98afb818"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga4688bdcb4548b2336ce08b1b98afb818">AUDIOLIB_ECODE_FILEEND</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memitem:ga4688bdcb4548b2336ce08b1b98afb818"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AUDIOLIB_ECODE_FILEEND</b>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:ga4688bdcb4548b2336ce08b1b98afb818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f95ac9b46b31b77a7008a8d654abf23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga1f95ac9b46b31b77a7008a8d654abf23">AUDIOLIB_ECODE_BUFFER_AREA_ERROR</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memitem:ga1f95ac9b46b31b77a7008a8d654abf23"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AUDIOLIB_ECODE_BUFFER_AREA_ERROR</b>&#160;&#160;&#160;6</td></tr>
 <tr class="separator:ga1f95ac9b46b31b77a7008a8d654abf23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c57a957e04670978b958dde157b9eaa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga5c57a957e04670978b958dde157b9eaa">AUDIOLIB_ECODE_BUFFER_SIZE_ERROR</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memitem:ga5c57a957e04670978b958dde157b9eaa"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AUDIOLIB_ECODE_BUFFER_SIZE_ERROR</b>&#160;&#160;&#160;7</td></tr>
 <tr class="separator:ga5c57a957e04670978b958dde157b9eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6d4437d70daf7cae9422921dc411c253"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga6d4437d70daf7cae9422921dc411c253">AUDIOLIB_ECODE_INSUFFICIENT_BUFFER_AREA</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memitem:ga6d4437d70daf7cae9422921dc411c253"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AUDIOLIB_ECODE_INSUFFICIENT_BUFFER_AREA</b>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:ga6d4437d70daf7cae9422921dc411c253"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaf6ac065efc9938399becedc2e5d70be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#gaaf6ac065efc9938399becedc2e5d70be">AUDIOLIB_ECODE_WAV_PARSE_ERROR</a>&#160;&#160;&#160;9</td></tr>
+<tr class="memitem:gaaf6ac065efc9938399becedc2e5d70be"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AUDIOLIB_ECODE_WAV_PARSE_ERROR</b>&#160;&#160;&#160;9</td></tr>
 <tr class="separator:gaaf6ac065efc9938399becedc2e5d70be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a6ce1d154f038920fe96cdae7dab4ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga4a6ce1d154f038920fe96cdae7dab4ed">AUDIOLIB_ECODE_PARAMETER_ERROR</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memitem:ga4a6ce1d154f038920fe96cdae7dab4ed"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AUDIOLIB_ECODE_PARAMETER_ERROR</b>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:ga4a6ce1d154f038920fe96cdae7dab4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -146,12 +165,14 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga93765e44e0fbb213c80fbb37a2eaa680"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga93765e44e0fbb213c80fbb37a2eaa680">outputDeviceCallback</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)</td></tr>
+<tr class="memitem:ga93765e44e0fbb213c80fbb37a2eaa680"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>outputDeviceCallback</b> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)</td></tr>
 <tr class="separator:ga93765e44e0fbb213c80fbb37a2eaa680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga79073d741d6e88784514a35adceadf82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_class.html">AudioClass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio.html#ga79073d741d6e88784514a35adceadf82">Audio</a></td></tr>
+<tr class="memitem:ga79073d741d6e88784514a35adceadf82"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_audio_class.html">AudioClass</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Audio</b></td></tr>
 <tr class="separator:ga79073d741d6e88784514a35adceadf82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

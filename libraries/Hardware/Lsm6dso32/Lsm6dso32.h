@@ -28,7 +28,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include <stdint.h>
-//#include <math.h>
 #ifndef float_t
 #define float_t float
 #endif

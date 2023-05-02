@@ -27,7 +27,6 @@ extern "C" {
 #include <cxd56_pmic.h>
 }
 #include <errno.h>
-// #include "utility.h"
 #include "Wire.h"
 
 /* helper */

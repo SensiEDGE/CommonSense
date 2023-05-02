@@ -51,8 +51,6 @@
 #include "../../Hardware/Sgp4x/sgp40_i2c.h"
 #include "../../Hardware/Apds9250/Apds9250.h"
 #include "../../Drivers/CXD5602/Pwm/Pwm.h"
-//#include "../../LowPower/LowPower.h"
-//#include "../../Hardware/Mp34dt05/Mp34dt05.h"
 #include "../../Hardware/Sdcard/Sdcard.h"
 #include "../../ThirdParty/Fatfs/ff.h"
 #include "../../Hardware/Led/Led.h"

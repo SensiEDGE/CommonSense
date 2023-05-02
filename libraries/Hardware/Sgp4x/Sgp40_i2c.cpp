@@ -43,7 +43,28 @@
 
 sgp40_mode_t sgp40_mode = {0};
 
+/**
+ * sgp40_measure_raw_signal() - This command starts/continues the VOC
+ * measurement mode
+ *
+ * @param relative_humidity Leaves humidity compensation disabled by sending the
+ * default value 0x8000 (50%RH) or enables humidity compensation when sending
+ * the relative humidity in ticks (ticks = %RH * 65535 / 100)
+ *
+ * @param temperature Leaves humidity compensation disabled by sending the
+ * default value 0x6666 (25 degC) or enables humidity compensation when sending
+ * the temperature in ticks (ticks = (degC + 45) * 65535 / 175)
+ *
+ * @param sraw_voc u16 unsigned integer directly provides the raw signal
+ * SRAW_VOC in ticks which is proportional to the logarithm of the resistance of
+ * the sensing element.
+ *
+ * @return 0 on success, an error code otherwise
+ */
 int16_t sgp40_measure_raw_signal(uint16_t relative_humidity, uint16_t temperature, uint16_t* sraw_voc) {
+    if (sraw_voc == nullptr) {
+        return ~NO_ERROR;
+    }
     int16_t error;
     uint8_t buffer[8];
     uint16_t offset = 0;
@@ -69,7 +90,20 @@ int16_t sgp40_measure_raw_signal(uint16_t relative_humidity, uint16_t temperatur
     return NO_ERROR;
 }
 
+/**
+ * sgp40_execute_self_test() - This command triggers the built-in self-test
+ * checking for integrity of the hotplate and MOX material and returns the
+ * result of this test as 2 bytes
+ *
+ * @param test_result 0xD4 00: all tests passed successfully or 0x4B 00: one or
+ * more tests have failed
+ *
+ * @return 0 on success, an error code otherwise
+ */
 int16_t sgp40_execute_self_test(uint16_t* test_result) {
+    if (test_result == nullptr) {
+        return ~NO_ERROR;
+    }
     int16_t error;
     uint8_t buffer[3];
     uint16_t offset = 0;
@@ -90,6 +124,12 @@ int16_t sgp40_execute_self_test(uint16_t* test_result) {
     return NO_ERROR;
 }
 
+/**
+ * sgp40_turn_heater_off() - This command turns the hotplate off and stops the
+ * measurement. Subsequently, the sensor enters the idle mode.
+ *
+ * @return 0 on success, an error code otherwise
+ */
 int16_t sgp40_turn_heater_off(void) {
     int16_t error;
     uint8_t buffer[2];
@@ -104,7 +144,18 @@ int16_t sgp40_turn_heater_off(void) {
     return NO_ERROR;
 }
 
+/**
+ * sgp40_get_serial_number() - This command provides the decimal serial number
+ * of the SGP40 chip by returning 3x2 bytes.
+ *
+ * @param serial_number 48-bit unique serial number
+ *
+ * @return 0 on success, an error code otherwise
+ */
 int16_t sgp40_get_serial_number(uint16_t* serial_number, uint8_t serial_number_size) {
+    if (serial_number == nullptr) {
+        return ~NO_ERROR;
+    }
     int16_t error;
     uint8_t buffer[9];
     uint16_t offset = 0;
@@ -149,6 +200,11 @@ uint16_t sgp40_get_t_tick(float t) {
     return (uint16_t) result;
 }
 
+/**
+ * @brief  sgp40 init
+ * @param  none
+ * @retval true if ok
+ */
 bool sgp40_init(void) {
     int16_t error = 0;
     uint16_t serial_number[3];
@@ -189,6 +245,9 @@ uint64_t sgp40_get_pheriod_ns(sgp40_period_t rate) {
  * @retval none
  */
 void sgp40_get_mode(sgp40_mode_t* mode) {
+    if (mode == nullptr) {
+        return;
+    }
     memcpy(mode, &sgp40_mode, sizeof(sgp40_mode_t));
 }
 
@@ -198,6 +257,9 @@ void sgp40_get_mode(sgp40_mode_t* mode) {
  * @retval none
  */
 void sgp40_set_mode(sgp40_mode_t* mode) {
+    if (mode == nullptr) {
+        return;
+    }
     memcpy(&sgp40_mode, mode, sizeof(sgp40_mode_t));
     if (sgp40_mode.enable != false) {
         sgp40_enable();

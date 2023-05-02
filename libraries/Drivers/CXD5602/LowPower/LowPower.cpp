@@ -54,7 +54,6 @@
 
 #include <../RTC/RTC.h>
 #include "LowPower.h"
-//#include "wiring_private.h"
 
 #define DEV_BATT "/dev/bat"
 
@@ -168,7 +167,9 @@ uint8_t LowPowerClass::getWakeupPin(bootcause_e bc) {
     if ((COLD_GPIO_IRQ36 <= bc) && (bc <= COLD_GPIO_IRQ47)) {
         int irq = bc - COLD_GPIO_IRQ36 + CXD56_IRQ_EXDEVICE_0;
         int _pin = cxd56_gpioint_pin(irq);
-        //pin = pin_invert(_pin);
+#if 0 // Currently don't need
+        pin = pin_invert(_pin);
+#endif
     }
 
     return pin;
@@ -271,15 +272,16 @@ int LowPowerClass::getCurrent(void) {
 }
 
 bootcause_e LowPowerClass::pin2bootcause(uint8_t pin) {
-    // bootcause_e bc = POR_NORMAL;
+#if 0 // Currently don't need
+     bootcause_e bc = POR_NORMAL;
 
-    // uint8_t _pin = pin_convert(pin);
-    // int irq = cxd56_gpioint_irq(_pin);
+     uint8_t _pin = pin_convert(pin);
+     int irq = cxd56_gpioint_irq(_pin);
 
-    // if (irq > 0) {
-    //     bc = (bootcause_e)(irq - CXD56_IRQ_EXDEVICE_0 + COLD_GPIO_IRQ36);
-    // }
-
+     if (irq > 0) {
+         bc = (bootcause_e)(irq - CXD56_IRQ_EXDEVICE_0 + COLD_GPIO_IRQ36);
+     }
+#endif
     return POR_NORMAL;//bc;
 }
 

@@ -107,51 +107,51 @@ $(function() {
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#include &lt;audio/utilities/frame_samples.h&gt;</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#include &lt;memutils/simple_fifo/CMN_SimpleFifo.h&gt;</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="group__audio.html#ga1e912ef8b1d61a7062f2de3f8910b144">   54</a></span><span class="preprocessor">#define WRITE_FIFO_FRAME_NUM  (4)</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="group__audio.html#ga0a5f20968e1ad603efbf608892e19616">   55</a></span><span class="preprocessor">#define WRITE_FIFO_FRAME_SIZE (1024*2*3)</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="group__audio.html#gadad24756bf4c417f225c47af5a6f0a94">   56</a></span><span class="preprocessor">#define WRITE_BUF_SIZE   (WRITE_FIFO_FRAME_NUM * WRITE_FIFO_FRAME_SIZE)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#define WRITE_FIFO_FRAME_NUM  (4)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#define WRITE_FIFO_FRAME_SIZE (1024*2*3)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#define WRITE_BUF_SIZE   (WRITE_FIFO_FRAME_NUM * WRITE_FIFO_FRAME_SIZE)</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="group__audio.html#gab743ad5b25f830584896ee6e1c24623f">   58</a></span><span class="preprocessor">#define READ_FIFO_FRAME_NUM   (4)</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="group__audio.html#ga1da302764de8f1652e6f075c178cd4bf">   59</a></span><span class="preprocessor">#define READ_FIFO_FRAME_SIZE  (1024*2*8)</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="group__audio.html#ga4245ea3fba0358165b402a7a615419bb">   60</a></span><span class="preprocessor">#define READ_BUF_SIZE    (READ_FIFO_FRAME_NUM * READ_FIFO_FRAME_SIZE)</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#define READ_FIFO_FRAME_NUM   (4)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#define READ_FIFO_FRAME_SIZE  (1024*2*8)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#define READ_BUF_SIZE    (READ_FIFO_FRAME_NUM * READ_FIFO_FRAME_SIZE)</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="group__audio.html#ga1a978df20f463eee83e7a3cb840e3ad4">   62</a></span><span class="preprocessor">#define FIFO_FRAME_SIZE (\</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#define FIFO_FRAME_SIZE (\</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">                          (WRITE_BUF_SIZE &gt; READ_BUF_SIZE) ?\</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">                          (WRITE_FIFO_FRAME_SIZE) : (READ_FIFO_FRAME_SIZE)\</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">                        )</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="group__audio.html#gad0be9ddacb94e9b486b1954795e19132">   67</a></span><span class="preprocessor">#define SIMPLE_FIFO_BUF_SIZE (\</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#define SIMPLE_FIFO_BUF_SIZE (\</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">                               ((WRITE_BUF_SIZE) &gt; (READ_BUF_SIZE)) ? \</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">                               (WRITE_BUF_SIZE) : (READ_BUF_SIZE)\</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">                             )</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="group__audio.html#ga93765e44e0fbb213c80fbb37a2eaa680">   72</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span>  <a class="code hl_function" href="group__audio.html#ga93765e44e0fbb213c80fbb37a2eaa680">outputDeviceCallback</a>(<a class="code hl_typedef" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span>  outputDeviceCallback(<a class="code hl_typedef" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>);</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">/*--------------------------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="group__audio.html#ga11c8775524344c177a10bb90336f296b">   75</a></span><span class="preprocessor">#define print_err (void)</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#define print_err (void)</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#ifdef BRD_DEBUG</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#define print_dbg(...) printf(__VA_ARGS__)</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="group__audio.html#ga587f4b98aa2f465051f2ad0c61d74d16">   80</a></span><span class="preprocessor">#define print_dbg(x...)</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#define print_dbg(x...)</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">/*--------------------------------------------------------------------------*/</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="group__audio.html#gad018f7e2c5f8fd25b8744a36ee0dce65">   85</a></span><span class="preprocessor">#define AS_CODECTYPE_PCM  5</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#define AS_CODECTYPE_PCM  5</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">/*--------------------------------------------------------------------------*/</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="group__audio.html#ga9b9fdb65b07b208feef874d26cf1367d">   91</a></span><span class="preprocessor">#define AUDIOLIB_ECODE_OK                  0  </span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="group__audio.html#ga23ac5263d61641a3a5e9b0eed463c759">   92</a></span><span class="preprocessor">#define AUDIOLIB_ECODE_SHARED_MEMORY_ERROR 1  </span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="group__audio.html#gac01d5a582b6ee2d08e92921eeb7bde5b">   93</a></span><span class="preprocessor">#define AUDIOLIB_ECODE_SIMPLEFIFO_ERROR    2  </span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="group__audio.html#gae9110e1b7cacb2416eab492ad1402a4a">   94</a></span><span class="preprocessor">#define AUDIOLIB_ECODE_AUDIOCOMMAND_ERROR  3  </span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="group__audio.html#gafb7ee8ebb0c0eecd2218182f25a3c755">   95</a></span><span class="preprocessor">#define AUDIOLIB_ECODE_FILEACCESS_ERROR    4  </span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="group__audio.html#ga4688bdcb4548b2336ce08b1b98afb818">   96</a></span><span class="preprocessor">#define AUDIOLIB_ECODE_FILEEND             5  </span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="group__audio.html#ga1f95ac9b46b31b77a7008a8d654abf23">   97</a></span><span class="preprocessor">#define AUDIOLIB_ECODE_BUFFER_AREA_ERROR   6  </span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="group__audio.html#ga5c57a957e04670978b958dde157b9eaa">   98</a></span><span class="preprocessor">#define AUDIOLIB_ECODE_BUFFER_SIZE_ERROR   7  </span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="group__audio.html#ga6d4437d70daf7cae9422921dc411c253">   99</a></span><span class="preprocessor">#define AUDIOLIB_ECODE_INSUFFICIENT_BUFFER_AREA   8  </span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="group__audio.html#gaaf6ac065efc9938399becedc2e5d70be">  100</a></span><span class="preprocessor">#define AUDIOLIB_ECODE_WAV_PARSE_ERROR     9  </span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="group__audio.html#ga4a6ce1d154f038920fe96cdae7dab4ed">  101</a></span><span class="preprocessor">#define AUDIOLIB_ECODE_PARAMETER_ERROR    10  </span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#define AUDIOLIB_ECODE_SHARED_MEMORY_ERROR 1  </span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#define AUDIOLIB_ECODE_SIMPLEFIFO_ERROR    2  </span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#define AUDIOLIB_ECODE_AUDIOCOMMAND_ERROR  3  </span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#define AUDIOLIB_ECODE_FILEACCESS_ERROR    4  </span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#define AUDIOLIB_ECODE_FILEEND             5  </span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#define AUDIOLIB_ECODE_BUFFER_AREA_ERROR   6  </span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#define AUDIOLIB_ECODE_BUFFER_SIZE_ERROR   7  </span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#define AUDIOLIB_ECODE_INSUFFICIENT_BUFFER_AREA   8  </span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#define AUDIOLIB_ECODE_WAV_PARSE_ERROR     9  </span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#define AUDIOLIB_ECODE_PARAMETER_ERROR    10  </span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">/*--------------------------------------------------------------------------*/</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="group__audio.html#gacc70dccfcf3da32c8da5c3dda542dd72">  108</a></span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_typedef" href="group__audio.html#gacc70dccfcf3da32c8da5c3dda542dd72">err_t</a>;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
@@ -400,8 +400,8 @@ $(function() {
 <div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>  <a class="code hl_class" href="class_audio_class.html">AudioClass</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="class_audio_class.html">AudioClass</a>&amp;);</div>
 <div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>  <a class="code hl_class" href="class_audio_class.html">~AudioClass</a>() {}</div>
 <div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span> </div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>  <span class="keywordtype">char</span> m_es_player0_buf[<a class="code hl_define" href="group__audio.html#ga1a978df20f463eee83e7a3cb840e3ad4">FIFO_FRAME_SIZE</a>];</div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>  <span class="keywordtype">char</span> m_es_player1_buf[<a class="code hl_define" href="group__audio.html#ga0a5f20968e1ad603efbf608892e19616">WRITE_FIFO_FRAME_SIZE</a>];</div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>  <span class="keywordtype">char</span> m_es_player0_buf[FIFO_FRAME_SIZE];</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>  <span class="keywordtype">char</span> m_es_player1_buf[WRITE_FIFO_FRAME_SIZE];</div>
 <div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span> </div>
 <div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>  CMN_SimpleFifoHandle m_player0_simple_fifo_handle;</div>
 <div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>  CMN_SimpleFifoHandle m_player1_simple_fifo_handle;</div>
@@ -459,7 +459,7 @@ $(function() {
 <div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>  <span class="keywordtype">bool</span> check_encode_dsp(<a class="code hl_typedef" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> codec_type, <span class="keyword">const</span> <span class="keywordtype">char</span> *path, <a class="code hl_typedef" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> fs);</div>
 <div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>};</div>
 <div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span> </div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span><span class="keyword">extern</span> <a class="code hl_class" href="class_audio_class.html">AudioClass</a> <a class="code hl_variable" href="group__audio.html#ga79073d741d6e88784514a35adceadf82">Audio</a>;</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span><span class="keyword">extern</span> <a class="code hl_class" href="class_audio_class.html">AudioClass</a> Audio;</div>
 <div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span> </div>
 <div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span><span class="comment">// #endif //__cplusplus</span></div>
 <div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span><span class="preprocessor">#endif </span><span class="comment">//Audio_h</span></div>
@@ -498,10 +498,6 @@ $(function() {
 <div class="ttc" id="aclass_audio_class_html_afe35ae32070d390f81befccb13da1ec6a3ca20cc5db56df5f2eaf11dea7f1fa23"><div class="ttname"><a href="class_audio_class.html#afe35ae32070d390f81befccb13da1ec6a3ca20cc5db56df5f2eaf11dea7f1fa23">AudioClass::Mic</a></div><div class="ttdeci">@ Mic</div><div class="ttdef"><b>Definition:</b> Audio.h:338</div></div>
 <div class="ttc" id="aclass_audio_class_html_afe35ae32070d390f81befccb13da1ec6acb7522f971ac17ed1547718d994eca70"><div class="ttname"><a href="class_audio_class.html#afe35ae32070d390f81befccb13da1ec6acb7522f971ac17ed1547718d994eca70">AudioClass::None</a></div><div class="ttdeci">@ None</div><div class="ttdef"><b>Definition:</b> Audio.h:336</div></div>
 <div class="ttc" id="aclass_file_html"><div class="ttname"><a href="class_file.html">File</a></div><div class="ttdoc">The File class allows for reading from and writing to individual files on the File System.</div><div class="ttdef"><b>Definition:</b> File.h:55</div></div>
-<div class="ttc" id="agroup__audio_html_ga0a5f20968e1ad603efbf608892e19616"><div class="ttname"><a href="group__audio.html#ga0a5f20968e1ad603efbf608892e19616">WRITE_FIFO_FRAME_SIZE</a></div><div class="ttdeci">#define WRITE_FIFO_FRAME_SIZE</div><div class="ttdef"><b>Definition:</b> Audio.h:55</div></div>
-<div class="ttc" id="agroup__audio_html_ga1a978df20f463eee83e7a3cb840e3ad4"><div class="ttname"><a href="group__audio.html#ga1a978df20f463eee83e7a3cb840e3ad4">FIFO_FRAME_SIZE</a></div><div class="ttdeci">#define FIFO_FRAME_SIZE</div><div class="ttdef"><b>Definition:</b> Audio.h:62</div></div>
-<div class="ttc" id="agroup__audio_html_ga79073d741d6e88784514a35adceadf82"><div class="ttname"><a href="group__audio.html#ga79073d741d6e88784514a35adceadf82">Audio</a></div><div class="ttdeci">AudioClass Audio</div></div>
-<div class="ttc" id="agroup__audio_html_ga93765e44e0fbb213c80fbb37a2eaa680"><div class="ttname"><a href="group__audio.html#ga93765e44e0fbb213c80fbb37a2eaa680">outputDeviceCallback</a></div><div class="ttdeci">void outputDeviceCallback(uint32_t)</div></div>
 <div class="ttc" id="agroup__audio_html_gacc70dccfcf3da32c8da5c3dda542dd72"><div class="ttname"><a href="group__audio.html#gacc70dccfcf3da32c8da5c3dda542dd72">err_t</a></div><div class="ttdeci">unsigned int err_t</div><div class="ttdef"><b>Definition:</b> Audio.h:108</div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. The developer should modify this to suit the platform be...</div><div class="ttdef"><b>Definition:</b> vl53l1_types.h:88</div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a32f2e37ee053cf2ce8ca28d1f74630e5"><div class="ttname"><a href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></div><div class="ttdeci">int int32_t</div><div class="ttdoc">Typedef defining 32 bit int type. The developer should modify this to suit the platform being deploye...</div><div class="ttdef"><b>Definition:</b> vl53l1_types.h:83</div></div>

@@ -79,7 +79,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="_uart_8h_source.html">Uart.h</a>&quot;</code><br />
 <code>#include &lt;cxd56_uart.h&gt;</code><br />
 <code>#include &lt;../../include/nuttx/serial/serial.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="_string_8h_source.html">string.h</a>&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
 <code>#include &lt;sys/ioctl.h&gt;</code><br />
@@ -87,11 +87,14 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1eec02e371060211822e716897997782"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_uart_8cpp.html#a1eec02e371060211822e716897997782">putreg32</a>(v,  a)&#160;&#160;&#160;(*(volatile <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *)(a) = (v))</td></tr>
+<tr class="memitem:a1eec02e371060211822e716897997782"><td class="memItemLeft" align="right" valign="top"><a id="a1eec02e371060211822e716897997782" name="a1eec02e371060211822e716897997782"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>putreg32</b>(v,  a)&#160;&#160;&#160;(*(volatile <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *)(a) = (v))</td></tr>
 <tr class="separator:a1eec02e371060211822e716897997782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac300a2d1572abe4295514731c661a8e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_uart_8cpp.html#ac300a2d1572abe4295514731c661a8e1">getreg32</a>(a)&#160;&#160;&#160;(*(volatile <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *)(a))</td></tr>
+<tr class="memitem:ac300a2d1572abe4295514731c661a8e1"><td class="memItemLeft" align="right" valign="top"><a id="ac300a2d1572abe4295514731c661a8e1" name="ac300a2d1572abe4295514731c661a8e1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>getreg32</b>(a)&#160;&#160;&#160;(*(volatile <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *)(a))</td></tr>
 <tr class="separator:ac300a2d1572abe4295514731c661a8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57807f99202ae56e92b7456c92a378ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_uart_8cpp.html#a57807f99202ae56e92b7456c92a378ac">CONSOLE_BASE</a>&#160;&#160;&#160;CXD56_UART1_BASE</td></tr>
+<tr class="memitem:a57807f99202ae56e92b7456c92a378ac"><td class="memItemLeft" align="right" valign="top"><a id="a57807f99202ae56e92b7456c92a378ac" name="a57807f99202ae56e92b7456c92a378ac"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONSOLE_BASE</b>&#160;&#160;&#160;CXD56_UART1_BASE</td></tr>
 <tr class="separator:a57807f99202ae56e92b7456c92a378ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -111,7 +114,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a6a65ee1d7aa146841b68afde603f0303"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_uart_8cpp.html#a6a65ee1d7aa146841b68afde603f0303">uart_send_data</a> (char *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
 <tr class="memdesc:a6a65ee1d7aa146841b68afde603f0303"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART send data.  <a href="_uart_8cpp.html#a6a65ee1d7aa146841b68afde603f0303">More...</a><br /></td></tr>
 <tr class="separator:a6a65ee1d7aa146841b68afde603f0303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a2229b86ef43b310ac521704150e3a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_uart_8cpp.html#a1a2229b86ef43b310ac521704150e3a0">uart_attach_symbol_callback</a> (char symbol, <a class="el" href="_uart_8h.html#a805f7338e93840b7f99a09dbfbc3c1b1">callback_func</a> func)</td></tr>
+<tr class="memitem:a1a2229b86ef43b310ac521704150e3a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_uart_8cpp.html#a1a2229b86ef43b310ac521704150e3a0">uart_attach_symbol_callback</a> (char symbol, callback_func func)</td></tr>
 <tr class="memdesc:a1a2229b86ef43b310ac521704150e3a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART attaching callback aftre some synbol received.  <a href="_uart_8cpp.html#a1a2229b86ef43b310ac521704150e3a0">More...</a><br /></td></tr>
 <tr class="separator:a1a2229b86ef43b310ac521704150e3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0ac66889170067832127c5734ec7726"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_uart_8cpp.html#ad0ac66889170067832127c5734ec7726">uart_act_callback</a> (void)</td></tr>
@@ -120,7 +123,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a412dad55157a8cdd91c56cdee4ab0dbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_uart_8cpp.html#a412dad55157a8cdd91c56cdee4ab0dbf">uart_rx_pnt</a> = 0</td></tr>
+<tr class="memitem:a412dad55157a8cdd91c56cdee4ab0dbf"><td class="memItemLeft" align="right" valign="top"><a id="a412dad55157a8cdd91c56cdee4ab0dbf" name="a412dad55157a8cdd91c56cdee4ab0dbf"></a>
+<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>uart_rx_pnt</b> = 0</td></tr>
 <tr class="separator:a412dad55157a8cdd91c56cdee4ab0dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -133,68 +137,7 @@ Variables</h2></td></tr>
 <li>Neither the name of EDGE Impulse nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
 </ol>
 <p >THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a57807f99202ae56e92b7456c92a378ac" name="a57807f99202ae56e92b7456c92a378ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57807f99202ae56e92b7456c92a378ac">&#9670;&nbsp;</a></span>CONSOLE_BASE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CONSOLE_BASE&#160;&#160;&#160;CXD56_UART1_BASE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac300a2d1572abe4295514731c661a8e1" name="ac300a2d1572abe4295514731c661a8e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac300a2d1572abe4295514731c661a8e1">&#9670;&nbsp;</a></span>getreg32</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define getreg32</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;(*(volatile <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *)(a))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1eec02e371060211822e716897997782" name="a1eec02e371060211822e716897997782"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1eec02e371060211822e716897997782">&#9670;&nbsp;</a></span>putreg32</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define putreg32</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">v, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(*(volatile <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *)(a) = (v))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a7a2019d246e22cd5fe655e094111a8a9" name="a7a2019d246e22cd5fe655e094111a8a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a2019d246e22cd5fe655e094111a8a9">&#9670;&nbsp;</a></span>uart_act()</h2>
 
@@ -274,7 +217,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_uart_8h.html#a805f7338e93840b7f99a09dbfbc3c1b1">callback_func</a>&#160;</td>
+          <td class="paramtype">callback_func&#160;</td>
           <td class="paramname"><em>func</em>&#160;</td>
         </tr>
         <tr>
@@ -438,21 +381,6 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a412dad55157a8cdd91c56cdee4ab0dbf" name="a412dad55157a8cdd91c56cdee4ab0dbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a412dad55157a8cdd91c56cdee4ab0dbf">&#9670;&nbsp;</a></span>uart_rx_pnt</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> uart_rx_pnt = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

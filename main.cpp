@@ -8,9 +8,7 @@
 
 #include "ei_device_sony_spresense.h"
 
-//#include "Audio.h"
 #include "libraries/Drivers/CXD5602/Wire/Wire.h"
-//#include "libraries/Hardware/KXxx/KX126.h"
 #include "libraries/ThirdParty/File/File.h"
 
 #include "Tests.h"
@@ -36,7 +34,6 @@ static void handle_sony_id(void);
 static void init_acc(void);
 char spresense_getchar(void);
 bool check_and_get_char (char* data);
-//static void audio_attention_cb(const ErrorAttentionParam *atprm);
 static void empty_audio_fifo(void);
 extern "C" void spresense_time_cb(uint32_t *sec, uint32_t *nano);
 
@@ -46,10 +43,8 @@ extern "C" void spresense_time_cb(uint32_t *sec, uint32_t *nano);
 #define CONSOLE_BASE    CXD56_UART1_BASE
 
 /* Private variables ------------------------------------------------------- */
-//KX126 kx126(KX126_DEVICE_ADDRESS_1F);
 
 /* Audio variables */
-//AudioClass *theAudio;
 static const int32_t buffer_size = 1600; /*768sample,1ch,16bit*/
 
 extern "C" {
@@ -108,7 +103,7 @@ extern "C" int spresense_main(void)
     boardctl(BOARDIOC_INIT, 0);
 
     handle_sony_id();
-    //tests();
+    //tests(); //Use this for onboard devices test
     ei_main();
     
     while (1){}

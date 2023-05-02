@@ -387,9 +387,6 @@ void bq27441_g1_exit_resim (void) {
 }
 
 
-/*void bq27441_g1_set_unsealed (void) {
-    bq27441_g1->write(BQ27441_G1_ADDR,bq27441_g1_CONTROL_CMD, 0x8000);
-}*/
 
 /* _________________________________________________________ */
 
@@ -412,10 +409,6 @@ uint16_t bq27441_g1_get_design_capacity(void) {
     return buffer;
 }
 
-/*void bq27441_g1_WriteDataClass (uint8_t value) {
-    bq27441_g1->write(BQ27441_G1_ADDR,bq27441_g1_DATA_CLASS_CMD, value);
-}*/
-
 
 uint16_t bq27441_g1_get_data_block (uint8_t value) {
     uint16_t buffer;
@@ -425,24 +418,11 @@ uint16_t bq27441_g1_get_data_block (uint8_t value) {
 }
 
 
-
-/*uint16_t bq27441_g1_block_data (void) {
-    uint16_t buffer;
-    buffer = bq27441_g1->read(BQ27441_G1_ADDR, bq27441_g1_BLOCK_DATA_CMD);
-    return buffer;
-}*/
-
-
-
 uint16_t bq27441_g1_GetChecksum (void) {
     uint16_t buffer;
     buffer = bq27441_g1->read(BQ27441_G1_ADDR, BQ27441_G1_BLOCK_DATA_CHECKSUM_CMD);
     return buffer;
 }
-
-/*void bq27441_g1_WriteChecksum (uint16_t value) {
-    bq27441_g1->write(BQ27441_G1_ADDR,bq27441_g1_BLOCK_DATA_CHECKSUM_CMD, value);
-}*/
 
  
 void bq27441_g1_block_data_control (void) {

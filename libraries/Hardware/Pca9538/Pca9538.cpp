@@ -43,6 +43,11 @@
 #define PCA9538_POLARITY_INVERSION_REG  2
 #define PCA9538_CONFIG_REG  3
 
+/**
+ * @brief  PCA9538 init
+ * @param  None
+ * @retval None
+ */
 void pca9538_init(void) {
     i2c_init();
 }

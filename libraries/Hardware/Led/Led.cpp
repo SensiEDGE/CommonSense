@@ -42,6 +42,11 @@ static uint8_t led_status = LED_OFF;
 
 #include "../../libraries/Max7317/Max7317.h"
 
+/**
+ * @brief  LEDs init
+ * @param  None
+ * @retval None
+ */
 void led_init (void) {
     static bool isInit = false;
     if (isInit == false) {
@@ -50,18 +55,38 @@ void led_init (void) {
     }
 }
 
+/**
+ * @brief  LED green on
+ * @param  None
+ * @retval None
+ */
 void led_green_on(void) {
     max7317_reset_pin(LED_GREEN_MAX7317_PIN);
 }
 
+/**
+ * @brief  LED green off
+ * @param  None
+ * @retval None
+ */
 void led_green_off(void) {
     max7317_set_pin(LED_GREEN_MAX7317_PIN);
 }
 
+/**
+ * @brief  LED red on
+ * @param  None
+ * @retval None
+ */
 void led_red_on(void) {
     max7317_reset_pin(LED_RED_MAX7317_PIN);
 }
 
+/**
+ * @brief  LED red off
+ * @param  None
+ * @retval None
+ */
 void led_red_off(void) {
     max7317_set_pin(LED_RED_MAX7317_PIN);
 }

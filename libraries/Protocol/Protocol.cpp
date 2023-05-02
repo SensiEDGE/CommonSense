@@ -1,6 +1,6 @@
 /**
  ******************************************************************************
- * @file    Protocol.h
+ * @file    Protocol.cpp
  * @date    17 Octpber 2022
  * @brief   Protocol routine
  ******************************************************************************
@@ -157,6 +157,9 @@ uint16_t conv_hex_to_uint16(char* start) {
     uint8_t b;
     uint16_t Out = 0;
 
+    if (start == 0) {
+        return 0xffff;
+    }
     for(uint8_t a = 0; a < 4; a++) {
         switch(start[a]) {
             case '0': 
@@ -283,6 +286,9 @@ static bool protocol_check_data(char* ptr) {
 }
 
 void new_command_callback(char* rx) {
+    if (rx == nullptr) {
+        return;
+    }
     rx_pnt = rx;
     new_command = true;
 }
@@ -825,6 +831,9 @@ static void protocol_set_0(char *pnt) {
  * @retval None
  */
 static void protocol_set_1(char *pnt) {
+    if (pnt == nullptr) {
+        return;
+    }
     Settings_t sett;
     memcpy (&sett, &settings, sizeof(Settings_t));
     sscanf(pnt,"EN=%hhd;FS=%hhd;ODR=%hhd", &sett.lsm6dso32_mode.enable, &sett.lsm6dso32_mode.gyro_scale, &sett.lsm6dso32_mode.gyro_data_rate);
@@ -842,6 +851,9 @@ static void protocol_set_1(char *pnt) {
  * @retval None
  */
 static void protocol_set_2(char *pnt) {
+    if (pnt == nullptr) {
+        return;
+    }
     Settings_t sett;
     memcpy (&sett, &settings, sizeof(Settings_t));
     sscanf(pnt,"EN=%hhu;ODR=%hhu", &sett.lis2mdl_mode.enable, &sett.lis2mdl_mode.data_rate);
@@ -859,6 +871,9 @@ static void protocol_set_2(char *pnt) {
  * @retval None
  */
 static void protocol_set_3(char *pnt) {
+    if (pnt == nullptr) {
+        return;
+    }
     Settings_t sett;
     memcpy (&sett, &settings, sizeof(Settings_t));
     sscanf(pnt,"EN=%hhu;ODR=%hhu", &sett.lps22hh_mode.enable, &sett.lps22hh_mode.data_rate);
@@ -876,6 +891,9 @@ static void protocol_set_3(char *pnt) {
  * @retval None
  */
 static void protocol_set_4(char *pnt) {
+    if (pnt == nullptr) {
+        return;
+    }
     Settings_t sett;
     memcpy (&sett, &settings, sizeof(Settings_t));
     sscanf(pnt,"EN=%hhu;ODR=%hhu;AVG=%hhu", &sett.hts221_mode.enable, &sett.hts221_mode.data_rate, &sett.hts221_mode.hts221_avgh);
@@ -893,6 +911,9 @@ static void protocol_set_4(char *pnt) {
  * @retval None
  */
 static void protocol_set_5(char *pnt) {
+    if (pnt == nullptr) {
+        return;
+    }
     Settings_t sett;
     memcpy (&sett, &settings, sizeof(Settings_t));
     sscanf(pnt,"EN=%hhu;AVG=%hhu", &sett.hts221_mode.enable, &sett.hts221_mode.hts221_avgt);
@@ -910,6 +931,9 @@ static void protocol_set_5(char *pnt) {
  * @retval None
  */
 static void protocol_set_6(char *pnt) {
+    if (pnt == nullptr) {
+        return;
+    }
     Settings_t sett;
     memcpy (&sett, &settings, sizeof(Settings_t));
     sscanf(pnt,"EN=%hhu;BIT=%hhu;MS=%hhu", &sett.lightsensor_mode.enable, &sett.lightsensor_mode.resolution, &sett.lightsensor_mode.measure_rate);
@@ -927,6 +951,9 @@ static void protocol_set_6(char *pnt) {
  * @retval None
  */
 static void protocol_set_10(char *pnt) {
+    if (pnt == nullptr) {
+        return;
+    }
     Settings_t sett;
     memcpy (&sett, &settings, sizeof(Settings_t));
     sscanf(pnt,"EN=%hhu;SRC=%hhu;MS=%hhu", &sett.sgp40_mode.enable, &sett.sgp40_mode.sgp40_source, &sett.sgp40_mode.sgp40_period);
@@ -944,6 +971,9 @@ static void protocol_set_10(char *pnt) {
  * @retval None
  */
 static void protocol_set_11(char *pnt) {
+    if (pnt == nullptr) {
+        return;
+    }
     Settings_t sett;
     memcpy (&sett, &settings, sizeof(Settings_t));
     sscanf(pnt,"EN=%hhu;DIST=%hhu;MS=%hhu", &sett.vl53l1x_mode.enable, &sett.vl53l1x_mode.vl53l1x_distance, &sett.vl53l1x_mode.vl53l1x_period);
@@ -961,6 +991,9 @@ static void protocol_set_11(char *pnt) {
  * @retval None
  */
 static void protocol_set_12(char *pnt) {
+    if (pnt == nullptr) {
+        return;
+    }
     Settings_t sett;
     memcpy (&sett, &settings, sizeof(Settings_t));
     sscanf(pnt, "DEVMOD=%hhd", &sett.device_mode);
@@ -977,6 +1010,9 @@ static void protocol_set_12(char *pnt) {
  * @retval None
  */
 static void protocol_set_13(char *pnt) {
+    if (pnt == nullptr) {
+        return;
+    }
     Settings_t sett;
     memcpy (&sett, &settings, sizeof(Settings_t));
     sscanf(pnt, "GPS=%hhd", &sett.gps_mode.enable);
@@ -993,6 +1029,9 @@ static void protocol_set_13(char *pnt) {
  * @retval None
  */
 static void protocol_set_14(char *pnt) {
+    if (pnt == nullptr) {
+        return;
+    }
     Settings_t sett;
     memcpy (&sett, &settings, sizeof(Settings_t));
     sscanf(pnt, "MIC=%hhd", &sett.microphone_mode.enable);
@@ -1009,6 +1048,9 @@ static void protocol_set_14(char *pnt) {
  * @retval None
  */
 static void protocol_set_15(char *pnt) { // PWM_MODE
+    if (pnt == nullptr) {
+        return;
+    }
     Settings_t sett;
     memcpy (&sett, &settings, sizeof(Settings_t));
     sscanf(pnt, "PWM_MODE=%hhd", &sett.pwm_mode_block);
@@ -1025,6 +1067,9 @@ static void protocol_set_15(char *pnt) { // PWM_MODE
  * @retval None
  */
 static void protocol_set_16(char *pnt) {
+    if (pnt == nullptr) {
+        return;
+    }
     uint16_t freq_hz = 0;
     uint8_t duty = 0;
     uint16_t time_ms = 0;

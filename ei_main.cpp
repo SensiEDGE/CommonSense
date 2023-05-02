@@ -251,12 +251,16 @@ void ei_main (void) {
         settings_load_default(&settings);
         settings_set_to_storage(&settings);
     }
+#if 1
     settings_get_from_storage(&settings);
     if (settings_check(&settings) != 0) {
         settings_load_default(&settings);
         usleep(250 * 1000);
         settings_set_to_storage(&settings);
     }
+#else
+    settings_load_default(&settings);
+#endif
     system_setup();
     if (sd_card_err == false) {
         led_green_on();
